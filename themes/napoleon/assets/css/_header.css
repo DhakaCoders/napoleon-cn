@@ -24,6 +24,7 @@ header.header{
 .hdr-top-menu ul li{
 	display: inline-block;
 	vertical-align: baseline;
+	padding: 0 13px;
 }
 .hdr-top-menu ul li a{
 	display: inline-block;
@@ -32,6 +33,26 @@ header.header{
 	font-size: 14px;
 	line-height: 17px;
 	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+}
+.hdr-top-menu ul li a span{
+	position: absolute;
+	right: -10px;
+	top: -20px;
+	width: 16px;
+	height: 16px;
+	border-radius: 100% 100%;
+	background: #A21D1D;
+	font-weight: 600;
+	font-size: 8px;
+	line-height: 10px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.03em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: #fff;
 }
 .hdr-language{
