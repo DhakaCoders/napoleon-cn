@@ -170,6 +170,40 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }, false);
 })();
 
+
+
+
+
+
+
+  /*Start Of Ranojit*/
+
+
+
+
+
+
+  /*Start Of Noyon*/
+
+
+
+
+
+  /*Start Of Milon*/
+
+
+
+
+
+  /*Start Of Shariful*/
+
+
+
+
+
+
+
+
     new WOW().init();
 
 })(jQuery);
