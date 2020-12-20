@@ -38,7 +38,9 @@ header.header{
 	width: 75px;
 	height: 41px;
 }
-
+.hdr-language input{
+	width: 20px;
+}
 .logo{
 	position: absolute;
 	left: 50%;
@@ -203,78 +205,3 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 
 
 
-.page-banner{
-	overflow: hidden;
-}
-
-.page-banner-title{
-	font-size: 74px;
-	line-height: 1.2;
-	font-weight: 500;
-	margin-bottom: 22px!important;
-}
-
-
-.page-banner-inr{
-	height: 720px;
-	position: relative;
-}
-
-.page-banner-bg-cntlr{
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 1;
-}
-.page-banner-bg-cntlr div{
-	width: 100%;
-	height: 100%;
-}
-.page-banner-des{
-	position: relative;
-	z-index: 5;
-	padding: 335px 0 0 60px;
-	color: #fff;
-}
-.page-banner-des-inr{
-	max-width: 640px;
-	width: 100%;
-}
-.page-banner-des p{
-	font-size: 16px;
-	line-height: 1.5;
-	margin-bottom: 30px;
-}
-.page-banner-des a{
-	max-width: 198px;
-	height: 48px;
-	width: 100%;
-	background: #A21D1D;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 15px;
-	letter-spacing: 0.03em;
-	display: flex;
-	align-items: center;
-	padding: 5px 35px 5px 22px;
-	position: relative;
-}
-.page-banner-des a:hover{
-	background: #8d1414;
-}
-.page-banner-des a:hover i{
-	right: 15px;
-}
-
-.page-banner-des a i{
-	position: absolute;
-	right: 20px;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-}
