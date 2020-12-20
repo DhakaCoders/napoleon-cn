@@ -340,3 +340,6 @@ form .dropdown-menu li a{
 .dropdown-menu.show{
 	width: 100%;
 }
+.btn-light{
+	border: 1px solid #CEA673;
+}
