@@ -369,3 +369,166 @@
 .ftr-top-news-form-cntlr .input-fields-row .input-fields-col.form-control {
 	border-radius: 0!important;
 }
+
+
+
+
+/*footer top sec version 2*/
+.footer-top-sec-v2{
+	position: relative;
+	padding-bottom: 60px;
+}
+.footer-top-sec-v2-bg{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #1a1429;
+	height: 280px;
+}
+.footer-top-sec-v2-inr{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 52px;
+	background: #4c2631;
+	padding-top: 55px;
+	padding-bottom: 60px;
+}
+.ftr-top-sec-v2-lft{
+	width: 43.75%;
+}
+.fts-v2-lft-top{
+
+}
+.fts-v2-lft-sub-title{
+	font-family: 'Operetta18-Regular';
+	font-size: 18px;
+	line-height: 1;
+	color: #C19764;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+.fts-v2-lft-title{
+	font-family: 'Operetta18-Medium';
+	font-size: 26px;
+	line-height: 1;
+	color: #C19764;
+	letter-spacing: 0.04em;
+	margin-bottom: 26px;
+}
+
+
+.fts-v2-lft-sediule{
+	display: flex;
+	justify-content: space-between;
+}
+.fts-v2-lft-sediule-col{
+	max-width: 225px;
+	width: 100%;
+}
+.fts-v2-lft-sediule-col > ul > li{
+	line-height: 1;
+	padding: 6px 0;
+}
+.fts-v2-lft-sediule-col > ul > li:first-child{
+	padding-top: 0;
+}
+.fts-v2-lft-sediule-col > ul > li:last-child{
+	padding-bottom: 0;
+}
+.fts-v2-lft-sediule-items{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fts-v2-lft-sdl-day strong{
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 14px;
+	letter-spacing: 0.03em;
+	color: #EBE7DE;
+	display: inline-block;
+
+}
+.fts-v2-lft-sdl-time span{
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 14px;
+	display: inline-block;
+	color: #EBE7DE;
+}
+
+.ftr-top-sec-v2-rt{
+	width: 56.25%;
+	padding-left: 115px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.fts-v2-rt-desc{
+	width: 55%;
+}
+.fts-v2-rt-desc-row{
+
+}
+.fts-v2-rt-desc-row-title{
+	font-family: 'Operetta18-Regular';
+	font-size: 18px;
+	line-height: 1;
+	color: #C19764;
+	margin-bottom: 6px;
+}
+.fts-v2-rt-desc-contact{
+	margin-bottom: 20px;
+}
+.fts-v2-rt-desc-cntct-tel{
+	margin-bottom: 5px;
+}
+.fts-v2-rt-desc-cntct-tel a,
+.fts-v2-rt-desc-cntct-mail a{
+	display: inline-block;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 14px;
+	color: #EBE7DE;
+}
+.fts-v2-rt-desc-visit{
+	margin-bottom: 20px;
+}
+.fts-v2-rt-desc-visit a{
+	display: inline-block;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 2;
+	color: #EBE7DE;
+}
+.fts-v2-rt-desc-Parking{
+
+}
+.fts-v2-rt-desc-Parking a{
+	display: inline-block;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1;
+	color: #EBE7DE;
+}
+
+.fts-v2-rt-form{
+	max-width: 45%;
+}
+.fts-v2-rt-form-title{
+	margin-bottom: 18px;
+}
+.fts-v2-input-fields-submit-col{
+	margin-top: 14px;
+	max-width: 170px;
+	width: 100%;
+}
+
+.fts-v2-rt-form .input-fields-row{
+	margin: 0 -4px;
+	margin-bottom: 9px;
+	
+}
+.fts-v2-rt-form .input-fields-row .input-fields-col{
+	padding: 0 4px;
+}
