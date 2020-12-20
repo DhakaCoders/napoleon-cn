@@ -18,14 +18,14 @@ a, a:hover, a:focus, button:hover, button:focus{
 body {
     background: #eeeae1;
     color: #512C36;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 26px;
     font-family: 'Montserrat', sans-serif;
 
 }
 p{
-	line-height: 1.2;
+	line-height: 1.7;
 	margin-bottom: 15px;
 }
 h1::-moz-selection,h2::-moz-selection,h3::-moz-selection,h4::-moz-selection,h5::-moz-selection,h6::-moz-selection,p::-moz-selection {
@@ -188,7 +188,8 @@ ul.reset-list,
 ol.reset-list,
 ul.sub-menu,
 .fl-pagi-ctlr ul,
-.reset-slect ul{
+.reset-slect ul,
+.page-breadcrumbs ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -196,7 +197,8 @@ ul.sub-menu,
 .reset-list li,
 ul.sub-menu li,
 .fl-pagi-ctlr ul li,
-.reset-slect ul li{
+.reset-slect ul li,
+.page-breadcrumbs ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -205,7 +207,8 @@ ul.sub-menu li,
 .reset-list li:before,
 ul.sub-menu li:before,
 .fl-pagi-ctlr ul li:before,
-.reset-slect ul li:before{
+.reset-slect ul li:before,
+.page-breadcrumbs ul li:before{
 	content: none!important;
 }
 
