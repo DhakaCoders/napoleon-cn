@@ -58,6 +58,21 @@ Purpose -> practice.html
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+}
+.news-slider{
+    overflow: hidden;
+    padding: 30px 0;
+}
+.slider1-arrows,
+.slider2-arrows{
+    position: relative;
+}
+.slider2Item{
+    max-width: 560px;
+}
+.slider1 .box{
+    margin-right: 0;
 }
 @media(max-width: 1920px){
     .container-new{

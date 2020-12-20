@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
@@ -27,7 +28,7 @@
 <body>
 
 <section class="news">
-  <div class="container-new">
+  <div class="container">
     <div class="row">
       <div class="col-6">
         <div class="box">
@@ -43,6 +44,52 @@
   </div>
 </section>
 
+<section class="news-slider">
+  <div class="holder">
+      <div class="swiper-container slider1">
+        <div class="swiper-wrapper slide1Wrapper">
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 1</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 2</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 3</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 4</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 5</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 6</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 7</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 8</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 9</div></div>
+          <div class="swiper-slide slider1Item"><div class='box'>Slide 1</div></div>
+        </div>
+      </div>
+      <div class="slider1-arrows">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+  </div>
+</section>
+
+<section class="news-slider">
+  <div class="holder">
+      <div class="swiper-container slider2">
+        <div class="swiper-wrapper slide2Wrapper">
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 1</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 2</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 3</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 4</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 5</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 6</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 7</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 8</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 9</div></div>
+          <div class="swiper-slide slider2Item"><div class='box'>Slide 1</div></div>
+        </div>
+      </div>
+      <div class="slider2-arrows">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+  </div>
+</section>
+
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
 <script src="assets/js/popper.min.js"></script>
@@ -54,8 +101,53 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+  function holdeWidth(){
+    var padding = 15, 
+        offset = 100,
+        winW = $(window).width(),
+        conW = $('.container').outerWidth(),
+        conWleft = (winW - conW) / 2;
+    $('.holder').css('margin-left', (conWleft+padding+offset));
+  }
+  holdeWidth();
+  $(window).resize(function(){
+    holdeWidth()
+  });
+  
+  var swiper = new Swiper('.slider1', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    }
+  });
+
+  var swiper = new Swiper('.slider2', {
+    slidesPerView: 'auto',
+    //centeredSlides: true,
+    loop: true,
+    navigation: {
+      nextEl: '.slider2-arrows .swiper-button-next',
+      prevEl: '.slider2-arrows .swiper-button-prev',
+    },
+  });
+</script>
 
 </body>
 </html>
