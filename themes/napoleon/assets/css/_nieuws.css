@@ -1,4 +1,6 @@
-
+.np-nieuws-con-sec{
+	padding-bottom: 80px;
+}
 
 
 .np-nieuws-lftsidebar{
@@ -107,4 +109,92 @@
 	transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
+}
+
+
+
+.fl-pagination-ctlr{
+	text-align: center;
+	position: relative;
+}
+.fl-pagination-ctlr ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.fl-pagination-ctlr ul li span{
+	display: inline-block;
+	vertical-align: baseline;
+	border: 2px solid #4C2631;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600px;
+	color: #4C2631;
+}
+.fl-pagination-ctlr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 14px;
+	color: #4C2631;
+	font-weight: 600;
+	line-height: 1;
+}
+.fl-pagination-ctlr ul li a:hover{
+	color: #CBA068;
+}
+.fl-pagination-ctlr ul li:first-child{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	padding-left: 0;
+}
+.fl-pagination-ctlr ul li:last-child{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.fl-pagination-ctlr ul li:first-child a,
+.fl-pagination-ctlr ul li:last-child a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 14px;
+	line-height: 1;
+	color: #CBA068;
+	font-weight: 600;
+}
+.fl-pagination-ctlr ul li:first-child a{
+	padding-left: 40px;
+	position: relative;
+}
+.fl-pagination-ctlr ul li:first-child a i{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fl-pagination-ctlr ul li:first-child a:hover,
+.fl-pagination-ctlr ul li:last-child a:hover{
+	color: #4C2631;
+}
+.fl-pagination-ctlr ul li:first-child a:hover svg,
+.fl-pagination-ctlr ul li:last-child a:hover svg{
+	fill: #4C2631;
+}
+.fl-pagination-ctlr ul li:last-child a{
+	padding-right: 40px;
+	position: relative;
+}
+.fl-pagination-ctlr ul li:last-child a i{
+	position: absolute;
+	top: 0;
+	right: 0;
 }
