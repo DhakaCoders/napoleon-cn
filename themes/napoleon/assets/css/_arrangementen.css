@@ -1,0 +1,126 @@
+.np-arrangementen-con{
+	padding-bottom: 115px;
+}
+
+
+.np-arrangementen-lftsidebar{
+	float: left;
+	width: 32.1428%;
+}
+.np-arrangementen-rgt{
+	float: right;
+    width: 67.8571%;
+}
+
+.np-agi-lft-img{
+	float: left;
+	width: 50%;
+}
+.np-agi-rgt-des{
+	float: right;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	background: #0A2B20;
+}
+
+.np-agi-lft-img-ctlr{
+	position: relative;
+	overflow: hidden;
+}
+.np-agi-lft-img-inr{
+	min-height: 475px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+
+.np-agi-rgt-des-inr{
+	padding-left: 55px;
+	padding-right: 55px;
+}
+
+.np-agi-rgt-des-inr label{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 10px;
+	line-height: 1;
+	color: #fff;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 7px 15px;
+	background: #1A1429;
+	border-radius: 2px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.np-agird-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 8px;
+	color: #fff;
+}
+.np-agird-title > a{
+	color: #fff;
+}
+.np-agird-title > a:hover{
+	color: #CB9F67;
+}
+.np-agi-rgt-des-inr strong{
+	display: block;
+	font-size: 26px;
+	color: #CB9F67;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+.np-agi-rgt-des-inr p{
+	color: #D7D3CD;
+	margin-bottom: 30px;
+}
+
+.np-agi-rgt-des-inr > a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	line-height: 1;
+	color: #CB9F67;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	font-weight: 600;
+	padding-right: 18px;
+	position: relative;
+}
+.np-agi-rgt-des-inr > a i{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.np-agi-rgt-des-inr > a:hover{
+	color: #fff;
+}
+.np-agi-rgt-des-inr > a:hover svg{
+	fill: #fff;
+}
+
+.lftimg-rgtdes .np-agi-lft-img{
+	float: right;
+	width: 50%;
+}
+.lftimg-rgtdes .np-agi-rgt-des{
+	float: left;
+	width: 50%;
+	background: #1A1429;
+}
+.lftimg-rgtdes .np-agi-rgt-des-inr label{
+	background: #0A2B20;
+}
+
+
+.np-arrangementen-grd-item:hover .np-agi-lft-img-inr{
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+}
