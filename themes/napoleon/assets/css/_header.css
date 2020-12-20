@@ -295,3 +295,45 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 
 
 
+header.header.page-header{
+	position: static;
+	margin-bottom: 70px;
+}
+
+
+header.header.page-header .logo{
+	background: transparent;
+	padding-top: 20px;
+	width: auto;
+	height: auto;
+}
+
+
+header.header.page-header .hdr-menu > ul > li > a,
+header.header.page-header .hdr-top-menu ul li a{
+	color: #4C2631;
+}
+
+header.header.page-header .hdr-menu > ul > li:hover > a,
+header.header.page-header .hdr-top-menu ul li a:hover{
+	color: #A21D1D;
+}
+
+header.header.page-header .hdr-language{
+	border-color: #4C2631;
+}
+
+
+header.header.page-header .hdr-language .switch{
+	background: #4C2631;
+	color: #fff;
+
+}
+header.header.page-header .hdr-language strong{
+	color: #4C2631;
+}
+
+
+header.header.page-header .hdr-lang input:checked + strong{
+	color: #fff;
+}
