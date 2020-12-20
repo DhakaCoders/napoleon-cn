@@ -60,7 +60,7 @@
 
 .page-banner-title{
 	font-size: 74px;
-	line-height: 1.2;
+	line-height: 1.1;
 	font-weight: 500;
 	margin-bottom: 22px!important;
 }
@@ -86,12 +86,23 @@
 .page-banner-des{
 	position: relative;
 	z-index: 5;
-	padding: 335px 0 0 60px;
+	padding: 335px 0 0 0;
 	color: #fff;
 }
 .page-banner-des-inr{
 	max-width: 640px;
 	width: 100%;
+	padding-left: 60px;
+}
+.page-banner-des strong{
+	display: block;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: 0.038em;
+	margin-bottom: 30px;
+	font-weight: normal;
+	font-family: 'Operetta18-Medium';
 }
 .page-banner-des p{
 	font-size: 16px;
@@ -99,9 +110,8 @@
 	margin-bottom: 30px;
 }
 .page-banner-des a{
-	max-width: 198px;
+	width: 198px;
 	height: 48px;
-	width: 100%;
 	background: #A21D1D;
 	color: #fff;
 	text-transform: uppercase;
@@ -113,9 +123,11 @@
 	align-items: center;
 	padding: 5px 35px 5px 22px;
 	position: relative;
+	border: 2px solid #A21D1D;
 }
 .page-banner-des a:hover{
-	background: #8d1414;
+	background: transparent;
+	border-color: #fff;
 }
 .page-banner-des a:hover i{
 	right: 15px;
