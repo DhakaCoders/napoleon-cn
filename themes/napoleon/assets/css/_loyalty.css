@@ -41,6 +41,7 @@
 	font-size: 14px;
 	line-height: 1.5;
 	color: #D7D3CD;
+	padding-right: 123px;
 }
 .loyalty-welcome-sec-des p:last-child{
 	margin-bottom: 0;
@@ -68,7 +69,10 @@
 
 
 .loyalty-grds-section{
-	padding: 100px 0 0;
+	padding: 100px 0 22px;
+}
+.loyalty-grds-cntlr{
+	width: 100%;
 }
 .loyalty-grds-cntlr ul li{
 	padding-bottom: 95px;
@@ -91,7 +95,10 @@
 	width: 51%;
 	padding-left: 70px;
 }
-
+.loyalty-grd-item-des > div{
+	max-width: 439px;
+	width: 100%;
+}
 .loyalty-grd-item-des a{
 	font-weight: 500;
 	font-size: 13px;
@@ -110,7 +117,7 @@
 .lgid-title{
 	font-weight: 500;
 	font-size: 34px;
-	line-height: 1;
+	line-height: 1.2;
 	font-family: 'Operetta18-Medium';
 	color: #512C36;
 	margin-bottom: 20px;
@@ -132,6 +139,6 @@
 }
 
 .loyalty-grds-cntlr ul li:nth-child(2n+2) .loyalty-grd-item-des > div{
-	max-width: 485px;
+	max-width: 428px;
 	margin-left: auto;
 }
