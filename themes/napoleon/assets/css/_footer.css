@@ -1,0 +1,110 @@
+.footer-wrp{
+	background: #fff;
+}
+.footer-top{
+	padding-top: 67px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid #FAF9F8;
+}
+.frt-logo a{
+	display: inline-block;
+	margin-left: -38px;
+}
+.frt-logo,
+.ftr-top-col{
+	float: left;
+}
+.frt-logo{
+	max-width: 25.357%;
+	width: 100%;
+}
+.ftr-top-col{
+	max-width: 16.928%;
+	width: 100%;
+}
+.ftr-col-nav{
+
+}
+.ftr-col-nav > ul > li{
+	padding: 10px 0;
+	line-height: 1;
+}
+.ftr-col-nav > ul > li:first-child{
+	padding-top: 0;
+}
+.ftr-col-nav > ul > li:last-child{
+	padding-bottom: 0;
+}
+.ftr-col-nav > ul > li > a{
+	display: inline-block;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	color: #D8B78C;
+	text-transform: capitalize;
+}
+.ftr-col-nav > ul > li > a:hover{
+	color: #A21D1D;
+}
+.ftr-top-col-title{
+	font-weight: 800;
+	font-size: 12px;
+	color: #D8B78C;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	margin-bottom: 15px;
+}
+.ftr-col-contact .ftr-top-col-title{
+	margin-bottom: 20px;
+}
+.ftr-col-address a{
+	display: inline-block;
+	line-height: 3;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	color: #D8B78C;
+	text-transform: capitalize;
+
+}
+.ftr-col-contact{
+
+}
+.ftr-col-contact-tell{
+	margin-bottom: 12px;
+}
+.ftr-col-contact-tell a{
+	display: inline-block;
+	line-height: 1.5;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	color: #D8B78C;
+	text-transform: capitalize;
+}
+.ftr-col-contact-mail a{
+	display: inline-block;
+	line-height: 1.5;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	color: #D8B78C;
+}
+.ftr-col-contact-tell a:hover,
+.ftr-col-contact-mail a:hover,
+.ftr-col-address a:hover{
+	color: #A21D1D;
+}
+/*.ftr-col-nav-ano{
+	max-width: 300px;
+	width: 100%;
+}
+.ftr-col-address{
+	max-width: 300px;
+	width: 100%;
+}
+.ftr-col-contact{
+	max-width: 300px;
+	width: 100%;	
+}*/
