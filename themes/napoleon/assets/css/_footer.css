@@ -281,7 +281,7 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-.footer-top-form .input-fields-row .input-fields-col input.form-control{
+.footer-top-form .was-validated .input-fields-row .input-fields-col input.form-control{
 	padding-left: 42px;
 }
 .input-fields-submit-col button{
