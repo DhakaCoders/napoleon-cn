@@ -5,29 +5,24 @@
 @import url('_header.css');
 @import url('_page.css');
 @import url('_home.css');
-@import url('_contact.css');
-@import url('_footer.css');
-@import url('_loyalty.css');
-
-@import url('_binnenpagina.css');
 
 /*Start Of Ranojit*/
-
-
-
-
-
-
-/*Start Of Noyon*/
-
+@import url('_loyalty.css');
+@import url('_binnenpagina.css');
 
 
 
 
 /*Start Of Milon*/
-
+@import url('_contact.css');
 
 
 
 
 /*Start Of Shariful*/
+
+
+
+/*Start Of Noyon*/
+
+@import url('_footer.css');
