@@ -350,19 +350,21 @@
 }
 
 
-.footer-top-form .was-validated .input-fields-row .input-fields-col input::placeholder {
+.footer-top-form .was-validated .input-fields-row .input-fields-col.from-group input::placeholder {
   color: #A21D1D;
  
 }
 
-.footer-top-form .was-validated .input-fields-row .input-fields-col input:-ms-input-placeholder {
+.footer-top-form .was-validated .input-fields-row .input-fields-col.from-group input:-ms-input-placeholder {
  color: #A21D1D;
 }
 
-.footer-top-form .was-validated .input-fields-row .input-fields-col input::-ms-input-placeholder {
+.footer-top-form .was-validated .input-fields-row .input-fields-col.from-group input::-ms-input-placeholder {
  color: #A21D1D;
 }
-
+.footer-top-form .was-validated .input-fields-row .input-fields-col.from-group .form-control{
+	border-color: #A21D1D;
+}
 
 .ftr-top-news-form-cntlr .input-fields-row .input-fields-col.form-control {
 	border-radius: 0!important;
