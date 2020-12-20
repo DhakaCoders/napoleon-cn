@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Operetta 18';
+    src: url('Operetta18-Regular.eot');
+    src: url('Operetta18-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Operetta18-Regular.woff2') format('woff2'),
+        url('Operetta18-Regular.woff') format('woff'),
+        url('Operetta18-Regular.ttf') format('truetype'),
+        url('Operetta18-Regular.svg#Operetta18-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
