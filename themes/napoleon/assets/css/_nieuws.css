@@ -42,6 +42,31 @@
 	line-height: 1.6;
 }
 
+.np-nieuws-lftsidebar-des-inr ul li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.np-nieuws-lftsidebar-des-inr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	line-height: 1;
+	color: #fff;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.np-nieuws-lftsidebar-des-inr ul li a:hover{
+	color: #CB9F67;
+	text-decoration: underline;
+}
+.np-agenda-lftsidebar .np-nieuws-lftsidebar-des{
+	min-height: 475px;
+}
+.np-arrangementen-lftsidebar .np-nieuws-lftsidebar-des-inr{
+	padding-left: 40px;
+}
+
 .np-nieuws-grd-items ul{
 	margin-left: -12px;
 	margin-right: -12px;
