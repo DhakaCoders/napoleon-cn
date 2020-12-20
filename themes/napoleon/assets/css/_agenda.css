@@ -1,4 +1,5 @@
 .np-agenda-con{
+	padding-top: 40px;
 	padding-bottom: 80px;
 }
 
@@ -157,3 +158,5 @@
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 }
+
+
