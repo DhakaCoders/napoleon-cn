@@ -200,6 +200,7 @@
 	position: relative;
 	background: #1a1429;
 	padding: 70px 15px;
+	margin-top: 28px;
 }
 .footer-top-sec-bg{
 	position: absolute;
@@ -377,6 +378,7 @@
 .footer-top-sec-v2{
 	position: relative;
 	padding-bottom: 60px;
+	margin-top: 60px;
 }
 .footer-top-sec-v2-bg{
 	position: absolute;
