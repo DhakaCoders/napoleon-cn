@@ -17,10 +17,12 @@
 .frt-logo{
 	max-width: 25.357%;
 	width: 100%;
+	padding-right: 10px;
 }
 .ftr-top-col{
 	max-width: 16.928%;
 	width: 100%;
+	padding-right: 10px;
 }
 .ftr-col-nav{
 
@@ -69,7 +71,7 @@
 
 }
 .ftr-col-contact{
-
+	padding-right: 0;
 }
 .ftr-col-contact-tell{
 	margin-bottom: 12px;
@@ -96,15 +98,98 @@
 .ftr-col-address a:hover{
 	color: #A21D1D;
 }
-/*.ftr-col-nav-ano{
-	max-width: 300px;
-	width: 100%;
+
+.footer-bottom{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-top: 22px;
+	padding-bottom: 25px;
 }
-.ftr-col-address{
-	max-width: 300px;
-	width: 100%;
+
+.ftr-btm-socials{
+	padding-right: 10px;
 }
-.ftr-col-contact{
-	max-width: 300px;
-	width: 100%;	
-}*/
+.ftr-btm-socials > ul{
+	display: flex;
+	align-items: center;
+}
+.ftr-btm-socials > ul > li{
+	padding: 0 11px;
+}
+.ftr-btm-socials > ul > li:first-child{
+	padding-left: 0;
+}
+.ftr-btm-socials > ul > li:last-child{
+	padding-right: 0;
+}
+.ftr-btm-socials > ul > li > a:hover i svg{
+	fill: #A21D1D;
+}
+
+.ftr-btm-manu{
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ftr-btm-manu > ul{
+	display: flex;
+	align-items: center;
+}
+.ftr-btm-manu > ul > li{
+	padding: 0 17px;
+	position: relative;
+}
+.ftr-btm-manu > ul > li:after{
+	content: "";
+	position: absolute;
+	background: #999999;
+	height: 1px;
+	width: 4px;
+	right: -2px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ftr-btm-manu > ul > li:first-child{
+	padding-left: 0;
+}
+.ftr-btm-manu > ul > li:last-child{
+	padding-right: 0;
+}
+.ftr-btm-manu > ul > li:last-child:after{
+	content: none;
+}
+.ftr-btm-manu > ul > li > a{
+	display: inline-block;
+	line-height: 1;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	color: #999999;
+	text-transform: capitalize;
+}
+.ftr-btm-manu > ul > li > a:hover{
+	color: #A21D1D;
+}
+.ftr-btm-brands-logo-cntlr{
+	/*margin-left: auto;*/
+}
+.ftr-btm-brands-logo-cntlr > ul{
+	display: flex;
+	align-items: center;
+}
+.ftr-btm-brands-logo-cntlr > ul > li{
+	padding: 0 12px;
+}
+.ftr-btm-brands-logo-cntlr > ul > li:first-child{
+	padding-left: 0;
+}
+.ftr-btm-brands-logo-cntlr > ul > li:last-child{
+	padding-right: 0;
+}
+.ftr-btm-brands-logo-cntlr > ul > li > .ftr-btm-brands-logo{
+
+}
+.ftr-btm-brands-logo-cntlr > ul > li > .ftr-btm-brands-logo a{
+	display: inline-block;
+}
