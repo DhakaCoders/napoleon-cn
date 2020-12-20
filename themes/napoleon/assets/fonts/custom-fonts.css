@@ -1,11 +1,26 @@
 
 @font-face {
-    font-family: 'LatoRegular';
-    src: url('LatoRegular/LatoRegular.eot');
-    src: url('LatoRegular/LatoRegular.eot') format('embedded-opentype'),
-         url('LatoRegular/LatoRegular.woff2') format('woff2'),
-         url('LatoRegular/LatoRegular.woff') format('woff'),
-         url('LatoRegular/LatoRegular.ttf') format('truetype'),
-         url('LatoRegular/LatoRegular.svg#LatoRegular') format('svg');
+    font-family: 'Operetta18-Regular';
+    src: url('Operetta18-Regular/Operetta18-Regular.eot');
+    src: url('Operetta18-Regular/Operetta18-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Operetta18-Regular/Operetta18-Regular.woff2') format('woff2'),
+        url('Operetta18-Regular/Operetta18-Regular.woff') format('woff'),
+        url('Operetta18-Regular/Operetta18-Regular.ttf') format('truetype'),
+        url('Operetta18-Regular/Operetta18-Regular.svg#Operetta18-Regular') format('svg');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Operetta18-Medium';
+    src: url('Operetta18-Medium/Operetta18-Medium.eot');
+    src: url('Operetta18-Medium/Operetta18-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Operetta18-Medium/Operetta18-Medium.woff2') format('woff2'),
+        url('Operetta18-Medium/Operetta18-Medium.woff') format('woff'),
+        url('Operetta18-Medium/Operetta18-Medium.ttf') format('truetype'),
+        url('Operetta18-Medium/Operetta18-Medium.svg#Operetta18-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
