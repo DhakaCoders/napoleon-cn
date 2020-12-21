@@ -328,7 +328,7 @@ var swiper = new Swiper('.restaurantTestiSlider', {
     $('.npCasinoImgHolder').css('margin-left', (conLft + padding + offset));
   }
   npCasinoHolderwidth();
-  var swiper = new Swiper('.np-casino-slider',{
+  var swiper = new Swiper('.np-casino-img-slider',{
     slidesPerView: 2,
     loop: true,
     navigation: {
@@ -348,7 +348,7 @@ var swiper = new Swiper('.restaurantTestiSlider', {
   }
   npCasinoDesHolderwidth();
   var swiper = new Swiper('.np-casino-des-slider',{
-    slidesPerView: 2,
+    slidesPerView: 2.5,
     loop: true,
     navigation: {
       nextEl: '.npCasinoDesArrows .swiper-button-next',
