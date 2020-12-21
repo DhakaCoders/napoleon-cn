@@ -213,8 +213,8 @@ var swiper = new Swiper('.restaurantTestiSlider', {
     slidesPerView: 3,
     loop: true,
     navigation: {
-      nextEl: '.slider1-arrows .swiper-button-next',
-      prevEl: '.slider1-arrows .swiper-button-prev',
+      nextEl: '.restaurantTestiSliderArrows .swiper-button-next',
+      prevEl: '.restaurantTestiSliderArrows .swiper-button-prev',
     },
     breakpoints: {
       768: {
