@@ -88,10 +88,67 @@
 	align-items: center;
 }
 .restaurant-tab-con-fea-box{
-	width: 30%;
+	width: 42.5%;
 	height: 432px;
+	position: relative;
 }
-.restaurant-tab-con-fea-box-img
+.restaurant-tab-con-fea-box-img{
+	width: 100%;
+	height: 100%;
+}
 .restaurant-tab-con-des{
-	width: 70%;
+	width: 57.5%;
+	padding-left: 10%;
+}
+
+.restaurant-tab-con-fea-box-des{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(30px);
+	-ms-backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	padding: 30px 20px 35px 40px;
+}
+
+.rtcfbd-title{
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 1;
+	color: #CB9F67;
+	margin-bottom: 14px;
+}
+
+.restaurant-tab-con-fea-box-des p{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #D7D3CD;
+	margin-bottom: 20px;
+}
+
+.rtcfbd-price{
+	font-size: 26px;
+	line-height: 1.2;
+	color: #CB9F67
+}
+
+
+.restaurant-tab-con-des ul li{
+	padding-bottom: 50px;
+}
+
+.restaurant-tab-con-des ul li label{
+	display: block;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #512C36;
+	margin-bottom: 6px;
+}
+
+.restaurant-tab-con-des ul li p{
+	text-transform: uppercase;
 }
