@@ -1,0 +1,154 @@
+.restaurant-page-entry-hdr{
+	text-align: center;
+	max-width: 780px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 60px;
+	padding-top: 50px;
+}
+
+
+.rpeh-title{
+	font-weight: normal;
+	font-size: 34px;
+	line-height: 1.2;
+	margin-bottom: 32px;
+}
+.restaurant-page-entry-hdr p{
+	margin-bottom: 26px;
+}
+.restaurant-page-entry-hdr a{
+	max-width: 280px;
+	width: 100%;
+	height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	border: 2px solid #512C36;
+	margin-left: auto;
+	margin-right: auto;
+	color: #512C36;
+}
+
+.restaurant-page-entry-hdr a:hover{
+	background: #512C36;
+	color: #fff;
+}
+
+
+.fl-tab-content{
+	display: none;
+}
+.fl-tab-content.current{
+	display: block;
+}
+
+.restaurant-tabs{
+	background: #351720;
+	padding: 22px 0 7px;
+	margin-bottom: 65px;
+}
+.restaurant-tabs ul{
+	text-align: center;
+}
+
+.restaurant-tabs ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 52px 15px;
+}
+
+.restaurant-tabs .tab-link{
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #EEEAE1;
+	display: inline-block;
+	vertical-align: baseline;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.restaurant-tabs .tab-link.current,
+.restaurant-tabs .tab-link:hover{
+	color: #CB9F67;
+}
+
+.restaurant-tab-con{
+	display: flex;
+	align-items: center;
+}
+.restaurant-tab-con-fea-box{
+	width: 42.5%;
+	height: 432px;
+	position: relative;
+}
+.restaurant-tab-con-fea-box-img{
+	width: 100%;
+	height: 100%;
+}
+.restaurant-tab-con-des{
+	width: 57.5%;
+	padding-left: 10%;
+}
+
+.restaurant-tab-con-fea-box-des{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(30px);
+	-ms-backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	padding: 30px 20px 35px 40px;
+}
+
+.rtcfbd-title{
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 1;
+	color: #CB9F67;
+	margin-bottom: 14px;
+}
+
+.restaurant-tab-con-fea-box-des p{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #D7D3CD;
+	margin-bottom: 20px;
+}
+
+.rtcfbd-price{
+	font-size: 26px;
+	line-height: 1.2;
+	color: #CB9F67
+}
+
+
+.restaurant-tab-con-des ul li{
+	padding-bottom: 50px;
+}
+
+.restaurant-tab-con-des ul li label{
+	display: block;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #512C36;
+	margin-bottom: 6px;
+}
+
+.restaurant-tab-con-des ul li p{
+	text-transform: uppercase;
+}

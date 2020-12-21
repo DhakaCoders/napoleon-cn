@@ -157,7 +157,7 @@
 	line-height: 1.5;
 	margin-bottom: 30px;
 }
-.page-banner-des a{
+.page-banner-des a,.fl-red-btn{
 	width: 198px;
 	height: 48px;
 	background: #A21D1D;
@@ -173,15 +173,19 @@
 	position: relative;
 	border: 2px solid #A21D1D;
 }
-.page-banner-des a:hover{
+.page-banner-des a:hover,
+.fl-red-btn:hover{
 	background: transparent;
 	border-color: #fff;
+	color: #fff;
 }
-.page-banner-des a:hover i{
+.page-banner-des a:hover i,
+.fl-red-btn:hover i{
 	right: 15px;
 }
 
-.page-banner-des a i{
+.page-banner-des a i,
+.fl-red-btn i{
 	position: absolute;
 	right: 20px;
 	top: 50%;
