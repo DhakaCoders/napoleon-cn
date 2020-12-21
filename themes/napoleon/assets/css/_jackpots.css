@@ -1,3 +1,71 @@
+.jackpots-banner-wrap{
+
+}
+.jackpots-banner{
+
+}
+.jackpots-banner-cntlr{
+
+}
+
+.jackpots-banner-title{
+
+}
+
+.j-bnr-sliders-cntlr{
+
+}
+.j-bnr-slider{
+	
+}
+.j-bnr-slide-item-cntlr{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.j-bnr-slide-item{
+	border-bottom: 2px solid #fff;
+	padding: 25px 10px 53px 10px;
+	text-align: center;
+	margin: 24px;
+}
+.j-bnr-slider .j-bnr-slide-item{
+	margin-right: 0;
+}
+.j-bnr-slide-icon{
+	margin-bottom: 34px;
+}
+.j-bnr-slide-icon img{
+	max-height: 87px; 
+}
+.j-bnr-slide-item-title{
+	font-family: 'Operetta18-Regular';
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: 0.038em;
+	color: #CEA673;
+	margin-bottom: 8px;
+}	
+.j-bnr-slide-item-prize{
+
+}
+.j-bnr-slide-item-prize bdi{
+	font-family: 'Operetta18-Medium';
+	font-size: 48px;
+	line-height: 1;
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
 .j-left-img-right-desc-sec{
 	padding: 100px 0;
 }
