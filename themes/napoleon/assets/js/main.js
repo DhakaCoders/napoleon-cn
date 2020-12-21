@@ -178,14 +178,183 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   /*Start Of Ranojit*/
 
+$('div.fl-tabs button').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('div.fl-tabs button').removeClass('current');
+    $('.fl-tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+});
+
+
+function rgsHolderWidth(){
+  var padding = 15, 
+      offset = 100,
+      winW = $(window).width(),
+      conW = $('.container').outerWidth(),
+      conWleft = (winW - conW) / 2;
+  $('.rgsHolder').css('margin-left', (conWleft+padding+offset));
+}
+rgsHolderWidth();
+$(window).resize(function(){
+  rgsHolderWidth()
+});
+
+var swiper = new Swiper('.restaurantGallerySlider', {
+    slidesPerView: 2,
+    loop: true,
+    spaceBetween: 12,
+    navigation: {
+      nextEl: '.restaurantGallerySliderArrows .swiper-button-next',
+      prevEl: '.restaurantGallerySliderArrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 12,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+    }
+  });
 
 
 
+
+function rtsHolderWidth(){
+  var padding = 15, 
+      offset = 100,
+      winW = $(window).width(),
+      conW = $('.container').outerWidth(),
+      conWleft = (winW - conW) / 2;
+  $('.rtsHolder').css('margin-left', (conWleft+padding+offset));
+}
+rtsHolderWidth();
+$(window).resize(function(){
+  rtsHolderWidth()
+});
+var swiper = new Swiper('.restaurantTestiSlider', {
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 12,
+    navigation: {
+      nextEl: '.restaurantTestiSliderArrows .swiper-button-next',
+      prevEl: '.restaurantTestiSliderArrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 12,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+    }
+  });
 
 
   /*Start Of Noyon*/
 
+  
+  var swiper = new Swiper('.jBnrSlider', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    }
+  });
 
+
+
+
+  
+  var swiper = new Swiper('.catagorySlider', {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    }
+  });
+
+
+  function holdeWidth(){
+    var padding = 15, 
+    offset = 0,
+    winW = $(window).width(),
+    conW = $('.container').outerWidth(),
+    conWleft = (winW - conW) / 2;
+    $('.visite-sec-wrap').css('margin-left', (conWleft+padding+offset));
+  }
+  holdeWidth();
+  $(window).resize(function(){
+    holdeWidth()
+  });
+  
+  var swiper = new Swiper('.visiteSlider', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+    }
+  });
+
+   var swiper = new Swiper('.hmFtrGlrySlider', {
+    slidesPerView: 5,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+    }
+  });
+ 
 
 
 
@@ -251,7 +420,42 @@ if( $('#googlemap').length ){
 
 
   /*Start Of Shariful*/
+  function npCasinoHolderwidth(){
+    var padding = 15;
+    var offset = 240;
+    var winWidth = $(window).width();
+    var conW = $('.container').outerWidth();
+    var conLft = (winWidth - conW) / 2;
+    $('.npCasinoImgHolder').css('margin-left', (conLft + padding + offset));
+  }
+  npCasinoHolderwidth();
+  var swiper = new Swiper('.np-casino-img-slider',{
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.npCasinoImgArrows .swiper-button-next',
+      prevEl: '.npCasinoImgArrows .swiper-button-prev',
+    },
+  });
 
+
+  function npCasinoDesHolderwidth(){
+    var padding = 15;
+    var offset = 240;
+    var winWidth = $(window).width();
+    var conW = $('.container').outerWidth();
+    var conLft = (winWidth - conW) / 2;
+    $('.np-casino-des-holder').css('margin-left', (conLft + offset));
+  }
+  npCasinoDesHolderwidth();
+  var swiper = new Swiper('.np-casino-des-slider',{
+    slidesPerView: 2.5,
+    loop: true,
+    navigation: {
+      nextEl: '.npCasinoDesArrows .swiper-button-next',
+      prevEl: '.npCasinoDesArrows .swiper-button-prev',
+    },
+  });
 
 
 

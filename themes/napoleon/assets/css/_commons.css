@@ -189,7 +189,8 @@ ol.reset-list,
 ul.sub-menu,
 .fl-pagi-ctlr ul,
 .reset-slect ul,
-.page-breadcrumbs ul{
+.page-breadcrumbs ul,
+.restaurant-tab-con-des ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -198,7 +199,8 @@ ul.sub-menu,
 ul.sub-menu li,
 .fl-pagi-ctlr ul li,
 .reset-slect ul li,
-.page-breadcrumbs ul li{
+.page-breadcrumbs ul li,
+.restaurant-tab-con-des ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -208,7 +210,8 @@ ul.sub-menu li,
 ul.sub-menu li:before,
 .fl-pagi-ctlr ul li:before,
 .reset-slect ul li:before,
-.page-breadcrumbs ul li:before{
+.page-breadcrumbs ul li:before,
+.restaurant-tab-con-des ul li:before{
 	content: none!important;
 }
 
@@ -345,4 +348,29 @@ form .dropdown-menu li a{
 }
 .btn-light{
 	border: 1px solid #CEA673;
+}
+
+
+/*button*/
+
+.fl-red-center-btn{
+	max-width: 212px;
+	width: 100%;
+	height: 48px;
+	background: #A21D1D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #A21D1D;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.fl-red-center-btn:hover{
+	color: #A21D1D;
+	background: transparent;
 }

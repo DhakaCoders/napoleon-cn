@@ -1,0 +1,159 @@
+
+.np-roulette-sec{
+	padding: 110px 0 150px;
+}
+
+.np-roulette-sec-inr{
+	margin-left: 240px;
+	display: flex;
+	align-items: center;
+}
+.np-roulette-lft{
+	float: left;
+	width:  40.9482%;
+	padding-right: 95px;
+}
+.np-roulette-rgt{
+	float: right;
+	width:  59.0517%;
+}
+
+
+.np-roulette-lft-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1.1;
+	margin-bottom: 30px;
+	color: #512C36;
+}
+.np-roulette-lft p{
+	margin-bottom: 20px;
+}
+
+.np-roulette-lft a{
+	width: 140px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 11px;
+	line-height: 1;
+	color: #fff;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-weight: 600;
+	background: #A21D1D;
+	border: 2px solid #A21D1D;
+}
+
+.np-roulette-lft a:hover{
+	background: transparent;
+	color: #A21D1D;
+}
+
+
+.np-roulette-img{
+	min-height: 450px;
+}
+
+
+.np-winner-sec{
+	padding-bottom: 95px;
+}
+.np-winner-sec-inr{
+	margin-right: 200px;
+	display: flex;
+	align-items: center;
+}
+.np-winner-lft{
+	float: left;
+	width:  57.5%;
+}
+.np-winner-rgt{
+	float: right;
+	width: 42.5%;
+	padding-left: 75px;
+	padding-right: 42px;
+}
+
+.np-winner-rgt-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 28px;
+	color: #512C36;
+}
+
+
+.np-winner-lft-img{
+	min-height: 445px;
+}
+
+
+
+
+/*slider*/
+
+.np-casino-img-slider-sec{
+	padding-bottom: 135px;
+}
+
+
+.np-casino-slider-img-wrapper{
+	margin-left: -14px;
+	margin-right: -14px;
+}
+.np-casino-slider-img-item{
+	padding-left: 14px;
+	padding-right: 14px;
+}
+.np-casino-slider-item-img{
+	min-height: 510px;
+	width: 730px;
+}
+
+
+.np-casino-img-slider .swiper-slide{
+	overflow: hidden;
+}
+
+.np-casino-holder{
+	position: relative;
+}
+
+.np-casino-des-slider{
+	padding-bottom: 30px;
+}
+
+.np-casino-des{
+	padding: 88px 50px 70px 75px;
+	background: #1A1429;
+	position: relative;
+}
+.np-casino-des i{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.np-casino-des-slider-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 15px;
+	color: #CB9F67;
+}
+.np-casino-des p{
+	color: #fff;
+}
+.np-casino-des-slider-wrapper{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.np-casino-des-slider-item{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.np-casino-des-slider .slider-arrows{
+	padding-bottom: 75px;
+}

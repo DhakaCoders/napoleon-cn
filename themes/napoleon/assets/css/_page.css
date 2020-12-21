@@ -27,6 +27,53 @@
 }
 
 
+
+.slider-arrows{
+	position: relative;
+	padding-bottom: 55px;
+}
+.swiper-button-prev{
+	position: absolute;
+	left: 0;
+	top: auto;
+	bottom: 0;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+
+.swiper-button-next{
+	position: absolute;
+	left: 60px;
+	top: auto;
+	bottom: 0;
+	height: 30px;
+	width: 30px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg{
+	fill: #4c2631;
+}
+
+.swiper-button-prev:after, 
+.swiper-container-rtl .swiper-button-next:after{
+	content: none;
+}
+.swiper-button-next:after, 
+.swiper-container-rtl .swiper-button-prev:after{
+	content: none;
+}
+
+
 .sitemap{
 	padding: 50px 0 70px;
 }
@@ -109,7 +156,7 @@
 	line-height: 1.5;
 	margin-bottom: 30px;
 }
-.page-banner-des a{
+.page-banner-des a,.fl-red-btn{
 	width: 198px;
 	height: 48px;
 	background: #A21D1D;
@@ -125,15 +172,19 @@
 	position: relative;
 	border: 2px solid #A21D1D;
 }
-.page-banner-des a:hover{
+.page-banner-des a:hover,
+.fl-red-btn:hover{
 	background: transparent;
 	border-color: #fff;
+	color: #fff;
 }
-.page-banner-des a:hover i{
+.page-banner-des a:hover i,
+.fl-red-btn:hover i{
 	right: 15px;
 }
 
-.page-banner-des a i{
+.page-banner-des a i,
+.fl-red-btn i{
 	position: absolute;
 	right: 20px;
 	top: 50%;
@@ -200,6 +251,30 @@
 .page-breadcrumbs ul li a:hover{
 	color: #ba905a;
 }
+
+
+/*common button*/
+.fl-tsprnt-btn{
+	width: 212px;
+	height: 48px;
+	border: 2px solid #512C36;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #512C36;
+}
+.fl-tsprnt-btn:hover{
+	border-color: #A21D1D;
+	color: #fff;
+	background: #A21D1D;
+}
+
+
 
 
 
@@ -313,3 +388,4 @@
     left: -85px;
     top: 120px;
 }
+

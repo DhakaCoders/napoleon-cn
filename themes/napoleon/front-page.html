@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
-
+  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
@@ -50,10 +50,7 @@
       <!--Start Of Noyon-->
 
       <symbol id="facebool-icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.1209 14.4023C13.4582 14.4023 14.5485 13.3249 14.5485 12C14.5485 11.477 14.3756 10.9941 14.0895 10.5997C13.6486 9.9945 12.9319 9.59766 12.1224 9.59766C11.3124 9.59766 10.5961 9.99401 10.1543 10.5992C9.86718 10.9936 9.6958 11.4765 9.69531 11.9995C9.69385 13.3244 10.7831 14.4023 12.1209 14.4023Z"/>
-        <path d="M17.4198 9.06094V7.04724V6.74756L17.1156 6.74853L15.0825 6.75481L15.0903 9.06867L17.4198 9.06094Z"/>
-        <path d="M12.1212 0C5.4376 0 0 5.38323 0 12C0 18.6163 5.4376 24 12.1212 24C18.8043 24 24.2424 18.6163 24.2424 12C24.2424 5.38323 18.8053 0 12.1212 0ZM19.0148 10.5997V16.1874C19.0148 17.6428 17.8195 18.8256 16.3504 18.8256H7.89202C6.4224 18.8256 5.22766 17.6428 5.22766 16.1874V10.5997V7.81358C5.22766 6.35866 6.4224 5.17586 7.89202 5.17586H16.3499C17.8195 5.17586 19.0148 6.35866 19.0148 7.81358V10.5997Z"/>
-        <path d="M15.8919 11.9999C15.8919 14.0576 14.2006 15.7329 12.1212 15.7329C10.0417 15.7329 8.35095 14.0576 8.35095 11.9999C8.35095 11.5049 8.45055 11.0317 8.62827 10.5996H6.57031V16.1873C6.57031 16.9094 7.16256 17.4943 7.89151 17.4943H16.3494C17.0774 17.4943 17.6706 16.9094 17.6706 16.1873V10.5996H15.6117C15.7909 11.0317 15.8919 11.5049 15.8919 11.9999Z"/>
+        <path d="M12.1212 0C5.4376 0 0 5.38323 0 12C0 18.6163 5.4376 24 12.1212 24C18.8043 24 24.2424 18.6163 24.2424 12C24.2424 5.38323 18.8053 0 12.1212 0ZM15.1356 12.4225H13.1636V19.381H10.2415C10.2415 19.381 10.2415 15.5788 10.2415 12.4225H8.8524V9.9631H10.2415V8.37235C10.2415 7.23306 10.7883 5.45283 13.1905 5.45283L15.3558 5.46105V7.84838C15.3558 7.84838 14.04 7.84838 13.7842 7.84838C13.5283 7.84838 13.1646 7.97503 13.1646 8.51833V9.96359H15.391L15.1356 12.4225Z"/>
       </symbol>
 
       <symbol id="instagram-icon" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +69,13 @@
 
 
       <!--Start Of Shariful-->
+      <symbol id="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.9982 8.92292L25.0396 8.93196H7.31561L12.8874 3.34792C13.1602 3.0753 13.3099 2.70599 13.3099 2.31837C13.3099 1.93076 13.1602 1.56403 12.8874 1.29076L12.0204 0.423363C11.7478 0.150739 11.3845 0 10.9971 0C10.6095 0 10.246 0.149663 9.97336 0.422286L0.422292 9.9725C0.148592 10.2462 -0.00107094 10.6108 5.76931e-06 10.9986C-0.00107094 11.3886 0.148592 11.7534 0.422292 12.0266L9.97336 21.5777C10.246 21.8501 10.6093 22 10.9971 22C11.3845 22 11.7478 21.8499 12.0204 21.5777L12.8874 20.7103C13.1602 20.4381 13.3099 20.0746 13.3099 19.687C13.3099 19.2996 13.1602 18.9553 12.8874 18.6829L7.25273 13.0676H25.018C25.8163 13.0676 26.4871 12.3796 26.4871 11.5817V10.3549C26.4871 9.5571 25.7965 8.92292 24.9982 8.92292Z"/>
+      </symbol>
 
+      <symbol id="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.48909 8.92292L1.44774 8.93196H19.1717L13.5999 3.34792C13.3271 3.0753 13.1774 2.70599 13.1774 2.31837C13.1774 1.93076 13.3271 1.56403 13.5999 1.29076L14.4669 0.423363C14.7395 0.150739 15.1028 0 15.4902 0C15.8778 0 16.2413 0.149663 16.5139 0.422286L26.065 9.9725C26.3387 10.2462 26.4884 10.6108 26.4873 10.9986C26.4884 11.3886 26.3387 11.7534 26.065 12.0266L16.5139 21.5777C16.2413 21.8501 15.878 22 15.4902 22C15.1028 22 14.7395 21.8499 14.4669 21.5777L13.5999 20.7103C13.3271 20.4381 13.1774 20.0746 13.1774 19.687C13.1774 19.2996 13.3271 18.9553 13.5999 18.6829L19.2346 13.0676H1.46927C0.671001 13.0676 0.000209808 12.3796 0.000209808 11.5817V10.3549C0.000209808 9.5571 0.690813 8.92292 1.48909 8.92292Z"/>
+      </symbol>
 
   </svg>
 
@@ -202,39 +205,287 @@
   </div>
 </section><!-- end of page-banner -->
 
-<section class="main-content">
-  <div class="container">
+<section class="catagory-sec">
+  <div class="catagory-sec-cntlr inline-bg" style="background-image: url('assets/images/catagory-sec-bg.png');">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6">
-
-        </div>
-        <div class="col-md-6">
-
+        <div class="col-md-12">
+          <div class="catagory-slider-cntlr">
+            <div class="catagory-slider swiper-container catagorySlider"> 
+              <div class="swiper-wrapper">
+                <div class="swiper-slide sliderItem">
+                  <div class="catagory-slide-item-cntlr">
+                    <div class="catagory-slide-item">
+                      <div class="catagory-slide-item-img-cntlr">
+                        <div class="catagory-slide-item-img dft-transition inline-bg" style="background-image: url('assets/images/catagory-slide-item-img-001.jpg');"></div>
+                        <a class="overlay-link" href="#"></a>
+                      </div>
+                      <div class="catagory-slide-item-desc">
+                        <h3 class="catagory-slide-item-title"><a href="#">Events</a></h3>
+                        <p>Pharetra sed morbi ac mauris vel id tellus consectetur adipiscing. Sit mollis tempus lectus eu at in.</p>
+                        <div class="catagory-slide-item-btn">
+                          <a class="fl-red-btn" href="#">
+                            <span>BUTTON</span> 
+                            <i>
+                              <svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff">
+                                <use xlink:href="#btn-white-angle-svg"></use>
+                              </svg> 
+                            </i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide sliderItem">
+                  <div class="catagory-slide-item-cntlr">
+                    <div class="catagory-slide-item">
+                      <div class="catagory-slide-item-img-cntlr">
+                        <div class="catagory-slide-item-img dft-transition inline-bg" style="background-image: url('assets/images/catagory-slide-item-img-002.jpg');"></div>
+                        <a class="overlay-link" href="#"></a>
+                      </div>
+                      <div class="catagory-slide-item-desc">
+                        <h3 class="catagory-slide-item-title"><a href="#">Casino</a></h3>
+                        <p>Pharetra sed morbi ac mauris vel id tellus consectetur adipiscing. Sit mollis tempus lectus eu at in.</p>
+                        <div class="catagory-slide-item-btn">
+                          <a class="fl-red-btn" href="#">
+                            <span>BUTTON</span> 
+                            <i>
+                              <svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff">
+                                <use xlink:href="#btn-white-angle-svg"></use>
+                              </svg> 
+                            </i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide sliderItem">
+                  <div class="catagory-slide-item-cntlr">
+                    <div class="catagory-slide-item">
+                      <div class="catagory-slide-item-img-cntlr">
+                        <div class="catagory-slide-item-img dft-transition inline-bg" style="background-image: url('assets/images/catagory-slide-item-img-003.jpg');"></div>
+                        <a class="overlay-link" href="#"></a>
+                      </div>
+                      <div class="catagory-slide-item-desc">
+                        <h3 class="catagory-slide-item-title"><a href="#">Arrangementen</a></h3>
+                        <p>Pharetra sed morbi ac mauris vel id tellus consectetur adipiscing. Sit mollis tempus lectus eu at in.</p>
+                        <div class="catagory-slide-item-btn">
+                          <a class="fl-red-btn" href="#">
+                            <span>BUTTON</span> 
+                            <i>
+                              <svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff">
+                                <use xlink:href="#btn-white-angle-svg"></use>
+                              </svg> 
+                            </i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide sliderItem">
+                  <div class="catagory-slide-item-cntlr">
+                    <div class="catagory-slide-item">
+                      <div class="catagory-slide-item-img-cntlr">
+                        <div class="catagory-slide-item-img dft-transition inline-bg" style="background-image: url('assets/images/catagory-slide-item-img-004.jpg');"></div>
+                        <a class="overlay-link" href="#"></a>
+                      </div>
+                      <div class="catagory-slide-item-desc">
+                        <h3 class="catagory-slide-item-title"><a href="#">Slots</a></h3>
+                        <p>Pharetra sed morbi ac mauris vel id tellus consectetur adipiscing. Sit mollis tempus lectus eu at in.</p>
+                        <div class="catagory-slide-item-btn">
+                          <a class="fl-red-btn" href="#">
+                            <span>BUTTON</span> 
+                            <i>
+                              <svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff">
+                                <use xlink:href="#btn-white-angle-svg"></use>
+                              </svg> 
+                            </i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-arrows">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-  </div>    
+    </div> 
+  </div>   
+</section>
+
+<section class="wellcome-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wellcome-sec-cntrl">
+          <div class="wellcome-left">
+            <h2 class="wellcome-title">Bienvenue à <br>Grand Casino <br>Knokke</h2>
+          </div>
+          <div class="wellcome-right-cntlr">
+            <div class="wellcome-right">
+              <h5 class="wellcome-sub-title">Een stijlvolle avond, vol plezier en genieten. Laat je verleiden door onze topchef Christian van den Ouden in zijn restaurant Mascotte.</h5>
+              <p>Dit stuk gaat voornamelijk over het restaurant van Grand Casino Knokke.<br>
+                Hier kunnen we het restaurant verder uitlichten en de bezoeker lekker maken.<br>
+                Phasellus quam erat, facilisis sit amet est eu, accumsan disctum diam.<br>
+              Phasellus nec sem at lectus interdum rhoncus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visite-sec">
+  <div class="visite-sec-wrap">
+    <div class="visite-lft-desc">
+      <h4 class="visite-lft-title">Tour in het Casino</h4>
+      <p>Image slider with title and description <br> on each image</p>
+    </div>
+    <div class="visite-slider-cntlr">
+      <div class="visite-slider swiper-container visiteSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide sliderItem">
+            <div class="visite-slide-item">
+              <div class="visite-slide-item-img-cntlr">
+                <div class="visite-slide-item-img inline-bg dft-transition" style="background-image: url('assets/images/catagory-slide-item-img-004.jpg');"></div>
+                <a class="overlay-link" href="#"></a>
+              </div>
+              <div class="visite-slide-item-desc-cntlr">
+                <div class="visite-slide-item-desc">
+                  <h4 class="visite-slide-item-title"><a href="#">Tour in het Casino</a></h4>
+                  <p>Image slider with title and description on each image</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide sliderItem">
+            <div class="visite-slide-item">
+              <div class="visite-slide-item-img-cntlr">
+                <div class="visite-slide-item-img inline-bg dft-transition" style="background-image: url('assets/images/visite-slide-item-img-001.jpg');"></div>
+                <a class="overlay-link" href="#"></a>
+              </div>
+              <div class="visite-slide-item-desc-cntlr">
+                <div class="visite-slide-item-desc">
+                  <h4 class="visite-slide-item-title"><a href="#">Tour in het Casino</a></h4>
+                  <p>Image slider with title and description on each image</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide sliderItem">
+            <div class="visite-slide-item">
+              <div class="visite-slide-item-img-cntlr">
+                <div class="visite-slide-item-img inline-bg dft-transition" style="background-image: url('assets/images/visite-slide-item-img-002.jpg');"></div>
+                <a class="overlay-link" href="#"></a>
+              </div>
+              <div class="visite-slide-item-desc-cntlr">
+                <div class="visite-slide-item-desc">
+                  <h4 class="visite-slide-item-title"><a href="#">Tour in het Casino</a></h4>
+                  <p>Image slider with title and description on each image</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-arrows">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="news-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="news-sec-inr">
+          <h2 class="news-title">Laatste nieuws</h2>
+          <!-- <div class="news-items-cntlr"></div> code copy here -->
+          <div class="news-btn">
+            <a class="fl-tsprnt-btn" href="#">Ontdek meer nieuws</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
+<section class="hm-footer-gallery">
+  <h2 class="hm-footer-gallery-title">#GrandCasinoKnokke on Instagram</h2>
+  <div class="hm-ftr-gllry-cntlr">
+    <div class="swiper-container hmFtrGlrySlider hm-ftr-glry-slider-wrap">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hm-ftr-glry-slide-item">
+            <div class="gllry-slide-item-cntlr">
+              <div class="glry-slide-item inline-bg dft-transition" style="background-image: url('assets/images/glry-slide-item-img-001.jpg');">
+              </div>
+              <a class="overlay-link" href="#"></a>
+            </div>
+          </div>
 
-<ol>
-  <li class="facebook"><a href="#"></a></li>
-</ol>
+          <div class="swiper-slide hm-ftr-glry-slide-item">
+            <div class="gllry-slide-item-cntlr">
+              <div class="glry-slide-item inline-bg dft-transition" style="background-image: url('assets/images/glry-slide-item-img-002.jpg');">
+              </div>
+              <a class="overlay-link" href="#"></a>
+            </div>
+          </div>
 
+          <div class="swiper-slide hm-ftr-glry-slide-item">
+            <div class="gllry-slide-item-cntlr">
+              <div class="glry-slide-item inline-bg dft-transition" style="background-image: url('assets/images/glry-slide-item-img-003.jpg');">
+              </div>
+              <a class="overlay-link" href="#"></a>
+            </div>
+          </div>
 
+          <div class="swiper-slide hm-ftr-glry-slide-item">
+            <div class="gllry-slide-item-cntlr">
+              <div class="glry-slide-item inline-bg dft-transition" style="background-image: url('assets/images/glry-slide-item-img-004.jpg');">
+              </div>
+              <a class="overlay-link" href="#"></a>
+            </div>
+          </div>
 
+          <div class="swiper-slide hm-ftr-glry-slide-item">
+            <div class="gllry-slide-item-cntlr">
+              <div class="glry-slide-item inline-bg dft-transition" style="background-image: url('assets/images/glry-slide-item-img-005.jpg');">
+              </div>
+              <a class="overlay-link" href="#"></a>
+            </div>
+          </div>
 
-<section class="main-content">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-
-        </div>
-        <div class="col-md-6">
+          <div class="swiper-slide hm-ftr-glry-slide-item">
+            <div class="gllry-slide-item-cntlr">
+              <div class="glry-slide-item inline-bg dft-transition" style="background-image: url('assets/images/glry-slide-item-img-004.jpg');">
+              </div>
+              <a class="overlay-link" href="#"></a>
+            </div>
+          </div>
 
         </div>
       </div>
-  </div>    
+      <div class="slider2-arrows">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+  </div>
 </section>
 
 
@@ -362,10 +613,8 @@
                 </div>
               </li>
               <li>
-                <div class="ftr-btm-brands-logo">
-                  <a href="#">
-                    <img src="assets/images/ftr-btm-brands-logo-img-003.png" alt="">
-                  </a>
+                <div class="ftr-btm-brands-logo ftr-btm-brands-last-logo">
+                  <span>21+</span>
                 </div>
               </li>
             </ul>
@@ -387,6 +636,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
 
