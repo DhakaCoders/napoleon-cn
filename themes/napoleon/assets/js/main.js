@@ -193,7 +193,39 @@ $('div.fl-tabs button').click(function(){
 
   /*Start Of Noyon*/
 
+  function holdeWidth(){
+    var padding = 15, 
+        offset = 100,
+        winW = $(window).width(),
+        conW = $('.container').outerWidth(),
+        conWleft = (winW - conW) / 2;
+    $('.holder').css('margin-left', (conWleft+padding+offset));
+  }
+  holdeWidth();
+  $(window).resize(function(){
+    holdeWidth()
+  });
+  
+  var swiper = new Swiper('.jBnrSlider', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    }
+  });
 
+ 
 
 
 
