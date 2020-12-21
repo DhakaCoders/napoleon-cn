@@ -26,10 +26,16 @@
 	height: 16px;
 }
 
-.fl-prev{
-	position: absolute;
-	bottom: 0%;
+
+
+.slider-arrows{
+	position: relative;
+	padding-bottom: 55px;
+}
+.swiper-button-prev{
+	position: all;
 	left: 0;
+	top: 100%;
 	width: 30px;
 	height: 30px;
 	background: transparent;
@@ -37,30 +43,31 @@
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
-	z-index: 2;
-}
-.fl-next{
-	position: absolute;
-	bottom: 0%;
-	left: 65px;
-	width: 30px;
-	height: 30px;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	z-index: 2;
-}
-.fl-prev i,
-.fl-next i{
-	display: inline-block;
-	vertical-align: baseline;
 }
 
-.fl-prev:hover svg,
-.fl-next:hover svg{
+.swiper-button-next{
+	left: 60px;
+	top: 100%;
+	height: 30px;
+	width: 30px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg{
 	fill: #4c2631;
+}
+
+.swiper-button-prev:after, 
+.swiper-container-rtl .swiper-button-next:after{
+	content: none;
+}
+.swiper-button-next:after, 
+.swiper-container-rtl .swiper-button-prev:after{
+	content: none;
 }
 
 

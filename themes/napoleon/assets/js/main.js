@@ -231,18 +231,6 @@ var swiper = new Swiper('.restaurantTestiSlider', {
 
   /*Start Of Noyon*/
 
-  function holdeWidth(){
-    var padding = 15, 
-        offset = 100,
-        winW = $(window).width(),
-        conW = $('.container').outerWidth(),
-        conWleft = (winW - conW) / 2;
-    $('.holder').css('margin-left', (conWleft+padding+offset));
-  }
-  holdeWidth();
-  $(window).resize(function(){
-    holdeWidth()
-  });
   
   var swiper = new Swiper('.jBnrSlider', {
     slidesPerView: 3,
@@ -263,6 +251,63 @@ var swiper = new Swiper('.restaurantTestiSlider', {
     }
   });
 
+
+
+
+  
+  var swiper = new Swiper('.catagorySlider', {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    }
+  });
+
+
+  function holdeWidth(){
+    var padding = 15, 
+    offset = 0,
+    winW = $(window).width(),
+    conW = $('.container').outerWidth(),
+    conWleft = (winW - conW) / 2;
+    $('.visite-sec-wrap').css('margin-left', (conWleft+padding+offset));
+  }
+  holdeWidth();
+  $(window).resize(function(){
+    holdeWidth()
+  });
+  
+  var swiper = new Swiper('.visiteSlider', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+    }
+  });
+
+
  
 
 
@@ -274,7 +319,42 @@ var swiper = new Swiper('.restaurantTestiSlider', {
 
 
   /*Start Of Shariful*/
+  function npCasinoHolderwidth(){
+    var padding = 15;
+    var offset = 240;
+    var winWidth = $(window).width();
+    var conW = $('.container').outerWidth();
+    var conLft = (winWidth - conW) / 2;
+    $('.npCasinoImgHolder').css('margin-left', (conLft + padding + offset));
+  }
+  npCasinoHolderwidth();
+  var swiper = new Swiper('.np-casino-slider',{
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.npCasinoImgArrows .swiper-button-next',
+      prevEl: '.npCasinoImgArrows .swiper-button-prev',
+    },
+  });
 
+
+  function npCasinoDesHolderwidth(){
+    var padding = 15;
+    var offset = 240;
+    var winWidth = $(window).width();
+    var conW = $('.container').outerWidth();
+    var conLft = (winWidth - conW) / 2;
+    $('.np-casino-des-holder').css('margin-left', (conLft + offset));
+  }
+  npCasinoDesHolderwidth();
+  var swiper = new Swiper('.np-casino-des-slider',{
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.npCasinoDesArrows .swiper-button-next',
+      prevEl: '.npCasinoDesArrows .swiper-button-prev',
+    },
+  });
 
 
 
