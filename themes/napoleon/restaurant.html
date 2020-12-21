@@ -53,6 +53,9 @@
           </clipPath>
           </defs>
         </symbol>
+        <symbol id="blockquote-icon-svg" width="44" height="32" viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.7363 29.1801C14.1363 30.7801 12.0763 31.5801 9.55633 31.5801C7.03633 31.5801 4.93633 30.6601 3.25633 28.8201C1.57633 26.9401 0.736328 24.5401 0.736328 21.6201C0.736328 16.2601 2.39633 11.6201 5.71633 7.70008C9.07633 3.74008 13.4163 1.20008 18.7363 0.0800781L19.2163 1.28008C14.3363 2.40008 10.3563 4.60008 7.27633 7.88008C4.19633 11.1601 2.45633 15.3401 2.05633 20.4201C2.65633 18.6601 3.67633 17.2801 5.11633 16.2801C6.55633 15.2401 8.15633 14.7201 9.91633 14.7201C12.2763 14.7201 14.2363 15.5201 15.7963 17.1201C17.3563 18.6801 18.1363 20.6801 18.1363 23.1201C18.1363 25.5601 17.3363 27.5801 15.7363 29.1801ZM39.6163 29.1801C38.0163 30.7801 35.9563 31.5801 33.4363 31.5801C30.9163 31.5801 28.8163 30.6601 27.1363 28.8201C25.4563 26.9401 24.6163 24.5401 24.6163 21.6201C24.6163 16.2601 26.2763 11.6201 29.5963 7.70008C32.9563 3.74008 37.2963 1.20008 42.6163 0.0800781L43.0963 1.28008C38.2163 2.40008 34.2363 4.60008 31.1563 7.88008C28.0763 11.1601 26.3363 15.3401 25.9363 20.4201C26.5363 18.6601 27.5563 17.2801 28.9963 16.2801C30.4363 15.2401 32.0363 14.7201 33.7963 14.7201C36.1563 14.7201 38.1163 15.5201 39.6763 17.1201C41.2363 18.6801 42.0163 20.6801 42.0163 23.1201C42.0163 25.5601 41.2163 27.5801 39.6163 29.1801Z" fill="#CB9F67"/>
+        </symbol>
 
 
 
@@ -295,7 +298,7 @@
 
 
 <section class="restaurant-gallery-slider">
-  <div class="holder">
+  <div class="rgsHolder">
       <div class="swiper-container restaurantGallerySlider">
         <div class="swiper-wrapper slide1Wrapper">
           <div class="swiper-slide restaurantGallerySlide">
@@ -305,24 +308,36 @@
           </div>
           <div class="swiper-slide restaurantGallerySlide">
             <div class='restaurant-gallery-slide-item inline-bg'>
-              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-02.jpg);"></div>
+              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
             </div>
           </div>
           <div class="swiper-slide restaurantGallerySlide">
             <div class='restaurant-gallery-slide-item inline-bg'>
-              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-03.jpg);"></div>
+              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
             </div>
           </div>
           <div class="swiper-slide restaurantGallerySlide">
             <div class='restaurant-gallery-slide-item inline-bg'>
-              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-04.jpg);"></div>
+              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="slider1-arrows">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      <div class="slider-arrows restaurantGallerySliderArrows">
+        <div class="swiper-button-prev">
+          <i>
+            <svg class="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+              <use xlink:href="#fl-lft-arrow-svg"></use>
+            </svg> 
+          </i>
+        </div>
+        <div class="swiper-button-next">
+          <i>
+            <svg class="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+              <use xlink:href="#fl-rgt-arrow-svg"></use>
+            </svg> 
+          </i>
+        </div>
       </div>
   </div>    
 </section>
@@ -356,13 +371,19 @@
 </section>
 
 
-<section class="restaurant-gallery-slider">
-  <div class="holder">
+<section class="restaurant-testi-slider">
+  <div class="rtsHolder">
+      <div class="restaurant-testi-slider-hdr">
+        <h4 class="rtshdr-title">Deze mensen are feeling lucky</h4>
+      </div>
       <div class="swiper-container restaurantTestiSlider">
         <div class="swiper-wrapper">
           <div class="swiper-slide restaurantTestiSlide">
             <div class="restaurantTestiSlide-item">
-
+              <i>
+                <svg class="blockquote-icon-svg" width="44" height="32" viewBox="0 0 44 32" fill="#CB9F67">
+                <use xlink:href="#blockquote-icon-svg"></use> </svg>
+              </i>
               <h4>Mathias H.</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
               Blandit at tortor, gravida mattis. </p>
@@ -370,7 +391,10 @@
           </div>
           <div class="swiper-slide restaurantTestiSlide">
             <div class="restaurantTestiSlide-item">
-
+              <i>
+                <svg class="blockquote-icon-svg" width="44" height="32" viewBox="0 0 44 32" fill="#CB9F67">
+                <use xlink:href="#blockquote-icon-svg"></use> </svg>
+              </i>
               <h4>Mathias H.</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
               Blandit at tortor, gravida mattis. </p>
@@ -378,7 +402,10 @@
           </div>
           <div class="swiper-slide restaurantTestiSlide">
             <div class="restaurantTestiSlide-item">
-
+              <i>
+                <svg class="blockquote-icon-svg" width="44" height="32" viewBox="0 0 44 32" fill="#CB9F67">
+                <use xlink:href="#blockquote-icon-svg"></use> </svg>
+              </i>
               <h4>Mathias H.</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
               Blandit at tortor, gravida mattis. </p>
@@ -386,7 +413,10 @@
           </div>
           <div class="swiper-slide restaurantTestiSlide">
             <div class="restaurantTestiSlide-item">
-
+              <i>
+                <svg class="blockquote-icon-svg" width="44" height="32" viewBox="0 0 44 32" fill="#CB9F67">
+                <use xlink:href="#blockquote-icon-svg"></use> </svg>
+              </i>
               <h4>Mathias H.</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
               Blandit at tortor, gravida mattis. </p>

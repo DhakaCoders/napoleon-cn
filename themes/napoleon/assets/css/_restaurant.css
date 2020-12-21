@@ -254,14 +254,73 @@
 	width: 100%;
 	height: 100%;
 }
-.restaurantGallerySlide{
-	padding-left: 15px;
-	padding-right: 15px;
+.restaurant-gallery-slider{
+	overflow: hidden;
+}
+.restaurantGallerySlider{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.restaurantGallerySlider .swiper-slide{
+	padding-left: 12px;
+	padding-right: 12px;
+	overflow: hidden;
 }
 
+
+.restaurant-testi-slider{
+	padding: 95px 0 101px;
+	overflow: hidden;
+}
 
 
 .restaurantTestiSlide-item{
 	background: #1A1429;
 	color: #D7D3CD;
+	padding: 90px 65px 80px;
+	width: 570px;
+}
+
+.restaurantTestiSlide-item i{
+	position: absolute;
+	right: 33px;
+	top: 33px;
+}
+.restaurantTestiSlider{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+.restaurantTestiSlider .swiper-slide{
+	padding-left: 12px;
+	padding-right: 12px;
+	overflow: hidden;
+}
+
+.rtshdr-title{
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+	font-size: 30px;
+	line-height: 38px;
+	text-align: center;
+	letter-spacing: 0.038em;
+	color: #522D37;
+	font-family: 'Operetta18-Regular';
+	padding-bottom: 25px;
+	margin-bottom: 55px;
+	margin-left: 490px;
+}
+
+.rtshdr-title:after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	width: 58px;
+	height: 2px;
+	background: #522D37;
+	bottom: 0;
 }
