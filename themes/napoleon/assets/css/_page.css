@@ -200,3 +200,116 @@
 .page-breadcrumbs ul li a:hover{
 	color: #ba905a;
 }
+
+
+
+/*
+----------------------
+ 404 Page Css
+----------------------
+*/
+.np-two-grid-sec-wrp {
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: 170px;
+}
+.np-two-grid-sec-wrp .col-xs-12,
+.np-two-grid-sec-wrp .col-sm-6 {
+    position: static;
+}
+.np-two-grid-main{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    overflow: hidden;
+}
+.np-two-grid-main .np-two-grid-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.np-two-grid-main .np-two-grid-img img{
+	width: 100%;
+}
+.np-two-grid-sec-wrp .np-two-grid-des {
+    padding: 20px 10px 30px 210px;
+    position: relative;
+}
+.np-two-grid-des-title{
+	display: block;
+	font-size: 62px;
+	line-height: 1.1;
+	font-family: 'Operetta18-Regular';
+}
+.np-two-grid-des span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 26px;
+	line-height: 1.2;
+	color: #512C36;
+	font-style: normal;
+	font-family: 'Operetta18-Medium';
+	padding-bottom: 15px;
+}
+.np-two-grid-des p{
+	margin-bottom: 45px;
+}
+.np-two-grid-des ul{
+	margin: 0 -35px;
+}
+.np-two-grid-des ul li{
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 0 35px;
+	font-weight: 600;
+}
+.np-two-grid-des ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #512C36;
+	position: relative;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.np-two-grid-des ul li a:before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -25px;
+    background: url(../images/angle-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 6px 8px;
+    background-position: center center;
+    width: 6px;
+    height: 8px;
+    transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.np-two-grid-des ul li a:hover{
+	color: #A21D1D;
+}
+.np-two-grid-des ul li a:hover:before{
+	right: -30px;
+	background: url(../images/angle-icon-hover.svg);
+}
+.np-two-grid-des strong {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 180px;
+    line-height: 64px;
+    letter-spacing: 0.01em;
+    color: #D2AE80;
+    transform: rotate(-90deg);
+    font-family: 'Operetta18-Regular';
+    position: absolute;
+    left: -85px;
+    top: 120px;
+}
