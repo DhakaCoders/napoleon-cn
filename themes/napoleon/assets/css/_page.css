@@ -234,3 +234,25 @@
 .page-breadcrumbs ul li a:hover{
 	color: #ba905a;
 }
+
+
+/*common button*/
+.fl-tsprnt-btn{
+	width: 212px;
+	height: 48px;
+	border: 2px solid #512C36;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #512C36;
+}
+.fl-tsprnt-btn:hover{
+	border-color: #A21D1D;
+	color: #fff;
+	background: #A21D1D;
+}

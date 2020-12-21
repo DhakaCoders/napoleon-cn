@@ -269,7 +269,24 @@ $('div.fl-tabs button').click(function(){
     }
   });
 
-
+   var swiper = new Swiper('.hmFtrGlrySlider', {
+    slidesPerView: 5,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+    }
+  });
  
 
 
