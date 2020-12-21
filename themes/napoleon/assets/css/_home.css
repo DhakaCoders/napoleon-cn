@@ -284,3 +284,74 @@
 .visite-slide-item-desc p:last-child{
 	margin-bottom: 0;
 }
+
+.news-sec{
+	padding: 122px 0;
+	background: #ebe6dc;
+}
+.news-title{
+	font-family: 'Operetta18-Regular';
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: 0.038em;
+	color: #522D37;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.news-btn .fl-tsprnt-btn{
+	margin-left: auto;
+	margin-right: auto;
+}
+.hm-footer-gallery{
+	padding-top: 92px;
+}
+.hm-ftr-gllry-cntlr{
+
+}
+.hm-footer-gallery-title{
+    font-family: 'Operetta18-Regular';
+	font-size: 30px;
+	line-height: 1;
+	letter-spacing: 0.038em;
+	color: #522D37;
+	margin-bottom: 60px;
+	padding-bottom: 28px;
+	position: relative;
+	text-align: center;
+}
+.hm-footer-gallery-title:after{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	height: 2px;
+	width: 58px;
+	background: #522d37;
+}
+.hm-ftr-glry-slide-item{
+	max-width: 398px;
+	width: 100%;
+}
+.gllry-slide-item-cntlr{
+	height: 398px;
+	position: relative;
+	overflow: hidden;
+	margin: 20px;
+}
+.hm-ftr-glry-slider-wrap .gllry-slide-item-cntlr{
+	margin-right: 0;
+}
+.glry-slide-item{
+	height: 100%;
+	width: 100%;
+}
+.gllry-slide-item-cntlr:hover .gllry-slide-item{
+	transform: scale(1.051);
+	-ms-transform: scale(1.051);
+	-webkit-transform: scale(1.051);
+	-o-transform: scale(1.051);
+}
