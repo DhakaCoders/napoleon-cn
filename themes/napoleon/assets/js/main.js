@@ -196,7 +196,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*Start Of Shariful*/
-
+  function npCasinoHolderwidth(){
+    var offset = 240;
+    var winWidth = $(window).width();
+    var conW = $('.container').width();
+    var conLft = (winWidth - conW) / 2;
+    $('.npCasinoImgHolder').css('margin-left', (offset));
+  }
+  npCasinoHolderwidth();
+  var swiper = new Swiper('.np-casino-slider',{
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.np-casino-slider-arrows .swiper-button-next',
+      prevEl: '.np-casino-slider-arrows .swiper-button-prev',
+    },
+  });
 
 
 
