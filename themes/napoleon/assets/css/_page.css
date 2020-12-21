@@ -28,19 +28,36 @@
 
 
 
-
+.slider-arrows{
+	position: relative;
+	padding-bottom: 55px;
+}
 .swiper-button-prev{
+	position: absolute;
 	left: 0;
+	top: auto;
+	bottom: 0;
 	width: 30px;
 	height: 30px;
-	top: 100%;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 
 .swiper-button-next{
+	position: absolute;
 	left: 60px;
+	top: auto;
+	bottom: 0;
 	height: 30px;
 	width: 30px;
-	top: 100%;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 .swiper-button-prev:hover svg,
 .swiper-button-next:hover svg{

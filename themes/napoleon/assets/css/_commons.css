@@ -353,3 +353,24 @@ form .dropdown-menu li a{
 
 /*button*/
 
+.fl-red-center-btn{
+	max-width: 212px;
+	width: 100%;
+	height: 48px;
+	background: #A21D1D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #A21D1D;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.fl-red-center-btn:hover{
+	color: #A21D1D;
+	background: transparent;
+}

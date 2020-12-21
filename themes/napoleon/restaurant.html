@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
-
+  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
@@ -83,6 +83,13 @@
 
 
       <!--Start Of Shariful-->
+      <symbol id="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.9982 8.92292L25.0396 8.93196H7.31561L12.8874 3.34792C13.1602 3.0753 13.3099 2.70599 13.3099 2.31837C13.3099 1.93076 13.1602 1.56403 12.8874 1.29076L12.0204 0.423363C11.7478 0.150739 11.3845 0 10.9971 0C10.6095 0 10.246 0.149663 9.97336 0.422286L0.422292 9.9725C0.148592 10.2462 -0.00107094 10.6108 5.76931e-06 10.9986C-0.00107094 11.3886 0.148592 11.7534 0.422292 12.0266L9.97336 21.5777C10.246 21.8501 10.6093 22 10.9971 22C11.3845 22 11.7478 21.8499 12.0204 21.5777L12.8874 20.7103C13.1602 20.4381 13.3099 20.0746 13.3099 19.687C13.3099 19.2996 13.1602 18.9553 12.8874 18.6829L7.25273 13.0676H25.018C25.8163 13.0676 26.4871 12.3796 26.4871 11.5817V10.3549C26.4871 9.5571 25.7965 8.92292 24.9982 8.92292Z"/>
+      </symbol>
+
+      <symbol id="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.48909 8.92292L1.44774 8.93196H19.1717L13.5999 3.34792C13.3271 3.0753 13.1774 2.70599 13.1774 2.31837C13.1774 1.93076 13.3271 1.56403 13.5999 1.29076L14.4669 0.423363C14.7395 0.150739 15.1028 0 15.4902 0C15.8778 0 16.2413 0.149663 16.5139 0.422286L26.065 9.9725C26.3387 10.2462 26.4884 10.6108 26.4873 10.9986C26.4884 11.3886 26.3387 11.7534 26.065 12.0266L16.5139 21.5777C16.2413 21.8501 15.878 22 15.4902 22C15.1028 22 14.7395 21.8499 14.4669 21.5777L13.5999 20.7103C13.3271 20.4381 13.1774 20.0746 13.1774 19.687C13.1774 19.2996 13.3271 18.9553 13.5999 18.6829L19.2346 13.0676H1.46927C0.671001 13.0676 0.000209808 12.3796 0.000209808 11.5817V10.3549C0.000209808 9.5571 0.690813 8.92292 1.48909 8.92292Z"/>
+      </symbol>
 
 
   </svg>
@@ -234,14 +241,51 @@
                         <p>LIMOEN - PASSIEVRUCHT - FRAMBOOS</p>
                       </li>
                     </ul>
-                    <div>
-                      <a class="" href="#">Boek uw tafel</a>
+                    <div class="rtcd-btn-cntlr">
+                      <a class="fl-red-center-btn" href="#">Boek uw tafel</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div id="tab-2" class="fl-tab-content">
-                
+                <div class="restaurant-tab-con">
+                  <div class="restaurant-tab-con-fea-box">
+                    <div class="inline-bg restaurant-tab-con-fea-box-img" style="background: url(assets/images/restaurant-tab-con-fea-box-01.jpg);"></div>
+                    <div class="restaurant-tab-con-fea-box-des">
+                      <h4 class="rtcfbd-title">Kreeftenmenu</h4>
+                      <p>Een luxueus menu op basis van heerlijke kreeft</p>
+                      <div class="rtcfbd-price">
+                        <span class="price">
+                          <span class="woocommerce-Price-amount amount">
+                            <bdi><span class="woocommerce-Price-currencySymbol">€</span>65</bdi>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="restaurant-tab-con-des">
+                    <ul>
+                      <li>
+                        <label>Amuse van de chef 2</label>
+                      </li>
+                      <li>
+                        <label>½ Kreeft Belle Vue</label>
+                        <p>LAUW GESERVEER - SALADE</p>
+                      </li>
+                      <li>
+                        <label>½ Kreeft in de oven</label>
+                        <p>CITROEN - TIJM - PILIPILI - FLEUR DE SEL</p>
+                      </li>
+                      <li>
+                        <label>Sorbet</label>
+                        <p>LIMOEN - PASSIEVRUCHT - FRAMBOOS</p>
+                      </li>
+                    </ul>
+                    <div class="rtcd-btn-cntlr">
+                      <a class="fl-red-center-btn" href="#">Boek uw tafel</a>
+                    </div>
+                  </div>
+                </div>
               </div> 
           </div>
         </div>
@@ -250,168 +294,152 @@
 </section>
 
 
-<section class="main-content">
+<section class="restaurant-gallery-slider">
+  <div class="holder">
+      <div class="swiper-container restaurantGallerySlider">
+        <div class="swiper-wrapper slide1Wrapper">
+          <div class="swiper-slide restaurantGallerySlide">
+            <div class='restaurant-gallery-slide-item inline-bg'>
+              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
+            </div>
+          </div>
+          <div class="swiper-slide restaurantGallerySlide">
+            <div class='restaurant-gallery-slide-item inline-bg'>
+              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-02.jpg);"></div>
+            </div>
+          </div>
+          <div class="swiper-slide restaurantGallerySlide">
+            <div class='restaurant-gallery-slide-item inline-bg'>
+              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-03.jpg);"></div>
+            </div>
+          </div>
+          <div class="swiper-slide restaurantGallerySlide">
+            <div class='restaurant-gallery-slide-item inline-bg'>
+              <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-04.jpg);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider1-arrows">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+  </div>    
+</section>
+
+
+<section class="restaurant-mascotte-section">
   <div class="container">
       <div class="row">
-        <div class="col-md-6">
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
+          <div class="restaurant-mascotte-sec-con">
+            <div class="restaurant-mascotte-sec-fea-img">
+              <div class="inline-bg" style="background: url(assets/images/restaurant-mascotte-sec-fea-img.jpg);"></div>
+            </div>
+            <div class="restaurant-mascotte-sec-con-des">
+              <h3 class="rmscd-title">Culinaire <br>hoogstandjes in restaurant Mascotte</h3>
+              <p>Mascotte is al Jarenlang een gevestigde waarde in
+              Knokke. Het restaurant onder leiding van topchef
+              Christian Van den Ouden bledt culinaire
+              hoogstandjes aan. Laat je verwennen door de
+              heerlijke Frans-Belgische keuken in een sfeervol
+              decor en geniet van het uitzicht over de volledige
+              speelzaal.</p>
+             <div class="rtcd-btn-cntlr">
+                <a class="fl-red-center-btn" href="#">RESERVEER EEN TAFEL</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
   </div>    
 </section>
 
-<section class="footer-top-sec-v2">
-  <div class="footer-top-sec-v2-bg inline-bg" style="background-image: url('assets/images/footer-top-sec-bg.png');"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-top-sec-v2-inr">
-          <div class="ftr-top-sec-v2-lft">
-            <div class="fts-v2-lft-top">
-              <h6 class="fts-v2-lft-sub-title">Openingsuren</h6>
-              <h4 class="fts-v2-lft-title">Vandaag open van 11u tot 04u00</h4>
-            </div>
-            <div class="fts-v2-lft-sediule">
-              <div class="fts-v2-lft-sediule-col">
-                <ul class="reset-list">
-                  <li>
-                    <div class="fts-v2-lft-sediule-items">
-                      <div class="fts-v2-lft-sdl-day">
-                        <strong>Zondag</strong>
-                      </div>
-                      <div class="fts-v2-lft-sdl-time">
-                        <span>11u tot 04u00</span>
-                      </div>
-                    </div>
-                  </li>
 
-                  <li>
-                    <div class="fts-v2-lft-sediule-items">
-                      <div class="fts-v2-lft-sdl-day">
-                        <strong>Maandag</strong>
-                      </div>
-                      <div class="fts-v2-lft-sdl-time">
-                        <span>11u tot 04u00</span>
-                      </div>
-                    </div>
-                  </li>
+<section class="restaurant-gallery-slider">
+  <div class="holder">
+      <div class="swiper-container restaurantTestiSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide restaurantTestiSlide">
+            <div class="restaurantTestiSlide-item">
 
-                  <li>
-                    <div class="fts-v2-lft-sediule-items">
-                      <div class="fts-v2-lft-sdl-day">
-                        <strong>Dinsdag</strong>
-                      </div>
-                      <div class="fts-v2-lft-sdl-time">
-                        <span>11u tot 04u00</span>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="fts-v2-lft-sediule-items">
-                      <div class="fts-v2-lft-sdl-day">
-                        <strong>Woensdag</strong>
-                      </div>
-                      <div class="fts-v2-lft-sdl-time">
-                        <span>11u tot 04u00</span>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="fts-v2-lft-sediule-items">
-                      <div class="fts-v2-lft-sdl-day">
-                        <strong>Donderdag</strong>
-                      </div>
-                      <div class="fts-v2-lft-sdl-time">
-                        <span>11u tot 04u00</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="fts-v2-lft-sediule-col fts-v2-lft-sediule-col2">
-                <ul class="reset-list">
-                  <li>
-                    <div class="fts-v2-lft-sediule-items">
-                      <div class="fts-v2-lft-sdl-day">
-                        <strong>Vrijdag</strong>
-                      </div>
-                      <div class="fts-v2-lft-sdl-time">
-                        <span>11u tot 05u00</span>
-                      </div>
-                    </div>
-                  </li>
-
-                   <li>
-                    <div class="fts-v2-lft-sediule-items">
-                      <div class="fts-v2-lft-sdl-day">
-                        <strong>Zaterdag</strong>
-                      </div>
-                      <div class="fts-v2-lft-sdl-time">
-                        <span>11u tot 05u00</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <h4>Mathias H.</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
+              Blandit at tortor, gravida mattis. </p>
             </div>
           </div>
-          <div class="ftr-top-sec-v2-rt">
-            <div class="fts-v2-rt-desc">
-              <div class="fts-v2-rt-desc-contact fts-v2-rt-desc-row">
-                <h5 class="fts-v2-rt-desc-row-title">Contact opnemen</h5>
-                <div class="fts-v2-rt-desc-cntct-tel">
-                  <a href="tel:(+32)050630500"> (+32) 050 630 500</a>
-                </div>
-                <div class="fts-v2-rt-desc-cntct-mail">
-                  <a href="mailto: info@grandcasinoknokke.be">info@grandcasinoknokke.be</a>
-                </div>
-              </div>
-              <div class="fts-v2-rt-desc-visit fts-v2-rt-desc-row">
-                <h5 class="fts-v2-rt-desc-row-title">Bezoek ons</h5>
-                <a href="#">Zeedijk-Albertstrand 509 <br>8300 Knokke-Heist</a>
-              </div>
-              <div class="fts-v2-rt-desc-Parking fts-v2-rt-desc-row">
-                <h5 class="fts-v2-rt-desc-row-title">Parking</h5>
-                <a href="#">Parking bij het gebouw voorzien</a>
-              </div>
+          <div class="swiper-slide restaurantTestiSlide">
+            <div class="restaurantTestiSlide-item">
+
+              <h4>Mathias H.</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
+              Blandit at tortor, gravida mattis. </p>
             </div>
-            <div class="fts-v2-rt-form footer-top-form">
-              <h5 class="fts-v2-rt-desc-row-title fts-v2-rt-form-title">Schrijf je in voor onze nieuwsbrief</h5>
-              <form action="" class="needs-validation" novalidate>
-                <div class="input-fields-row">
-                  <div class="input-fields-col">
-                    <input type="text" name="fname" placeholder="Naam">
-                  </div>
-                </div>
+          </div>
+          <div class="swiper-slide restaurantTestiSlide">
+            <div class="restaurantTestiSlide-item">
 
-                <div class="input-fields-row">
-                  <div class="input-fields-col">
-                    <input type="text" name="lname" placeholder="Voornaam">
-                  </div>
-                </div>
+              <h4>Mathias H.</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
+              Blandit at tortor, gravida mattis. </p>
+            </div>
+          </div>
+          <div class="swiper-slide restaurantTestiSlide">
+            <div class="restaurantTestiSlide-item">
 
-                <div class="input-fields-row">
-                  <div class="input-fields-col from-group">
-                    <input type="email" name="email" placeholder="E-mailadres" class="form-control" required>
-                  </div>
-                </div>
-
-                <div class="input-fields-row">
-                  <div class="input-fields-col input-fields-submit-col fts-v2-input-fields-submit-col">
-                    <button type="submit" name="submit">SCHRIJF JE IN</button>
-                  </div>
-                </div>
-
-              </form>
+              <h4>Mathias H.</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet est, mauris nulla posuere velit vel purus risus. Cursus in viverra donec rhoncus molestie. Orci euismod et urna, vulputate dolor. Dignissim ipsum purus nunc vitae.
+              Blandit at tortor, gravida mattis. </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="slider-arrows restaurantTestiSliderArrows">
+        <div class="swiper-button-prev">
+          <i>
+            <svg class="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+              <use xlink:href="#fl-lft-arrow-svg"></use>
+            </svg> 
+          </i>
+        </div>
+        <div class="swiper-button-next">
+          <i>
+            <svg class="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+              <use xlink:href="#fl-rgt-arrow-svg"></use>
+            </svg> 
+          </i>
+        </div>
+      </div>
+  </div>    
+</section>
+
+
+<section class="restaurant-btm-des-section">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="res-btm-des-sec-lft">
+            <div>
+              <p><strong>In auctor tincidunt id tellus ligula at. In mus lorem vitae parturient at diam.</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="res-btm-des-sec-rgt">
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis non quisque lectus congue ligula posuere sem. Odio velit est lacus justo, aliquam nulla. Aenean felis, est et orci, lacus ut viverra. Integer blandit nunc nec dolor, est ullamcorper lectus. At donec non consequat senectus nec, at nascetur. Augue tristique diam feugiat magna sit nulla commodo.</p>
+
+              <p>Bibendum id pellentesque orci etiam interdum id fringilla. Pharetra sed morbi ac mauris vel id tellus consectetur adipiscing. Sit mollis tempus lectus eu at in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>    
+</section>
+
+
+<section class="ftr-top-blank-bg-sec inline-bg" style="background: url(assets/images/ftr-top-blank-bg.jpg);">
+  <div></div>   
 </section>
 
 
@@ -523,6 +551,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
 

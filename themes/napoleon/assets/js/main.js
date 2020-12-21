@@ -188,7 +188,45 @@ $('div.fl-tabs button').click(function(){
     $("#"+tab_id).addClass('current');
 });
 
+var swiper = new Swiper('.restaurantGallerySlider', {
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    }
+  });
 
+
+
+var swiper = new Swiper('.restaurantTestiSlider', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+      nextEl: '.restaurantTestiSliderArrows .swiper-button-next',
+      prevEl: '.restaurantTestiSliderArrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    }
+  });
 
 
   /*Start Of Noyon*/
@@ -299,28 +337,39 @@ $('div.fl-tabs button').click(function(){
 
   /*Start Of Shariful*/
   function npCasinoHolderwidth(){
+    var padding = 15;
     var offset = 240;
     var winWidth = $(window).width();
-    var conW = $('.container').width();
+    var conW = $('.container').outerWidth();
     var conLft = (winWidth - conW) / 2;
-    $('.npCasinoImgHolder').css('margin-left', (offset));
+    $('.npCasinoImgHolder').css('margin-left', (conLft + padding + offset));
   }
   npCasinoHolderwidth();
   var swiper = new Swiper('.np-casino-slider',{
     slidesPerView: 2,
     loop: true,
     navigation: {
-      nextEl: '.np-casino-slider-arrows .swiper-button-next',
-      prevEl: '.np-casino-slider-arrows .swiper-button-prev',
+      nextEl: '.npCasinoImgArrows .swiper-button-next',
+      prevEl: '.npCasinoImgArrows .swiper-button-prev',
     },
   });
 
+
+  function npCasinoDesHolderwidth(){
+    var padding = 15;
+    var offset = 240;
+    var winWidth = $(window).width();
+    var conW = $('.container').outerWidth();
+    var conLft = (winWidth - conW) / 2;
+    $('.np-casino-des-holder').css('margin-left', (conLft + offset));
+  }
+  npCasinoDesHolderwidth();
   var swiper = new Swiper('.np-casino-des-slider',{
     slidesPerView: 2,
     loop: true,
     navigation: {
-      nextEl: '.np-casino-slider-arrows .swiper-button-next',
-      prevEl: '.np-casino-slider-arrows .swiper-button-prev',
+      nextEl: '.npCasinoDesArrows .swiper-button-next',
+      prevEl: '.npCasinoDesArrows .swiper-button-prev',
     },
   });
 
