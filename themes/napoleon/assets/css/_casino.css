@@ -97,10 +97,7 @@
 .np-casino-img-slide-sec{
 	padding-bottom: 135px;
 }
-.np-casino-slider-arrows{
-	position: relative;
-	padding-bottom: 55px;
-}
+
 
 .np-casino-slider-wrapper{
 	margin-left: -14px;
@@ -118,20 +115,19 @@
 	position: relative;
 }
 
-.fl-prev-nxt .swiper-button-prev{
-	left: 0;
-	width: 30px;
-	height: 30px;
-	top: 100%;
-}
 
-.fl-prev-nxt .swiper-button-next{
-	left: 60px;
-	height: 30px;
-	width: 30px;
-	top: 100%;
+
+.np-casino-des{
+	padding: 88px 55px 70px 75px;
+	background: #1A1429;
 }
-.fl-prev-nxt .swiper-button-prev:hover svg,
-.fl-prev-nxt .swiper-button-next:hover svg{
-	fill: #4c2631;
+.np-casino-des-slider-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 15px;
+	color: #CB9F67;
+}
+.np-casino-des p{
+	color: #fff;
 }
