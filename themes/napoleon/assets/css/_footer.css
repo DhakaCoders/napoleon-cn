@@ -180,18 +180,41 @@
 }
 .ftr-btm-brands-logo-cntlr > ul > li{
 	padding: 0 12px;
+	display: none;
 }
 .ftr-btm-brands-logo-cntlr > ul > li:first-child{
 	padding-left: 0;
+	display: inline-block;
+}
+.ftr-btm-brands-logo-cntlr > ul > li:nth-child(2){
+	display: inline-block;
 }
 .ftr-btm-brands-logo-cntlr > ul > li:last-child{
 	padding-right: 0;
+	display: inline-block;
 }
 .ftr-btm-brands-logo-cntlr > ul > li > .ftr-btm-brands-logo{
 
 }
 .ftr-btm-brands-logo-cntlr > ul > li > .ftr-btm-brands-logo a{
 	display: inline-block;
+}
+.ftr-btm-brands-last-logo{
+	height: 48px;
+	width: 48px;
+	border-radius: 50% 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #999999;
+}
+.ftr-btm-brands-last-logo span{
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 700;
+	line-height: 1;
 }
 
 
