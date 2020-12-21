@@ -42,8 +42,8 @@
 	width: 30px;
 	top: 100%;
 }
-.fl-prev-nxt .swiper-button-prev:hover svg,
-.fl-prev-nxt .swiper-button-next:hover svg{
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg{
 	fill: #4c2631;
 }
 

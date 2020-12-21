@@ -298,6 +298,15 @@ $('div.fl-tabs button').click(function(){
     },
   });
 
+  var swiper = new Swiper('.np-casino-des-slider',{
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.np-casino-slider-arrows .swiper-button-next',
+      prevEl: '.np-casino-slider-arrows .swiper-button-prev',
+    },
+  });
+
 
 
 
