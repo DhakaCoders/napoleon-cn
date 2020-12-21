@@ -98,7 +98,7 @@
 }
 .restaurant-tab-con-des{
 	width: 57.5%;
-	padding-left: 10%;
+    padding-left: 17.5%;
 }
 
 .restaurant-tab-con-fea-box-des{
@@ -110,7 +110,7 @@
 	backdrop-filter: blur(30px);
 	-ms-backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
-	padding: 30px 20px 35px 40px;
+	padding: 30px 20px 32px 40px;
 }
 
 .rtcfbd-title{
@@ -137,7 +137,7 @@
 
 
 .restaurant-tab-con-des ul li{
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .restaurant-tab-con-des ul li label{
@@ -151,4 +151,117 @@
 
 .restaurant-tab-con-des ul li p{
 	text-transform: uppercase;
+}
+
+
+.restaurant-mascotte-section{
+	background: #4c2631;
+	padding: 130px 0;
+}
+
+
+.restaurant-mascotte-sec-con{
+	display: flex;
+	align-items: center;
+}
+
+.restaurant-mascotte-sec-con-des{
+	order: 1;
+	width: 50%;
+	padding-right: 120px;
+}
+.rmscd-title{
+	font-size: 62px;
+	line-height: 1;
+	letter-spacing: 0.01em;
+	color: #C19764;
+	margin-bottom: 95px;
+}
+.restaurant-mascotte-sec-con-des p{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #D7D3CD;
+	margin-bottom: 25px;
+}
+
+.restaurant-mascotte-sec-fea-img{
+	order: 2;
+	width: 50%;
+}
+
+.restaurant-mascotte-sec-fea-img{
+	height: 490px;
+}
+
+.restaurant-mascotte-sec-fea-img div{
+	height: 100%;
+	width: 100%;
+}
+
+.restaurant-btm-des-section{
+	padding: 140px 0 115px;
+	text-align: center;
+}
+.res-btm-des-sec-rgt > div{
+	max-width: 570px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.res-btm-des-sec-lft > div {
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.res-btm-des-sec-rgt p{
+	font-weight: 500;
+}
+
+.res-btm-des-sec-lft p strong{
+	font-size: 26px;
+	line-height: 38px;
+	text-align: center;
+	letter-spacing: 0.038em;
+	font-family: 'Operetta18-Regular';
+}
+
+.ftr-top-blank-bg-sec{
+	position: relative;
+	height: 557px;
+}
+/*.ftr-top-blank-bg-sec div{
+	position: absolute;
+	max-width: 1160px;
+	width: 100%;
+	height: 304px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	z-index: 10;
+}*/
+
+.restaurant-gallery-slider{
+	padding: 125px 0 115px;
+}
+
+.restaurant-gallery-slide-item{
+	width: 830px;
+	height: 558px;
+}
+.restaurant-gallery-slide-item .inline-bg{
+	width: 100%;
+	height: 100%;
+}
+.restaurantGallerySlide{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+.restaurantTestiSlide-item{
+	background: #1A1429;
+	color: #D7D3CD;
 }

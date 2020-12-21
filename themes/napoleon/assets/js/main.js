@@ -188,7 +188,45 @@ $('div.fl-tabs button').click(function(){
     $("#"+tab_id).addClass('current');
 });
 
+var swiper = new Swiper('.restaurantGallerySlider', {
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    }
+  });
 
+
+
+var swiper = new Swiper('.restaurantTestiSlider', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+    }
+  });
 
 
   /*Start Of Noyon*/
