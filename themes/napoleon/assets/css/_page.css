@@ -28,42 +28,8 @@
 
 
 
-/*.fl-prev{
-	position: absolute;
-	bottom: 0%;
-	left: 0;
-	width: 30px;
-	height: 30px;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	z-index: 2;
-}*/
-/*.fl-next{
-	position: absolute;
-	bottom: 0%;
-	right: 65px;
-	width: 30px;
-	height: 30px;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	z-index: 2;
-}*/
-/*.fl-prev i,
-.fl-next i{
-	display: inline-block;
-	vertical-align: baseline;
-}
 
-.fl-prev:hover svg,
-.fl-next:hover svg{
-	fill: #4c2631;
-}*/
+
 
 .swiper-button-prev:after, 
 .swiper-container-rtl .swiper-button-next:after{
