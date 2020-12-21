@@ -29,7 +29,23 @@
 
 
 
+.swiper-button-prev{
+	left: 0;
+	width: 30px;
+	height: 30px;
+	top: 100%;
+}
 
+.swiper-button-next{
+	left: 60px;
+	height: 30px;
+	width: 30px;
+	top: 100%;
+}
+.fl-prev-nxt .swiper-button-prev:hover svg,
+.fl-prev-nxt .swiper-button-next:hover svg{
+	fill: #4c2631;
+}
 
 .swiper-button-prev:after, 
 .swiper-container-rtl .swiper-button-next:after{
