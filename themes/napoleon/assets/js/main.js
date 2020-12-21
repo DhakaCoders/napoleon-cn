@@ -193,18 +193,6 @@ $('div.fl-tabs button').click(function(){
 
   /*Start Of Noyon*/
 
-  function holdeWidth(){
-    var padding = 15, 
-    offset = 100,
-    winW = $(window).width(),
-    conW = $('.container').outerWidth(),
-    conWleft = (winW - conW) / 2;
-    $('.holder').css('margin-left', (conWleft+padding+offset));
-  }
-  holdeWidth();
-  $(window).resize(function(){
-    holdeWidth()
-  });
   
   var swiper = new Swiper('.jBnrSlider', {
     slidesPerView: 3,
@@ -228,21 +216,42 @@ $('div.fl-tabs button').click(function(){
 
 
 
+  
+  var swiper = new Swiper('.catagorySlider', {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+      nextEl: '.slider1-arrows .swiper-button-next',
+      prevEl: '.slider1-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    }
+  });
+
+
   function holdeWidth(){
     var padding = 15, 
-        offset = 100,
-        winW = $(window).width(),
-        conW = $('.container').outerWidth(),
-        conWleft = (winW - conW) / 2;
-    $('.holder').css('margin-left', (conWleft+padding+offset));
+    offset = 0,
+    winW = $(window).width(),
+    conW = $('.container').outerWidth(),
+    conWleft = (winW - conW) / 2;
+    $('.visite-sec-wrap').css('margin-left', (conWleft+padding+offset));
   }
   holdeWidth();
   $(window).resize(function(){
     holdeWidth()
   });
   
-  var swiper = new Swiper('.catagorySlider', {
-    slidesPerView: 4,
+  var swiper = new Swiper('.visiteSlider', {
+    slidesPerView: 1,
     loop: true,
     navigation: {
       nextEl: '.slider1-arrows .swiper-button-next',
@@ -254,21 +263,12 @@ $('div.fl-tabs button').click(function(){
         spaceBetween: 0,
       },
       1920: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 0,
       },
     }
   });
 
-  var swiper = new Swiper('.slider2', {
-    slidesPerView: 'auto',
-    //centeredSlides: true,
-    loop: true,
-    navigation: {
-      nextEl: '.slider2-arrows .swiper-button-next',
-      prevEl: '.slider2-arrows .swiper-button-prev',
-    },
-  });
 
  
 
