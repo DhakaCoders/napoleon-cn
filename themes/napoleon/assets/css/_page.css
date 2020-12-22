@@ -328,8 +328,8 @@
 */
 .np-two-grid-sec-wrp {
     position: relative;
-    margin-top: 250px;
-    margin-bottom: 170px;
+    margin-top: 125px;
+    margin-bottom: 100px;
 }
 .np-two-grid-sec-wrp .col-xs-12,
 .np-two-grid-sec-wrp .col-sm-6 {
@@ -351,7 +351,7 @@
 .np-two-grid-main .np-two-grid-img img{
 	width: 100%;
 }
-.np-two-grid-sec-wrp .np-two-grid-des {
+.np-two-grid-sec-wrp .np-two-grid-des{
     padding: 20px 10px 30px 210px;
     position: relative;
 }
@@ -360,6 +360,7 @@
 	font-size: 62px;
 	line-height: 1.1;
 	font-family: 'Operetta18-Regular';
+	letter-spacing: 0.01em;
 }
 .np-two-grid-des span{
 	display: inline-block;
@@ -373,6 +374,7 @@
 }
 .np-two-grid-des p{
 	margin-bottom: 45px;
+	font-size: 16px;
 }
 .np-two-grid-des ul{
 	margin: 0 -35px;
@@ -430,5 +432,6 @@
     position: absolute;
     left: -85px;
     top: 120px;
+    font-weight: normal;
 }
 

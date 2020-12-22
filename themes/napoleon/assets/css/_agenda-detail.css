@@ -1,0 +1,135 @@
+/*
+--------------------------
+--------------------------
+*/
+.ad-two-grid-wrp li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 90px;
+}
+.ad-two-grid-wrp li:nth-child(2n+2){
+    margin-bottom: 75px;
+}
+
+
+.ad-two-grid-wrp li .ad-two-grid-img-inr{
+    width: 46%;
+    position: relative;
+    order: 2;
+    overflow: hidden;
+}
+.ad-two-grid-img{
+    min-height: 490px;
+}
+.ad-two-grid-img-inr .ad-two-grid-img > img {
+    display: none;
+}
+.ad-two-grid-wrp li .ad-two-grid-des-inr{
+    width: 54%;
+    order: 1;
+}
+.ad-two-grid-wrp li .ad-two-grid-des-inr .ad-two-grid-des{
+    max-width: 660px;
+    width: 100%;
+    float: right;
+    padding: 10px 135px 30px 0; 
+}
+.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr{
+	order: 2 !important;
+}
+.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-img{
+    order: 1;
+}
+.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des{
+    float: left;
+    padding: 20px 135px 20px 125px;
+}
+.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title{
+	margin-bottom: 20px;
+}
+.ad-two-grid-des-title{
+    display: block;
+    font-size: 62px;
+    line-height: 1.1;
+    font-family: 'Operetta18-Regular';
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+}
+.ad-two-grid-des strong{
+	display: block;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	color: #A21D1D;
+	font-weight: 600;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+}
+.ad-two-grid-des span {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #512C36;
+    font-style: normal;
+    font-family: 'Operetta18-Medium';
+    padding-bottom: 15px;
+}
+.ad-two-grid-des p{
+	font-size: 16px;
+	margin-bottom: 0;
+	line-height: 1.5;
+}
+.ad-two-grid-des a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: underline;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.01em;
+	color: #512C36;
+	font-weight: 500;
+	padding-top: 50px;
+}
+.terug-overzicht a:hover,
+.ad-two-grid-des a:hover{
+	color: #A21D1D;
+}
+
+.terug-overzicht a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #512C36;
+	padding-left: 24px;
+	position: relative;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.terug-overzicht a:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 3px;
+	background: url(../images/terug-angle-icon.svg);
+	background-repeat: no-repeat;
+	background-size: 6px 8px;
+	width: 6px;
+	height: 8px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.terug-overzicht a:hover:after{
+	background: url(../images/terug-angle-icon-hover.svg);
+	left: -5px;
+}
