@@ -262,7 +262,7 @@ var swiper = new Swiper('.restaurantTestiSlider', {
 
   
   var swiper = new Swiper('.jBnrSlider', {
-    slidesPerView: 3,
+    slidesPerView: 4,
     loop: true,
     navigation: {
       nextEl: '.slider1-arrows .swiper-button-next',
@@ -270,7 +270,7 @@ var swiper = new Swiper('.restaurantTestiSlider', {
     },
     breakpoints: {
       768: {
-        slidesPerView: 2,
+        slidesPerView: 4,
         spaceBetween: 0,
       },
       1920: {
@@ -321,8 +321,8 @@ var swiper = new Swiper('.restaurantTestiSlider', {
     slidesPerView: 1,
     loop: true,
     navigation: {
-      nextEl: '.slider1-arrows .swiper-button-next',
-      prevEl: '.slider1-arrows .swiper-button-prev',
+      nextEl: '.visitePrevBtn',
+      prevEl: '.visiteNextBtn',
     },
     breakpoints: {
       768: {
