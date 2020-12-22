@@ -16,18 +16,15 @@
 
 }
 .j-bnr-slider{
-	
-}
-.j-bnr-slide-item-cntlr{
-	display: flex;
-	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
 }
 
 .j-bnr-slide-item{
 	border-bottom: 2px solid #fff;
 	padding: 25px 10px 53px 10px;
 	text-align: center;
-	margin: 24px;
+	position: relative;
 }
 .j-bnr-slider .j-bnr-slide-item{
 	margin-right: 0;
@@ -36,7 +33,7 @@
 	margin-bottom: 34px;
 }
 .j-bnr-slide-icon img{
-	max-height: 87px; 
+	min-height: 87px; 
 }
 .j-bnr-slide-item-title{
 	font-family: 'Operetta18-Regular';
@@ -46,24 +43,22 @@
 	color: #CEA673;
 	margin-bottom: 8px;
 }	
+.j-bnr-slide-item-title a{
+	color: #CEA673;
+	display: inline-block;
+}
+.j-bnr-slide-item-title a:hover{
+	color: #A21D1D;
+}
 .j-bnr-slide-item-prize{
 
 }
-.j-bnr-slide-item-prize bdi{
+.j-bnr-slide-item-prize .price .amount bdi{
 	font-family: 'Operetta18-Medium';
-	font-size: 48px;
+	font-size: 46px;
 	line-height: 1;
 	color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
-
 
 
 .j-left-img-right-desc-sec{
@@ -125,6 +120,13 @@
 	margin-bottom: 7px;
 	text-transform: capitalize;
 }
+.nl-right-desc-title a{
+	color: #FFFFFF;
+	display: inline-block;
+}
+.nl-right-desc-title a:hover{
+	color: #A21D1D;
+}
 .nl-rd-current-jackpots{
 	display: flex;
 	margin-bottom: 38px;
@@ -137,7 +139,7 @@
 	color: #CB9F67;
 	padding-right: 10px;
 }
-.nl-rd-current-jackpots-prize bdi{
+.nl-rd-current-jackpots-prize .price .amount bdi{
 	font-family: 'Operetta18-Medium';
 	font-size: 28px;
 	line-height: 1;
@@ -189,9 +191,9 @@
 .jackpots-content-cntlr > ul > li:nth-child(2n+2) .jkpt-cntnt-item .jkpt-cntnt-item-desc-cntlr{
 	order: 1;
 }
-.jackpots-content-cntlr > ul > li:nth-child(2n+2) .jkpt-cntnt-item .jkpt-cntnt-item-desc-cntlr .jkpt-cntnt-item-brand{
+/*.jackpots-content-cntlr > ul > li:nth-child(2n+2) .jkpt-cntnt-item .jkpt-cntnt-item-desc-cntlr .jkpt-cntnt-item-brand{
 	background: #0a2b20;
-}
+}*/
 .jkpt-cntnt-item{
 	display: flex;
 	flex-direction: column;
@@ -225,6 +227,9 @@
 }
 .jkpt-cntnt-item-desc-cntlr-c2{
 	background: #1a1429;
+}
+.jkpt-cntnt-item-desc-cntlr-c2 .jkpt-cntnt-item-brand{
+	background: #0a2b20;
 }
 .jkpt-cntnt-item-desc{
 	max-width: 395px;
