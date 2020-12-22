@@ -18,7 +18,7 @@
 	background: url('../images/np-nieuws-lftsidebar-bg.png');
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
-	padding: 95px 60px;
+	padding: 95px 60px 85px;
 }
 .np-nieuws-lftsidebar-des{
 	background: #1A1429;
@@ -38,14 +38,12 @@
 	color: #D5B48A;
 }
 .np-nieuws-lftsidebar-des p{
-	font-size: 14px;
 	color: #D7D3CD;
-	line-height: 1.6;
 }
 
 .np-nieuws-lftsidebar-des-inr ul li{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .np-nieuws-lftsidebar-des-inr ul li a{
 	display: inline-block;
