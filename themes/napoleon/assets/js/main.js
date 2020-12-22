@@ -441,7 +441,7 @@ if( $('#googlemap').length ){
 
   function npCasinoDesHolderwidth(){
     var padding = 15;
-    var offset = 240;
+    var offset = 255;
     var winWidth = $(window).width();
     var conW = $('.container').outerWidth();
     var conLft = (winWidth - conW) / 2;
@@ -449,7 +449,7 @@ if( $('#googlemap').length ){
   }
   npCasinoDesHolderwidth();
   var swiper = new Swiper('.np-casino-des-slider',{
-    slidesPerView: 2.5,
+    slidesPerView: 2.4,
     loop: true,
     navigation: {
       nextEl: '.npCasinoDesArrows .swiper-button-next',
@@ -464,5 +464,8 @@ if( $('#googlemap').length ){
 
 
     new WOW().init();
+
+
+
 
 })(jQuery);

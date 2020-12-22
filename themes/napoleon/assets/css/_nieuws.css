@@ -143,13 +143,18 @@
 	text-align: center;
 	position: relative;
 }
+.fl-pagination-ctlr ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .fl-pagination-ctlr ul li{
 	display: inline-block;
 	vertical-align: baseline;
 	padding-left: 18px;
 	padding-right: 18px;
 }
-.fl-pagination-ctlr ul li span{
+.fl-pagination-ctlr ul li span.current{
 	display: inline-block;
 	vertical-align: baseline;
 	border: 2px solid #4C2631;
@@ -161,7 +166,8 @@
 	font-weight: 600px;
 	color: #4C2631;
 }
-.fl-pagination-ctlr ul li a{
+.fl-pagination-ctlr ul li a,
+.fl-pagination-ctlr ul li span{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 14px;

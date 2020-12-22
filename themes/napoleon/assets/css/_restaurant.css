@@ -61,7 +61,7 @@
 .restaurant-tabs ul li{
 	display: inline-block;
 	vertical-align: baseline;
-	padding: 0 52px 15px;
+	padding: 0 50px 15px;
 }
 
 .restaurant-tabs .tab-link{
@@ -107,10 +107,9 @@
 	right: 0;
 	bottom: 0;
 	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(30px);
-	-ms-backdrop-filter: blur(30px);
-	-webkit-backdrop-filter: blur(30px);
-	padding: 30px 20px 32px 40px;
+	background-image: url(../images/restaurant-tab-con-fea-box-des-bg.png);
+	padding: 30px 20px 30px 40px;
+	background-size: cover;
 }
 
 .rtcfbd-title{
@@ -118,7 +117,7 @@
 	font-size: 48px;
 	line-height: 1;
 	color: #CB9F67;
-	margin-bottom: 14px;
+	margin-bottom: 10px;
 }
 
 .restaurant-tab-con-fea-box-des p{
@@ -126,13 +125,17 @@
 	font-size: 16px;
 	line-height: 1.5;
 	color: #D7D3CD;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .rtcfbd-price{
 	font-size: 26px;
 	line-height: 1.2;
-	color: #CB9F67
+	color: #CB9F67;
+	font-weight: 400;
+}
+.rtcfbd-price bdi{
+	font-weight: 400;
 }
 
 
@@ -247,7 +250,8 @@
 }
 
 .restaurant-gallery-slide-item{
-	width: 830px;
+	max-width: 830px;
+	width: 100%;
 	height: 558px;
 }
 .restaurant-gallery-slide-item .inline-bg{
@@ -271,6 +275,7 @@
 .restaurant-testi-slider{
 	padding: 95px 0 101px;
 	overflow: hidden;
+	background: #FFFFFF;
 }
 
 
@@ -278,22 +283,28 @@
 	background: #1A1429;
 	color: #D7D3CD;
 	padding: 90px 65px 80px;
-	width: 570px;
+	position: relative;
 }
-
+.rti-titlte{
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 15px;
+	color: #CB9F67;
+}
 .restaurantTestiSlide-item i{
 	position: absolute;
 	right: 33px;
 	top: 33px;
 }
+.restaurantTestiSlide-item p{
+	text-align: center;
+	color: #D7D3CD;
+}
 .restaurantTestiSlider{
-	margin-left: -12px;
-	margin-right: -12px;
+	margin-right: -100px;
 }
 
 .restaurantTestiSlider .swiper-slide{
-	padding-left: 12px;
-	padding-right: 12px;
 	overflow: hidden;
 }
 
@@ -323,4 +334,47 @@
 	height: 2px;
 	background: #522D37;
 	bottom: 0;
+}
+
+
+
+@media(max-width: 1599px){
+	.rtshdr-title{
+		margin-left: 200px;
+	}
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	
+
+}
+
+@media(max-width: 991px){
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
