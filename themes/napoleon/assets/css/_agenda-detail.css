@@ -2,45 +2,6 @@
 --------------------------
 --------------------------
 */
-.ad-two-grid-sec-wrp{
-	padding-top: 250px;
-    padding-bottom: 170px;
-}
-/*.ad-two-grid-lft-img-contlr,
-.ad-two-grid-contlr{
-    position: relative;
-    margin-bottom: 90px;
-}
-.ad-two-grid-sec-wrp .col-xs-12,
-.ad-two-grid-sec-wrp .col-sm-6 {
-    position: static;
-}
-.ad-two-grid-img-inr{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 45%;
-    overflow: hidden;
-    height: 490px;
-}
-.ad-two-grid-lft-img-contlr .ad-two-grid-img-inr{
-	right: auto;
-	left: 0;
-}
-.ad-two-grid-img-inr .ad-two-grid-img{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.ad-two-grid-des-inr{
-	display: flex;
-	justify-content: left;
-	align-items: left;
-}*/
-
-
-
 .ad-two-grid-wrp li{
     display: flex;
     align-items: center;
