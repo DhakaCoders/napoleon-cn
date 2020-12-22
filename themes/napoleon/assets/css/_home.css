@@ -113,7 +113,7 @@
 	-webkit-transform: scale(1.051);
 	-o-transform: scale(1.051);
 }
-.catagory-slide-item-desc{
+.catagory-slide-item-desc-cntlr{
 	text-align: center;
 }
 .catagory-slide-item-title{
@@ -132,12 +132,18 @@
 .catagory-slide-item-title a:hover{
 	color: #A21D1D;
 }
+.catagory-slide-item-desc{
+	margin-bottom: 25px;
+}
 .catagory-slide-item-desc p{
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #D5B48A;
 	margin-bottom: 25px;
+}
+.catagory-slide-item-desc p:last-child{
+	margin-bottom: 0;
 }
 .catagory-slide-item-btn{
 	display: flex;
@@ -154,10 +160,10 @@
 
 }
 .wellcome-left{
-	width: 33.33%;
+	width: 28.3%;
 }
 .wellcome-right-cntlr{
-	width: 66.67%;
+	width: 71.7%;
 }
 .wellcome-title{
 	font-family: 'Operetta18-Regular';
