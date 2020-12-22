@@ -238,9 +238,9 @@ $(window).resize(function(){
   rtsHolderWidth()
 });
 var swiper = new Swiper('.restaurantTestiSlider', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     loop: true,
-    spaceBetween: 12,
+    spaceBetween: 0,
     navigation: {
       nextEl: '.restaurantTestiSliderArrows .swiper-button-next',
       prevEl: '.restaurantTestiSliderArrows .swiper-button-prev',
@@ -248,11 +248,11 @@ var swiper = new Swiper('.restaurantTestiSlider', {
     breakpoints: {
       768: {
         slidesPerView: 2,
-        spaceBetween: 12,
+        spaceBetween: 0,
       },
       1920: {
-        slidesPerView: 3,
-        spaceBetween: 12,
+        slidesPerView: 2,
+        spaceBetween: 0,
       },
     }
   });
