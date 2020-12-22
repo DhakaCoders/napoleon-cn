@@ -429,6 +429,9 @@ if( $('#googlemap').length ){
     $('.npCasinoImgHolder').css('margin-left', (conLft + padding + offset));
   }
   npCasinoHolderwidth();
+  $(window).resize(function(){
+    npCasinoHolderwidth()
+  });
   var swiper = new Swiper('.np-casino-img-slider',{
     slidesPerView: 2,
     loop: true,
@@ -448,6 +451,9 @@ if( $('#googlemap').length ){
     $('.np-casino-des-holder').css('margin-left', (conLft + offset));
   }
   npCasinoDesHolderwidth();
+  $(window).resize(function(){
+    npCasinoDesHolderwidth()
+  });
   var swiper = new Swiper('.np-casino-des-slider',{
     slidesPerView: 2.4,
     loop: true,
