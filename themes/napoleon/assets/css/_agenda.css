@@ -49,7 +49,7 @@
 }
 
 .np-agenda-grd-item-des label,
-.np-agenda-rgt-des-ing label{
+.np-agenda-rgt-des-inr label{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 10px;
@@ -81,7 +81,7 @@
 }
 
 .np-agenda-grd-item-des strong,
-.np-agenda-rgt-des-ing strong{
+.np-agenda-rgt-des-inr strong{
 	display: block;
 	font-size: 12px;
 	line-height: 1;
@@ -93,13 +93,13 @@
 }
 
 .np-agenda-grd-item-des p,
-.np-agenda-rgt-des-ing p{
+.np-agenda-rgt-des-inr p{
 	font-size: 16px;
 	margin-bottom: 30px;
 }
 
 .np-agenda-grd-item-des > a,
-.np-agenda-rgt-des-ing > a{
+.np-agenda-rgt-des-inr > a{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 13px;
@@ -111,7 +111,7 @@
 	border-bottom: 2px solid #512C36;
 }
 .np-agenda-grd-item-des > a:hover,
-.np-agenda-rgt-des-ing > a:hover{
+.np-agenda-rgt-des-inr > a:hover{
 	color: #D5B48A;
 	border-color: #D5B48A;
 }
@@ -145,7 +145,7 @@
 	display: flex;
 	align-items: center;
 }
-.np-agenda-rgt-des-ing{
+.np-agenda-rgt-des-inr{
 	padding-left: 55px;
 	padding-right: 25px;
 }
