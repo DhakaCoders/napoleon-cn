@@ -194,7 +194,7 @@
 	flex-wrap: wrap;
 }
 .visite-lft-desc{
-	width: 26.7%;
+	width:  28.57%;
 	padding-top: 25px;
 }
 .visite-lft-title{
@@ -213,36 +213,12 @@
 }
 
 .visite-slider-cntlr{
-	width: 73.3%;
-	padding-right: 0.989%;
+	width: 71.43%;
+	padding-right: 19px;
 }
-.visite-slider .slider-arrows{
-	padding-bottom: 30px;
-	margin-left: 28px;
-}
-.visite-slide-item{
-	margin: 28px;
-}
-.visite-slider .visite-slide-item{
-	margin-right: 0;
-}
-.visite-slide-item{
+.visite-slider-cntlr .restaurant-gallery-slide-item{
 	position: relative;
-}
-.visite-slide-item-img-cntlr{
-	height: 398px;
-	position: relative;
-	overflow: hidden;
-}
-.visite-slide-item-img{
-	height: 100%;
-	width: 100%;
-}
-.visite-slide-item:hover .visite-slide-item-img{
-	transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	max-width: 569px;
 }
 .visite-slide-item-desc-cntlr{
 	position: absolute;
@@ -259,7 +235,10 @@
 	z-index: 11;
 	display: none;
 }
-.visite-slider .swiper-slide.swiper-slide-active .visite-slide-item .visite-slide-item-desc-cntlr{
+.visite-slider-cntlr .swiper-container{
+	padding-bottom: 50px;
+}
+.visite-slider-cntlr .restaurantGallerySlider .swiper-slide-active .restaurant-gallery-slide-item .visite-slide-item-desc-cntlr{
 	display: flex;
 }
 .visite-slide-item-desc{
