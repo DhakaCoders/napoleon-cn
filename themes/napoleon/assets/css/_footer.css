@@ -58,11 +58,11 @@
 	margin-bottom: 15px;
 }
 .ftr-col-contact .ftr-top-col-title{
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 .ftr-col-address a{
 	display: inline-block;
-	line-height: 3;
+	line-height: 2.7;
 	font-weight: 600;
 	font-size: 12px;
 	letter-spacing: 0.03em;
@@ -74,7 +74,7 @@
 	padding-right: 0;
 }
 .ftr-col-contact-tell{
-	margin-bottom: 12px;
+	margin-bottom: 6px;
 }
 .ftr-col-contact-tell a{
 	display: inline-block;
@@ -116,6 +116,9 @@
 }
 .ftr-btm-socials > ul > li{
 	padding: 0 11px;
+}
+.ftr-btm-socials > ul > li > a{
+	display: inline-block;
 }
 .ftr-btm-socials > ul > li:first-child{
 	padding-left: 0;
@@ -247,7 +250,7 @@
 .footer-top-col-title{
 	font-family: 'Operetta18-Regular';
 	font-size: 30px;
-	line-height: 1.5;
+	line-height: 1.3;
 	letter-spacing: 0.038em;
 	color: #C19764;
 	margin-bottom: 0;
@@ -260,7 +263,7 @@
 .footer-top-col-desc p{
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 2;
+	line-height: 1.7;
 	color: #CABFBA;
 	margin-bottom: 0;
 }
@@ -556,4 +559,11 @@
 }
 .fts-v2-rt-form .input-fields-row .input-fields-col{
 	padding: 0 4px;
+}
+
+/*responsive*/
+@media(max-width: 1600px){
+	.footer-top-col-title{
+		font-size: 26px;
+	}
 }

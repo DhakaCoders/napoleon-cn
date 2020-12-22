@@ -186,7 +186,7 @@
 }
 
 .visite-sec{
-
+	padding-bottom: 115px;
 }
 .visite-sec-wrap{
 	display: flex;
@@ -194,6 +194,7 @@
 }
 .visite-lft-desc{
 	width: 26.7%;
+	padding-top: 25px;
 }
 .visite-lft-title{
 	font-family: 'Operetta18-Medium';
@@ -213,6 +214,10 @@
 .visite-slider-cntlr{
 	width: 73.3%;
 	padding-right: 0.989%;
+}
+.visite-slider .slider-arrows{
+	padding-bottom: 30px;
+	margin-left: 28px;
 }
 .visite-slide-item{
 	margin: 28px;
@@ -333,8 +338,7 @@
 	background: #522d37;
 }
 .hm-ftr-glry-slide-item{
-	max-width: 398px;
-	width: 100%;
+	width: 398px;
 }
 .gllry-slide-item-cntlr{
 	height: 398px;
@@ -354,4 +358,17 @@
 	-ms-transform: scale(1.051);
 	-webkit-transform: scale(1.051);
 	-o-transform: scale(1.051);
+}
+
+
+
+/*responsive*/
+@media(max-width: 1600px){
+	.catagory-slide-item-cntlr {
+		margin: 17px;
+		padding: 17px 17px;
+	}
+	.catagory-slide-item-desc p{
+		font-size: 13px;
+	}
 }
