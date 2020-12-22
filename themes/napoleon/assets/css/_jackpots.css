@@ -37,7 +37,7 @@
 	margin-bottom: 34px;
 }
 .j-bnr-slide-icon img{
-	max-height: 87px; 
+	min-height: 87px; 
 }
 .j-bnr-slide-item-title{
 	font-family: 'Operetta18-Regular';
@@ -59,7 +59,7 @@
 }
 .j-bnr-slide-item-prize bdi{
 	font-family: 'Operetta18-Medium';
-	font-size: 48px;
+	font-size: 46px;
 	line-height: 1;
 	color: #FFFFFF;
 }
