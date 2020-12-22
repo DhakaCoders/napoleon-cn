@@ -426,9 +426,17 @@ if( $('#googlemap').length ){
 
 
   /*Start Of Shariful*/
-  
+  var offset = 130;
+  var windowW = $(window).width();
+  var containerW = $('.container').outerWidth();
+  var containerLft = (windowW - containerW) / 2;
+  $('.np-ad-package-holder').css('margin-left', (containerLft+offset));
 
-
+  var rgtoffset = 100;
+  var windowW = $(window).width();
+  var containerW = $('.container').outerWidth();
+  var containerRgt = (windowW - containerW) / 2;
+  $('.np-ad-btm-package-holder').css('margin-right', (containerRgt+rgtoffset));
   
 
 

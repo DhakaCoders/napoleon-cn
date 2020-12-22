@@ -1,0 +1,73 @@
+.np-ad-package-sec{
+	padding-bottom: 90px;
+}
+
+.np-ad-package-inr{
+	display: flex;
+	align-items: center;
+}
+.np-ad-package-lft{
+	width: 42.8104%;
+	padding-right: 185px;
+}
+.np-ad-package-rgt{
+	width: 57.1895%;
+}
+
+.np-ad-package-lft-title{
+	display: block;
+	font-size: 62px;
+	line-height: 1;
+	margin-bottom: 5px;
+	color: #512C36;
+	letter-spacing: 0.01em;
+	font-family: 'Operetta18-Regular';
+}
+.np-ad-package-lft strong{
+	display: block;
+	font-size: 26px;
+	color: #4C2631;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.np-ad-package-lft p{
+	font-size: 16px;
+	color: #4C2631;
+}
+
+.np-ad-package-rgt-img{
+	min-height: 490px;
+}
+
+
+
+.np-ad-btm-package-sec{
+	padding-bottom: 115px;
+}
+.np-ad-btm-package-inr{
+	display: flex;
+	align-items: center;
+}
+.np-ad-btm-package-lft{
+	width: 56.7741%;
+}
+.np-ad-btm-package-rgt{
+	width: 43.2258%;
+	padding-left: 130px;
+	padding-right: 50px;
+}
+
+.np-ad-btm-package-lft-img{
+	min-height: 490px;
+}
+.np-ad-btm-package-rgt-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: #512C36;
+}
+.np-ad-btm-package-rgt p{
+	font-size: 16px; 
+	color: #512C36;
+}
