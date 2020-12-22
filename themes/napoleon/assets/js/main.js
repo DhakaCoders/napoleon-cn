@@ -251,18 +251,17 @@ var swiper = new Swiper('.restaurantTestiSlider', {
 var Html5video = document.getElementById('fl-vdo'); 
 
 
-function vdoPlay() { 
-  if (Html5video.paused) {
-    Html5video.play();  
-  }
-} 
-function vdoPush() { 
-  if (Html5video.paused) {
-    Html5video.pause();  
-  }
-} 
-
-
+$('.fl-play-btn').on('click', function(){
+    if (myVideo.paused) {
+        myVideo.play();  
+    } 
+});
+  
+$('.fl-push-btn').on('click', function(){
+    if (myVideo.paused) {
+      myVideo.pause();
+    }
+});  
 
 
   /*Start Of Noyon*/

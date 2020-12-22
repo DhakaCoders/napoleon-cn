@@ -91,7 +91,7 @@
 	padding-right: 12px;
 }
 .catagory-slide-item-cntlr{
-	padding: 30px 25px;
+	padding: 25px 25px;
 	background: #1A1429;
 }
 .catagory-slide-item{
@@ -194,8 +194,7 @@
 	flex-wrap: wrap;
 }
 .visite-lft-desc{
-	width:  28.57%;
-	padding-top: 25px;
+	width:  28.3%;
 }
 .visite-lft-title{
 	font-family: 'Operetta18-Medium';
@@ -213,12 +212,18 @@
 }
 
 .visite-slider-cntlr{
-	width: 71.43%;
+	width: 71.7%;
 	padding-right: 19px;
+	overflow: hidden;
 }
+/*.visite-slider-cntlr .swiper-slide{
+	width: 569px!important;
+}*/
 .visite-slider-cntlr .restaurant-gallery-slide-item{
 	position: relative;
-	max-width: 569px;
+	max-width: initial;
+	width: 100%;
+	height: 398px;
 }
 .visite-slide-item-desc-cntlr{
 	position: absolute;
@@ -237,6 +242,10 @@
 }
 .visite-slider-cntlr .swiper-container{
 	padding-bottom: 50px;
+	margin-right: 0;
+}
+.visite-slider-cntlr .slider-arrows{
+	margin-top: -50px;
 }
 .visite-slider-cntlr .restaurantGallerySlider .swiper-slide-active .restaurant-gallery-slide-item .visite-slide-item-desc-cntlr{
 	display: flex;
