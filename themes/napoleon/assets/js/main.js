@@ -423,12 +423,6 @@ if( $('#googlemap').length ){
           styles : CustomMapStyles
       };
       var map= new google.maps.Map(document.getElementById('googlemap'),mapProp);
-
-      var marker= new google.maps.Marker({
-        position:myCenter,
-        icon:''
-        });
-      marker.setMap(map);
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
