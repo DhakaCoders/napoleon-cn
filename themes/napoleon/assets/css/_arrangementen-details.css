@@ -71,3 +71,33 @@
 	font-size: 16px; 
 	color: #512C36;
 }
+
+.np-ad-expert-sec{
+	padding-bottom: 105px;
+}
+.np-ad-expert-lft{
+	float: left;
+	width: 46.7857%;
+	padding-right: 150px;
+}
+.np-ad-expert-rgt{
+	float: right;
+	width: 53.2142%;
+	background: #1A1429;
+	padding: 90px 70px 50px 92px;
+}
+.np-ad-expert-lft-title,
+.np-ad-expert-rgt-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: #512C36;
+}
+.np-ad-expert-lft p{
+	font-size: 16px;
+	margin-bottom: 28px;
+}
+.np-ad-expert-lft p:last-child{
+	margin-bottom: 0;
+}

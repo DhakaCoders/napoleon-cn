@@ -263,10 +263,6 @@
 	overflow: hidden;
 }
 
-#fl-vdo{
-	width: 100%;
-	height: 100%;
-}
 
 
 #fl-vdo{
@@ -280,6 +276,9 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     z-index: 0;
+    object-fit: cover;
+    -ms-object-fit: cover;
+    -webkit-object-fit: cover;
 }
 .vdo-controller{
 	position: absolute;
@@ -291,6 +290,7 @@
 .vdo-controller button{
 	background: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 
