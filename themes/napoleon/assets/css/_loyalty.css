@@ -77,6 +77,9 @@
 .loyalty-grds-cntlr ul li{
 	padding-bottom: 95px;
 }
+.loyalty-grds-cntlr ul li:last-child{
+	padding-bottom: 69px;
+}
 .loyalty-grd-item{
 	display: flex;
 	align-items: center;
