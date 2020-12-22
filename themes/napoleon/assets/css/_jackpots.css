@@ -46,6 +46,13 @@
 	color: #CEA673;
 	margin-bottom: 8px;
 }	
+.j-bnr-slide-item-title a{
+	color: #CEA673;
+	display: inline-block;
+}
+.j-bnr-slide-item-title a:hover{
+	color: #A21D1D;
+}
 .j-bnr-slide-item-prize{
 
 }
@@ -124,6 +131,13 @@
 	color: #FFFFFF;
 	margin-bottom: 7px;
 	text-transform: capitalize;
+}
+.nl-right-desc-title a{
+	color: #FFFFFF;
+	display: inline-block;
+}
+.nl-right-desc-title a:hover{
+	color: #A21D1D;
 }
 .nl-rd-current-jackpots{
 	display: flex;
