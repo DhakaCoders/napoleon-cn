@@ -267,6 +267,7 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #512C36;
+	padding-top: 4px;
 }
 .fl-tsprnt-btn:hover{
 	border-color: #A21D1D;
