@@ -101,3 +101,22 @@
 .np-ad-expert-lft p:last-child{
 	margin-bottom: 0;
 }
+
+.np-ad-expert-rgt-title{
+	color: #BE9563;
+}
+.np-ad-expert-rgt p{
+	font-size: 16px;
+	color: #D7D3CD;
+	margin-bottom: 30px;
+}
+.np-ad-expert-rgt span{
+	font-size: 16px;
+	color: #D7D3CD;
+	margin-bottom: 10px;
+}
+
+.np-ad-expert-rgt ul li{
+	font-size: 16px;
+	color: #D7D3CD;
+}
