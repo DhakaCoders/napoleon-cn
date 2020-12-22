@@ -310,6 +310,19 @@ function vdoPush() {
     }
   });
 
+  function wswWidth(){
+    var padding = 15, 
+    offset = 0,
+    winW = $(window).width(),
+    conW = $('.container').outerWidth(),
+    conWleft = (winW - conW) / 2;
+    $('.wellcome-sec-wrap').css('margin-left', (conWleft+padding+offset));
+  }
+  wswWidth();
+  $(window).resize(function(){
+    wswWidth()
+  });
+
 
   function holdeWidth(){
     var padding = 15, 
