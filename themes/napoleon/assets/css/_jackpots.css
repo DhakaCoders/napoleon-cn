@@ -16,18 +16,14 @@
 
 }
 .j-bnr-slider{
-	
-}
-.j-bnr-slide-item-cntlr{
-	/*display: flex;
-	flex-wrap: wrap;*/
+	margin-left: -12px;
+	margin-right: -12px;
 }
 
 .j-bnr-slide-item{
 	border-bottom: 2px solid #fff;
 	padding: 25px 10px 53px 10px;
 	text-align: center;
-	margin: 24px;
 	position: relative;
 }
 .j-bnr-slider .j-bnr-slide-item{
