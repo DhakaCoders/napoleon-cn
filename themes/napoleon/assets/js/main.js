@@ -410,4 +410,7 @@ var swiper = new Swiper('.restaurantTestiSlider', {
 
     new WOW().init();
 
+
+
+
 })(jQuery);
