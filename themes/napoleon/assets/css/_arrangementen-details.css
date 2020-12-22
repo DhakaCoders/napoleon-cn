@@ -120,3 +120,41 @@
 	font-size: 16px;
 	color: #D7D3CD;
 }
+
+
+.np-ad-contact-sec-inr{
+	max-width: 1160px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #EBE6DC;
+	padding: 60px 0 55px;
+}
+
+
+.np-ad-ctlr .restaurant-gallery-slider{
+	padding-top: 0;
+	padding-bottom: 50px;
+}
+.np-ad-ctlr .restaurant-testi-slider{
+	background: inherit;
+	padding-top: 75px;
+	padding-bottom: 0px;
+}
+
+.np-ad-ctlr .contact-form-dsc-title{
+	text-align: left;
+	font-size: 34px;
+	margin-bottom: 20px;
+}
+.np-ad-ctlr .contact-form-dsc p{
+	color: #512C36;
+	margin-bottom: 30px;
+}
+.np-ad-ctlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-html p{
+	text-align: left;
+}
+.np-ad-ctlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
+	margin-left: inherit;
+	margin-right: inherit;
+}
