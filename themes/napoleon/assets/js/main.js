@@ -199,7 +199,7 @@ function rgsHolderWidth(){
 }
 rgsHolderWidth();
 $(window).resize(function(){
-  rgsHolderWidth()
+  rgsHolderWidth();
 });
 
 var swiper = new Swiper('.restaurantGallerySlider', {
@@ -336,7 +336,7 @@ $('.fl-push-btn').on('click', function(){
     holdeWidth()
   });
   
-  var swiper = new Swiper('.visiteSlider', {
+/*  var swiper = new Swiper('.visiteSlider', {
     slidesPerView: 1,
     loop: true,
     navigation: {
@@ -353,7 +353,7 @@ $('.fl-push-btn').on('click', function(){
         spaceBetween: 0,
       },
     }
-  });
+  });*/
 
    var swiper = new Swiper('.hmFtrGlrySlider', {
     slidesPerView: 5,

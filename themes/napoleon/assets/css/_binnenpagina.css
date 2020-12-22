@@ -2,6 +2,7 @@
 	overflow: hidden;
 	position: relative;
 	padding-top: 80px;
+	margin-top: 213px;
 	padding-bottom: 130px;
 }
 .default-page-con {
@@ -11,6 +12,18 @@
 
 .fl-dft-overflow-controller {
 	overflow: initial;
+}
+.block-930{
+	max-width: 930px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.block-954{
+	max-width: 930px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .default-page-con h1,
 .dfp-promo-module-title,
@@ -27,6 +40,11 @@
 
 .default-page-con h2{
 	margin-bottom: 15px;
+	font-size: 34px;
+}
+.default-page-con h3{
+	margin-bottom: 15px;
+	font-size: 26px;
 }
 
 
@@ -94,16 +112,18 @@ ol li::before {
 
 .dfp-promo-module{
 	padding-bottom: 30px;
+
 }
 .dfp-promo-module h1,
 .dfp-promo-module-title{
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.1;
+	font-family: 'Operetta18-Regular';
+	font-size: 62px;
+	line-height: 1;
+	letter-spacing: 0.01em;
+	color: #512C36;
+	margin-bottom: 35px;
+	text-align: center;
 	display: block;
-	text-transform: uppercase;
-	color: #43587B;
-	margin-bottom: 25px;
 }
 
 .dfp-promo-module-hdr p{
