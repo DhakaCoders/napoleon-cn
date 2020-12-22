@@ -190,11 +190,11 @@ $('div.fl-tabs button').click(function(){
 
 
 function rgsHolderWidth(){
-  var padding = 15, 
-      offset = 100,
-      winW = $(window).width(),
-      conW = $('.container').outerWidth(),
-      conWleft = (winW - conW) / 2;
+  var padding = 15;
+  var   offset = 100;
+  var    winW = $(window).width();
+  var   conW = $('.container').outerWidth();
+  var conWleft = (winW - conW) / 2;
   $('.rgsHolder').css('margin-left', (conWleft+padding+offset));
 }
 rgsHolderWidth();
@@ -205,7 +205,7 @@ $(window).resize(function(){
 var swiper = new Swiper('.restaurantGallerySlider', {
     slidesPerView: 2,
     loop: true,
-    spaceBetween: 12,
+    spaceBetween: 0,
     navigation: {
       nextEl: '.restaurantGallerySliderArrows .swiper-button-next',
       prevEl: '.restaurantGallerySliderArrows .swiper-button-prev',
@@ -213,11 +213,11 @@ var swiper = new Swiper('.restaurantGallerySlider', {
     breakpoints: {
       768: {
         slidesPerView: 2,
-        spaceBetween: 12,
+        spaceBetween: 0,
       },
       1920: {
-        slidesPerView: 3,
-        spaceBetween: 12,
+        slidesPerView: 2,
+        spaceBetween: 0,
       },
     }
   });
@@ -238,24 +238,31 @@ $(window).resize(function(){
   rtsHolderWidth()
 });
 var swiper = new Swiper('.restaurantTestiSlider', {
-    slidesPerView: 2,
+    slidesPerView: 'auto',
     loop: true,
     spaceBetween: 0,
     navigation: {
       nextEl: '.restaurantTestiSliderArrows .swiper-button-next',
       prevEl: '.restaurantTestiSliderArrows .swiper-button-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      1920: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
     }
   });
+
+
+var Html5video = document.getElementById('fl-vdo'); 
+
+
+function vdoPlay() { 
+  if (Html5video.paused) {
+    Html5video.play();  
+  }
+} 
+function vdoPush() { 
+  if (Html5video.paused) {
+    Html5video.pause();  
+  }
+} 
+
+
 
 
   /*Start Of Noyon*/
