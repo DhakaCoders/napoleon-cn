@@ -519,6 +519,10 @@
 	line-height: 14px;
 	color: #EBE7DE;
 }
+.fts-v2-rt-desc-cntct-tel a:hover,
+.fts-v2-rt-desc-cntct-mail a:hover{
+	color: #A21D1D;
+}
 .fts-v2-rt-desc-visit{
 	margin-bottom: 20px;
 }
@@ -528,6 +532,11 @@
 	font-size: 13px;
 	line-height: 2;
 	color: #EBE7DE;
+}
+.fts-v2-rt-desc-visit a:hover,
+.fts-v2-rt-desc-Parking a:hover{
+	color: #A21D1D;
+
 }
 .fts-v2-rt-desc-Parking{
 
