@@ -1,6 +1,6 @@
 .restaurant-page-entry-hdr{
 	text-align: center;
-	max-width: 780px;
+	max-width: 676px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -178,7 +178,7 @@
 	line-height: 1;
 	letter-spacing: 0.01em;
 	color: #C19764;
-	margin-bottom: 95px;
+	margin-bottom: 90px;
 }
 .restaurant-mascotte-sec-con-des p{
 	font-weight: 500;
@@ -351,6 +351,9 @@
 	}
 	.restaurantTestiSlider .swiper-slide {
 	    width: 470px;
+	}
+	.rmscd-title{
+		font-size: 52px;
 	}
 }
 
