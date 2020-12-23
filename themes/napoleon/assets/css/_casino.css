@@ -126,3 +126,6 @@
 .np-casino-ctlr .restaurant-testi-slider .slider-arrows{
 	padding-bottom: 78px;
 }
+.np-casino-ctlr .restaurantTestiSlide-item p{
+	text-align: left;
+}
