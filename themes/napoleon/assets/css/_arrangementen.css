@@ -103,15 +103,17 @@
 }
 .np-agi-rgt-des-inr > a i{
 	position: absolute;
-	top: 0;
+	top: -1px;
 	right: 0;
 }
 .np-agi-rgt-des-inr > a:hover{
 	color: #fff;
+	padding-right: 22px;
 }
 .np-agi-rgt-des-inr > a:hover svg{
 	fill: #fff;
 }
+
 
 .lftimg-rgtdes .np-agi-lft-img{
 	float: right;
