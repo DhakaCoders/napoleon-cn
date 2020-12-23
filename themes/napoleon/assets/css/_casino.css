@@ -4,9 +4,11 @@
 }
 
 .np-roulette-sec-inr{
-	margin-left: 240px;
+	max-width: 1160px;
+	width: 100%;
 	display: flex;
 	align-items: center;
+	margin-left: auto;
 }
 .np-roulette-lft{
 	float: left;
@@ -62,7 +64,8 @@
 	padding-bottom: 95px;
 }
 .np-winner-sec-inr{
-	margin-right: 200px;
+	max-width: 1200px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
@@ -110,14 +113,9 @@
 	padding-top: 0;
 	padding-bottom: 0px;
 }
-.np-casino-ctlr .slider-arrows{
-	padding-bottom: 78px;
-}
 
-.np-casino-ctlr .restaurant-gallery-slide-item{
-	max-width: 100%;
-	width: 730px;
-	height: 510px;
+.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+    width: 730px;
 }
 .np-casino-slider-ctlr{
 	padding-left: 140px;

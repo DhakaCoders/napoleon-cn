@@ -65,6 +65,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 }
+.np-nieuws-lftsidebar-des-inr ul li.active a,
 .np-nieuws-lftsidebar-des-inr ul li a:hover{
 	color: #CB9F67;
 	text-decoration: underline;
