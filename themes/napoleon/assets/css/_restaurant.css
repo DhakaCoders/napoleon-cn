@@ -346,6 +346,12 @@
 	.rtshdr-title{
 		margin-left: 200px;
 	}
+	.restaurantGallerySlider .swiper-slide {
+	    width: 598px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 470px;
+	}
 }
 
 @media(max-width: 1399px){
