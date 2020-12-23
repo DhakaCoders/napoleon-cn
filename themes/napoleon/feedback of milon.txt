@@ -62,3 +62,7 @@ Desktop--->
 
 3. https://prnt.sc/w8bcsf
 	font-size kom hobe ata r h3 use kori ata
+
+
+	N.B.--> desktop fix hole responsive tene dekhte hobe thik ache kina
+			browser check korte hobe
