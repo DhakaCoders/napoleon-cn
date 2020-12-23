@@ -329,7 +329,7 @@
 */
 .np-two-grid-sec-wrp {
     margin-top: 125px;
-    margin-bottom: 100px;
+    margin-bottom: 320px;
 }
 .np-two-grid-wrp{
 	display: flex;
@@ -367,7 +367,7 @@
 	font-family: 'Operetta18-Regular';
 	letter-spacing: 0.01em;
 }
-.np-two-grid-des span{
+.np-two-grid-des strong:last-of-type{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 26px;
@@ -376,6 +376,7 @@
 	font-style: normal;
 	font-family: 'Operetta18-Medium';
 	padding-bottom: 15px;
+	font-weight: normal;
 }
 .np-two-grid-des p{
 	margin-bottom: 45px;
@@ -422,10 +423,9 @@
 	color: #A21D1D;
 }
 .np-two-grid-des ul li a:hover:before{
-	right: -30px;
 	background: url(../images/angle-icon-hover.svg);
 }
-.np-two-grid-des strong {
+.np-two-grid-des strong:first-of-type{
     display: inline-block;
     vertical-align: baseline;
     font-size: 180px;

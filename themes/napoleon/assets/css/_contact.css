@@ -48,7 +48,7 @@ contact-info-sec-wrp
 .contact-info-gird p{
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 600;
+	font-weight: 400;
 	color: #CB9F67;
 	margin-bottom: 5px;
 	letter-spacing: 0.04em;
@@ -59,7 +59,7 @@ contact-info-sec-wrp
 	vertical-align: baseline;
 	font-size: 24px;
 	line-height: 26px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #CB9F67;
 	letter-spacing: 0.04em;
 }
@@ -154,12 +154,14 @@ contact-info-sec-wrp
     color: #CB9F67;
 }
 .np-contact-form-tab-dsc ul li{
-    display: inline-block;
-    vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 4px 0;
     line-height: 14px;
 }
+.np-contact-form-tab-dsc ul li strong,
 .np-contact-form-tab-dsc ul li span{
 	display: inline-block;
 	vertical-align: baseline;
@@ -169,12 +171,10 @@ contact-info-sec-wrp
 	font-weight: 700;
 	color: #fff;
 }
-.np-contact-form-tab-dsc ul li span:first-child{
+.np-contact-form-tab-dsc ul li span{
 	float: left;
-}
-.np-contact-form-tab-dsc ul li span:last-child{
-	float: right;
 	font-weight: 400;
+	margin-left: auto;
 }
 .tabs{
 	display: none;
@@ -349,7 +349,7 @@ contact-info-sec-wrp
     height: 60px !important;
     background: #fff !important;
     border: 2px solid#D9D0BC !important;
-    padding: 21px 20px 20px;
+    padding: 18px 20px 18px;
     font-size: 14px !important;
     line-height: 16px;
     color: #B7B1A8 !important;
@@ -385,6 +385,9 @@ contact-info-sec-wrp
 	text-decoration: none;
 	color: #512C36;
 	text-decoration: underline;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-html p a:hover{
+	color: #A21D1D;
 }
 
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -460,8 +463,8 @@ contact-info-sec-wrp
  color: #A21D1D;
 }
 
-.contact-map-sec-wrp{
-	margin-bottom: -204px;
+.contact-map-sec-wrp {
+    margin-bottom: -3px;
 }
 #googlemap{
 	height: 700px;
@@ -494,11 +497,17 @@ contact-info-sec-wrp
 	.np-two-grid-des p {
 	    margin-bottom: 30px;
 	}
+	.np-two-grid-des strong:last-of-type br{
+		display: none;
+	}
 }
 
 @media(max-width: 1399px){
-	.np-two-grid-des strong{
+	.np-two-grid-des strong:first-of-type{
 		font-size: 150px;
+	}
+	.np-two-grid-des strong:first-of-type{
+		top: 100px;
 	}
 }
 
@@ -547,7 +556,7 @@ contact-info-sec-wrp
 	.np-two-grid-des-title{
 		font-size: 55px;
 	}
-	.np-two-grid-des span{
+	.np-two-grid-des strong:last-of-type{
 		font-size: 24px;
 	}
 	.np-two-grid-sec-wrp .np-two-grid-des {
@@ -555,7 +564,7 @@ contact-info-sec-wrp
 	    max-width: 515px;
 	    width: 100%;
 	}
-	.np-two-grid-des strong {
+	.np-two-grid-des strong:first-of-type{
 	    font-size: 140px;
 	    left: -75px;
 	}
@@ -598,7 +607,7 @@ contact-info-sec-wrp
 	.np-two-grid-des-title{
 		font-size: 48px;
 	}
-	.np-two-grid-des span{
+	.np-two-grid-des strong:last-of-type{
 		font-size: 22px;
 	}
 	.np-two-grid-des p {
@@ -620,7 +629,7 @@ contact-info-sec-wrp
 	    width: 100%;
 	    float: left;
 	}
-	.np-two-grid-des strong {
+	.np-two-grid-des strong:first-of-type{
 	    font-size: 130px;
 	     left: -50px;
 	}
@@ -662,11 +671,13 @@ contact-info-sec-wrp
 	.np-two-grid-des-title{
 		font-size: 40px;
 	}
-	.np-two-grid-des span{
+	.np-two-grid-des strong:last-of-type{
 		font-size: 20px;
 	}
-	.np-two-grid-des strong {
-	    font-size: 110px;
+	.np-two-grid-des strong:first-of-type {
+	    font-size: 105px;
+	    left: -40px;
+	    top: 80px;
 	}
 	.np-two-grid-main .np-two-grid-img {
 	  min-height: 320px;
@@ -693,7 +704,7 @@ contact-info-sec-wrp
 	.np-two-grid-des-title{
 		font-size: 30px;
 	}
-	.np-two-grid-des span{
+	.np-two-grid-des strong:last-of-type{
 		font-size: 18px;
 	}
 	.np-two-grid-main .np-two-grid-img {
@@ -705,10 +716,10 @@ contact-info-sec-wrp
 	    width: 100%;
 	    float: left;
 	}
-	.np-two-grid-des strong {
+	.np-two-grid-des strong:first-of-type {
 	    font-size: 90px;
-	    left: -40px;
-	    top: 70px;
+	    left: -35px;
+	    top: 60px;
 	}
 	.np-two-grid-des p {
 	    margin-bottom: 25px;

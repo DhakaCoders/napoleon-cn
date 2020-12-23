@@ -1,7 +1,11 @@
 /*
 --------------------------
+ad-two-grid-sec-wrp
 --------------------------
 */
+.ad-two-grid-sec-wrp{
+	padding-bottom: 210px;
+}
 .ad-two-grid-wrp li{
     display: flex;
     align-items: center;
@@ -49,6 +53,7 @@
 }
 .ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title{
 	margin-bottom: 20px;
+	font-size: 34px;
 }
 .ad-two-grid-des-title{
     display: block;
@@ -83,6 +88,9 @@
 	margin-bottom: 0;
 	line-height: 1.5;
 }
+.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des p{
+	margin-bottom: 50px;
+}
 .ad-two-grid-des a{
 	display: inline-block;
 	vertical-align: baseline;
@@ -92,7 +100,6 @@
 	letter-spacing: 0.01em;
 	color: #512C36;
 	font-weight: 500;
-	padding-top: 50px;
 }
 .terug-overzicht a:hover,
 .ad-two-grid-des a:hover{
@@ -187,6 +194,9 @@
 	.ad-two-grid-des span{
 		font-size: 24px;
 	}
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
+	    font-size: 32px;
+	}
 }
 
 @media(max-width: 991px){
@@ -210,6 +220,9 @@
 	}
 	.ad-two-grid-des a{
 		padding-top: 40px;
+	}
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
+	    font-size: 30px;
 	}
 
 }
@@ -257,6 +270,9 @@
 	.ad-two-grid-des p {
 	    font-size: 14px;
 	}
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
+	    font-size: 26px;
+	}
 
 	
 }
@@ -280,6 +296,9 @@
 	.ad-two-grid-des p {
 	    font-size: 11px;
 	}
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
+	    font-size: 22px;
+	}
 
 
 }
@@ -290,6 +309,9 @@
 	}
 	.ad-two-grid-img img {
 	    height: 200px;
+	}
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
+	    font-size: 20px;
 	}
 
 }
