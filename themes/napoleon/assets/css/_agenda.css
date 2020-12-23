@@ -175,6 +175,21 @@
 	.np-arrangementen-rgt{
 		width: 65%;
 	}
+	.np-agenda-grd-item-des {
+	    padding: 30px 15px 40px 20px;
+	}
+	.np-agid-title, 
+	.np-agenda-rgt-des-title {
+	    font-size: 30px;
+	}
+	.np-agid-text-module p, 
+	.np-agenda-rgt-des-inr p {
+	    font-size: 15px;
+	}
+	.np-agenda-rgt-des-inr {
+	    padding-left: 40px;
+	    padding-right: 15px;
+	}
 
 }
 @media(max-width: 1399px){

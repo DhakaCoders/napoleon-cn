@@ -172,3 +172,105 @@
 .np-ad-ctlr .restaurantTestiSlide-item p{
 	text-align: left;
 }
+
+@media(max-width: 1599px){
+	.container{
+		max-width: 1200px;
+	}
+	.np-ad-package-sec{
+		margin-left: -115px;
+	}
+	.np-ad-package-lft {
+	    padding-right: 60px;
+	    width: 50%;
+	}
+	.np-ad-package-rgt {
+	    width: 50%;
+	}
+	.np-ad-package-lft-title{
+		font-size: 60px;
+	}
+	.np-ad-package-lft p{
+		font-size: 15px;
+	}
+	/*.np-ad-btm-package-lft {
+	    width: 50%;
+	}*/
+	.np-ad-btm-package-rgt {
+	    padding-left: 50px;
+	    padding-right: 20px;
+	}
+	.np-ad-expert-lft{
+		padding-right: 70px;
+	}
+	.np-ad-expert-lft,
+	.np-ad-expert-rgt{
+		width: 50%;
+	}
+	.np-ad-expert-lft p{
+		font-size: 15px;
+	}
+	.np-ad-ctlr .restaurant-gallery-slider,
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: -115px;
+	}
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
+	
+
+}
+
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+	
+}
+
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

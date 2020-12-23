@@ -129,3 +129,83 @@
 .np-casino-ctlr .restaurantTestiSlide-item p{
 	text-align: left;
 }
+
+
+@media(max-width: 1599px){
+	.container{
+		max-width: 1200px;
+	}
+	.np-casino-slider-ctlr,
+	.np-casino-rtstestiholder-inr{
+	    padding-left: 0px;
+	}
+	.np-casino-ctlr .restaurant-gallery-slider,
+	.np-casino-ctlr .restaurant-testi-slider{
+		margin-left: -100px;
+	}
+	.np-roulette-sec {
+	    padding: 115px 0 0px;
+	}
+	.np-winner-sec{
+		padding-top: 0;
+	}
+	.np-casino-ctlr .np-roulette-sec {
+	    padding-top: 0;
+	    padding-bottom: 120px;
+	}
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
+
+}
+
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+}
+
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+}
+
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

@@ -145,6 +145,13 @@
 	.np-arrangementen-rgt{
 		width: 65%;
 	}
+	.np-agi-rgt-des-inr{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.np-agird-title{
+		font-size: 32px;
+	}
 
 }
 @media(max-width: 1399px){
