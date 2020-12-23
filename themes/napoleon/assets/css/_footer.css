@@ -25,17 +25,17 @@
 	padding-right: 10px;
 }
 .ftr-col-nav{
-
+	max-width: 33.856%;
+}
+.ftr-col-nav > ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 .ftr-col-nav > ul > li{
-	padding: 10px 0;
+	padding-bottom: 20px;
 	line-height: 1;
-}
-.ftr-col-nav > ul > li:first-child{
-	padding-top: 0;
-}
-.ftr-col-nav > ul > li:last-child{
-	padding-bottom: 0;
+	width: 50%;
 }
 .ftr-col-nav > ul > li > a{
 	display: inline-block;
@@ -297,16 +297,16 @@
 	width: 100%;
 	outline: none;
 	border: 1px solid transparent;
-	padding: 8px 20px;
+	padding: 12px 20px;
 	background: #381922;
 	color: #fff;
 	font-weight: 500;
 	font-size: 12px;
+	line-height: 1;
 	border-radius: 0!important;
 }
 .footer-top-form .input-fields-row .input-fields-col input[type="email"]{
-	padding-top: 20px;
-	padding-bottom: 20px;
+	height: 41px;
 }
 .footer-top-form .was-validated .input-fields-row .input-fields-col input.form-control{
 	padding-left: 42px;
@@ -361,17 +361,17 @@
 }
 
 
-.footer-top-form .input-fields-row .input-fields-col input::placeholder {
+.footer-top-form .input-fields-row .input-fields-col input::placeholder{
   color: #CABFBA;
   opacity: 1;
 }
 
-.footer-top-form .input-fields-row .input-fields-col input:-ms-input-placeholder {
+.footer-top-form .input-fields-row .input-fields-col input::-webkit-input-placeholder{
  color: #CABFBA;
  opacity: 1;
 }
 
-.footer-top-form .input-fields-row .input-fields-col input::-ms-input-placeholder {
+.footer-top-form .input-fields-row .input-fields-col input:-ms-input-placeholder{
  color: #CABFBA;
  opacity: 1;
 }
@@ -404,7 +404,6 @@
 .footer-top-sec-v2{
 	position: relative;
 	padding-bottom: 60px;
-	margin-top: 60px;
 }
 .footer-top-sec-v2-bg{
 	position: absolute;
@@ -421,6 +420,7 @@
 	background: #4c2631;
 	padding-top: 55px;
 	padding-bottom: 60px;
+	margin-top: -150px;
 }
 .ftr-top-sec-v2-lft{
 	width: 43.75%;

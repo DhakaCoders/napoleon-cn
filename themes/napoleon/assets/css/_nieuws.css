@@ -1,6 +1,6 @@
 .np-nieuws-con-sec{
 	padding-top: 40px;
-	padding-bottom: 80px;
+	padding-bottom: 55px;
 }
 
 
@@ -65,6 +65,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 }
+.np-nieuws-lftsidebar-des-inr ul li.active a,
 .np-nieuws-lftsidebar-des-inr ul li a:hover{
 	color: #CB9F67;
 	text-decoration: underline;
@@ -74,6 +75,7 @@
 }
 .np-arrangementen-lftsidebar .np-nieuws-lftsidebar-des-inr{
 	padding-left: 40px;
+	padding-right: 25px;
 }
 
 .np-nieuws-grd-items ul{
@@ -190,7 +192,7 @@
 }
 .fl-pagination-ctlr ul li:first-child{
 	position: absolute;
-	left: 0;
+	left: -30px;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -231,6 +233,12 @@
 .fl-pagination-ctlr ul li:last-child a:hover svg{
 	fill: #4C2631;
 }
+.fl-pagination-ctlr ul li:first-child a:hover i{
+	margin-left: -5px;
+}
+.fl-pagination-ctlr ul li:last-child a:hover i{
+	margin-right: -5px;
+}
 .fl-pagination-ctlr ul li:last-child a{
 	padding-right: 40px;
 	position: relative;
@@ -239,4 +247,89 @@
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+@media(max-width: 1599px){
+	.container{
+		max-width: 1200px;
+	}
+	.np-nieuws-lftsidebar-inr{
+		padding: 95px 40px 85px;
+	}
+	.np-nieuws-lftsidebar-des-inr{
+		padding-left: 40px;
+    	padding-right: 40px;
+	}
+	.np-nieuws-lftsidebar-title{
+		font-size: 40px;
+		margin-bottom: 25px;
+	}
+
+}
+
+@media(max-width: 1399px){
+	.np-nieuws-lftsidebar-inr{
+		padding: 95px 40px 85px;
+	}
+	.np-nieuws-lftsidebar-des-inr{
+		padding-left: 40px;
+    	padding-right: 40px;
+	}
+}
+
+@media(max-width: 1299px){
+	.np-nieuws-lftsidebar-inr{
+		padding: 95px 40px 85px;
+	}
+	.np-nieuws-lftsidebar-des-inr{
+		padding-left: 40px;
+    	padding-right: 40px;
+	}
+}
+
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
+
+}
+
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+}
+
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+}
+
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }

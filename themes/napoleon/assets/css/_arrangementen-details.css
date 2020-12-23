@@ -1,0 +1,276 @@
+.np-ad-package-sec{
+	padding-bottom: 90px;
+}
+
+.np-ad-package-inr{
+	display: flex;
+	align-items: center;
+}
+.np-ad-package-lft{
+	width: 42.8104%;
+	padding-right: 185px;
+}
+.np-ad-package-rgt{
+	width: 57.1895%;
+}
+
+.np-ad-package-lft-title{
+	display: block;
+	font-size: 62px;
+	line-height: 1;
+	margin-bottom: 5px;
+	color: #512C36;
+	letter-spacing: 0.01em;
+	font-family: 'Operetta18-Regular';
+}
+.np-ad-package-lft span.woocommerce-Price-amount bdi{
+	display: block;
+	font-size: 26px;
+	color: #4C2631;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.np-ad-package-lft p{
+	font-size: 16px;
+	color: #4C2631;
+}
+
+.np-ad-package-rgt-img{
+	min-height: 490px;
+}
+
+
+
+.np-ad-btm-package-sec{
+	padding-bottom: 115px;
+}
+.np-ad-btm-package-inr{
+	display: flex;
+	align-items: center;
+}
+.np-ad-btm-package-lft{
+	width: 56.7741%;
+}
+.np-ad-btm-package-rgt{
+	width: 43.2258%;
+	padding-left: 130px;
+	padding-right: 50px;
+}
+
+.np-ad-btm-package-lft-img{
+	min-height: 490px;
+}
+.np-ad-btm-package-rgt-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: #512C36;
+}
+.np-ad-btm-package-rgt p{
+	font-size: 16px; 
+	color: #512C36;
+}
+
+.np-ad-expert-sec{
+	padding-bottom: 105px;
+}
+.np-ad-expert-lft{
+	float: left;
+	width: 46.7857%;
+	padding-right: 150px;
+}
+.np-ad-expert-rgt{
+	float: right;
+	width: 53.2142%;
+	background: #1A1429;
+	padding: 90px 70px 50px 92px;
+}
+.np-ad-expert-lft-title,
+.np-ad-expert-rgt-title{
+	display: block;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: #512C36;
+}
+.np-ad-expert-lft p{
+	font-size: 16px;
+	margin-bottom: 28px;
+}
+.np-ad-expert-lft p:last-child{
+	margin-bottom: 0;
+}
+
+.np-ad-expert-rgt-title{
+	color: #BE9563;
+}
+.np-ad-expert-rgt p{
+	font-size: 16px;
+	color: #D7D3CD;
+	margin-bottom: 30px;
+}
+.np-ad-expert-rgt span{
+	font-size: 16px;
+	color: #D7D3CD;
+	margin-bottom: 10px;
+}
+
+.np-ad-expert-rgt ul li{
+	font-size: 16px;
+	color: #D7D3CD;
+}
+
+
+.np-ad-contact-sec-inr{
+	max-width: 1160px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #EBE6DC;
+	padding: 60px 0 55px;
+}
+
+
+.np-ad-ctlr .restaurant-gallery-slider{
+	padding-top: 0;
+	padding-bottom: 50px;
+}
+.np-ad-ctlr .restaurant-testi-slider{
+	background: inherit;
+	padding-top: 75px;
+	padding-bottom: 0px;
+}
+
+.np-ad-ctlr .contact-form-dsc-title{
+	text-align: left;
+	font-size: 34px;
+	margin-bottom: 20px;
+}
+.np-ad-ctlr .contact-form-dsc p{
+	color: #512C36;
+	margin-bottom: 30px;
+}
+.np-ad-ctlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-html p{
+	text-align: left;
+}
+.np-ad-ctlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+.np-ad-ctlr .np-ad-rgsholder-inr{
+	padding-left: 22px;
+}
+.np-ad-ctlr .restaurant-gallery-slide-item{
+	max-width: 100%;
+	width: 800px;
+}
+.np-ad-ctlr .np-ad-rgs-testiholder-inr{
+	padding-left: 10px;
+}
+.np-ad-ctlr .restaurantTestiSlide-item p{
+	text-align: left;
+}
+
+@media(max-width: 1599px){
+	.container{
+		max-width: 1200px;
+	}
+	.np-ad-package-sec{
+		margin-left: -115px;
+	}
+	.np-ad-package-lft {
+	    padding-right: 60px;
+	    width: 50%;
+	}
+	.np-ad-package-rgt {
+	    width: 50%;
+	}
+	.np-ad-package-lft-title{
+		font-size: 60px;
+	}
+	.np-ad-package-lft p{
+		font-size: 15px;
+	}
+	/*.np-ad-btm-package-lft {
+	    width: 50%;
+	}*/
+	.np-ad-btm-package-rgt {
+	    padding-left: 50px;
+	    padding-right: 20px;
+	}
+	.np-ad-expert-lft{
+		padding-right: 70px;
+	}
+	.np-ad-expert-lft,
+	.np-ad-expert-rgt{
+		width: 50%;
+	}
+	.np-ad-expert-lft p{
+		font-size: 15px;
+	}
+	.np-ad-ctlr .restaurant-gallery-slider,
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: -115px;
+	}
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
+	
+
+}
+
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+	
+}
+
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

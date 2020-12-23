@@ -69,7 +69,7 @@
 
 
 .loyalty-grds-section{
-	padding: 100px 0 22px;
+	padding: 100px 0 265px;
 }
 .loyalty-grds-cntlr{
 	width: 100%;
@@ -78,7 +78,7 @@
 	padding-bottom: 95px;
 }
 .loyalty-grds-cntlr ul li:last-child{
-	padding-bottom: 69px;
+	padding-bottom: 0;
 }
 .loyalty-grd-item{
 	display: flex;
@@ -144,4 +144,56 @@
 .loyalty-grds-cntlr ul li:nth-child(2n+2) .loyalty-grd-item-des > div{
 	max-width: 428px;
 	margin-left: auto;
+}
+
+
+
+@media(max-width: 1599px){
+	.lwsd-title{
+		font-size: 45px;
+	}
+	.loyalty-welcome-sec-des strong {
+	    font-size: 20px;
+	}
+	.loyalty-welcome-sec-des{
+		padding-right: 44px;
+	}
+	.loyalty-welcome-sec-des p{
+		padding-right: 64px;
+	}
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }

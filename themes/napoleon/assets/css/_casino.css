@@ -1,12 +1,14 @@
 
 .np-roulette-sec{
-	padding: 115px 0 155px;
+	padding: 115px 0 35px;
 }
 
 .np-roulette-sec-inr{
-	margin-left: 240px;
+	max-width: 1160px;
+	width: 100%;
 	display: flex;
 	align-items: center;
+	margin-left: auto;
 }
 .np-roulette-lft{
 	float: left;
@@ -58,10 +60,12 @@
 
 
 .np-winner-sec{
+	padding-top: 25px;
 	padding-bottom: 95px;
 }
 .np-winner-sec-inr{
-	margin-right: 200px;
+	max-width: 1200px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
@@ -94,65 +98,6 @@
 
 /*slider*/
 
-.np-casino-img-slider-sec{
-	padding-bottom: 135px;
-}
-
-
-.np-casino-slider-img-wrapper{
-	margin-left: -14px;
-	margin-right: -14px;
-}
-.np-casino-slider-img-item{
-	padding-left: 14px;
-	padding-right: 14px;
-}
-.np-casino-slider-item-img{
-	min-height: 510px;
-	width: 730px;
-}
-
-
-.np-casino-img-slider .swiper-slide{
-	overflow: hidden;
-}
-
-.np-casino-holder{
-	position: relative;
-}
-
-.np-casino-des-slider{
-	padding-bottom: 30px;
-}
-
-.np-casino-des{
-	padding: 88px 50px 70px 75px;
-	background: #1A1429;
-	position: relative;
-}
-.np-casino-des i{
-	position: absolute;
-	top: 30px;
-	right: 30px;
-}
-.np-casino-des-slider-title{
-	display: block;
-	font-size: 34px;
-	line-height: 1;
-	margin-bottom: 15px;
-	color: #CB9F67;
-}
-.np-casino-des p{
-	color: #D7D3CD;
-}
-.np-casino-des-slider-wrapper{
-	margin-left: -12px;
-	margin-right: -12px;
-}
-.np-casino-des-slider-item{
-	padding-left: 12px;
-	padding-right: 12px;
-}
 
 .np-casino-des-slider .slider-arrows{
 	padding-bottom: 75px;
@@ -161,4 +106,106 @@
 .np-casino-ctlr .np-roulette-sec{
 	padding-top: 0;
 	padding-bottom: 140px;
+}
+
+.np-casino-ctlr .restaurant-testi-slider{
+	background: inherit;
+	padding-top: 0;
+	padding-bottom: 0px;
+}
+
+.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+    width: 730px;
+}
+.np-casino-slider-ctlr{
+	padding-left: 140px;
+}
+.np-casino-rtstestiholder-inr{
+	padding-left: 130px;
+}
+.np-casino-ctlr .restaurant-testi-slider .slider-arrows{
+	padding-bottom: 78px;
+}
+.np-casino-ctlr .restaurantTestiSlide-item p{
+	text-align: left;
+}
+
+
+@media(max-width: 1599px){
+	.container{
+		max-width: 1200px;
+	}
+	.np-casino-slider-ctlr,
+	.np-casino-rtstestiholder-inr{
+	    padding-left: 0px;
+	}
+	.np-casino-ctlr .restaurant-gallery-slider,
+	.np-casino-ctlr .restaurant-testi-slider{
+		margin-left: -100px;
+	}
+	.np-roulette-sec {
+	    padding: 115px 0 0px;
+	}
+	.np-winner-sec{
+		padding-top: 0;
+	}
+	.np-casino-ctlr .np-roulette-sec {
+	    padding-top: 0;
+	    padding-bottom: 120px;
+	}
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
+
+}
+
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+}
+
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+}
+
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }

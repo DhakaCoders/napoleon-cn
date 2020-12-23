@@ -70,13 +70,20 @@
 .np-agird-title > a:hover{
 	color: #CB9F67;
 }
-.np-agi-rgt-des-inr strong{
+.np-agi-rgt-des-inr span.woocommerce-Price-amount bdi{
 	display: block;
 	font-size: 26px;
 	color: #CB9F67;
 	font-weight: 400;
 	margin-bottom: 25px;
 }
+/*.np-agi-rgt-des-inr strong{
+	display: block;
+	font-size: 26px;
+	color: #CB9F67;
+	font-weight: 400;
+	margin-bottom: 25px;
+}*/
 .np-agi-rgt-des-inr p{
 	color: #D7D3CD;
 	margin-bottom: 30px;
@@ -96,15 +103,17 @@
 }
 .np-agi-rgt-des-inr > a i{
 	position: absolute;
-	top: 0;
+	top: -1px;
 	right: 0;
 }
 .np-agi-rgt-des-inr > a:hover{
 	color: #fff;
+	padding-right: 22px;
 }
 .np-agi-rgt-des-inr > a:hover svg{
 	fill: #fff;
 }
+
 
 .lftimg-rgtdes .np-agi-lft-img{
 	float: right;
@@ -124,4 +133,40 @@
 	transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
+}
+
+@media(max-width: 1599px){
+	.container{
+		max-width: 1200px;
+	}
+	.np-arrangementen-lftsidebar{
+		width: 35%;
+	}
+	.np-arrangementen-rgt{
+		width: 65%;
+	}
+	.np-agi-rgt-des-inr{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.np-agird-title{
+		font-size: 32px;
+	}
+
+}
+@media(max-width: 1399px){
+	.np-arrangementen-lftsidebar{
+		width: 35%;
+	}
+	.np-arrangementen-rgt{
+		width: 65%;
+	}
+}
+@media(max-width: 1299px){
+	.np-arrangementen-lftsidebar{
+		width: 35%;
+	}
+	.np-arrangementen-rgt{
+		width: 65%;
+	}
 }

@@ -42,24 +42,22 @@ header.header{
 .hdr-top-menu ul li a:hover{
 	color: #A21D1D;
 }
-.hdr-top-menu ul li a span{
-	position: absolute;
-	right: -10px;
-	top: -20px;
-	width: 16px;
-	height: 16px;
-	border-radius: 100% 100%;
-	background: #A21D1D;
-	font-weight: 600;
-	font-size: 8px;
-	line-height: 10px;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.03em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
+.hdr-top-menu ul li a span {
+    position: absolute;
+    right: -16px;
+    top: -13px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100% 100%;
+    background: #A21D1D;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 .hdr-language{
 	width: 75px;
@@ -115,6 +113,7 @@ header.header{
 	left: 0;
 	z-index: 1;
 	opacity: 0;
+
 }
 .hdr-language strong{
 	position: relative;
@@ -336,4 +335,65 @@ header.header.page-header .hdr-language strong{
 
 header.header.page-header .hdr-lang input:checked + strong{
 	color: #fff;
+}
+
+
+
+
+
+@media(max-width: 1599px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hdr-menu > ul > li{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.logo {
+	    width: 156px;
+	    height: 135px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.hdr-menu > ul > li > a{
+		font-size: 17px;
+	}
+	.hdr-top-menu ul li a{
+		font-size: 13px;
+	}
+	.hdr-lang{
+		font-size: 13px;
+	}
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }

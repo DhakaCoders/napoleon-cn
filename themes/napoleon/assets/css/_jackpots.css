@@ -16,18 +16,14 @@
 
 }
 .j-bnr-slider{
-	
-}
-.j-bnr-slide-item-cntlr{
-	/*display: flex;
-	flex-wrap: wrap;*/
+	margin-left: -12px;
+	margin-right: -12px;
 }
 
 .j-bnr-slide-item{
 	border-bottom: 2px solid #fff;
 	padding: 25px 10px 53px 10px;
 	text-align: center;
-	margin: 24px;
 	position: relative;
 }
 .j-bnr-slider .j-bnr-slide-item{
@@ -57,21 +53,12 @@
 .j-bnr-slide-item-prize{
 
 }
-.j-bnr-slide-item-prize bdi{
+.j-bnr-slide-item-prize .price .amount bdi{
 	font-family: 'Operetta18-Medium';
 	font-size: 46px;
 	line-height: 1;
 	color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
-
 
 
 .j-left-img-right-desc-sec{
@@ -152,7 +139,7 @@
 	color: #CB9F67;
 	padding-right: 10px;
 }
-.nl-rd-current-jackpots-prize bdi{
+.nl-rd-current-jackpots-prize .price .amount bdi{
 	font-family: 'Operetta18-Medium';
 	font-size: 28px;
 	line-height: 1;

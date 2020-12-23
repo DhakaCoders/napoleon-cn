@@ -79,19 +79,20 @@
 	background: #4c2631;
 }
 .catagory-slider-cntlr{
-	margin-top: -83px;
+	margin-top: -63px;
 	overflow-x: 3;
 }
 .catagory-slider{
-
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.sliderItem{
+	padding-left: 12px;
+	padding-right: 12px;
 }
 .catagory-slide-item-cntlr{
-	margin: 23px;
-	padding: 30px 25px;
+	padding: 25px 25px;
 	background: #1A1429;
-}
-.catagory-slider .catagory-slide-item-cntlr{
-	margin-right: 0;
 }
 .catagory-slide-item{
 	padding-bottom: 23px;
@@ -112,7 +113,7 @@
 	-webkit-transform: scale(1.051);
 	-o-transform: scale(1.051);
 }
-.catagory-slide-item-desc{
+.catagory-slide-item-desc-cntlr{
 	text-align: center;
 }
 .catagory-slide-item-title{
@@ -131,12 +132,18 @@
 .catagory-slide-item-title a:hover{
 	color: #A21D1D;
 }
+.catagory-slide-item-desc{
+	margin-bottom: 25px;
+}
 .catagory-slide-item-desc p{
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #D5B48A;
 	margin-bottom: 25px;
+}
+.catagory-slide-item-desc p:last-child{
+	margin-bottom: 0;
 }
 .catagory-slide-item-btn{
 	display: flex;
@@ -153,10 +160,10 @@
 
 }
 .wellcome-left{
-	width: 33.33%;
+	width: 28.3%;
 }
 .wellcome-right-cntlr{
-	width: 66.67%;
+	width: 71.7%;
 }
 .wellcome-title{
 	font-family: 'Operetta18-Regular';
@@ -193,8 +200,7 @@
 	flex-wrap: wrap;
 }
 .visite-lft-desc{
-	width: 26.7%;
-	padding-top: 25px;
+	width:  28.3%;
 }
 .visite-lft-title{
 	font-family: 'Operetta18-Medium';
@@ -212,36 +218,18 @@
 }
 
 .visite-slider-cntlr{
-	width: 73.3%;
-	padding-right: 0.989%;
-}
-.visite-slider .slider-arrows{
-	padding-bottom: 30px;
-	margin-left: 28px;
-}
-.visite-slide-item{
-	margin: 28px;
-}
-.visite-slider .visite-slide-item{
-	margin-right: 0;
-}
-.visite-slide-item{
-	position: relative;
-}
-.visite-slide-item-img-cntlr{
-	height: 398px;
-	position: relative;
+	width: 71.7%;
+	padding-right: 19px;
 	overflow: hidden;
 }
-.visite-slide-item-img{
-	height: 100%;
+/*.visite-slider-cntlr .swiper-slide{
+	width: 569px!important;
+}*/
+.visite-slider-cntlr .restaurant-gallery-slide-item{
+	position: relative;
+	max-width: initial;
 	width: 100%;
-}
-.visite-slide-item:hover .visite-slide-item-img{
-	transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	height: 398px;
 }
 .visite-slide-item-desc-cntlr{
 	position: absolute;
@@ -258,7 +246,14 @@
 	z-index: 11;
 	display: none;
 }
-.visite-slider .swiper-slide.swiper-slide-active .visite-slide-item .visite-slide-item-desc-cntlr{
+.visite-slider-cntlr .swiper-container{
+	padding-bottom: 50px;
+	margin-right: 0;
+}
+.visite-slider-cntlr .slider-arrows{
+	margin-top: -50px;
+}
+.visite-slider-cntlr .restaurantGallerySlider .swiper-slide-active .restaurant-gallery-slide-item .visite-slide-item-desc-cntlr{
 	display: flex;
 }
 .visite-slide-item-desc{
@@ -309,6 +304,7 @@
 }
 .hm-footer-gallery{
 	padding-top: 92px;
+	padding-left: 20px;
 }
 .hm-ftr-gllry-cntlr{
 
@@ -365,7 +361,6 @@
 /*responsive*/
 @media(max-width: 1600px){
 	.catagory-slide-item-cntlr {
-		margin: 17px;
 		padding: 17px 17px;
 	}
 	.catagory-slide-item-desc p{
