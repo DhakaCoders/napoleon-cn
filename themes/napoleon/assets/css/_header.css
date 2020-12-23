@@ -336,3 +336,64 @@ header.header.page-header .hdr-language strong{
 header.header.page-header .hdr-lang input:checked + strong{
 	color: #fff;
 }
+
+
+
+
+
+@media(max-width: 1599px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.hdr-menu > ul > li{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.logo {
+	    width: 156px;
+	    height: 135px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.hdr-menu > ul > li > a{
+		font-size: 17px;
+	}
+	.hdr-top-menu ul li a{
+		font-size: 13px;
+	}
+	.hdr-lang{
+		font-size: 13px;
+	}
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
