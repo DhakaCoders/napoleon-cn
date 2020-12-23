@@ -104,25 +104,14 @@
 </head>
 <body>
 <div class="bdoverlay"></div>
-<header class="header">
-  <div class="hdr-top-notification-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="hdr-top-notification">
-            <p>Phasellus quam erat, facilisis sit amet est eu, accumsan disctum diam.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<header class="header page-header">
   <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="header-inr clearfix">
             <div class="logo-cntlr">
               <div class="logo">
-                <a href="#"><img src="assets/images/logo-green.svg"></a>
+                <a href="#"><img src="assets/images/logo.svg"></a>
               </div>
             </div>
             <div class="hdr-topbar">
@@ -177,6 +166,21 @@
       </div>
   </div>
 </header>
+
+<section class="breadcrumbs-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-breadcrumbs">
+          <ul>
+            <li><a class="fl-home-icon" href="#">Home</a></li>
+            <li><a href="#">Restaurant</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -284,44 +288,46 @@
     <div class="dfp-restaurant-gallery-slider">
       <div class="restaurant-gallery-slider">
         <div class="rgsHolder">
-          <div class="swiper-container restaurantGallerySlider">
-            <div class="swiper-wrapper slide1Wrapper">
-              <div class="swiper-slide restaurantGallerySlide">
-                <div class='restaurant-gallery-slide-item'>
-                  <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
+          <div class="dfp-rgsholder">
+            <div class="swiper-container restaurantGallerySlider">
+              <div class="swiper-wrapper slide1Wrapper">
+                <div class="swiper-slide restaurantGallerySlide">
+                  <div class='restaurant-gallery-slide-item'>
+                    <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide restaurantGallerySlide">
-                <div class='restaurant-gallery-slide-item'>
-                  <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-02.jpg);"></div>
+                <div class="swiper-slide restaurantGallerySlide">
+                  <div class='restaurant-gallery-slide-item'>
+                    <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-02.jpg);"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide restaurantGallerySlide">
-                <div class='restaurant-gallery-slide-item'>
-                  <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
+                <div class="swiper-slide restaurantGallerySlide">
+                  <div class='restaurant-gallery-slide-item'>
+                    <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-01.jpg);"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide restaurantGallerySlide">
-                <div class='restaurant-gallery-slide-item'>
-                  <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-02.jpg);"></div>
+                <div class="swiper-slide restaurantGallerySlide">
+                  <div class='restaurant-gallery-slide-item'>
+                    <div class="inline-bg" style="background: url(assets/images/restaurant-gallery-slide-img-02.jpg);"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider-arrows restaurantGallerySliderArrows">
-            <div class="swiper-button-prev">
-              <i>
-                <svg class="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
-                  <use xlink:href="#fl-lft-arrow-svg"></use>
-                </svg> 
-              </i>
-            </div>
-            <div class="swiper-button-next">
-              <i>
-                <svg class="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
-                  <use xlink:href="#fl-rgt-arrow-svg"></use>
-                </svg> 
-              </i>
+            <div class="slider-arrows restaurantGallerySliderArrows">
+              <div class="swiper-button-prev">
+                <i>
+                  <svg class="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+                    <use xlink:href="#fl-lft-arrow-svg"></use>
+                  </svg> 
+                </i>
+              </div>
+              <div class="swiper-button-next">
+                <i>
+                  <svg class="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+                    <use xlink:href="#fl-rgt-arrow-svg"></use>
+                  </svg> 
+                </i>
+              </div>
             </div>
           </div>
         </div>    
@@ -723,9 +729,6 @@
                           <p>LIMOEN - PASSIEVRUCHT - FRAMBOOS</p>
                         </li>
                       </ul>
-                      <div class="rtcd-btn-cntlr">
-                        <a class="fl-red-center-btn" href="#">Boek uw tafel</a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -763,9 +766,6 @@
                           <p>LIMOEN - PASSIEVRUCHT - FRAMBOOS</p>
                         </li>
                       </ul>
-                      <div class="rtcd-btn-cntlr">
-                        <a class="fl-red-center-btn" href="#">Boek uw tafel</a>
-                      </div>
                     </div>
                   </div>
                 </div> 
@@ -774,6 +774,110 @@
           </div>
         </div>
     </div>
+
+    <div class="dfp-text-module-cntlr">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="dfp-text-module block-930 clearfix">
+              <h6>Downloads</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis non quisque lectus congue ligula posuere sem. Odio velit est lacus justo, aliquam nulla. Aenean felis, est et orci, lacus ut viverra. Integer blandit nunc nec dolor, est ullamcorper lectus.</p>
+
+              <div class="dfp-download-pdf">
+                <div class="dfp-download-pdf-item-cntlr">
+                  <div class="dfp-download-pdf-item">
+                    <div class="dfp-download-pdf-item-img">
+                      <img src="assets/images/dfp-download-item-pdf-icon.png" alt="">
+                    </div>
+                    <h6 class="dfp-download-pdf-item-type">Book:</h6>
+                    <h3 class="dfp-download-pdf-item-title">Lorem ipsum dolor sit amet ullamcorper lectus.</h3>
+                    <div class="dfp-download-pdf-item-btn dfp-lftimg-rtdesc-rt-desc-btn">
+                      <a href="#">
+                        <span>DOWNLOAD</span>
+                        <i>
+                          <svg class="dfp-lftimg-rtdesc-icon" width="6" height="8" viewBox="0 0 6 8" fill="#CB9F67">
+                          <use xlink:href="#dfp-lftimg-rtdesc-icon"></use> </svg>
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dfp-download-pdf-item-cntlr">
+                  <div class="dfp-download-pdf-item">
+                    <div class="dfp-download-pdf-item-img">
+                      <img src="assets/images/dfp-download-item-pdf-icon.png" alt="">
+                    </div>
+                    <h6 class="dfp-download-pdf-item-type">Book:</h6>
+                    <h3 class="dfp-download-pdf-item-title">Lorem ipsum dolor sit amet ullamcorper lectus.</h3>
+                    <div class="dfp-download-pdf-item-btn dfp-lftimg-rtdesc-rt-desc-btn">
+                      <a href="#">
+                        <span>DOWNLOAD</span>
+                        <i>
+                          <svg class="dfp-lftimg-rtdesc-icon" width="6" height="8" viewBox="0 0 6 8" fill="#CB9F67">
+                          <use xlink:href="#dfp-lftimg-rtdesc-icon"></use> </svg>
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dfp-text-module-btn">
+                <a class="fl-tsprnt-btn dfp-tmb2" href="#">BUTTON</a>
+                <a class="fl-tsprnt-btn" href="#">BUTTON</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dfp-tbl-wrap-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="dfp-tbl-wrap-cntlr">
+              <div class="dfp-tbl-wrap block-930">
+                <div class="table-dsc">
+                  <table>
+                    <thead class="dfp-thead">
+                      <tr>
+                        <th><span class="mHc">#</span></th>
+                        <th><span class="mHc">Lorem Ipsum </span></th>
+                        <th><span class="mHc">Dolor sit amet</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="mHc">1.</span></td>
+                        <td> <span class="mHc">Amuse van de chef</span></td>
+                        <td><span class="mHc">Amuse van de chef</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="mhc">2.</span></td>
+                        <td><span class="mhc">½ Kreeft Belle Vue</span> <p>LAUW GESERVEER - SALADE</p></td>
+                        <td><span class="mhc">½ Kreeft Belle Vue</span> <p>LAUW GESERVEER - SALADE</p></td>
+                      </tr>
+                      <tr>
+                        <td><span class="mHc">3.</span></td>
+                        <td><span class="mhc">½ Kreeft in de oven</span> <p>CITROEN - TIJM - PILIPILI - FLEUR DE SEL</p></td>
+                        <td><span class="mhc">½ Kreeft in de oven</span> <p>CITROEN - TIJM - PILIPILI - FLEUR DE SEL</p></td>
+                      </tr>
+                      <tr>
+                        <td><span class="mHc">4.</span></td>
+                        <td><span class="mhc">Sorbet</span> <p>LIMOEN - PASSIEVRUCHT - FRAMBOOS</p></td>
+                        <td><span class="mhc">Sorbet</span> <p>LIMOEN - PASSIEVRUCHT - FRAMBOOS</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 

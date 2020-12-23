@@ -404,7 +404,6 @@
 .footer-top-sec-v2{
 	position: relative;
 	padding-bottom: 60px;
-	margin-top: 60px;
 }
 .footer-top-sec-v2-bg{
 	position: absolute;
@@ -421,6 +420,7 @@
 	background: #4c2631;
 	padding-top: 55px;
 	padding-bottom: 60px;
+	margin-top: -150px;
 }
 .ftr-top-sec-v2-lft{
 	width: 43.75%;

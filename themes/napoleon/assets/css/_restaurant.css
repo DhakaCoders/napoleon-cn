@@ -114,10 +114,10 @@
 
 .rtcfbd-title{
 	font-weight: normal;
-	font-size: 48px;
-	line-height: 1;
+	font-size: 48px!important;
+	line-height: 1!important;
 	color: #CB9F67;
-	margin-bottom: 10px;
+	margin-bottom: 10px!important;
 }
 
 .restaurant-tab-con-fea-box-des p{
@@ -125,7 +125,7 @@
 	font-size: 16px;
 	line-height: 1.5;
 	color: #D7D3CD;
-	margin-bottom: 18px;
+	margin-bottom: 18px!important;
 }
 
 .rtcfbd-price{
