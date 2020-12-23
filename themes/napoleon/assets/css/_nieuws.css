@@ -1,6 +1,6 @@
 .np-nieuws-con-sec{
 	padding-top: 40px;
-	padding-bottom: 80px;
+	padding-bottom: 55px;
 }
 
 
@@ -65,6 +65,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 }
+.np-nieuws-lftsidebar-des-inr ul li.active a,
 .np-nieuws-lftsidebar-des-inr ul li a:hover{
 	color: #CB9F67;
 	text-decoration: underline;
@@ -231,6 +232,12 @@
 .fl-pagination-ctlr ul li:first-child a:hover svg,
 .fl-pagination-ctlr ul li:last-child a:hover svg{
 	fill: #4C2631;
+}
+.fl-pagination-ctlr ul li:first-child a:hover i{
+	margin-left: -5px;
+}
+.fl-pagination-ctlr ul li:last-child a:hover i{
+	margin-right: -5px;
 }
 .fl-pagination-ctlr ul li:last-child a{
 	padding-right: 40px;
