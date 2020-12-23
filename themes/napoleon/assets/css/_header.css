@@ -42,24 +42,22 @@ header.header{
 .hdr-top-menu ul li a:hover{
 	color: #A21D1D;
 }
-.hdr-top-menu ul li a span{
-	position: absolute;
-	right: -10px;
-	top: -20px;
-	width: 16px;
-	height: 16px;
-	border-radius: 100% 100%;
-	background: #A21D1D;
-	font-weight: 600;
-	font-size: 8px;
-	line-height: 10px;
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.03em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
+.hdr-top-menu ul li a span {
+    position: absolute;
+    right: -16px;
+    top: -13px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100% 100%;
+    background: #A21D1D;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 .hdr-language{
 	width: 75px;
