@@ -143,7 +143,7 @@ ol li::before {
 	line-height: 1;
 	letter-spacing: 0.01em;
 	color: #512C36;
-	margin-bottom: 35px;
+	margin-bottom: 46px;
 	display: block;
 }
 
@@ -801,9 +801,11 @@ Gallery design
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 }
-@media(max-width: 1199px){
+@media(max-width: 1599px){
 	
-	
+	.dfp-ngibd-title{
+	    font-size: 32px!important;
+	}
 	
 }
 

@@ -161,7 +161,9 @@
 
 
 
-
+.jackpots-content{
+	padding-bottom: 220px;
+}
 .jackpots-content-cntlr{
 	max-width: 980px;
 	width: 100%;
@@ -243,4 +245,15 @@
 	line-height: 1;
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
+}
+
+
+/*responsive*/
+@media(max-width: 1599px){
+	.j-bnr-slide-item-title{
+		font-size: 22px;
+	}
+	.j-bnr-slide-item-prize .price .amount bdi{
+		font-size: 39px;
+	}
 }
