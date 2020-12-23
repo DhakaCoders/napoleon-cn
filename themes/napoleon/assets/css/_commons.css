@@ -30,19 +30,19 @@ p{
 }
 h1::-moz-selection,h2::-moz-selection,h3::-moz-selection,h4::-moz-selection,h5::-moz-selection,h6::-moz-selection,p::-moz-selection {
   color: #fff;
-  background: #A61916;
+  background: #A21D1D;
 }
 h1::-ms-selection,h2::-ms-selection,h3::-ms-selection,h4::-ms-selection,h5::-ms-selection,h6::-ms-selection,p::-ms-selection { 
   color: #fff;
-  background: #A61916;
+  background: #A21D1D;
 }
 h1::-webkit-selection,h2::-webkit-selection,h3::-webkit-selection,h4::-webkit-selection,h5::-webkit-selection,h6::-webkit-selection,p::-webkit-selection { 
   color: #fff;
-  background: #A61916;
+  background: #A21D1D;
 }
 h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,p::selection {
   color: #fff;
-  background: #A61916;
+  background: #A21D1D;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
