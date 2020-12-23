@@ -487,7 +487,7 @@ Gallery design
 }
 
 .dfp-nieuws-con-sec{
-
+	padding-bottom: 95px;
 }
 .dfp-nieuws-con-sec-cntlr{
 
@@ -496,12 +496,12 @@ Gallery design
 	padding-left: 0;
 }
 .dfp-np-nieuws-grds-items > ul{
-	margin: 0;
+	padding: 0!important;
+	margin: 0!important;
 }
 .dfp-np-nieuws-grds-items > ul >li{
-	padding-left: 0;
-	padding-right: 0;
-	margin-bottom: 0;
+	padding: 0!important;
+	margin: 0!important;
 }
 .dfp-np-nieuws-grds-item{
 	position: relative;
@@ -515,8 +515,9 @@ Gallery design
 	backdrop-filter: blur(30px);
 	display: flex;
 	align-items: center;
-	padding: 30px;
+	padding: 24px;
 	min-height: 164px;
+	z-index: 11;
 }
 .dfp-ngibd-brnd{
 	background: #1A1429;
@@ -532,10 +533,19 @@ Gallery design
 }
 .dfp-ngibd-title{
 	font-family: 'Operetta18-Medium';
-	font-size: 34px;
+	font-size: 34px!important;
 	line-height: 1.1;
 	color: #FFFFFF;
-	margin-bottom: 15px;
+	margin-bottom: 1px!important;
+	padding-top: 0!important;
+
+}
+.dfp-ngibd-title a{
+	display: inline-block;
+	color: #FFFFFF;
+}
+.dfp-ngibd-title a:hover{
+	color: #A21D1D;
 }
 .dfp-ngibd-time{
 	font-weight: 600;
@@ -546,9 +556,59 @@ Gallery design
 	display: inline-block;
 	margin-bottom: 0;
 }
+.dfp-np-nieuws-grds-item .np-nieuws-grd-item-img-ctlr{
+	height: 478px;
+}
+.dfp-np-nieuws-grds-item .np-nieuws-grd-item-img{
+	min-height: initial;
+	height: 100%;
+	width: 100%;
+}
 
+.dfp-np-nieuws-grd-items-sec{
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+.dfp-loyalty-welcome-sec{
+	padding-bottom: 110px;
+}
+.dfp-loyalty-welcome-cntlr{
 
+}
+.dfp-loyalty-welcome-cntlr .loyalty-welcome-sec-fea-img{
+	height: 600px;
+}
+.dfp-loyalty-welcome-cntlr .loyalty-welcome-sec-fea-img i svg{
+	width: 68px;
+	height: 68px;
+}
+.dfp-restaurant-tab-section{
 
+}
+.dfp-restaurant-tab-section-cntlr{
+	background: #4c2631;
+	padding: 62px 95px 44px 95px;
+}
+.dfp-restaurant-tab-section-title{
+	font-family: 'Operetta18-Medium';
+	font-size: 34px!important;
+	line-height: 1.1;
+	text-align: center;
+	color: #CB9F67!important;
+	margin-bottom: 55px!important;
+}
+.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box {
+    width: 49%;
+    height: 390px;
+}
+.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-des {
+    width: 51%;
+    padding-left: 143px;
+    color: #fff!important;
+}
+.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-des ul li label{
+	color: #fff!important;
+}
 
 @media(max-width: 1199px){
 	
