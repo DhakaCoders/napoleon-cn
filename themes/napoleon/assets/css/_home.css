@@ -219,12 +219,12 @@
 
 .visite-slider-cntlr{
 	width: 71.7%;
-	padding-right: 19px;
+/*	padding-right: 19px;*/
 	overflow: hidden;
 }
-/*.visite-slider-cntlr .swiper-slide{
-	width: 569px!important;
-}*/
+.visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
+	width: 600px!important;
+}
 .visite-slider-cntlr .restaurant-gallery-slide-item{
 	position: relative;
 	max-width: initial;
@@ -365,5 +365,10 @@
 	}
 	.catagory-slide-item-desc p{
 		font-size: 13px;
+	}
+
+
+	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
+		width: 456px!important;
 	}
 }
