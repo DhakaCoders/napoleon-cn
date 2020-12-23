@@ -23,7 +23,7 @@
 	letter-spacing: 0.01em;
 	font-family: 'Operetta18-Regular';
 }
-.np-ad-package-lft strong{
+.np-ad-package-lft span.woocommerce-Price-amount bdi{
 	display: block;
 	font-size: 26px;
 	color: #4C2631;
@@ -157,4 +157,15 @@
 .np-ad-ctlr .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
 	margin-left: inherit;
 	margin-right: inherit;
+}
+
+.np-ad-ctlr .np-ad-rgsholder-inr{
+	padding-left: 22px;
+}
+.np-ad-ctlr .restaurant-gallery-slide-item{
+	max-width: 100%;
+	width: 800px;
+}
+.np-ad-ctlr .np-ad-rgs-testiholder-inr{
+	padding-left: 10px;
 }

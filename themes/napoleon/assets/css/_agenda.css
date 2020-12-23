@@ -160,3 +160,35 @@
 }
 
 
+
+
+@media(max-width: 1599px){
+	.container{
+		max-width: 1200px;
+	}
+	.np-arrangementen-lftsidebar{
+		width: 35%;
+	}
+	.np-arrangementen-rgt{
+		width: 65%;
+	}
+
+}
+@media(max-width: 1399px){
+	.np-arrangementen-lftsidebar{
+		width: 35%;
+	}
+	.np-arrangementen-rgt{
+		width: 65%;
+	}
+}
+@media(max-width: 1299px){
+	.np-arrangementen-lftsidebar{
+		width: 35%;
+	}
+	.np-arrangementen-rgt{
+		width: 65%;
+	}
+}
+
+

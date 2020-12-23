@@ -203,22 +203,12 @@ $(window).resize(function(){
 });
 
 var swiper = new Swiper('.restaurantGallerySlider', {
-    slidesPerView: 2,
+    slidesPerView: 'auto',
     loop: true,
     spaceBetween: 0,
     navigation: {
       nextEl: '.restaurantGallerySliderArrows .swiper-button-next',
       prevEl: '.restaurantGallerySliderArrows .swiper-button-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      1920: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
     }
   });
 
@@ -248,7 +238,7 @@ var swiper = new Swiper('.restaurantTestiSlider', {
   });
 
 
-var Html5video = document.getElementById('fl-vdo'); 
+/*var myVideo = document.getElementById('fl-vdo'); 
 
 
 $('.fl-play-btn').on('click', function(){
@@ -262,7 +252,27 @@ $('.fl-push-btn').on('click', function(){
       myVideo.pause();
     }
 });  
+*/
 
+var video = $('.fl-vdo').get(0);
+
+$(document).delegate('.fl-play-btn', 'click', function() {
+    video.load();
+    video.play();
+    //$('.fl-play-btn').addClass('hide');
+    //$('.fl-push-btn').addClass('show');
+});
+
+$(document).delegate('.fl-push-btn', 'click', function() {
+    if (video.paused !== true && video.ended !== true) {
+        video.pause();
+       //$('.fl-play-btn').addClass('show');
+        //$('.fl-push-btn').addClass('hide');
+    } /*else {
+        $('.fl-push-btn > img').attr('src', 'image/play.png');
+        video.play();
+    }*/
+});
 
   /*Start Of Noyon*/
 
