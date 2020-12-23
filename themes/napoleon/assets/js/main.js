@@ -203,22 +203,12 @@ $(window).resize(function(){
 });
 
 var swiper = new Swiper('.restaurantGallerySlider', {
-    slidesPerView: 2,
+    slidesPerView: 'auto',
     loop: true,
     spaceBetween: 0,
     navigation: {
       nextEl: '.restaurantGallerySliderArrows .swiper-button-next',
       prevEl: '.restaurantGallerySliderArrows .swiper-button-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      1920: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
     }
   });
 

@@ -248,10 +248,10 @@
 .restaurant-gallery-slider{
 	padding: 125px 0 115px;
 }
-
+.restaurantGallerySlider .swiper-slide{
+	width: 798px;
+}
 .restaurant-gallery-slide-item{
-	max-width: 830px;
-	width: 100%;
 	height: 558px;
 }
 .restaurant-gallery-slide-item .inline-bg{
