@@ -113,3 +113,15 @@
 .np-casino-ctlr .slider-arrows{
 	padding-bottom: 78px;
 }
+
+.np-casino-ctlr .restaurant-gallery-slide-item{
+	max-width: 100%;
+	width: 730px;
+	height: 510px;
+}
+.np-casino-slider-ctlr{
+	padding-left: 140px;
+}
+.np-casino-rtstestiholder-inr{
+	padding-left: 130px;
+}
