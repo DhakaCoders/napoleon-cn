@@ -218,8 +218,8 @@ ad-two-grid-sec-wrp
 	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des {
 	    padding: 20px 50px 20px 50px;
 	}
-	.ad-two-grid-des a{
-		padding-top: 40px;
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des p{
+		margin-bottom: 40px;
 	}
 	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
 	    font-size: 30px;
@@ -260,18 +260,22 @@ ad-two-grid-sec-wrp
 	    float: none;
 	    margin: 0 auto;
 	}
-	.ad-two-grid-des a {
-	    padding-top: 20px;
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des p{
+		margin-bottom: 20px;
 	}
 	.terug-overzicht {
 	    border-top: 2px solid #fff;
-	    padding-top: 30px;
+	    padding-top: 35px;
 	}
 	.ad-two-grid-des p {
 	    font-size: 14px;
 	}
 	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
 	    font-size: 26px;
+	    margin-bottom: 15px;
+	}
+	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des {
+	    padding: 38px 50px 40px 50px;
 	}
 
 	
