@@ -275,6 +275,9 @@
 		padding-left: 40px;
     	padding-right: 40px;
 	}
+	.np-nieuws-lftsidebar-title {
+	    font-size: 38px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -426,6 +429,24 @@
 	}
 	.show-xs{
 		display: block!important;
+	}
+	.np-nieuws-grd-items ul{
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.np-nieuws-grd-items ul li{
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+	.np-nieuws-grd-item{
+		max-width: 320px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.np-nieuws-grd-item-des {
+	    padding-top: 15px;
 	}
 
 }
