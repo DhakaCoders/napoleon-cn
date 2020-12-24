@@ -82,7 +82,8 @@ Containers
 .container-lg,
 .container-md,
 .container-sm,
-.container-xs{
+.container-xs.
+.container-new{
 	width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -98,7 +99,9 @@ Containers
 .container-sm:before,
 .container-sm:after,
 .container-xs:before,
-.container-xs:after{
+.container-xs:after,
+.container-new:after,
+.container-new:before{
 	content: "";
 	display: table;
 	clear: both;
@@ -119,6 +122,12 @@ Containers
 
 .container-sm{
 
+}
+.container-new{
+	max-width: 1430px;
+	width: 100%;
+	margin-left: 13%;
+	margin-right: 13%;
 }
 
 
