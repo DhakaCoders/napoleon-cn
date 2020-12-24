@@ -311,7 +311,7 @@
 
 
 /*responsive*/
-@media(max-width: 1600px){
+@media(max-width: 1599px){
 	.catagory-sec{
 		padding: 0 40px;
 	}
@@ -325,5 +325,19 @@
 
 	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
 		width: 456px!important;
+	}
+}
+@media(max-width: 1399px){
+	.catagory-sec{
+		padding: 0 60px;
+	}
+	.sliderItem{
+		padding: 0 8px;
+	}
+	.catagory-slide-item-desc p{
+	    font-size: 12px;
+	}
+	.catagory-slide-item-title{
+		font-size: 30px;
 	}
 }
