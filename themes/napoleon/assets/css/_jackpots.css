@@ -263,3 +263,15 @@
 		max-width: 930px;
 	}
 }
+@media(max-width: 1399px){
+	.j-bnr-slide-item-title{
+		font-size: 19px;
+	}
+	.j-bnr-slide-item-prize .price .amount bdi,
+	.j-bnr-slide-item-prize span{
+		font-size: 35px;
+	}
+	.jackpots-content-cntlr{
+		max-width: 900px;
+	}
+}

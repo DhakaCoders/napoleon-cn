@@ -596,6 +596,11 @@
 	.fts-v2-rt-desc-row-title{
 		font-size: 16px;
 	}
+
+	.footer-top-sec-cntlr{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }
 @media(max-width: 1399px){
 	.footer-top-sec-v2-inr{
@@ -612,5 +617,9 @@
 	.fts-v2-rt-desc-visit a,
 	.fts-v2-rt-desc-Parking a{
 		font-size: 12px;
+	}
+	.footer-top-sec-cntlr{
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
