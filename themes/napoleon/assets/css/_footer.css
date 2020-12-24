@@ -305,6 +305,9 @@
 	line-height: 1;
 	border-radius: 0!important;
 }
+.footer-top-form .input-fields-row .input-fields-col input:focus{
+	border-color: #C19764;
+}
 .footer-top-form .input-fields-row .input-fields-col input[type="email"]{
 	height: 41px;
 }
@@ -574,5 +577,19 @@
 @media(max-width: 1600px){
 	.footer-top-col-title{
 		font-size: 26px;
+	}
+	.ftr-top-sec-v2-lft{
+		width: 50%;
+	}
+	.ftr-top-sec-v2-rt{
+		width: 50%;
+		padding-left: 60px;
+	}
+	.fts-v2-rt-desc,
+	.fts-v2-rt-form{
+		max-width: 50%;
+	}
+	.fts-v2-rt-desc-row-title{
+		font-size: 16px;
 	}
 }
