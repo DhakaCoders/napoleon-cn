@@ -448,6 +448,20 @@
 	.np-nieuws-grd-item-des {
 	    padding-top: 15px;
 	}
+	.np-nieuws-grd-items{
+		padding-bottom: 15px;
+		border-bottom: 2px solid #fff;
+		margin-bottom: 40px;
+	}
+	.fl-pagination-ctlr ul li:first-child a{
+		height: 16px;
+	}
+	.fl-pagination-ctlr ul li:first-child a span{
+		display: none;
+	}
+	.fl-pagination-ctlr ul li:first-child a i{
+		top: 4px;
+	}
 
 }
 
