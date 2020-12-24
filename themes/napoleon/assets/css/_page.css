@@ -212,6 +212,7 @@
 	position: relative;
 	margin: 0;
 	padding-left: 50px;
+	line-height: 1.5;
 }
 
 .hdr-top-notification p:before{
@@ -527,20 +528,34 @@
 }
 
 @media(max-width: 1199px){
-	
-
+	.page-banner-title {
+	    font-size: 52px;
+	}
+	.page-banner-des strong{
+		font-size: 22px;
+	}
+	.page-banner-des p {
+	    font-size: 15px;
+	}
 }
 
 @media(max-width: 991px){
-	
+	.breadcrumbs-section{
+		display: none;
+	}
 }
 
 @media(max-width: 767px){
-	
+	.hdr-top-notification-bar{
+		font-size: 15px;
+	}
 }
 
 @media(max-width: 575px){
-	
+	.hdr-top-notification-bar{
+		font-size: 12px;
+		line-height: 16px;
+	}
 
 }
 

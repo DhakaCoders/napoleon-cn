@@ -154,7 +154,7 @@
 </head>
 <body>
 
-
+<div class="bdoverlay"></div>
 <header class="header">
   <div class="hdr-top-notification-bar">
     <div class="container">
@@ -171,6 +171,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="header-inr clearfix">
+            <div class="xs-hamburger-btn show-md">
+              <div class="line-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
             <div class="logo-cntlr">
               <div class="logo">
                 <a href="#"><img src="assets/images/logo-green.svg"></a>
@@ -228,6 +235,75 @@
       </div>
   </div>
 </header>
+
+<div class="xs-nav-menu-cntlr show-md">
+  <div class="xs-nav-menu-cntlr-inr">
+    <div class="closebtn-wrp">
+      <div class="closebtn">
+        <span></span>
+        <span></span>
+      </div>
+      <strong>sluiten</strong>
+    </div>
+    <nav class="main-nav">
+      <ul class="clearfix reset-list">
+        <li><a href="#">Casino</a></li>
+        <li class="menu-item-has-children">
+          <a href="#">Restaurant</a>
+          <ul class="sub-menu">
+            <li><a href="#">Sub menu item 1</a></li>
+            <li><a href="#">Sub menu item 2</a></li>
+            <li><a href="#">Sub menu item 3</a></li>
+            <li><a href="#">Sub menu item 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Arrangementen</a></li>
+        <li><a href="#">Nieuws</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="xs-language">
+      <ul class="reset-list clearfix">
+        <li><span>NL</span></li>
+        <li><span>NL</span></li>
+      </ul>
+    </div>
+    <div class="xs-menu-address">
+      <strong>Adres</strong>
+      <a href="#">Zeedijk-Albertstrand 509 <br> Zeedijk-Albertstrand 509 <br>Belgie</a>
+    </div>
+    <div class="xs-menu-quick-info">
+      <div class="xs-tel-email">
+        <ul class="reset-list clearfix">
+          <li><a href="tel:(+32) 050 630 500"><i><img src="assets/images/tel-icon-xs.png"></i> (+32) 050 630 500</a></li>
+          <li><a href="mailto:info@grandcasinoknokke.be"><i><img src="assets/images/mail-icon-xs.png"></i>info@grandcasinoknokke.be</a></li>
+        </ul>
+      </div>
+      <div class="xs-social">
+        <ul class="reset-list">
+          <li><a href="#"><i><img src="assets/images/facebook-icon-xs.png"></i></a></li>
+          <li><a href="#"><i><img src="assets/images/instagram-icon-xs.png"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xs-menu-product">
+      <div class="xs-menu-product-item inline-bg" style="background: url(assets/images/xs-menu-product-img.jpg);">
+        <div>
+          <h4>
+            <a href="#">
+              De rijke geschiedenis van<br>
+              Grand Casino Knokke</a>
+          </h4>
+          <a href="#">BEKIJK DE VIDEO <i><img src="assets/images/xs-menu-link-arrow.png"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
 
 
 <section class="page-banner home-page-bnr">
@@ -630,13 +706,33 @@
     <div class="row">
       <div class="col-md-12">
         <div class="footer-top clearfix">
-          <div class="frt-logo">
-            <a href="#">
-              <img src="assets/images/footer-logo.png" alt="">
-            </a>
+          <div class="ftr-left">
+            <div class="ftr-logo">
+              <a href="#">
+                <img src="assets/images/footer-logo.png" alt="">
+              </a>
+            </div>
+            <div class="ftr-btm-socials show-md">
+              <ul class="reset-list">
+                <li><a href="#">
+                  <i>
+                    <svg class="facebool-icon" width="25" height="24" viewBox="0 0 25 24" fill="#999999">
+                      <use xlink:href="#facebool-icon"></use> </svg>
+                    </i>
+                  </a></li>
+
+                  <li><a href="#">
+                    <i>
+                      <svg class="instagram-icon" width="25" height="24" viewBox="0 0 25 24" fill="#999999">
+                        <use xlink:href="#instagram-icon"></use> </svg>
+                      </i>
+                    </a></li>
+                  </ul>
+                </div>
           </div>
-          <div class="ftr-top-col ftr-col-nav">
-            <ul class="reset-list">
+          <div class="ftr-top-col ftr-top-row-col ftr-col-nav">
+            <h5 class="ftr-top-row-col-title">Navigatie</h5>
+            <ul class="reset-list xs-ftr-mbl-accrdn">
               <li><a href="#">Casino</a></li>
               <li><a href="#">Arrangementen</a></li>
               <li><a href="#">Restaurant</a></li>
@@ -645,23 +741,30 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="ftr-top-col ftr-col-address">
-            <h6 class="ftr-top-col-title">Adres</h6>
-            <a href="#">Zeedijk-Albertstrand 509 <br>8300 Knokke-Heist</a>
-          </div>
-          <div class="ftr-top-col ftr-col-contact">
-            <h6 class="ftr-top-col-title">Contact</h6>
-            <div class="ftr-col-contact-tell">
-              <a href="tel:(+32)050630500">(+32) 050 630 500’</a>
+
+          <div class="ftr-top-addr-cntct-wrap ftr-top-row-col clearfix">
+            <h5 class="ftr-top-row-col-title">Contact Info</h5>
+            <div class="ftr-top-addr-cntct xs-ftr-mbl-accrdn">
+              <div class="ftr-top-col ftr-col-address">
+                <h6 class="ftr-top-col-title">Adres</h6>
+                <a href="#">Zeedijk-Albertstrand 509 <br>8300 Knokke-Heist</a>
+              </div>
+              <div class="ftr-top-col ftr-col-contact">
+                <h6 class="ftr-top-col-title">Contact</h6>
+                <div class="ftr-col-contact-tell">
+                  <a href="tel:(+32)050630500">(+32) 050 630 500’</a>
+                </div>
+                <div class="ftr-col-contact-mail">
+                  <a href="mailto:info@grandcasinoknokke.be">info@grandcasinoknokke.be</a>
+                </div>
+              </div>
             </div>
-            <div class="ftr-col-contact-mail">
-              <a href="mailto:info@grandcasinoknokke.be">info@grandcasinoknokke.be</a>
-            </div>
           </div>
+
         </div>
 
         <div class="footer-bottom">
-          <div class="ftr-btm-socials">
+          <div class="ftr-btm-socials hide-md">
             <ul class="reset-list">
               <li><a href="#">
                 <i>
