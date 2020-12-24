@@ -199,6 +199,10 @@
 	.np-arrangementen-rgt{
 		width: 65%;
 	}
+	.np-agid-title, 
+	.np-agenda-rgt-des-title {
+	    font-size: 28px;
+	}
 }
 @media(max-width: 1299px){
 	.np-arrangementen-lftsidebar{
