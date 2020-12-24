@@ -161,6 +161,15 @@
 	.np-arrangementen-rgt{
 		width: 65%;
 	}
+	.np-arrangementen-lftsidebar .np-nieuws-lftsidebar-des-inr{
+		padding-left: 25px;
+	}
+	.np-agi-rgt-des-inr{
+		padding-right: 25px;
+	}
+	.np-agird-title {
+	    font-size: 30px;
+	}
 }
 @media(max-width: 1299px){
 	.np-arrangementen-lftsidebar{
