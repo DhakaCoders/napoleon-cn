@@ -274,6 +274,34 @@ $(document).delegate('.fl-push-btn', 'click', function() {
     }*/
 });
 
+/**
+Sidebar menu
+*/
+if (windowWidth <= 991) {
+  $('.xs-hamburger-btn').on('click', function(e){
+    $('.xs-nav-menu-cntlr').addClass('opacity-1');
+    $('.bdoverlay').addClass('active');
+    $('body').addClass('active-scroll-off');
+    $(this).addClass('active-collapse');
+  });
+  $('.closebtn-wrp').on('click', function(e){
+    $('.bdoverlay').removeClass('active');
+    $('.xs-nav-menu-cntlr').removeClass('opacity-1');
+    $('body').removeClass('active-scroll-off');
+    $('.xs-hamburger-btn').removeClass('active-collapse');
+  });
+  
+  $('li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().siblings().find('.sub-menu').slideUp(300);
+    $(this).parent().find('.sub-menu').slideToggle(300);
+    $(this).toggleClass('sub-menu-active');
+
+  });
+}
+
+
+
   /*Start Of Noyon*/
 
   
