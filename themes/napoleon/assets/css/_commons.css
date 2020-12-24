@@ -82,7 +82,8 @@ Containers
 .container-lg,
 .container-md,
 .container-sm,
-.container-xs{
+.container-xs.
+.container-new{
 	width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -98,7 +99,9 @@ Containers
 .container-sm:before,
 .container-sm:after,
 .container-xs:before,
-.container-xs:after{
+.container-xs:after,
+.container-new:after,
+.container-new:before{
 	content: "";
 	display: table;
 	clear: both;
@@ -119,6 +122,12 @@ Containers
 
 .container-sm{
 
+}
+.container-new{
+	max-width: 1430px;
+	width: 100%;
+	margin-left: 13%;
+	margin-right: 13%;
 }
 
 
@@ -261,15 +270,15 @@ form .bootstrap-select .caret{
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
     text-decoration: inherit;
-    color: #CEA673;
-    font-size: 22px;
+    color: #512C36;
+    font-size: 14px;
     padding-right: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    right: 15px;
+    right: 0px;
     line-height: 15px;
 }
 .bootstrap-select.show .dropdown-toggle::before{
@@ -314,6 +323,7 @@ form .dropdown-menu{
 form .dropdown-menu > li{
     position: relative;
     margin-bottom: 6px;
+    padding-bottom: 0;
 }
 .bootstrap-select .dropdown-menu li{
 	padding-left: 0;
@@ -327,8 +337,11 @@ form .dropdown-menu > li{
 }
 
 form .dropdown-menu li a{
+	display: inline-block;
+	vertical-align: baseline;
 	padding-top: 6px;
 	color: #fff;
+	text-transform: lowercase;
 }
 .dropdown-menu>.active>a, 
 .dropdown-menu>.active>a:focus, 
@@ -374,3 +387,11 @@ form .dropdown-menu li a{
 	color: #A21D1D;
 	background: transparent;
 }
+
+
+.restaurant-mascotte-sec-con-des .fl-red-center-btn:hover{
+	color: #fff;
+	background: #C19764;
+	border-color: #C19764;
+}
+

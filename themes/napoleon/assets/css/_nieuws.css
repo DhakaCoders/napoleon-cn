@@ -175,7 +175,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-weight: 600px;
+	font-weight: 600;
 	color: #4C2631;
 }
 .fl-pagination-ctlr ul li a,
@@ -206,6 +206,7 @@
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+	padding-right: 0;
 }
 .fl-pagination-ctlr ul li:first-child a,
 .fl-pagination-ctlr ul li:last-child a{
@@ -215,6 +216,10 @@
 	line-height: 1;
 	color: #CBA068;
 	font-weight: 600;
+}
+.fl-pagination-ctlr ul li:first-child a span,
+.fl-pagination-ctlr ul li:last-child a span{
+	color: #CBA068;
 }
 .fl-pagination-ctlr ul li:first-child a{
 	padding-left: 40px;
@@ -275,6 +280,9 @@
 		padding-left: 40px;
     	padding-right: 40px;
 	}
+	.np-nieuws-lftsidebar-title {
+	    font-size: 38px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -294,7 +302,26 @@
 	.show-lg{
 		display: block!important;
 	}
-
+	.np-nieuws-lftsidebar {
+	    width: 35%;
+	}
+	.np-nieuws-grds-item{
+		width: 65%;
+	}
+	.np-nieuws-lftsidebar-inr {
+	    padding: 60px 40px 55px;
+	}
+	.np-ngid-title{
+		font-size: 20px;
+	}
+	.np-nieuws-grd-item-des{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.np-ngid-title br,
+	.np-ngid-title > a br{
+		display: none;
+	}
 }
 
 @media(max-width: 991px){
@@ -303,6 +330,55 @@
 	}
 	.show-md{
 		display: block!important;
+	}
+	.np-nieuws-lftsidebar-inr {
+	    padding: 50px 30px 45px;
+	}
+	.np-nieuws-lftsidebar-des{
+		min-height: 300px;
+	}
+	.np-nieuws-lftsidebar-des-inr {
+	    padding-left: 25px;
+	    padding-right: 15px;
+	}
+	.np-nieuws-lftsidebar-title {
+	    font-size: 36px;
+	    margin-bottom: 20px;
+	}
+	.np-nieuws-grds-item{
+		padding-left: 20px;
+	}
+	.np-nieuws-grd-items ul {
+	    margin-left: -8px;
+	    margin-right: -8px;
+	}
+	.np-nieuws-grd-items ul li{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.np-nieuws-grd-item-des {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    padding-top: 30px;
+	}
+	.np-ngid-title {
+	    font-size: 18px;
+	}
+	.fl-pagination-ctlr ul li:first-child a, 
+	.fl-pagination-ctlr ul li:last-child a{
+		font-size: 13px;
+	}
+	.fl-pagination-ctlr ul li {
+	    padding-left: 12px;
+	    padding-right: 12px;
+	}
+	.fl-pagination-ctlr ul li a, 
+	.fl-pagination-ctlr ul li span{
+		font-size: 13px;
+	}
+	.np-nieuws-con-sec {
+	    padding-top: 30px;
+	    padding-bottom: 40px;
 	}
 }
 
@@ -313,6 +389,46 @@
 	.show-sm{
 		display: block!important;
 	}
+	.np-nieuws-con-sec {
+	    padding-top: 20px;
+	    padding-bottom: 25px;
+	}
+	.np-nieuws-lftsidebar {
+	    width: 100%;
+	    margin-bottom: 25px;
+	}
+	.np-nieuws-grds-item {
+	    width: 100%;
+	    padding-left: 0;
+	}
+	.np-nieuws-lftsidebar-inr{
+		max-width: 320px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.np-nieuws-lftsidebar-des {
+	    min-height: 255px;
+	}
+	.np-nieuws-grd-item-des{
+		padding-top: 20px;
+	}
+	.np-nieuws-grd-items ul li{
+		padding-bottom: 15px;
+	}
+	.np-ngid-title {
+	    font-size: 16px;
+	    margin-bottom: 25px;
+	}
+	.np-nieuws-grd-item-des span{
+		font-size: 10px;
+	}
+	.fl-pagination-ctlr ul li:first-child{
+		left: 0;
+	}
+	.np-nieuws-grd-item-img{
+		min-height: 240px;
+	}
 }
 
 @media(max-width: 575px){
@@ -322,11 +438,52 @@
 	.show-xs{
 		display: block!important;
 	}
+	.np-nieuws-grd-items ul{
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.np-nieuws-grd-items ul li{
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+	.np-nieuws-grd-item{
+		max-width: 320px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.np-nieuws-grd-item-des {
+	    padding-top: 15px;
+	}
+	.np-nieuws-grd-items{
+		padding-bottom: 15px;
+		border-bottom: 2px solid #fff;
+		margin-bottom: 40px;
+	}
+	.fl-pagination-ctlr ul li:first-child a,
+	.fl-pagination-ctlr ul li:last-child a{
+		height: 16px;
+	}
+	.fl-pagination-ctlr ul li:first-child a span,
+	.fl-pagination-ctlr ul li:last-child a span{
+		display: none;
+	}
+	.fl-pagination-ctlr ul li:first-child a i,
+	.fl-pagination-ctlr ul li:last-child a i{
+		top: 4px;
+	}
+	.np-nieuws-grd-item-img{
+		min-height: 200px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.fl-pagination-ctlr ul li span.current{
+		width: 32px;
+		height: 32px;
+	}
 
 }
 

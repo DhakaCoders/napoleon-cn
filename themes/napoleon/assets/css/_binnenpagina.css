@@ -143,7 +143,7 @@ ol li::before {
 	line-height: 1;
 	letter-spacing: 0.01em;
 	color: #512C36;
-	margin-bottom: 35px;
+	margin-bottom: 46px;
 	display: block;
 }
 
@@ -372,7 +372,7 @@ Gallery design
 }
 .table-dsc table tbody tr td:last-child span,
 .table-dsc table thead tr th:last-child span{
-	padding-left: 35px;
+	/*padding-left: 35px;*/
 }
 .table-dsc table{
 	width: 100%;
@@ -569,6 +569,10 @@ Gallery design
     font-size: 34px;
     padding-top: 0;
 }
+.dfp-lftimg-rtdesc-rt-desc-prize .price,
+.dfp-lftimg-rtdesc-rt-desc-prize .price span{
+	display: inline-block;
+}
 .dfp-lftimg-rtdesc-rt-desc-prize .price bdi{
 	font-weight: 400;
 	font-size: 26px;
@@ -704,6 +708,12 @@ Gallery design
 	padding-top: 80px;
 	padding-bottom: 70px;
 }
+.dfp-np-nieuws-grd-items-in > ul{
+	padding: 0!important;
+}
+.dfp-np-nieuws-grd-items-in > ul > li{
+	padding: 0 12px!important;
+}
 .dfp-loyalty-welcome-sec{
 	padding-bottom: 110px;
 }
@@ -801,10 +811,26 @@ Gallery design
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 }
-@media(max-width: 1199px){
+@media(max-width: 1599px){
 	
+	.dfp-ngibd-title{
+	    font-size: 32px!important;
+	}
+	.dfp-restaurant-tabs ul li{
+		padding: 0 29px 15px!important;
+	}
 	
-	
+}
+@media(max-width: 1399px){
+	.dfp-ngibd-title{
+	    font-size: 29px!important;
+	}
+	.dfp-restaurant-tabs ul li{
+		padding: 0 24px 15px!important;
+	}
+	.dfp-restaurant-tabs ul li .tab-link{
+		font-size: 11px;
+	}
 }
 
 

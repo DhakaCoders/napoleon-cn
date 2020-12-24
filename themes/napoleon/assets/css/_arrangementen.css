@@ -161,6 +161,15 @@
 	.np-arrangementen-rgt{
 		width: 65%;
 	}
+	.np-arrangementen-lftsidebar .np-nieuws-lftsidebar-des-inr{
+		padding-left: 25px;
+	}
+	.np-agi-rgt-des-inr{
+		padding-right: 25px;
+	}
+	.np-agird-title {
+	    font-size: 30px;
+	}
 }
 @media(max-width: 1299px){
 	.np-arrangementen-lftsidebar{
@@ -169,4 +178,112 @@
 	.np-arrangementen-rgt{
 		width: 65%;
 	}
+}
+
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
+	.np-arrangementen-con .np-arrangementen-lftsidebar {
+	    width: 38%;
+	}
+	.np-arrangementen-con .np-arrangementen-rgt {
+	    width: 62%;
+	}
+	.np-agi-rgt-des-inr{
+		padding-left: 15px;
+		padding-right: 10px;
+	}
+	.np-agird-title{
+		font-size: 28px;
+	}
+	.np-arrangementen-con{
+		padding-bottom: 70px;
+	}
+	.np-agi-lft-img-inr{
+		min-height: 400px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+	.np-arrangementen-con .np-arrangementen-lftsidebar {
+	    width: 100%;
+	}
+	.np-arrangementen-con .np-arrangementen-rgt {
+	    width: 100%;
+	}
+	.np-agi-rgt-des-inr {
+	    padding-left: 25px;
+	    padding-right: 15px;
+	}
+	.np-agi-rgt-des-inr p{
+		font-size: 12px;
+	}
+	.np-arrangementen-con {
+	    padding-bottom: 50px;
+	}
+	.np-agi-lft-img-inr{
+		min-height: 350px;
+	}
+}
+
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+	.np-agi-rgt-des-inr p {
+	    font-size: 11px;
+	    margin-bottom: 25px;
+	}
+	.np-agird-title {
+	    font-size: 26px;
+	}
+}
+
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
+	.np-agi-lft-img,
+	.np-agi-rgt-des,
+	.lftimg-rgtdes .np-agi-lft-img,
+	.lftimg-rgtdes .np-agi-rgt-des{
+		width: 100%;
+	}
+	.np-agi-lft-img-inr{
+		min-height: 200px;
+	}
+	.np-agi-rgt-des-inr{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.np-agi-rgt-des{
+		padding: 35px 15px 40px 25px;
+	}
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }

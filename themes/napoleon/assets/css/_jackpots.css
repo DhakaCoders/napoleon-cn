@@ -53,11 +53,13 @@
 .j-bnr-slide-item-prize{
 
 }
-.j-bnr-slide-item-prize .price .amount bdi{
+.j-bnr-slide-item-prize .price .amount bdi,
+.j-bnr-slide-item-prize span{
 	font-family: 'Operetta18-Medium';
 	font-size: 46px;
 	line-height: 1;
 	color: #FFFFFF;
+	display: inline-block;
 }
 
 
@@ -89,7 +91,6 @@
 }
 .nl-right-desc-cntlr{
 	width: 50%;
-	height: 448px;
 	background: #4c2631;
 	padding: 60px 15px;
 	display: flex;
@@ -99,6 +100,7 @@
 .nl-right-desc{
 	max-width: 385px;
 	width: 100%;
+	min-height: 300px;
 }
 .nl-right-desc-brand{
 	background: #1A1429;
@@ -161,7 +163,9 @@
 
 
 
-
+.jackpots-content{
+	padding-bottom: 220px;
+}
 .jackpots-content-cntlr{
 	max-width: 980px;
 	width: 100%;
@@ -243,4 +247,31 @@
 	line-height: 1;
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
+}
+
+
+/*responsive*/
+@media(max-width: 1599px){
+	.j-bnr-slide-item-title{
+		font-size: 22px;
+	}
+	.j-bnr-slide-item-prize .price .amount bdi,
+	.j-bnr-slide-item-prize span{
+		font-size: 38px;
+	}
+	.jackpots-content-cntlr{
+		max-width: 930px;
+	}
+}
+@media(max-width: 1399px){
+	.j-bnr-slide-item-title{
+		font-size: 19px;
+	}
+	.j-bnr-slide-item-prize .price .amount bdi,
+	.j-bnr-slide-item-prize span{
+		font-size: 35px;
+	}
+	.jackpots-content-cntlr{
+		max-width: 900px;
+	}
 }

@@ -1,61 +1,3 @@
-.hdr-top-notification-bar{
-	background: #0A2B20;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1;
-	color: #E1BF91;
-	padding: 35px 0;
-}
-
-.hdr-top-notification p{
-	position: relative;
-	margin: 0;
-	padding-left: 50px;
-}
-
-.hdr-top-notification p:before{
-	content: "";
-	width: 34px;
-	height: 34px;
-	border: 2px solid #E1BF91;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	background: url(../images/i.svg);
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-
-
-.page-banner.home-page-bnr .page-banner-inr{
-	height: 906px;
-}
-
-.page-banner.home-page-bnr .page-banner-des{
-
-}
-
-.bnr-btns{
-	display: flex;
-	align-items: center;
-}
-.bnr-btn-1{
-	margin-right: 10px;
-}
-
-.bnr-btn-2 a{
-	background: transparent;
-	border-color: #fff;
-}
-
-.bnr-btn-2 a:hover{
-	border-color: #A21D1D;
-	background: #A21D1D;
-}
 
 
 
@@ -219,12 +161,12 @@
 
 .visite-slider-cntlr{
 	width: 71.7%;
-	padding-right: 19px;
+/*	padding-right: 19px;*/
 	overflow: hidden;
 }
-/*.visite-slider-cntlr .swiper-slide{
-	width: 569px!important;
-}*/
+.visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
+	width: 600px!important;
+}
 .visite-slider-cntlr .restaurant-gallery-slide-item{
 	position: relative;
 	max-width: initial;
@@ -298,6 +240,16 @@
 	margin-bottom: 30px;
 	text-align: center;
 }
+.news-items-cntlr .np-nieuws-grd-items > ul > li{
+	width: 33.33%;
+	padding-bottom: 10px;
+}
+.news-items-cntlr .np-nieuws-grd-items > ul > li:nth-child(2n+1){
+	clear: initial;
+}
+.news-items-cntlr .np-nieuws-grd-items > ul > li:nth-child(3n+1){
+	clear: left;
+}
 .news-btn .fl-tsprnt-btn{
 	margin-left: auto;
 	margin-right: auto;
@@ -359,11 +311,33 @@
 
 
 /*responsive*/
-@media(max-width: 1600px){
+@media(max-width: 1599px){
+	.catagory-sec{
+		padding: 0 40px;
+	}
 	.catagory-slide-item-cntlr {
 		padding: 17px 17px;
 	}
 	.catagory-slide-item-desc p{
 		font-size: 13px;
+	}
+
+
+	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
+		width: 456px!important;
+	}
+}
+@media(max-width: 1399px){
+	.catagory-sec{
+		padding: 0 60px;
+	}
+	.sliderItem{
+		padding: 0 8px;
+	}
+	.catagory-slide-item-desc p{
+	    font-size: 12px;
+	}
+	.catagory-slide-item-title{
+		font-size: 30px;
 	}
 }

@@ -274,6 +274,34 @@ $(document).delegate('.fl-push-btn', 'click', function() {
     }*/
 });
 
+/**
+Sidebar menu
+*/
+if (windowWidth <= 991) {
+  $('.xs-hamburger-btn').on('click', function(e){
+    $('.xs-nav-menu-cntlr').addClass('opacity-1');
+    $('.bdoverlay').addClass('active');
+    $('body').addClass('active-scroll-off');
+    $(this).addClass('active-collapse');
+  });
+  $('.closebtn-wrp').on('click', function(e){
+    $('.bdoverlay').removeClass('active');
+    $('.xs-nav-menu-cntlr').removeClass('opacity-1');
+    $('body').removeClass('active-scroll-off');
+    $('.xs-hamburger-btn').removeClass('active-collapse');
+  });
+  
+  $('li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().siblings().find('.sub-menu').slideUp(300);
+    $(this).parent().find('.sub-menu').slideToggle(300);
+    $(this).toggleClass('sub-menu-active');
+
+  });
+}
+
+
+
   /*Start Of Noyon*/
 
   
@@ -346,24 +374,6 @@ $(document).delegate('.fl-push-btn', 'click', function() {
     holdeWidth()
   });
   
-/*  var swiper = new Swiper('.visiteSlider', {
-    slidesPerView: 1,
-    loop: true,
-    navigation: {
-      nextEl: '.visitePrevBtn',
-      prevEl: '.visiteNextBtn',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      1920: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-    }
-  });*/
 
    var swiper = new Swiper('.hmFtrGlrySlider', {
     slidesPerView: 5,
@@ -382,6 +392,14 @@ $(document).delegate('.fl-push-btn', 'click', function() {
         spaceBetween: 0,
       },
     }
+  });
+
+
+   $('.ftr-top-row-col h5').on('click', function(){
+    $(this).toggleClass('ftr-row-title-rotet');
+    $(this).parent().siblings().find('h5').removeClass('ftr-row-title-rotet');
+    $(this).parent().find('.xs-ftr-mbl-accrdn').slideToggle(300);
+    $(this).parent().siblings().find('.xs-ftr-mbl-accrdn').slideUp(300);
   });
  
 
