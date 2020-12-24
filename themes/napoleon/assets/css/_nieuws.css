@@ -453,6 +453,15 @@
 		border-bottom: 2px solid #fff;
 		margin-bottom: 40px;
 	}
+	.fl-pagination-ctlr ul li:first-child a{
+		height: 16px;
+	}
+	.fl-pagination-ctlr ul li:first-child a span{
+		display: none;
+	}
+	.fl-pagination-ctlr ul li:first-child a i{
+		top: 4px;
+	}
 
 }
 
