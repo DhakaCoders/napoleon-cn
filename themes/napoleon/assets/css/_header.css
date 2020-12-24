@@ -346,7 +346,23 @@ header.header.page-header .hdr-lang input:checked + strong{
 }
 
 @media(max-width: 1399px){
-
+	.hdr-menu > ul > li > a{
+		font-size: 17px;
+	}
+	.hdr-menu > ul > li{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.hdr-top-menu ul li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.logo{
+		width: 190px;
+		padding-left: 10px;
+		padding-right: 10px;
+		height: 140px;
+	}
 }
 
 @media(max-width: 1299px){

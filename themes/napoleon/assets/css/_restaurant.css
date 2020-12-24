@@ -61,7 +61,7 @@
 .restaurant-tabs ul li{
 	display: inline-block;
 	vertical-align: baseline;
-	padding: 0 50px 15px;
+	padding: 0 35px 15px;
 }
 
 .restaurant-tabs .tab-link{
@@ -357,10 +357,26 @@
 	}
 }
 @media(max-width: 1399px){
-	
-}
-@media(max-width: 1399px){
-	
+	.rmscd-title {
+	    font-size: 47px;
+	}
+	.rtshdr-title {
+	    margin-left: 253px;
+	}
+	.restaurantTestiSlide-item{
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 70px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 465px;
+	}
+	.rtcfbd-title {
+	    font-size: 44px!important;
+	}
+	.restaurant-tab-con-fea-box-des{
+		padding-left: 35px;
+	}
 }
 
 @media(max-width: 1299px){
