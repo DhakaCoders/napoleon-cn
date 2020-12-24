@@ -821,6 +821,17 @@ Gallery design
 	}
 	
 }
+@media(max-width: 1399px){
+	.dfp-ngibd-title{
+	    font-size: 29px!important;
+	}
+	.dfp-restaurant-tabs ul li{
+		padding: 0 24px 15px!important;
+	}
+	.dfp-restaurant-tabs ul li .tab-link{
+		font-size: 11px;
+	}
+}
 
 
 @media(max-width: 991px){

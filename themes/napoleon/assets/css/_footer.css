@@ -574,7 +574,11 @@
 }
 
 /*responsive*/
-@media(max-width: 1600px){
+@media(max-width: 1599px){
+	.footer-top-sec-v2-inr{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 	.footer-top-col-title{
 		font-size: 26px;
 	}
@@ -591,5 +595,11 @@
 	}
 	.fts-v2-rt-desc-row-title{
 		font-size: 16px;
+	}
+}
+@media(max-width: 1399px){
+	.footer-top-sec-v2-inr{
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
