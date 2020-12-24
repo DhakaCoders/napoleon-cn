@@ -574,7 +574,11 @@
 }
 
 /*responsive*/
-@media(max-width: 1600px){
+@media(max-width: 1599px){
+	.footer-top-sec-v2-inr{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 	.footer-top-col-title{
 		font-size: 26px;
 	}
@@ -591,5 +595,22 @@
 	}
 	.fts-v2-rt-desc-row-title{
 		font-size: 16px;
+	}
+}
+@media(max-width: 1399px){
+	.footer-top-sec-v2-inr{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.fts-v2-rt-desc-row-title{
+		font-size: 15px;
+	}
+	.fts-v2-lft-sdl-day strong,
+	.fts-v2-lft-sdl-time span,
+	.fts-v2-rt-desc-cntct-tel a,
+	.fts-v2-rt-desc-cntct-mail a,
+	.fts-v2-rt-desc-visit a,
+	.fts-v2-rt-desc-Parking a{
+		font-size: 12px;
 	}
 }
