@@ -223,11 +223,13 @@
 }
 
 @media(max-width: 1399px){
-	
+	.np-ad-btm-package-rgt {
+	    padding-left: 100px;
+	}
 }
 
 @media(max-width: 1299px){
-
+	
 }
 
 @media(max-width: 1199px){

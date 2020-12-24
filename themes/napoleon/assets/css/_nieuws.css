@@ -448,6 +448,11 @@
 	.np-nieuws-grd-item-des {
 	    padding-top: 15px;
 	}
+	.np-nieuws-grd-items{
+		padding-bottom: 15px;
+		border-bottom: 2px solid #fff;
+		margin-bottom: 40px;
+	}
 
 }
 
