@@ -267,7 +267,7 @@
 	}
 	.np-agenda-lftsidebar {
 	    width: 100%;
-	    margin-bottom: 15px;
+	    margin-bottom: 30px;
 	}
 	.np-agenda-rgt {
 	    width: 100%;
@@ -346,6 +346,9 @@
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.np-agenda-lftsidebar{
+		margin-bottom: 15px;
 	}
 }
 
