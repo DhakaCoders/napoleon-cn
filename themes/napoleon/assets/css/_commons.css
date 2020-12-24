@@ -383,3 +383,11 @@ form .dropdown-menu li a{
 	color: #A21D1D;
 	background: transparent;
 }
+
+
+.restaurant-mascotte-sec-con-des .fl-red-center-btn:hover{
+	color: #fff;
+	background: #C19764;
+	border-color: #C19764;
+}
+
