@@ -370,6 +370,9 @@
 
 /*responsive*/
 @media(max-width: 1600px){
+	.catagory-sec{
+		padding: 0 40px;
+	}
 	.catagory-slide-item-cntlr {
 		padding: 17px 17px;
 	}
