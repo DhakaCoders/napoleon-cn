@@ -59,9 +59,7 @@
 	.show-lg{
 		display: block!important;
 	}
-	br{
-		display: none;
-	}
+	
 	h1{
 		font-size: 60px;
 	}
