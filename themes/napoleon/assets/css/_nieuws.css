@@ -231,7 +231,9 @@
 	left: 0;
 }
 .fl-pagination-ctlr ul li:first-child a:hover,
-.fl-pagination-ctlr ul li:last-child a:hover{
+.fl-pagination-ctlr ul li:first-child a:hover span,
+.fl-pagination-ctlr ul li:last-child a:hover,
+.fl-pagination-ctlr ul li:last-child a:hover span{
 	color: #4C2631;
 }
 .fl-pagination-ctlr ul li:first-child a:hover svg,
