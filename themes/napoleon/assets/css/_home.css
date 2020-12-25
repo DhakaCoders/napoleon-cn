@@ -24,6 +24,13 @@
 	margin-top: -63px;
 	overflow-x: 3;
 }
+.catagorySlider-arrows .swiper-button-prev{
+	left: 10px;
+}
+.catagorySlider-arrows .swiper-button-prev:hover i svg,
+.catagorySlider-arrows .swiper-button-next:hover i svg{
+	fill: #fff;
+}
 .catagory-slider{
 	margin-left: -12px;
 	margin-right: -12px;
@@ -103,9 +110,11 @@
 }
 .wellcome-left{
 	width: 28.3%;
+
 }
 .wellcome-right-cntlr{
 	width: 71.7%;
+	padding-left: 20px;
 }
 .wellcome-title{
 	font-family: 'Operetta18-Regular';
@@ -331,6 +340,10 @@
 	.catagory-sec{
 		padding: 0 60px;
 	}
+	.catagory-slider {
+		margin-left: -8px;
+		margin-right: -8px;
+	}
 	.sliderItem{
 		padding: 0 8px;
 	}
@@ -340,4 +353,95 @@
 	.catagory-slide-item-title{
 		font-size: 30px;
 	}
+}
+@media(max-width: 1299px){
+	.catagory-sec{
+		padding: 0 30px;
+	}
+}
+@media(max-width: 1199px){
+	.catagory-sec{
+		padding: 0 20px;
+	}
+	.catagory-sec-cntlr{
+		min-height: 500px;
+	}
+}
+@media(max-width: 991px){
+	.catagory-sec{
+		margin-top: -50px;
+	}
+	.catagory-sec-cntlr{
+		min-height: 480px;
+	}
+	.catagory-slider-cntlr{
+		max-width: 600px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -48px;
+	}
+}
+@media(max-width: 767px){
+	.catagory-sec-cntlr{
+		min-height: 380px;
+	}
+}
+@media(max-width: 639px){
+	.catagory-sec{
+		margin-top: -32px;
+	}
+	.catagory-sec-cntlr{
+		padding-bottom: 25px;
+		min-height: 380px;
+	}
+	.catagory-slider-cntlr{
+		max-width: 285px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -35px;
+	}
+	.catagory-slide-item-cntlr{
+		padding: 20px 20px;
+	}
+	.catagory-slide-item-img-cntlr{
+		height: 130px;
+		margin-bottom: 22px;
+	}
+	.catagory-slide-item{
+		padding-bottom: 5px;
+	}
+	.catagory-slide-item-title{
+		margin-bottom: 15px;
+		font-size: 28px;
+	}
+	.catagory-slide-item-desc{
+		margin-bottom: 20px;
+	}
+	.catagory-slide-item-desc p{
+		font-size: 11px;
+	}
+	.catagory-slide-item-btn .fl-red-btn{
+		height: 40px;
+	}
+	.catagorySlider-arrows .swiper-button-prev:hover i svg,
+	.catagorySlider-arrows .swiper-button-next:hover i svg{
+		fill: rgb(203, 160, 104);
+	}
+}
+@media(max-width: 575px){
+	.catagory-sec{
+		padding: 0 8px;
+	}
+}
+@media(max-width: 479px){
+	
+}
+
+
+
+header,
+.home-page-bnr{
+	display: none;
 }
