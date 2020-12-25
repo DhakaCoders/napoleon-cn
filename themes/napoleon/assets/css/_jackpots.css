@@ -271,7 +271,172 @@
 	.j-bnr-slide-item-prize span{
 		font-size: 35px;
 	}
+	.j-bnr-slider{
+		margin-left: -8px;
+		margin-right: -8px;
+	}
 	.jackpots-content-cntlr{
 		max-width: 900px;
 	}
+	.j-bnr-slide-icon{
+		margin-bottom: 27px;
+	}
+	.j-bnr-slide-icon img{
+		max-width: 60px;
+		min-height: 60px;
+	}
+	.jackpots-content{
+		padding-bottom: 200px;
+	}
+}
+@media(max-width: 1199px){
+	.j-bnr-slide-item-title{
+		font-size: 17px;
+	}
+	.j-bnr-slide-item-prize .price .amount bdi, .j-bnr-slide-item-prize span{
+		font-size: 31px;
+	}
+	.j-bnr-slide-icon{
+	    margin-bottom: 20px;
+	}
+	.j-bnr-slide-icon img{
+		min-height: 50px;
+		max-width: 50px;
+	}
+	.j-left-img-right-desc-sec{
+		padding:  85px 0 85px;
+	}
+	.jackpots-content{
+		padding-bottom: 180px;
+	}
+
+}
+@media(max-width: 991px){
+	.j-bnr-slide-item-title{
+		font-size: 18px;
+	}
+	.j-bnr-slide-item-prize .price .amount bdi, .j-bnr-slide-item-prize span{
+		font-size: 32px;
+	}
+	.nl-right-desc-cntlr{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.j-left-img-right-desc-sec{
+		padding:  65px 0 65px;
+	}
+	.nl-rd-current-jackpots{
+		margin-bottom: 32px;
+	}
+	.jackpots-content{
+		padding-bottom: 160px;
+	}
+}
+@media(max-width: 767px){
+	
+	.nl-right-desc-title{
+		font-size: 30px;
+		margin-bottom: 
+	}
+	.nl-rd-current-jackpots > span{
+		display: none;
+	}
+	.j-left-img-right-desc-sec{
+		padding: 40px 0 50px;
+	}
+	.nl-rd-current-jackpots{
+		margin-bottom: 25px;
+	}
+	.nl-left-img-right-desc-cntlr,
+	.jkpt-cntnt-item{
+		display: block;
+		max-width: 500px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.nl-left-img-cntlr,
+	.jkpt-cntnt-item-img-cntlr{
+		width: 100%;
+		height: 250px;
+		margin-bottom: 
+	}
+	.nl-right-desc-cntlr{
+		width: 100%;
+	}
+	.jackpots-content-cntlr > ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.jackpots-content-cntlr > ul > li{
+		padding: 0;
+		width: 100%;
+		margin-bottom: 37px;
+	}
+	.nl-right-desc{
+		min-height: initial;
+	}
+	.nl-right-desc-cntlr,
+	.jkpt-cntnt-item-desc-cntlr{
+		padding-left: 27px;
+		padding-right: 27px;
+		padding-top: 37px;
+		padding-bottom: 37px;
+		width: 100%;
+		height: 100%;
+	}
+	.jackpots-content{
+		padding-bottom: 137px;
+	}
+	
+}
+@media(max-width: 639px){
+
+}
+@media(max-width: 575px){
+	.j-bnr-sliders-cntlr{
+		max-width: 300px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.j-bnr-slide-item-prize .price .amount bdi, .j-bnr-slide-item-prize span{
+		font-size: 38px;
+	}
+	.j-bnr-slide-icon{
+		margin-bottom: 10px;
+	}
+	.j-bnr-slide-icon img{
+		min-height: 48px;
+		max-width: 48px;
+	}
+	.j-left-img-right-desc-sec{
+		padding: 0 0 37px;
+	}
+	.nl-rd-current-jackpots{
+		margin-bottom: 18px;
+	}
+	.nl-right-desc-title{
+		font-size: 26px;
+		margin-bottom: 5px;
+	}
+	.nl-rd-current-jackpots-prize .price .amount bdi{
+		font-size: 26px;
+	}
+	.nl-rd-current-jackpots{
+		margin-bottom: 20px;
+	}
+	.nl-left-img-cntlr,
+	.jkpt-cntnt-item-img-cntlr{
+		width: 100%;
+		height: 200px;
+		
+	}
+	.jackpots-content{
+		padding-bottom: 107px;
+	}
+
+}
+@media(max-width: 479px){
+
 }
