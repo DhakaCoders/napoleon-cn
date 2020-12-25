@@ -329,14 +329,22 @@ if (windowWidth <= 991) {
 
   
   var swiper = new Swiper('.catagorySlider', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
     navigation: {
-      nextEl: '.slider1-arrows .swiper-button-next',
-      prevEl: '.slider1-arrows .swiper-button-prev',
+      nextEl: '.catagorySlider-arrows .swiper-button-next',
+      prevEl: '.catagorySlider-arrows .swiper-button-prev',
     },
     breakpoints: {
-      768: {
+       639: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1199: {
         slidesPerView: 4,
         spaceBetween: 0,
       },
@@ -357,11 +365,11 @@ if (windowWidth <= 991) {
   }
   wswWidth();
   $(window).resize(function(){
-    wswWidth()
+    wswWidth();
   });
 
 
-  function holdeWidth(){
+  function vswWidth(){
     var padding = 15, 
     offset = 0,
     winW = $(window).width(),
@@ -369,30 +377,11 @@ if (windowWidth <= 991) {
     conWleft = (winW - conW) / 2;
     $('.visite-sec-wrap').css('margin-left', (conWleft+padding+offset));
   }
-  holdeWidth();
+  vswWidth();
   $(window).resize(function(){
-    holdeWidth()
+    vswWidth();
   });
   
-
-   var swiper = new Swiper('.hmFtrGlrySlider', {
-    slidesPerView: 5,
-    loop: true,
-    navigation: {
-      nextEl: '.slider1-arrows .swiper-button-next',
-      prevEl: '.slider1-arrows .swiper-button-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 5,
-        spaceBetween: 0,
-      },
-      1920: {
-        slidesPerView: 5,
-        spaceBetween: 0,
-      },
-    }
-  });
 
 
    $('.ftr-top-row-col h5').on('click', function(){
