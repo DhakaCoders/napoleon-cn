@@ -709,6 +709,15 @@ header.header.page-header .hdr-lang input:checked + strong{
 	    position: relative;
 	    top: -2px;
 	}
+	.header.page-header .line-icon span{
+		background: #4C2631;
+	}
+	header.header.page-header{
+		margin-bottom: 0;
+	}
+	header.header.page-header .logo{
+		width: 160px;
+	}
 }
 
 @media(max-width: 767px){

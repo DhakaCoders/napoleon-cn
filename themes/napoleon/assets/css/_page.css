@@ -107,7 +107,7 @@
 
 .page-banner-title{
 	font-size: 74px;
-	line-height: 1.1;
+	line-height: 1;
 	font-weight: 500;
 	margin-bottom: 22px!important;
 }
@@ -543,11 +543,30 @@
 	.breadcrumbs-section{
 		display: none;
 	}
+	.page-banner-title {
+	    font-size: 42px;
+	}
 }
 
 @media(max-width: 767px){
 	.hdr-top-notification-bar{
 		font-size: 15px;
+	}
+	.page-banner-des-inr{
+		padding-left: 0;
+	}
+	.home-page-bnr .page-banner-des strong,
+	.home-page-bnr .page-banner-des p{
+		display: none;
+	}
+	.page-banner.home-page-bnr .page-banner-inr {
+	    height: 640px;
+	}
+	.page-banner.home-page-bnr .page-banner-des{
+		padding-top: 290px;
+	}
+	.page-banner-title {
+	    font-size: 36px;
 	}
 }
 
@@ -556,11 +575,21 @@
 		font-size: 12px;
 		line-height: 16px;
 	}
+	.bnr-btns{
+		flex-wrap: wrap;
+	}
+	.bnr-btns > div{
+		width: 100%;
+		margin-bottom: 10px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.hdr-top-notification-bar{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 
 }
 
