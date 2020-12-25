@@ -251,6 +251,9 @@
 	.np-agird-title {
 	    font-size: 26px;
 	}
+	.np-arrangementen-con {
+	    padding-bottom: 30px;
+	}
 }
 
 @media(max-width: 575px){
@@ -276,14 +279,26 @@
 	.np-agi-rgt-des{
 		padding: 35px 15px 40px 25px;
 	}
+	.np-arrangementen-con {
+	    padding-bottom: 15px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.np-arrangementen-con .np-arrangementen-lftsidebar .np-nieuws-lftsidebar-des-inr {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
 
 }
 
 @media(max-width: 359px){
-
+	.np-arrangementen-con .np-arrangementen-lftsidebar .np-nieuws-lftsidebar-des-inr {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.np-arrangementen-con .np-nieuws-lftsidebar-title {
+	    font-size: 30px;
+	}
 }
