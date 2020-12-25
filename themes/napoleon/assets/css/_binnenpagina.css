@@ -593,7 +593,7 @@ Gallery design
 	letter-spacing: 0.03em;
 	color: #CB9F67;
 	position: relative;
-	padding-right: 25px;
+	padding-right: 23px;
 }
 .dfp-lftimg-rtdesc-rt-desc-btn a i{
 	position: absolute;
@@ -602,7 +602,7 @@ Gallery design
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	right: 5px;
+	right: 3px;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;

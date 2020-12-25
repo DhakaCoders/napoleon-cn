@@ -384,8 +384,13 @@
 }
 
 @media(max-width: 1199px){
-	
-
+	.restaurant-tab-con-des{
+		padding-left: 10%;
+	}
+	.restaurant-tabs ul li{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 }
 
 @media(max-width: 991px){

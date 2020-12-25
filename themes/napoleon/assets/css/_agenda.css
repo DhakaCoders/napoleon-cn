@@ -296,6 +296,9 @@
 	.np-agenda-lftimg{
 		min-height: 300px;
 	}
+	.np-agenda-con {
+	    padding-bottom: 20px;
+	}
 }
 
 @media(max-width: 767px){
@@ -336,7 +339,6 @@
 	}
 	.np-agenda-con {
 		padding-top: 20px;
-	    padding-bottom: 30px;
 	}
 	.np-agenda-con .np-nieuws-lftsidebar-inr{
 		margin-bottom: 15px;
@@ -396,7 +398,13 @@
 }
 
 @media(max-width: 359px){
-
+	.np-agenda-con .np-nieuws-lftsidebar-des-inr {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.np-agenda-lftsidebar .np-nieuws-lftsidebar-des {
+	    min-height: 400px;
+	}
 }
 
 

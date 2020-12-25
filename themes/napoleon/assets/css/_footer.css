@@ -56,6 +56,9 @@
 	background-position: center center;
 	top: 7px;
 	right: 0;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 
 
 }
@@ -736,6 +739,12 @@
 		text-align: center;
 		margin-bottom: 25px;
 	}
+	.footer-top-col-hedding{
+		margin-bottom: 14px;
+	}
+	.footer-top-col-title{
+		font-size: 26px;
+	}
 	.footer-top-form{
 		max-width: 650px;
 		margin-left: auto;
@@ -928,6 +937,9 @@
 	.footer-top-sec-v2-inr{
 		padding-bottom: 45px;
 	}
+	.fts-v2-lft-title{
+		font-size: 22px;
+	}
 }
 @media(max-width: 639px){
 	/*footer top sec version 2*/
@@ -963,6 +975,9 @@
 	/*footer top sec version 2*/
 	.footer-top-sec-v2{
 		padding-bottom: 25px;
+	}
+	.fts-v2-lft-title{
+		font-size: 18px;
 	}
 	.footer-top-sec-v2-inr{
 		margin-top: -60px;
