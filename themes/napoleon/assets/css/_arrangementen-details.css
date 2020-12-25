@@ -274,6 +274,19 @@
 		font-size: 14px;
 		margin-bottom: 25px;
 	}
+	.np-ad-package-sec {
+	    padding-bottom: 75px;
+	}
+	.np-ad-btm-package-sec {
+	    padding-bottom: 90px;
+	}
+	.np-ad-expert-sec {
+	    padding-bottom: 85px;
+	}
+	.np-ad-ctlr .restaurant-testi-slider {
+	    padding-top: 60px;
+	    padding-bottom: 200px;
+	}
 	
 
 }
@@ -307,10 +320,11 @@
 		font-size: 32px;
 	}
 	.np-ad-package-sec {
-	    padding-bottom: 70px;
+	    padding-bottom: 50px;
+	    padding-top: 30px;
 	}
 	.np-ad-btm-package-sec {
-	    padding-bottom: 90px;
+	    padding-bottom: 70px;
 	}
 	.np-ad-expert-lft {
 	    padding-right: 20px;
@@ -320,7 +334,7 @@
 		font-size: 32px;
 	}
 	.np-ad-expert-sec {
-	    padding-bottom: 90px;
+	    padding-bottom: 65px;
 	}
 	.np-ad-expert-lft p,
 	.np-ad-btm-package-rgt p,
@@ -349,6 +363,13 @@
 	}
 	.np-ad-package-rgt-img{
 		min-height: 400px;
+	}
+	.np-ad-ctlr .restaurant-gallery-slider{
+		padding-bottom: 40px;
+	}
+	.np-ad-ctlr .restaurant-testi-slider {
+	    padding-top: 50px;
+	    padding-bottom: 180px;
 	}
 }
 
@@ -397,14 +418,14 @@
 	    font-size: 40px;
 	}
 	.np-ad-package-sec {
-	    padding-bottom: 40px;
+	    padding-bottom: 20px;
 	}
 	.np-ad-btm-package-lft,
 	.np-ad-expert-rgt{
 		margin-bottom: 35px;
 	}
 	.np-ad-btm-package-sec {
-	    padding-bottom: 60px;
+	    padding-bottom: 40px;
 	}
 	.np-ad-btm-package-rgt-title {
 	    font-size: 30px;
@@ -418,6 +439,15 @@
 	}
 	.np-ad-package-rgt-img{
 		min-height: 300px;
+	}
+	.np-ad-expert-sec {
+	    padding-bottom: 40px;
+	}
+	.np-ad-ctlr .restaurant-testi-slider{
+		padding-bottom: 140px;
+	}
+	.np-ad-btm-package-lft-img {
+	    min-height: 350px;
 	}
 }
 
@@ -443,6 +473,18 @@
 	}
 	.np-ad-ctlr .contact-form-dsc-title {
 	    font-size: 25px;
+	}
+	.np-ad-package-sec{
+	    padding-bottom: 10px;
+	}
+	.np-ad-btm-package-sec {
+	    padding-bottom: 20px;
+	}
+	.np-ad-ctlr .restaurant-testi-slider {
+	    padding-bottom: 100px;
+	}
+	.np-ad-btm-package-lft-img {
+	    min-height: 200px;
 	}
 	
 
