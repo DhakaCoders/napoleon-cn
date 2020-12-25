@@ -461,11 +461,11 @@ if( $('#googlemap').length ){
 
 
   /*Start Of Shariful*/
-  var offset = 130;
+  var lftoffset = 130;
   var windowW = $(window).width();
   var containerW = $('.container').outerWidth();
   var containerLft = (windowW - containerW) / 2;
-  $('.np-ad-package-holder').css('margin-left', (containerLft+offset));
+  $('.np-ad-package-holder').css('margin-left', (containerLft+lftoffset));
 
   var rgtoffset = 100;
   var windowW = $(window).width();
