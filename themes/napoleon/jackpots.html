@@ -73,7 +73,13 @@
 
 
       <!--Start Of Shariful-->
+        <symbol id="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.9982 8.92292L25.0396 8.93196H7.31561L12.8874 3.34792C13.1602 3.0753 13.3099 2.70599 13.3099 2.31837C13.3099 1.93076 13.1602 1.56403 12.8874 1.29076L12.0204 0.423363C11.7478 0.150739 11.3845 0 10.9971 0C10.6095 0 10.246 0.149663 9.97336 0.422286L0.422292 9.9725C0.148592 10.2462 -0.00107094 10.6108 5.76931e-06 10.9986C-0.00107094 11.3886 0.148592 11.7534 0.422292 12.0266L9.97336 21.5777C10.246 21.8501 10.6093 22 10.9971 22C11.3845 22 11.7478 21.8499 12.0204 21.5777L12.8874 20.7103C13.1602 20.4381 13.3099 20.0746 13.3099 19.687C13.3099 19.2996 13.1602 18.9553 12.8874 18.6829L7.25273 13.0676H25.018C25.8163 13.0676 26.4871 12.3796 26.4871 11.5817V10.3549C26.4871 9.5571 25.7965 8.92292 24.9982 8.92292Z"/>
+      </symbol>
 
+      <symbol id="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.48909 8.92292L1.44774 8.93196H19.1717L13.5999 3.34792C13.3271 3.0753 13.1774 2.70599 13.1774 2.31837C13.1774 1.93076 13.3271 1.56403 13.5999 1.29076L14.4669 0.423363C14.7395 0.150739 15.1028 0 15.4902 0C15.8778 0 16.2413 0.149663 16.5139 0.422286L26.065 9.9725C26.3387 10.2462 26.4884 10.6108 26.4873 10.9986C26.4884 11.3886 26.3387 11.7534 26.065 12.0266L16.5139 21.5777C16.2413 21.8501 15.878 22 15.4902 22C15.1028 22 14.7395 21.8499 14.4669 21.5777L13.5999 20.7103C13.3271 20.4381 13.1774 20.0746 13.1774 19.687C13.1774 19.2996 13.3271 18.9553 13.5999 18.6829L19.2346 13.0676H1.46927C0.671001 13.0676 0.000209808 12.3796 0.000209808 11.5817V10.3549C0.000209808 9.5571 0.690813 8.92292 1.48909 8.92292Z"/>
+      </symbol>
 
   </svg>
 
@@ -225,6 +231,22 @@
                           </span>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows show-sm jBnrSlider-arrows">
+                    <div class="swiper-button-prev">
+                      <i>
+                        <svg class="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+                          <use xlink:href="#fl-lft-arrow-svg"></use>
+                        </svg> 
+                      </i>
+                    </div>
+                    <div class="swiper-button-next">
+                      <i>
+                        <svg class="fl-rgt-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
+                          <use xlink:href="#fl-rgt-arrow-svg"></use>
+                        </svg> 
+                      </i>
                     </div>
                   </div>
                 </div>
@@ -549,13 +571,33 @@
     <div class="row">
       <div class="col-md-12">
         <div class="footer-top clearfix">
-          <div class="frt-logo">
-            <a href="#">
-              <img src="assets/images/footer-logo.png" alt="">
-            </a>
+          <div class="ftr-left">
+            <div class="ftr-logo">
+              <a href="#">
+                <img src="assets/images/footer-logo.png" alt="">
+              </a>
+            </div>
+            <div class="ftr-btm-socials show-md">
+              <ul class="reset-list">
+                <li><a href="#">
+                  <i>
+                    <svg class="facebool-icon" width="25" height="24" viewBox="0 0 25 24" fill="#999999">
+                      <use xlink:href="#facebool-icon"></use> </svg>
+                    </i>
+                  </a></li>
+
+                  <li><a href="#">
+                    <i>
+                      <svg class="instagram-icon" width="25" height="24" viewBox="0 0 25 24" fill="#999999">
+                        <use xlink:href="#instagram-icon"></use> </svg>
+                      </i>
+                    </a></li>
+                  </ul>
+                </div>
           </div>
-          <div class="ftr-top-col ftr-col-nav">
-            <ul class="reset-list">
+          <div class="ftr-top-col ftr-top-row-col ftr-col-nav">
+            <h5 class="ftr-top-row-col-title">Navigatie</h5>
+            <ul class="reset-list xs-ftr-mbl-accrdn">
               <li><a href="#">Casino</a></li>
               <li><a href="#">Arrangementen</a></li>
               <li><a href="#">Restaurant</a></li>
@@ -564,23 +606,30 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="ftr-top-col ftr-col-address">
-            <h6 class="ftr-top-col-title">Adres</h6>
-            <a href="#">Zeedijk-Albertstrand 509 <br>8300 Knokke-Heist</a>
-          </div>
-          <div class="ftr-top-col ftr-col-contact">
-            <h6 class="ftr-top-col-title">Contact</h6>
-            <div class="ftr-col-contact-tell">
-              <a href="tel:(+32)050630500">(+32) 050 630 500’</a>
+
+          <div class="ftr-top-addr-cntct-wrap ftr-top-row-col clearfix">
+            <h5 class="ftr-top-row-col-title">Contact Info</h5>
+            <div class="ftr-top-addr-cntct xs-ftr-mbl-accrdn">
+              <div class="ftr-top-col ftr-col-address">
+                <h6 class="ftr-top-col-title">Adres</h6>
+                <a href="#">Zeedijk-Albertstrand 509 <br>8300 Knokke-Heist</a>
+              </div>
+              <div class="ftr-top-col ftr-col-contact">
+                <h6 class="ftr-top-col-title">Contact</h6>
+                <div class="ftr-col-contact-tell">
+                  <a href="tel:(+32)050630500">(+32) 050 630 500’</a>
+                </div>
+                <div class="ftr-col-contact-mail">
+                  <a href="mailto:info@grandcasinoknokke.be">info@grandcasinoknokke.be</a>
+                </div>
+              </div>
             </div>
-            <div class="ftr-col-contact-mail">
-              <a href="mailto:info@grandcasinoknokke.be">info@grandcasinoknokke.be</a>
-            </div>
           </div>
+
         </div>
 
         <div class="footer-bottom">
-          <div class="ftr-btm-socials">
+          <div class="ftr-btm-socials hide-md">
             <ul class="reset-list">
               <li><a href="#">
                 <i>

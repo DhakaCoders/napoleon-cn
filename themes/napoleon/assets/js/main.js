@@ -306,14 +306,26 @@ if (windowWidth <= 991) {
 
   
   var swiper = new Swiper('.jBnrSlider', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
     navigation: {
-      nextEl: '.slider1-arrows .swiper-button-next',
-      prevEl: '.slider1-arrows .swiper-button-prev',
+      nextEl: '.jBnrSlider-arrows .swiper-button-next',
+      prevEl: '.jBnrSlider-arrows .swiper-button-prev',
     },
     breakpoints: {
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
       768: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      1199: {
         slidesPerView: 4,
         spaceBetween: 0,
       },
