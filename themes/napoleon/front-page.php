@@ -122,9 +122,9 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
                           <?php if( !empty($qknop['beschrijving']) ) echo wpautop( $qknop['beschrijving'] ); ?>
                         </div>
                         <?php 
-							if( is_array( $hqknop ) &&  !empty( $hqknop['url'] ) ){
-				                printf('<div class="catagory-slide-item-btn"><a class="fl-red-btn" href="%s" target="%s"><span>%s</span><i><svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff"><use xlink:href="#btn-white-angle-svg"></use></svg></i></a></div>', $hqknop['url'], $hqknop['target'], $hqknop['title']); 
-				            }
+							             if( is_array( $hqknop ) &&  !empty( $hqknop['url'] ) ){
+    				                printf('<div class="catagory-slide-item-btn"><a class="fl-red-btn" href="%s" target="%s"><span>%s</span><i><svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff"><use xlink:href="#btn-white-angle-svg"></use></svg></i></a></div>', $hqknop['url'], $hqknop['target'], $hqknop['title']); 
+    				                }
                         ?>
                       </div>
                     </div>
@@ -256,7 +256,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
           <?php 
             if( !empty($snieuwsIDs) ){
               $count = count($snieuwsIDs);
-              $pIDS = ( $count > 1 )? $snieuwsIDs: array($snieuwsIDs);
+              $pIDS = ( $count > 1 )? $snieuwsIDs: $snieuwsIDs;
               $pQuery = new WP_Query(array(
                 'post_type' => 'post',
                 'posts_per_page'=> 3,

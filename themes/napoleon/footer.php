@@ -52,14 +52,14 @@
           </div>
 
           <div class="ftr-top-addr-cntct-wrap ftr-top-row-col clearfix">
-            <h5 class="ftr-top-row-col-title">Contact Info</h5>
+            <h5 class="ftr-top-row-col-title"><?php _e( 'Contact Info', THEME_NAME ); ?></h5>
             <div class="ftr-top-addr-cntct xs-ftr-mbl-accrdn">
               <div class="ftr-top-col ftr-col-address">
-                <h6 class="ftr-top-col-title">Adres</h6>
+                <h6 class="ftr-top-col-title"><?php _e( 'Adres', THEME_NAME ); ?></h6>
                 <?php if( !empty($address) ) printf('<a href="%s">%s</a>', $gmaplink, $address); ?>
               </div>
               <div class="ftr-top-col ftr-col-contact">
-                <h6 class="ftr-top-col-title">Contact</h6>
+                <h6 class="ftr-top-col-title"><?php _e( 'Contact', THEME_NAME ); ?></h6>
                 <div class="ftr-col-contact-tell">
                   <?php if( !empty($telefoon) ) printf('<a href="tel:%s">%s</a>', phone_preg($telefoon),  $telefoon); ?>
                 </div>

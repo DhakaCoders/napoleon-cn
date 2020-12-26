@@ -102,3 +102,12 @@ function wpmu_role_based_style() {
 
 // for back-end; comment out if you don't want to hide in back-end
 add_action( 'admin_footer', 'wpmu_role_based_style', 99 );
+
+function is_default_page(){
+  $class = '';
+  if( is_blog() && !is_front_page() ){
+    $class = ' page-header';
+  }
+  echo $class;
+}
+

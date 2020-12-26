@@ -25,6 +25,9 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'postgrid', 340, 280, true );
         add_image_size( 'hmslider', 426, 398, true );
         add_image_size( 'quickknop', 222, 176, true );
+        add_image_size( 'cposter', 536, 446, true );
+        add_image_size( 'cblok1', 632, 450, true );
+        add_image_size( 'cslider', 700, 558, true );
         //add_image_size( 'hhovergrid', 574, 576, true );
         //add_image_size( 'hprogrid', 364, 236, true );
         //add_image_size( 'hawgrid', 574, 420, true );

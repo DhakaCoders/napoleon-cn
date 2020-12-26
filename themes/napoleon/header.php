@@ -150,8 +150,8 @@
   $fc_tekst = get_field('fc_tekst', 'options');
 ?>
 <div class="bdoverlay"></div>
-<header class="header">
-  <?php if( $is_top_text ): ?>
+<header class="header<?php is_default_page(); ?>">
+  <?php if( $is_top_text && is_front_page() ): ?>
   <div class="hdr-top-notification-bar">
     <div class="container">
       <div class="row">
