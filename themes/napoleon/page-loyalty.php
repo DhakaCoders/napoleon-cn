@@ -126,55 +126,14 @@ Phasellus nec sem at lectus interdum rhoncus.</p>
                       <?php echo $loyalty['description']; ?>
 
                       <?php if ( !empty($loyalty['link']) ): ?>
-                        <a href="<?php the_permalink(); ?>">Meer Info</a>
+                        <a href="<?php echo $loyalty['link']; ?>">Meer Info</a>
                       <?php endif; ?>
                     </div>
                   </div>
                 </div>
               </li>
               <?php endforeach; ?>
-              <!-- <li>
-                <div class="loyalty-grd-item">
-                  <div class="loyalty-grd-item-fea-img">
-                    <div class="inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/loyalty-grd-img-2.jpg);"></div>
-                  </div>
-                  <div class="loyalty-grd-item-des">
-                    <div>
-                      <h3 class="lgid-title">My Napoleon Prijzenkast</h3>
-                      <p>Gebruik je My Napoleonkaart, verzamel loyaltypunten en ruil ze in! In onze My Napoleon prijzenkast wachten er tal van prachtige prijzen op jou. Pronk met je nieuwe modieuze accessoires of bezoek onze website op je splinternieuwe iPhone. Een leuk cadeau nodig? Kies dan voor een van de restaurantbons. Ontdek hier alle prijzen uit onze prijzenkast.</p>
-                      <a href="#">Meer Info</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="loyalty-grd-item">
-                  <div class="loyalty-grd-item-fea-img">
-                    <div class="inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/loyalty-grd-img-3.jpg);"></div>
-                  </div>
-                  <div class="loyalty-grd-item-des">
-                    <div>
-                      <h3 class="lgid-title">Ben jij klaar voor je eerste <br>bezoek?</h3>
-                      <p>Breng je voor het eerst een bezoek aan Grand Casino Knokke? Wij zien je graag terugkomen! Kom alles te weten over een dag ongeremd speelplezier, en ontvang tot 11.000 loyaltypunten (= €110) op je persoonlijke spaarkaart.</p>
-                      <a href="#">Meer Info</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="loyalty-grd-item">
-                  <div class="loyalty-grd-item-fea-img">
-                    <div class="inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/loyalty-grd-img-4.jpg);"></div>
-                  </div>
-                  <div class="loyalty-grd-item-des">
-                    <div>
-                      <h3 class="lgid-title">#Speelverantwoord</h3>
-                      <p>We streven ernaar om je op een veilige en verantwoorde manier te laten spelen. Wij kennen de risico’s die verbonden zijn aan een casinobezoek en willen voorkomen dat een aangenaam uitje in een speelse sfeer uit de hand loopt. We geven graag enkele tips mee die ervoor moeten zorgen dat gokken een leuke ervaring blijft.</p>
-                      <a href="#">Meer Info</a>
-                    </div>
-                  </div>
-                </div>
-              </li> -->
+              
             </ul>
           </div>
         </div>
