@@ -5,31 +5,14 @@ Template Name: Loyalty
 get_header();
 $thisID = get_the_ID();
 ?>
-<?php  
-  $pgbanner = get_field('pagebanner', HOMEID);
-  if($pgbanner):
-    $bannerposter = !empty($pgbanner['afbeelding'])? cbv_get_image_src( $pgbanner['afbeelding'], 'full' ): '';
-    $pgvideo = !empty($pgbanner['video_uploaden'])? $pgbanner['video_uploaden']:'';
-?>
-<section class="page-banner home-page-bnr">
-  <div class="page-banner-inr">
-    <?php if( empty($pgvideo) ): ?>
-    <div class="page-banner-bg-cntlr">
-      <div class="page-banner-bg inline-bg" style="background-image:url(<?php echo $bannerposter; ?>);">
-      </div>
-    </div>
-    <?php 
 
-else:
-$ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
-?>
+
+<section class="page-banner">
+  <div class="page-banner-inr">
     <div class="bnr-vdo-cntlr"> 
-      <video id="fl-vdo" class="fl-vdo" muted poster="<?php echo $bannerposter; ?>">
-        <?php if( $ext == 'mp4' ): ?>
-        <source src="<?php echo $pgvideo; ?>" type="video/mp4">
-        <?php 
-      endif; 
-        ?>
+      <video id="fl-vdo" class="fl-vdo" muted poster="<?php echo THEME_URI; ?>/assets/images/page-bnr-loyalty.jpg">
+        <source src="<?php echo THEME_URI; ?>/assets/images/mov_bbb.mp4" type="video/mp4">
+        <source src="<?php echo THEME_URI; ?>/assets/images/mov_bbb.ogg" type="video/ogg">
       </video>
       <div class="vdo-controller">
         <button class="fl-play-btn">
@@ -48,30 +31,23 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
         </button> 
       </div>
     </div>
-  <?php endif; ?>
     <div class="page-banner-des">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-banner-des-inr">
               <div>
-                <?php 
-                  if( !empty($pgbanner['titel']) ) printf( '<h1 class="page-banner-title">%s</h1>', $pgbanner['titel'] ); 
-                  if( !empty($pgbanner['subtitel']) ) printf( '<strong>%s</strong>', $pgbanner['subtitel'] ); 
-                  if( !empty($pgbanner['beschrijving']) ) echo wpautop( $pgbanner['beschrijving'] );
-                ?>
-                <div class="bnr-btns">
-                <?php 
-                  $hknop_1 = $pgbanner['knop_1'];
-                  $hknop_2 = $pgbanner['knop_2'];
-                  if( is_array( $hknop_1 ) &&  !empty( $hknop_1['url'] ) ){
-                      printf('<div class="bnr-btn-1"><a class="fl-red-btn" href="%s" target="%s"><span>%s</span><i><svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff"><use xlink:href="#btn-white-angle-svg"></use></svg></i></a></div>', $hknop_1['url'], $hknop_1['target'], $hknop_1['title']); 
-                  }
-                  if( is_array( $hknop_2 ) &&  !empty( $hknop_2['url'] ) ){
-                      printf('<div class="bnr-btn-2"><a class="fl-red-btn" href="%s" target="%s"><span>%s</span><i><svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff"><use xlink:href="#btn-white-angle-svg"></use></svg></i></a></div>', $hknop_2['url'], $hknop_2['target'], $hknop_2['title']); 
-                  }
-                ?>
-                </div>
+                <h1 class="page-banner-title">Loyalty</h1>
+                <p>Phasellus quam erat, facilisis sit amet est eu, accumsan disctum diam.
+Phasellus nec sem at lectus interdum rhoncus.</p>
+                <a class="fl-red-btn" href="#">
+                  <span>BUTTON</span> 
+                  <i>
+                    <svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff">
+                      <use xlink:href="#btn-white-angle-svg"></use>
+                    </svg> 
+                  </i>
+                </a>
               </div>
             </div>
           </div>
@@ -80,14 +56,16 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
     </div>
   </div>
 </section><!-- end of page-banner -->
-<?php endif; ?>
-<?php  
-  $showhide_qknops = get_field('showhide_qknops', HOMEID);
-  if($showhide_qknops): 
-    $qknops = get_field('knops', HOMEID);
+
+
+<?php 
+  $thisID = get_the_ID();
+  $wc_fancy_box_image = get_field('image', $thisID);
+  $wc_fancy_video_url = get_field('video_url', $thisID);
+  $wc_title = get_field('title', $thisID);
+  $wc_description = get_field('description', $thisID);
+
 ?>
-
-
 <section class="loyalty-welcome-section">
   <div class="container">
       <div class="row">
@@ -95,8 +73,8 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
           <div class="loyalty-welcome-sec-con">
             <div class="loyalty-welcome-sec-lft">
               <div class="loyalty-welcome-sec-fea-img img-div-scale ">
-                <div class="loyalty-welcome-sec-fea-img-inr img-div inline-bg" style="background-image: url(assets/images/loyalty-welcome-sec-fea-img.jpg);"></div>
-                  <a href="https://youtu.be/9No-FiEInLA" data-fancybox="gallery" class="overlay-link"></a>
+                <div class="loyalty-welcome-sec-fea-img-inr img-div inline-bg" style="background: url(<?php echo $wc_fancy_box_image; ?>"></div>
+                  <a href="<?php echo $wc_fancy_video_url;?>" data-fancybox="gallery" class="overlay-link"></a>
                   <i>
                     <svg class="play-button-svg" width="50" height="50" viewBox="0 0 50 50" fill="#CB9F67">
                       <use xlink:href="#play-button-svg"></use>
@@ -106,12 +84,9 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
             </div>
             <div class="loyalty-welcome-sec-rgt">
               <div class="loyalty-welcome-sec-des">
-                <h2 class="lwsd-title">Bienvenue à <br> Grand Casino <br>Knokke</h2>
-                <strong>Hier zullen we verder ingaan op de grandeur en de
-                  historie en het nu, van Grand Casino Knokke.
-                  Phasellus quam erat, facilisis sit amet est eu.</strong>
-                <p>Dit stuk gaat voornamelijk over het restaurant van Grand Casino Knokke. Hier kunnen we het restaurant verder uitlichten en de bezoeker lekker maken. Phasellus quam erat, facilisis sit amet est eu, accumsan disctum diam.
-                Phasellus nec sem at lectus interdum rhoncus.</p>
+                <h2 class="lwsd-title"><?php echo $wc_title;  ?></h2>
+                <?php echo $wc_description; ?>
+
               </div>
             </div>
           </div>
@@ -120,30 +95,48 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
   </div>    
 </section>
 
+
+<?php 
+  $thisID = get_the_ID();
+  $loyalties = get_field('loyalties', $thisID);
+  if( $loyalties ):
+
+?>
+
 <section class="loyalty-grds-section">
   <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="loyalty-grds-cntlr">
             <ul class="clearfix reset-list">
+              <?php foreach( $loyalties as $loyalty ): 
+                if( !empty($loyalty['image']) ){
+                   $loyaltyImageId = $loyalty['image']; 
+                   $loyaltyImageSrc = cbv_get_image_src($loyaltyImageId, 'full');
+                }
+              ?>
               <li>
                 <div class="loyalty-grd-item">
                   <div class="loyalty-grd-item-fea-img">
-                    <div class="inline-bg" style="background-image: url(assets/images/loyalty-grd-img-1.jpg);"></div>
+                    <div class="inline-bg" style="background: url(<?php echo $loyaltyImageSrc;?>);"></div>
                   </div>
                   <div class="loyalty-grd-item-des">
                     <div>
-                      <h3 class="lgid-title">My Napoleonkaart</h3>
-                      <p>In Grand Casino Knokke laten we niets aan het toeval over om je het perfecte dagje uit voor te schotelen. Maar wist je dat je zelf nog verder kan gaan? Ontdek nu onze My Napoleonkaart, met tal van extra's die je bezoek aan Grand Casino Knokke nog specialer zullen maken!</p>
-                      <a href="#">Meer Info</a>
+                      <h3 class="lgid-title"><?php echo $loyalty['title']; ?></h3>
+                      <?php echo $loyalty['description']; ?>
+
+                      <?php if ( !empty($loyalty['link']) ): ?>
+                        <a href="<?php the_permalink(); ?>">Meer Info</a>
+                      <?php endif; ?>
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
+              <?php endforeach; ?>
+              <!-- <li>
                 <div class="loyalty-grd-item">
                   <div class="loyalty-grd-item-fea-img">
-                    <div class="inline-bg" style="background-image: url(assets/images/loyalty-grd-img-2.jpg);"></div>
+                    <div class="inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/loyalty-grd-img-2.jpg);"></div>
                   </div>
                   <div class="loyalty-grd-item-des">
                     <div>
@@ -157,7 +150,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
               <li>
                 <div class="loyalty-grd-item">
                   <div class="loyalty-grd-item-fea-img">
-                    <div class="inline-bg" style="background-image: url(assets/images/loyalty-grd-img-3.jpg);"></div>
+                    <div class="inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/loyalty-grd-img-3.jpg);"></div>
                   </div>
                   <div class="loyalty-grd-item-des">
                     <div>
@@ -171,7 +164,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
               <li>
                 <div class="loyalty-grd-item">
                   <div class="loyalty-grd-item-fea-img">
-                    <div class="inline-bg" style="background-image: url(assets/images/loyalty-grd-img-4.jpg);"></div>
+                    <div class="inline-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/loyalty-grd-img-4.jpg);"></div>
                   </div>
                   <div class="loyalty-grd-item-des">
                     <div>
@@ -181,7 +174,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -189,10 +182,11 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
   </div>    
 </section>
 
+<?php endif; ?>
 
 
 <section class="footer-top-sec-v2">
-  <div class="footer-top-sec-v2-bg inline-bg" style="background-image: url('assets/images/footer-top-sec-bg.png');"></div>
+  <div class="footer-top-sec-v2-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
