@@ -163,6 +163,9 @@
 	.show-xs{
 		display: block!important;
 	}
+	p{
+		font-size: 11px;
+	}
 	h1{
 		font-size: 36px;
 	}
