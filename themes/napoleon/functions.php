@@ -33,9 +33,10 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'agendadesk', 622, 490, true );
         add_image_size( 'arrgblok', 640, 490, true );
         add_image_size( 'restaugrid', 456, 432, true );
-        //add_image_size( 'hhovergrid', 574, 576, true );
-        //add_image_size( 'hprogrid', 364, 236, true );
-        //add_image_size( 'hawgrid', 574, 420, true );
+        add_image_size( 'dftslide', 568, 558, true );
+        add_image_size( 'dftagenda', 364, 478, true );
+        add_image_size( 'dftnieuws', 454, 280, true );
+        add_image_size( 'dftposter', 930, 600, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -53,6 +54,7 @@ if( !function_exists('cbv_theme_setup') ){
             'cbv_top_menu' => __( 'Top Menu', THEME_NAME ),
             'cbv_main_menu1' => __( 'Hoofdmenu 1', THEME_NAME ),
             'cbv_main_menu2' => __( 'Hoofdmenu 2', THEME_NAME ),
+            'cbv_mobiel_menu' => __( 'Mobiel Menu', THEME_NAME ),
             'cbv_ft_menu' => __( 'Footer Menu', THEME_NAME ),
             'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME )
         ) );

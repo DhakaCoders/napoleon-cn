@@ -45,7 +45,7 @@ function cbv_top_big_post() {
         $gridImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbeelding'], 'agendagrid' ): '';
         $excerpt = !empty($overzicht['beschrijving'])? wpautop( $overzicht['beschrijving']): '';
         $label = !empty($overzicht['etiket'])? '<label>'.$overzicht['etiket'].'</label>': '';
-
+        $datum = !empty($overzicht['datum'])? '<strong>'.$overzicht['datum'].'</strong>': '';
         $output .='<div class="np-agenda-lftimg-rgt-des clearfix">';
           $output .='<div class="np-agenda-lftimg-ctlr mHc1">';
             $output .='<a href="'.get_the_permalink().'" class="overlay-link"></a>';
@@ -55,7 +55,7 @@ function cbv_top_big_post() {
             $output .='<div class="np-agenda-rgt-des-inr">';
               $output .= $label;
               $output .='<h5 class="np-agenda-rgt-des-title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h5>';
-              $output .='<strong>28 FEBRUARI T/M 27 MAART</strong>';
+              $output .= $datum;
               $output .= $excerpt;
               $output .='<a href="'.get_the_permalink().'">Meer Info</a>';
             $output .='</div>';
@@ -102,7 +102,7 @@ function cbv_load_more_a($args, $post_not_id = '') {
         $gridImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbeelding'], 'agendagrid' ): '';
         $excerpt = !empty($overzicht['beschrijving'])? wpautop( $overzicht['beschrijving']): '';
         $label = !empty($overzicht['etiket'])? '<label>'.$overzicht['etiket'].'</label>': '';
-
+        $datum = !empty($overzicht['datum'])? '<strong>'.$overzicht['datum'].'</strong>': '';
         $output .='<li>';
           $output .='<div class="np-angenda-grd-item">';
             $output .='<div class="np-angenda-grd-item-img-ctlr">';
@@ -112,7 +112,7 @@ function cbv_load_more_a($args, $post_not_id = '') {
             $output .='<div class="np-agenda-grd-item-des">';
               $output .= $label;
               $output .='<h5 class="np-agid-title mHc"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h5>';
-              $output .='<strong>28 FEBRUARI T/M 27 MAART</strong>';
+              $output .= $datum;
               $output .='<div class="np-agid-text-module mHc1">';
                 $output .= $excerpt;
               $output .='</div>';
@@ -180,7 +180,7 @@ function ajax_script_load_more($args, $post_not_id = '') {
           $gridImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbeelding'], 'agendagrid' ): '';
           $excerpt = !empty($overzicht['beschrijving'])? wpautop( $overzicht['beschrijving']): '';
           $label = !empty($overzicht['etiket'])? '<label>'.$overzicht['etiket'].'</label>': '';
-
+          $datum = !empty($overzicht['datum'])? '<strong>'.$overzicht['datum'].'</strong>': '';
           $output .='<li>';
             $output .='<div class="np-angenda-grd-item">';
               $output .='<div class="np-angenda-grd-item-img-ctlr">';
@@ -190,7 +190,7 @@ function ajax_script_load_more($args, $post_not_id = '') {
               $output .='<div class="np-agenda-grd-item-des">';
                 $output .= $label;
                 $output .='<h5 class="np-agid-title mHc"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h5>';
-                $output .='<strong>28 FEBRUARI T/M 27 MAART</strong>';
+                $output .= $datum;
                 $output .='<div class="np-agid-text-module mHc1">';
                   $output .= $excerpt;
                 $output .='</div>';

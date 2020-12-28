@@ -2,22 +2,10 @@
 /*Template Name: Agenda*/
 get_header();
 $thisID = get_the_ID();
-?>
-<section class="breadcrumbs-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="page-breadcrumbs">
-          <?php cbv_breadcrumbs(); ?>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<?php 
 $overzicht = get_field('overzicht', get_the_ID());
 $blokImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbeelding'], 'arrgblok' ): '';
 ?>
+<?php get_template_part('templates/page', 'breadcrumbs'); ?>
 <section class="np-ad-package-sec">
   <div class="np-ad-package-holder">
     <div class="np-ad-package-inr">

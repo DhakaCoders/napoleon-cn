@@ -32,7 +32,7 @@ $beschrijving = get_field('beschrijving', $pageID);
               <ul class="reset-list clearfix">
               <?php 
                  while(have_posts()): the_post();
-                                   $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'postgrid' );
+                  $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'postgrid' );
                   if( empty($gridurl) ){
                     $gridurl = THEME_URI.'/assets/images/news-item-img-01.jpg';
                   }
@@ -47,8 +47,7 @@ $beschrijving = get_field('beschrijving', $pageID);
                   }
                   if( !empty($termThumID) ){
                     $gridTag = cbv_get_image_tag($termThumID);
-                  }
-                 
+                  } 
               ?> 
                 <li>
                   <div class="np-nieuws-grd-item">

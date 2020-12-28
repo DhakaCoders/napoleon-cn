@@ -139,18 +139,24 @@
 </head>
 <body <?php body_class(); ?>>
 <?php 
+  $logo_tag = '';
   $logoObj = get_field('hdlogo', 'options');
-  if( is_array($logoObj) ){
-    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  $minderlogoObj = get_field('minder_hdlogo', 'options');
+  if( is_default_page() == 'page-header' ){
+    if( is_array($minderlogoObj) ){
+      $logo_tag = '<img src="'.$minderlogoObj['url'].'" alt="'.$minderlogoObj['alt'].'" title="'.$minderlogoObj['title'].'">';
+    }
   }else{
-    $logo_tag = '';
+    if( is_array($logoObj) ){
+      $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+    }
   }
 
   $is_top_text = get_field('blok_tonenverbergen_tekst', 'options');
   $fc_tekst = get_field('fc_tekst', 'options');
 ?>
 <div class="bdoverlay"></div>
-<header class="header<?php is_default_page(); ?>">
+<header class="header <?php echo is_default_page(); ?>">
   <?php if( $is_top_text && is_front_page() ): ?>
   <div class="hdr-top-notification-bar">
     <div class="container">
@@ -256,25 +262,18 @@
         <span></span>
         <span></span>
       </div>
-      <strong>sluiten</strong>
+      <strong><?php _e( 'sluiten', THEME_NAME ); ?></strong>
     </div>
     <nav class="main-nav">
-      <ul class="clearfix reset-list">
-        <li><a href="#">Casino</a></li>
-        <li class="menu-item-has-children">
-          <a href="#">Restaurant</a>
-          <ul class="sub-menu">
-            <li><a href="#">Sub menu item 1</a></li>
-            <li><a href="#">Sub menu item 2</a></li>
-            <li><a href="#">Sub menu item 3</a></li>
-            <li><a href="#">Sub menu item 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Agenda</a></li>
-        <li><a href="#">Arrangementen</a></li>
-        <li><a href="#">Nieuws</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <?php 
+        $mobielmenuOptions = array( 
+            'theme_location' => 'cbv_mobiel_menu', 
+            'menu_class' => 'clearfix reset-list',
+            'container' => '',
+            'container_class' => ''
+          );
+        wp_nav_menu( $mobielmenuOptions );
+      ?>
     </nav>
     <div class="xs-language">
       <ul class="reset-list clearfix">
@@ -283,7 +282,7 @@
       </ul>
     </div>
     <div class="xs-menu-address">
-      <strong>Adres</strong>
+      <strong><?php _e( 'Adres', THEME_NAME ); ?></strong>
       <?php 
         if( !empty($address) ) printf('<a href="%s">%s</a>', $gmaplink, $address);
       ?>

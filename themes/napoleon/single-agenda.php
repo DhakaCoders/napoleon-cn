@@ -2,22 +2,10 @@
 /*Template Name: Agenda*/
 get_header();
 $thisID = get_the_ID();
-?>
-<section class="breadcrumbs-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="page-breadcrumbs">
-          <?php cbv_breadcrumbs(); ?>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<?php 
 $intro = get_field('intro_blok', $thisID); 
 $overzicht = get_field('overzicht', get_the_ID());
 ?>
+<?php get_template_part('templates/page', 'breadcrumbs'); ?>
 <section class="ad-two-grid-sec-wrp">
   <div class="ad-two-grid-wrp clearfix">
     <ul class="clearfix reset-list">
