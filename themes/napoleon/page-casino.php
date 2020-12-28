@@ -131,13 +131,13 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
             <div class="np-roulette-img inline-bg" style="background: url('<?php echo $blok1Img; ?>');"></div>
           </div>
           <div class="np-roulette-lft">
-			<?php 
-	            if( !empty($blok1['titel']) ) printf('<h3 class="np-roulette-lft-title">%s</h3>', $blok1['titel']); 
-	            if( !empty($blok1['beschrijving']) ) echo wpautop( $blok1['beschrijving'] ); 
-				if( is_array( $bk_knop1 ) &&  !empty( $bk_knop1['url'] ) ){
-					printf('<a href="%s" target="%s">%s</a>', $bk_knop1['url'], $bk_knop1['target'], $bk_knop1['title']); 
-				}
-            ?>
+		       <?php 
+            if( !empty($blok1['titel']) ) printf('<h3 class="np-roulette-lft-title">%s</h3>', $blok1['titel']); 
+            if( !empty($blok1['beschrijving']) ) echo wpautop( $blok1['beschrijving'] ); 
+    				if( is_array( $bk_knop1 ) &&  !empty( $bk_knop1['url'] ) ){
+    					printf('<a href="%s" target="%s">%s</a>', $bk_knop1['url'], $bk_knop1['target'], $bk_knop1['title']); 
+    				}
+          ?>
           </div>
       	  <?php endif; ?>
         </div>
@@ -213,12 +213,12 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
               <div class="np-winner-lft-img inline-bg" style="background: url('<?php echo $blokImg2; ?>');"></div>
             </div>
             <div class="np-winner-rgt">
-			<?php 
+			      <?php 
 	            if( !empty($blok2['titel']) ) printf('<h4 class="np-winner-rgt-title">%s</h4>', $blok2['titel']); 
 	            if( !empty($blok2['beschrijving']) ) echo wpautop( $blok2['beschrijving'] ); 
-				if( is_array( $bk_knop2 ) &&  !empty( $bk_knop2['url'] ) ){
-					printf('<a href="%s" target="%s">%s</a>', $bk_knop2['url'], $bk_knop2['target'], $bk_knop2['title']); 
-				}
+      				if( is_array( $bk_knop2 ) &&  !empty( $bk_knop2['url'] ) ){
+      					printf('<a href="%s" target="%s">%s</a>', $bk_knop2['url'], $bk_knop2['target'], $bk_knop2['title']); 
+      				}
             ?>
             </div>
           </div>
@@ -332,8 +332,8 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
       </div>
     </div>    
   </section>
-</div>
 <?php endif; ?>
+</div>
 <?php get_template_part('templates/openhours'); ?>
 <?php
 get_footer();

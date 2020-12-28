@@ -23,11 +23,15 @@ if( !function_exists('cbv_theme_setup') ){
             add_theme_support('category-thumbnails');
         }
         add_image_size( 'postgrid', 340, 280, true );
+        add_image_size( 'agendagrid', 340, 360, true );
         add_image_size( 'hmslider', 426, 398, true );
         add_image_size( 'quickknop', 222, 176, true );
         add_image_size( 'cposter', 536, 446, true );
         add_image_size( 'cblok1', 632, 450, true );
         add_image_size( 'cslider', 700, 558, true );
+        add_image_size( 'agendamb', 756, 300, true );
+        add_image_size( 'agendadesk', 622, 490, true );
+        add_image_size( 'arrgblok', 640, 490, true );
         //add_image_size( 'hhovergrid', 574, 576, true );
         //add_image_size( 'hprogrid', 364, 236, true );
         //add_image_size( 'hawgrid', 574, 420, true );
@@ -81,7 +85,9 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
-include_once(THEME_DIR .'/inc/wc-functions.php');
+include_once(THEME_DIR .'/inc/ajax-agenda.php');
+include_once(THEME_DIR .'/inc/ajax-agenda-cat.php');
+include_once(THEME_DIR .'/inc/ajax-arrangementen.php');
 /**
 ACF Option pages->>
 */

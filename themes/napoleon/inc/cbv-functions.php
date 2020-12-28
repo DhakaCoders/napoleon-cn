@@ -107,6 +107,10 @@ function is_default_page(){
   $class = '';
   if( is_blog() && !is_front_page() ){
     $class = ' page-header';
+  }elseif( is_page_template('page-agenda.php') || 'agenda'==get_post_type()){
+    $class = ' page-header';
+  }elseif( is_page_template('page-arrangementen.php') || 'arrangementen'==get_post_type()){
+    $class = ' page-header';
   }
   echo $class;
 }
