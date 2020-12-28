@@ -111,6 +111,8 @@ function is_default_page(){
     $class = ' page-header';
   }elseif( is_page_template('page-arrangementen.php') || 'arrangementen'==get_post_type()){
     $class = ' page-header';
+  }elseif( is_page_template('page-restaurant.php') ){
+    $class = ' page-header';
   }
   echo $class;
 }

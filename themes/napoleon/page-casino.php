@@ -248,12 +248,12 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
             </div>
             <div class="np-roulette-lft">
 			<?php 
-	            if( !empty($blok3['titel']) ) printf('<h5 class="np-roulette-lft-title">%s</h5>', $blok3['titel']); 
-	            if( !empty($blok3['beschrijving']) ) echo wpautop( $blok3['beschrijving'] ); 
+        if( !empty($blok3['titel']) ) printf('<h5 class="np-roulette-lft-title">%s</h5>', $blok3['titel']); 
+        if( !empty($blok3['beschrijving']) ) echo wpautop( $blok3['beschrijving'] ); 
 				if( is_array( $bk_knop3 ) &&  !empty( $bk_knop3['url'] ) ){
 					printf('<a href="%s" target="%s">%s</a>', $bk_knop3['url'], $bk_knop3['target'], $bk_knop3['title']); 
 				}
-            ?>
+      ?>
             </div>
           </div>
         <?php endif; ?>

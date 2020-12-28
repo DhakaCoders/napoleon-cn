@@ -32,6 +32,7 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'agendamb', 756, 300, true );
         add_image_size( 'agendadesk', 622, 490, true );
         add_image_size( 'arrgblok', 640, 490, true );
+        add_image_size( 'restaugrid', 456, 432, true );
         //add_image_size( 'hhovergrid', 574, 576, true );
         //add_image_size( 'hprogrid', 364, 236, true );
         //add_image_size( 'hawgrid', 574, 420, true );

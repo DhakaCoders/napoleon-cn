@@ -286,7 +286,21 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
                   	$gridurl = THEME_URI.'/assets/images/news-item-img-01.jpg';
                   }
 
-                  $gridTag = '<img src="'.THEME_URI.'/assets/images/np-nieuws-des-img-02.svg" alt="'.get_the_title().'">';
+                  
+
+                  $terms = get_the_terms(get_the_ID(), 'category');
+                  $termNameTag = $gridTag = '';
+                  if( !empty($terms) ){
+                    foreach ($terms as $key => $term) {
+                      $termThumID = get_field('icon', $term);
+                      $termNameTag = '<a href="'.esc_url( get_term_link( $term ) ).'">'.$term->name.'</a> / ';
+                    }
+
+                  }
+                  if( !empty($termThumID) ){
+                    $gridTag = cbv_get_image_tag($termThumID);
+                  }
+                  
 
                 ?>
                 <li>
@@ -297,14 +311,14 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
                     </div>
                     <div class="np-nieuws-grd-item-des">
                       <i><?php echo $gridTag; ?></i>
-                      <span><a href="#">TIPS & TRICKS</a> / <?php echo get_the_date('d-m-Y'); ?></span>
+                      <span><?php echo $termNameTag; ?><?php echo get_the_date('d-m-Y'); ?></span>
                       <h6 class="np-ngid-title mHc">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                       </h6>
                     </div>
                   </div>
                 </li>
-				<?php endwhile; ?>
+				        <?php endwhile; ?>
               </ul>
             </div>
           </div>

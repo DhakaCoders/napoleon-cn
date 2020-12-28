@@ -1,6 +1,8 @@
 <?php
 get_header();
 $pageID = get_option( 'page_for_posts' );
+$titel = get_field('titel', $pageID);
+$beschrijving = get_field('beschrijving', $pageID);
 ?>
 <section class="np-nieuws-con-sec">
   <div class="container">
@@ -12,8 +14,14 @@ $pageID = get_option( 'page_for_posts' );
               <div class="np-nieuws-lftsidebar-des">
                 <div class="np-nieuws-lftsidebar-des-inr">
                   <div class="np-nieuws-lftsidebar-des-ctlr">
-                    <h2 class="np-nieuws-lftsidebar-title"><?php echo get_the_title($pageID); ?></h2>
-                    <p>Phasellus quam erat, facilisis sit amet est eu, accumsan disctum diam.</p>
+                    <?php 
+                      if( !empty($titel) ) 
+                        printf('<h2 class="np-nieuws-lftsidebar-title">%s</h2>', $titel);
+                      else
+                        printf('<h2 class="np-nieuws-lftsidebar-title">%s</h2>', get_the_title($pageID));
+
+                      if( !empty($beschrijving) ) echo wpautop($beschrijving);
+                    ?>
                   </div>
                 </div>
               </div>
@@ -28,8 +36,18 @@ $pageID = get_option( 'page_for_posts' );
                   if( empty($gridurl) ){
                     $gridurl = THEME_URI.'/assets/images/news-item-img-01.jpg';
                   }
+                  $terms = get_the_terms(get_the_ID(), 'category');
+                  $termNameTag = $gridTag = '';
+                  if( !empty($terms) ){
+                    foreach ($terms as $key => $term) {
+                      $termThumID = get_field('icon', $term);
+                      $termNameTag = '<a href="'.esc_url( get_term_link( $term ) ).'">'.$term->name.'</a> / ';
+                    }
 
-                  $gridTag = '<img src="'.THEME_URI.'/assets/images/np-nieuws-des-img-02.svg" alt="'.get_the_title().'">';
+                  }
+                  if( !empty($termThumID) ){
+                    $gridTag = cbv_get_image_tag($termThumID);
+                  }
                  
               ?> 
                 <li>
@@ -40,7 +58,7 @@ $pageID = get_option( 'page_for_posts' );
                     </div>
                     <div class="np-nieuws-grd-item-des">
                       <i><?php echo $gridTag; ?></i>
-                      <span><a href="#">TIPS & TRICKS</a> / <?php echo get_the_date('d-m-Y'); ?></span>
+                      <span><?php echo $termNameTag; ?><?php echo get_the_date('d-m-Y'); ?></span>
                       <h6 class="np-ngid-title mHc">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                       </h6>
