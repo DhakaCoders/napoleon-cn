@@ -299,6 +299,15 @@
 	.np-agenda-con {
 	    padding-bottom: 20px;
 	}
+	.xs-np-agenda-select-ctlr{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.np-agenda-con .np-nieuws-lftsidebar-inr{
+		margin-bottom: 15px;
+	}
 }
 
 @media(max-width: 767px){
@@ -340,15 +349,8 @@
 	.np-agenda-con {
 		padding-top: 20px;
 	}
-	.np-agenda-con .np-nieuws-lftsidebar-inr{
-		margin-bottom: 15px;
-	}
-	.xs-np-agenda-select-ctlr{
-		max-width: 450px;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	
+	
 	.np-agenda-lftsidebar{
 		margin-bottom: 15px;
 	}
