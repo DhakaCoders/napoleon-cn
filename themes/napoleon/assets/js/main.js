@@ -467,6 +467,9 @@ if( $('#googlemap').length ){
   var containerW = $('.container').outerWidth();
   var containerLft = (windowW - containerW) / 2;
   $('.np-ad-package-holder').css('margin-left', (containerLft+lftoffset));
+  $(window).resize(function(){
+    ('.np-ad-package-holder');
+  });
 
   var rgtoffset = 100;
   var windowW = $(window).width();
