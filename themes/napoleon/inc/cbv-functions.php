@@ -153,6 +153,8 @@ function is_default_page(){
     $class = 'page-header';
   }elseif( is_page() && !is_front_page() ){
     $class = 'page-header';
+  }elseif( is_404() && !is_front_page() ){
+    $class = 'page-header';
   }
   return $class;
 }

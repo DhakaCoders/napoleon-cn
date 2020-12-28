@@ -420,7 +420,7 @@ while ( have_posts() ) :
                 if( !empty($terms) ){
                   foreach ($terms as $key => $term) {
                     $termThumID = get_field('icon', $term);
-                    $termNameTag = '<a href="'.esc_url( get_term_link( $term ) ).'">'.$term->name.'</a> / ';
+                    $termNameTag = '<a>'.$term->name.'</a> / ';
                   }
 
                 }
