@@ -198,6 +198,10 @@
 	.np-casino-ctlr .restaurant-testi-slider {
 	    padding-bottom: 200px;
 	}
+	.np-casino-ctlr .restaurant-gallery-slider,
+	.np-casino-ctlr .restaurant-testi-slider{
+		margin-left: 0px!important;
+	}
 
 }
 
