@@ -155,6 +155,10 @@
 	    padding-top: 0;
 	    padding-bottom: 120px;
 	}
+	.np-winner-rgt{
+		padding-left: 50px;
+    	padding-right: 15px;
+	}
 }
 
 @media(max-width: 1399px){
