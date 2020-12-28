@@ -182,6 +182,7 @@
 	width: 100%;
 	background: transparent;
 	text-transform: lowercase;
+	padding-top: 4px;
 }
 
 
@@ -395,7 +396,15 @@
 }
 
 @media(max-width: 479px){
-
+	.np-agenda-con-inr{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.xs-np-agenda-select-ctlr,
+	.np-agenda-rgt{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 }
 
