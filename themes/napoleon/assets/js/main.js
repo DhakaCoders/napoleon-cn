@@ -476,6 +476,9 @@ if( $('#googlemap').length ){
   var containerW = $('.container').outerWidth();
   var containerRgt = (windowW - containerW) / 2;
   $('.np-ad-btm-package-holder').css('margin-right', (containerRgt+rgtoffset));
+  $(window).resize(function(){
+    ('.np-ad-btm-package-holder');
+  });
   
 
 
