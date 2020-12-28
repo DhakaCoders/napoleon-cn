@@ -306,6 +306,13 @@
 	.np-casino-ctlr .np-roulette-sec {
 	    padding-bottom: 65px;
 	}
+	.np-roulette-img-ctlr,
+	.np-winner-lft-img-ctlr{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media(max-width: 575px){
