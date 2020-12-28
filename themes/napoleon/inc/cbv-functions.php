@@ -143,17 +143,22 @@ function cbv_table( $table){
 
 function is_default_page(){
   $class = '';
-  if( is_blog() && !is_front_page() ){
+/*  if( is_blog() && !is_front_page() ){
     $class = 'page-header';
-  }elseif( is_page() && (is_page_template('page-agenda.php') || 'agenda'==get_post_type()) ){
+  }elseif( (is_page_template('page-agenda.php') || 'agenda'==get_post_type()) ){
     $class = 'page-header';
-  }elseif( is_page() && (is_page_template('page-arrangementen.php') || 'arrangementen'==get_post_type()) ){
+  }elseif( (is_page_template('page-arrangementen.php') || 'arrangementen'==get_post_type()) ){
     $class = 'page-header';
   }elseif( is_page() && is_page_template('page-restaurant.php') ){
     $class = 'page-header';
   }elseif( is_page() && !is_front_page() ){
     $class = 'page-header';
   }elseif( is_404() && !is_front_page() ){
+    $class = 'page-header';
+  }*/
+  if( is_front_page() || is_page_template('page-contact.php') || is_page_template('page-casino.php') || is_page_template('page-loyalty.php')){
+    $class = '';
+  }else{
     $class = 'page-header';
   }
   return $class;

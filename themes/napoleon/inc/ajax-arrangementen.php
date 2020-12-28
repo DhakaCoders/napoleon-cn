@@ -116,14 +116,16 @@ function ajax_script_load_more_arrange($args) {
 
   if($query->have_posts()): 
     $output = '';
+    $i = 1;
     while($query->have_posts()): $query->the_post(); 
+      if( $i%2==0 ){$class = ' lftimg-rgtdes'; }else{$class = '';}
       $overzicht = get_field('overzicht', get_the_ID());
       $gridImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbeelding'], 'agendagrid' ): '';
       $excerpt = !empty($overzicht['kort_beschrijving'])? wpautop( $overzicht['kort_beschrijving']): '';
       $label = !empty($overzicht['etiket'])? '<label>'.$overzicht['etiket'].'</label>': '';
       $price = !empty($overzicht['prijs'])? $overzicht['prijs']:'';
       $output .='<li>';
-      $output .='<div class="np-arrangementen-grd-item clearfix">';
+      $output .='<div class="np-arrangementen-grd-item clearfix'.$class.'">';
       $output .='<div class="np-agi-lft-img mHc">';
       $output .='<div class="np-agi-lft-img-ctlr">';
       $output .='<a href="'.get_the_permalink().'" class="overlay-link"></a>';
@@ -154,6 +156,7 @@ function ajax_script_load_more_arrange($args) {
       $output .='</div>';
       $output .='</div>';
       $output .='</li>';
+      $i++;
   endwhile; 
   echo $output;
   endif;  

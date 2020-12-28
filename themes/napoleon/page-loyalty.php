@@ -27,9 +27,9 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
       <video id="fl-vdo" class="fl-vdo" muted poster="<?php echo $bannerposter; ?>">
         <?php if( $ext == 'mp4' ): ?>
         <source src="<?php echo $pgvideo; ?>" type="video/mp4">
-        <?php 
-      endif; 
-        ?>
+        <?php elseif($ext == 'ogg'): ?>
+          <source src="<?php echo $pgvideo; ?>" type="video/ogg">
+        <?php endif; ?>
       </video>
       <div class="vdo-controller">
         <button class="fl-play-btn">

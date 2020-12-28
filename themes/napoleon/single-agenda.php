@@ -1,5 +1,4 @@
 <?php
-/*Template Name: Agenda*/
 get_header();
 $thisID = get_the_ID();
 $intro = get_field('intro_blok', $thisID); 

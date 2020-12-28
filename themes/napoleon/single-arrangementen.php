@@ -1,5 +1,4 @@
 <?php
-/*Template Name: Agenda*/
 get_header();
 $thisID = get_the_ID();
 $overzicht = get_field('overzicht', get_the_ID());
@@ -152,47 +151,7 @@ if( $fc_arrang ):
               ?>
               </div>
               <div class="wpforms-container">
-                <form class="wpforms-form">
-                  
-                  <div class="wpforms-field-container">
-
-                    <div class="wpforms-field wpforms-field-select">
-                      <select id="select1" name="select1">
-                        <option value="First Choice">Ik heb een vraag over</option>
-                        <option value="Second Choice">Ik heb een vraag over</option>
-                        <option value="Third Choice">Ik heb een vraag over</option>
-                      </select>
-                    </div>
-                    
-                    <div class="wpforms-field">
-                      <input type="text" name="name" placeholder="Voornaam" required="">
-                    </div>
-                    <div class="wpforms-field">
-                      <input type="text" name="name" placeholder="Naam" required="">
-                    </div>
-
-                    <div class="wpforms-field InputTypeTelephone">
-                      <input type="text" name="text" placeholder="Telefoon" required="">
-                    </div>
-
-                    <div class="wpforms-field wpforms-has-error">
-                      <input type="email" name="email" placeholder="mathias2.conversalbe" class="form-control" required="">
-                    </div>
-
-                    <div class="wpforms-field wpforms-field-textarea">
-                      <textarea name="message" placeholder="Bericht"></textarea>
-                    </div>
-                    <div class="wpforms-field wpforms-field-html">
-                      <p>Wij respeteren uw <a href="#">privacy</a>. Uw gegevens worden altijd vertrouwlijk behandeld.</p>
-                    </div>
-                  </div><!-- end of .wpforms-field-container-->
-
-
-                  <div class="wpforms-submit-container">
-                    <button type="submit" name="submit" class="wpforms-submit">VERZENDEN</button>
-                  </div>
-
-                </form>
+              <?php if( !empty($fc_arrang['form_shortcode']) ) echo do_shortcode( $fc_arrang['form_shortcode'] ); ?>
               </div>
             </div>
           </div>
