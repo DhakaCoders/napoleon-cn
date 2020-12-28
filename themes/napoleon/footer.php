@@ -12,6 +12,7 @@
   $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
 
   $smedias = get_field('social_media', 'options');
+  $ftlgalerij = get_field('ftlgalerij', 'options');
 ?>
 <footer class="footer-wrp">
   <div class="container">
@@ -98,7 +99,13 @@
             ?>
           </div>
           <div class="ftr-btm-brands-logo-cntlr">
-            <img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-brands-logo.jpg" alt="">
+          <?php 
+            if( $ftlgalerij ): 
+              foreach ( $ftlgalerij as $key => $galerijID ) {
+               echo !empty($galerijID)? cbv_get_image_tag( $galerijID ): '';
+              } 
+            endif; 
+          ?>
           </div>
         </div>
       </div>

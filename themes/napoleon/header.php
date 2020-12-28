@@ -254,6 +254,8 @@
   $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
 
   $smedias = get_field('social_media', 'options');
+  $qknop = get_field('quick_knop', 'options');
+  $qvideo = get_field('fc_video_url', 'options');
 ?>
 <div class="xs-nav-menu-cntlr show-md">
   <div class="xs-nav-menu-cntlr-inr">
@@ -311,11 +313,16 @@
       <div class="xs-menu-product-item inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/xs-menu-product-img.jpg);">
         <div>
           <h4>
-            <a href="#">
-              De rijke geschiedenis van<br>
-              Grand Casino Knokke</a>
+          <?php
+            if( is_array( $qknop ) &&  !empty( $qknop['url'] ) ){
+              $qtitle = !empty($qknop['title'])? $qknop['title']:'De rijke geschiedenis van<br/>Grand Casino Knokke';
+              printf('<a href="%s" target="%s">%s</a>', $qknop['url'], $qknop['target'], $qknop['title']); 
+            }
+          ?>
           </h4>
-          <a href="#">BEKIJK DE VIDEO <i><img src="<?php echo THEME_URI; ?>/assets/images/xs-menu-link-arrow.png"></i></a>
+          <?php if( !empty( $qvideo ) ){ ?>
+          <a href="<?php echo $qvideo; ?>" data-fancybox="gallery">BEKIJK DE VIDEO <i><img src="<?php echo THEME_URI; ?>/assets/images/xs-menu-link-arrow.png"></i></a>
+          <?php } ?>
         </div>
       </div>
     </div>
