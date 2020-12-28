@@ -274,7 +274,7 @@ form .bootstrap-select .caret{
     font-size: 14px;
     padding-right: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
