@@ -435,11 +435,37 @@
 	.rmscd-title{
 		margin-bottom: 70px;
 	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 400px;
+	}
+	.restaurantTestiSlide-item {
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    padding-bottom: 50px;
+	}
+	.restaurantTestiSlide-item{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.restaurantTestiSliderArrows {
+	    margin-left: 5px;
+	}
+	.rtshdr-title{
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+	}
+	.restaurant-testi-slider {
+	    padding: 65px 0 80px;
+	}
 }
 
 @media(max-width: 1023px){
 	.restaurantGallerySlider .swiper-slide {
-	    width: 500px;
+	    width: 450px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 400px;
 	}
 }
 
@@ -479,6 +505,12 @@
 	}
 	.restaurant-mascotte-sec-fea-img {
 	    height: 445px;
+	}
+	.restaurantGallerySlider .swiper-slide {
+	    width: 380px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 450px;
 	}
 }
 
@@ -531,6 +563,30 @@
 	}
 	.restaurant-mascotte-sec-con-des p{
 		font-size: 15px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 400px;
+	}
+	.restaurantTestiSlide-item{
+		padding: 30px 40px 45px
+	}
+	.rti-titlte{
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	.restaurantTestiSlide-item i {
+	    right: 33px;
+	    top: 30px;
+	}
+	.restaurantTestiSlide-item i svg{
+		width: 40px;
+		height: auto;
+	}
+	.restaurantTestiSlide-item p{
+		text-align: left;
+	}
+	.rtshdr-title{
+		font-size: 27px;
 	}
 }
 
@@ -604,6 +660,22 @@
 	.restaurant-mascotte-sec-fea-img {
 	    height: 345px;
 	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 360px;
+	}
+	.restaurantTestiSlider {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.restaurantTestiSliderArrows {
+	    margin-left: 0;
+	}
+	.restaurant-testi-slider {
+	    padding: 60px 0 70px;
+	}
+	.rtshdr-title{
+		font-size: 25px;
+	}
 }
 
 @media(max-width: 479px){
@@ -627,6 +699,31 @@
 	}
 	.restaurant-mascotte-sec-fea-img {
 	    height: 245px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 320px;
+	}
+	.rtshdr-title{
+		font-size: 23px;
+		margin-bottom: 35px;
+		padding-bottom: 20px;
+	}
+	.restaurantTestiSlide-item {
+	    padding: 20px 20px 15px;
+	}
+	.restaurantTestiSlide-item i{
+		right: 18px;
+		top: 16px;
+	}
+	.restaurantTestiSlide-item i svg{
+		width: 34px;
+	}
+	.rti-titlte{
+		font-size: 25px;
+		margin-bottom: 22px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 260px;
 	}
 }
 
