@@ -356,7 +356,11 @@
 	.np-winner-lft-img-ctlr,
 	.np-roulette-sec-inr{
 		max-width: 100%;
-		width: 100%;
+		width: auto;
+	}
+	.np-roulette-sec-inr{
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 
 }
