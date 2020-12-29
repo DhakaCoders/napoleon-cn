@@ -293,7 +293,7 @@
 	}
 	.np-roulette-sec-inr,
 	.np-winner-sec-inr{
-		display: initial;
+		display: inherit;
 	}
 	.np-winner-rgt{
 		width: 100%;
@@ -351,6 +351,12 @@
 @media(max-width: 479px){
 	.np-winner-sec {
 	    padding-bottom: 25px;
+	}
+	.np-roulette-img-ctlr, 
+	.np-winner-lft-img-ctlr,
+	.np-roulette-sec-inr{
+		max-width: 100%;
+		width: 100%;
 	}
 
 }
