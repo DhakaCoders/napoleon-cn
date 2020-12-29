@@ -1,5 +1,6 @@
 .footer-wrp{
 	background: #fff;
+	overflow: hidden;
 }
 .footer-top{
 	padding-top: 67px;
@@ -803,8 +804,8 @@
 		content: "";
 		background: #FAF9F8;
 		height: 2px;
-		left: -20px;
-		right: -20px;
+		left: -25px;
+		right: -25px;
 		top: 0;
 	}
 
@@ -940,6 +941,23 @@
 	.fts-v2-lft-title{
 		font-size: 22px;
 	}
+
+	.ftr-btm-manu:after{
+		position: absolute;
+		content: "";
+		background: #FAF9F8;
+		height: 2px;
+		left: -20px;
+		right: -20px;
+		top: 0;
+	}
+
+
+	.ftr-top-col,
+	.ftr-left,
+	.ftr-btm-socials{
+		padding-right: 0;
+	}
 }
 @media(max-width: 639px){
 	/*footer top sec version 2*/
@@ -996,6 +1014,10 @@
 	}
 	.fts-v2-rt-form .input-fields-row{
 		margin-bottom: 0;
+	}
+	.ftr-btm-manu:after{
+		left: -10px;
+		right: -10px;
 	}
 
 }

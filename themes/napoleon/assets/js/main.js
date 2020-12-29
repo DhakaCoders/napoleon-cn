@@ -337,6 +337,16 @@ if (windowWidth <= 991) {
   });
 
 
+if (windowWidth <= 768) {
+  var swiper = new Swiper('.dfpNgiSlider', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.jBnrSlider-arrows .swiper-button-next',
+      prevEl: '.jBnrSlider-arrows .swiper-button-prev',
+    },
+  });
+}
 
 
   
