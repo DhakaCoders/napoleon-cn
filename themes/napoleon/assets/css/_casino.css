@@ -163,7 +163,9 @@
 }
 
 @media(max-width: 1399px){
-	
+	.np-roulette-lft{
+		padding-right: 60px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -376,7 +378,8 @@
 	}
 	.np-roulette-img-ctlr, 
 	.np-winner-lft-img-ctlr,
-	.np-roulette-sec-inr{
+	.np-roulette-sec-inr,
+	.np-winner-sec-inr{
 		max-width: 100%;
 		width: auto;
 	}
