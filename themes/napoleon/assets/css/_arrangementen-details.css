@@ -175,7 +175,7 @@
 	text-align: left;
 }
 
-@media(max-width: 1899){
+@media(max-width: 1899px){
 	.np-ad-package-lft{
 		padding-right: 75px;
 	}
@@ -292,6 +292,9 @@
 	}
 	.np-ad-ctlr .restaurant-gallery-slider{
 		margin-left: 0;
+	}
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: -15px;
 	}
 	
 
@@ -503,6 +506,9 @@
 	.np-ad-btm-package-lft-img {
 	    min-height: 200px;
 	}
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: 0px;
+	}
 	
 
 }
@@ -519,16 +525,18 @@
 	    font-size: 20px;
 	}
 	.np-ad-package-sec {
-	    padding-right: 10px;
+	    padding-right: 0px;
 	}
 	.np-ad-package-holder {
 	    margin-left: 10px!important;
+	    margin-right: 10px;
 	}
 	.np-ad-btm-package-sec {
-	    padding-left: 10px;
+	    padding-left: 0px;
 	}
 	.np-ad-btm-package-holder {
 	    margin-right: 10px!important;
+	    margin-left: 10px;
 	}
 	.np-ad-package-lft,
 	.np-ad-btm-package-rgt{

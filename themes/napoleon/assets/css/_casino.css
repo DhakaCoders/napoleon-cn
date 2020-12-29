@@ -163,7 +163,9 @@
 }
 
 @media(max-width: 1399px){
-	
+	.np-roulette-lft{
+		padding-right: 60px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -361,6 +363,12 @@
 	.np-casino-ctlr .np-roulette-lft-title{
 		font-size: 20px;
 	}
+	.np-casino-ctlr .restaurant-gallery-slider {
+	    padding: 40px 0 40px;
+	}
+	.np-casino-ctlr .restaurant-testi-slider .slider-arrows {
+	    padding-bottom: 30px;
+	}
 
 }
 
@@ -370,7 +378,8 @@
 	}
 	.np-roulette-img-ctlr, 
 	.np-winner-lft-img-ctlr,
-	.np-roulette-sec-inr{
+	.np-roulette-sec-inr,
+	.np-winner-sec-inr{
 		max-width: 100%;
 		width: auto;
 	}
