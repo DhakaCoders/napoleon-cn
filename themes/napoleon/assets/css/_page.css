@@ -568,6 +568,15 @@
 	.page-banner-title {
 	    font-size: 36px;
 	}
+	.page-banner-des-inr{
+		padding-left: 0;
+	}
+	.page-banner-inr{
+		height: 580px;
+	}
+	.page-banner-des{
+		padding-top: 240px;
+	}
 }
 
 @media(max-width: 575px){
@@ -598,7 +607,21 @@
 	.swiper-button-next{
 		left: 40px;
 	}
-	
+	.vdo-controller button svg{
+		width: 15px;
+		height: auto;
+	}
+	.vdo-controller{
+		right: 20px;
+		bottom: 30px;
+	}
+	.page-banner-des p{
+		font-size: 13px;
+	}
+	.page-banner-inr {
+	    height: 540px;
+	}
+		
 }
 
 @media(max-width: 479px){
@@ -606,7 +629,9 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
-	
+	.page-banner-des p{
+		font-size: 11px;
+	}
 }
 
 @media(max-width: 359px){
