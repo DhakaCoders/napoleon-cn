@@ -152,6 +152,7 @@
 }
 .visite-lft-desc{
 	width:  28.3%;
+	padding-right: 15px;
 }
 .visite-lft-title{
 	font-family: 'Operetta18-Medium';
@@ -381,6 +382,9 @@
 	.wellcome-sec{
 		padding: 130px 0 120px;
 	}
+	.visite-lft-desc p br{
+		display: none;
+	}
 }
 @media(max-width: 991px){
 	.catagory-sec{
@@ -407,6 +411,30 @@
 	}
 	.wellcome-sec{
 		padding: 100px 0;
+	}
+	.visite-lft-desc{
+		width: 100%;
+		padding-right: 0;
+		padding-left: 25px;
+	}
+	.visite-slider-cntlr{
+		width: 100%;
+	}
+	.wellcome-right p{
+		margin-bottom: 0px;
+	}
+	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide {
+		width: 485px!important;
+	}
+	.visite-slider-cntlr .restaurant-gallery-slide-item{
+		height: 420px;
+	}
+	.visite-lft-title{
+		margin-bottom: 25px;
+
+	}
+	.visite-lft-desc{
+		padding-bottom: 10px;
 	}
 }
 @media(max-width: 767px){
@@ -470,7 +498,29 @@
 	.wellcome-right-cntlr{
 		padding-right: 20px;
 	}
-
+	.wellcome-sub-title br,
+	.wellcome-right p br{
+		display: none;
+	}
+	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide {
+		width: 380px!important;
+	}
+	.visite-slider-cntlr .restaurant-gallery-slide-item{
+		height: 250px;
+	}
+	.visite-slide-item-desc-cntlr{
+		display: none;
+	}
+	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide-active .restaurant-gallery-slide-item .visite-slide-item-desc-cntlr{
+		display: none;
+	}
+	.visite-sec{
+		padding-bottom: 95px;
+	}
+	.visite-lft-title{
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
 }
 @media(max-width: 639px){
 	.catagory-sec{
@@ -513,6 +563,9 @@
 	.catagorySlider-arrows .swiper-button-prev:hover i svg,
 	.catagorySlider-arrows .swiper-button-next:hover i svg{
 		fill: rgb(203, 160, 104);
+	}
+	.visite-sec{
+		padding-bottom: 80px;
 	}
 }
 @media(max-width: 575px){
@@ -567,9 +620,27 @@
 		margin-left: -10px;
 		margin-right: -10px;
 	}
+	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide {
+		width: 280px!important;
+	}
+	.visite-slider-cntlr .restaurant-gallery-slide-item{
+		height: 200px;
+	}
+	.visite-lft-title{
+		margin-bottom: 18px;
+		font-size: 20px;
+	}
 }
 @media(max-width: 479px){
-	
+	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide {
+		width: 255px!important;
+	}
+	.visite-slider-cntlr .restaurant-gallery-slide-item{
+		height: 178px;
+	}
+	.visite-sec{
+		padding-bottom: 70px;
+	}
 }
 
 

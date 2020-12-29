@@ -78,7 +78,8 @@
 	h6{
 		font-size: 32px;
 	}
-	.rgsHolder{
+	.rgsHolder,
+	.rtsHolder{
 		margin-left: 25px!important;
 	}
 
@@ -184,8 +185,9 @@
 	h6{
 		font-size: 20px;
 	}
-	.rgsHolder {
-	    margin-left: 15px!important;
+	.rgsHolder,
+	.rtsHolder {
+	    margin-left: 13px!important;
 	}
 }
 
