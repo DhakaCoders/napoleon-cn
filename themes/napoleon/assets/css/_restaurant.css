@@ -720,6 +720,9 @@
 	.restaurant-tab-con-fea-box-des p{
 		margin-bottom: 40px!important;
 	}
+	.rpeh-title{
+		font-size: 30px;
+	}
 }
 
 @media(max-width: 479px){
