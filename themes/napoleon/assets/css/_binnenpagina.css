@@ -850,6 +850,16 @@ Gallery design
 	.dfp-lftimg-rtdesc-rt-desc-prize{
 		font-size: 30px;
 	}
+	.dfp-rgsholder,
+	.dfp-restaurant-testi-slider .dfp-rtsholder{
+		padding-left: 0;
+	}
+	.dfp-restaurant-gallery-slider .restaurant-gallery-slider{
+		padding-bottom: 80px;
+	}
+	.dfp-restaurant-testi-slider{
+		padding-bottom: 85px;
+	}
 }
 @media(max-width: 991px){
 	.dfp-promo-module h1, .dfp-promo-module-title{
@@ -903,7 +913,12 @@ Gallery design
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	.dfp-restaurant-gallery-slider .restaurant-gallery-slider{
+		padding-bottom: 65px;
+	}
+	.dfp-restaurant-testi-slider{
+		padding-bottom: 70px;
+	}
 }
 @media(max-width: 850px){
 
@@ -1022,6 +1037,32 @@ Gallery design
 		flex-wrap: initial;
 
 	}
+	.dfp-restaurant-gallery-slider .restaurant-gallery-slider{
+		padding-bottom: 55px;
+	}
+	.dfp-restaurant-testi-slider{
+		padding-bottom: 55px;
+		padding-top: 20px;
+	}
+	.dfp-nieuws-con-sec-cntlr .np-nieuws-lftsidebar{
+		margin-bottom: 0;
+	}
+	.dfp-nieuws-con-sec-cntlr .np-nieuws-grds-item{
+		max-width: 450px;
+	}
+	.dfp-np-nieuws-grds-item .np-nieuws-grd-item-img-ctlr{
+		height: 405px;
+	}
+	.dfp-nieuws-grd-item-btm-desc-cntlr{
+		min-height: 110px;
+		padding: 10px 15px;
+	}
+	.dfp-ngibd-title{
+		font-size: 24px!important;
+	}
+	.dfp-ngibd-brnd{
+		margin-bottom: 7px;
+	}
 }
 @media(max-width: 639px){
 	
@@ -1122,6 +1163,25 @@ Gallery design
 	.dfp-lftimg-rtdesc-lft-img-cntlr{
 		height: 300px;
 	}
+	.dfp-restaurant-gallery-slider .restaurant-gallery-slider{
+		padding-bottom: 45px;
+	}
+	.dfp-restaurant-testi-slider{
+		padding-bottom: 40px;
+		padding-top: 10px;
+	}
+	.np-nieuws-lftsidebar-des p{
+		display: none;
+	}
+
+	.dfp-np-nieuws-grds-item .np-nieuws-grd-item-img-ctlr{
+		height: 305px;
+	}
+	.dfp-np-nieuws-grds-items{
+		margin-bottom: 0!important;
+		padding-bottom: 0!important;
+		border-bottom: 0!important;
+	}
 }
 
 
@@ -1129,6 +1189,13 @@ Gallery design
 	.dfp-promo-module h1, 
 	.dfp-promo-module-title{
 		font-size: 26px;
+	}
+	.dfp-restaurant-gallery-slider .restaurant-gallery-slider{
+		padding-bottom: 30px;
+	}
+	.dfp-restaurant-testi-slider{
+		padding-bottom: 32px;
+		padding-top: 0;
 	}
 }
 

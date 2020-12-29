@@ -382,8 +382,8 @@ if (windowWidth <= 768) {
     slidesPerView: 1,
     loop: true,
     navigation: {
-      nextEl: '.jBnrSlider-arrows .swiper-button-next',
-      prevEl: '.jBnrSlider-arrows .swiper-button-prev',
+      nextEl: '.dfpNgiSlider-arrows .swiper-button-next',
+      prevEl: '.dfpNgiSlider-arrows .swiper-button-prev',
     },
   });
 }
