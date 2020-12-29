@@ -1014,6 +1014,14 @@ Gallery design
 		bottom: -1px;
 
 	}
+	.loyalty-welcome-sec-con-cntlr .loyalty-welcome-sec-des{
+		max-width: 100%;
+		padding-right: 0;
+	}
+	.dfp-np-nieuws-grds-items .dfp-np-nieuws-grds-item-cntlr{
+		flex-wrap: initial;
+
+	}
 }
 @media(max-width: 639px){
 	
