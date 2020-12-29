@@ -274,6 +274,9 @@ $(document).delegate('.fl-push-btn', 'click', function() {
     }*/
 });
 
+
+
+
 /**
 Sidebar menu
 */
@@ -302,18 +305,67 @@ if (windowWidth <= 991) {
 
 
 
+if (windowWidth <= 767) {
+  
+  if( $('.xsRestaurantTabsSlider').length ){
+      $('.xsRestaurantTabsSlider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+            }
+          }
+        ]
+      });
+  }
+}
+
+
   /*Start Of Noyon*/
 
   
   var swiper = new Swiper('.jBnrSlider', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
     navigation: {
-      nextEl: '.slider1-arrows .swiper-button-next',
-      prevEl: '.slider1-arrows .swiper-button-prev',
+      nextEl: '.jBnrSlider-arrows .swiper-button-next',
+      prevEl: '.jBnrSlider-arrows .swiper-button-prev',
     },
     breakpoints: {
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
       768: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      1199: {
         slidesPerView: 4,
         spaceBetween: 0,
       },
@@ -325,6 +377,16 @@ if (windowWidth <= 991) {
   });
 
 
+if (windowWidth <= 768) {
+  var swiper = new Swiper('.dfpNgiSlider', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.dfpNgiSlider-arrows .swiper-button-next',
+      prevEl: '.dfpNgiSlider-arrows .swiper-button-prev',
+    },
+  });
+}
 
 
   
@@ -455,12 +517,18 @@ if( $('#googlemap').length ){
   var containerW = $('.container').outerWidth();
   var containerLft = (windowW - containerW) / 2;
   $('.np-ad-package-holder').css('margin-left', (containerLft+lftoffset));
+  $(window).resize(function(){
+    ('.np-ad-package-holder');
+  });
 
   var rgtoffset = 100;
   var windowW = $(window).width();
   var containerW = $('.container').outerWidth();
   var containerRgt = (windowW - containerW) / 2;
   $('.np-ad-btm-package-holder').css('margin-right', (containerRgt+rgtoffset));
+  $(window).resize(function(){
+    ('.np-ad-btm-package-holder');
+  });
   
 
 

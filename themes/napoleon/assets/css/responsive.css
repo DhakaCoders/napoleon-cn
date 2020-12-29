@@ -78,7 +78,8 @@
 	h6{
 		font-size: 32px;
 	}
-	.rgsHolder{
+	.rgsHolder,
+	.rtsHolder{
 		margin-left: 25px!important;
 	}
 
@@ -118,8 +119,8 @@
 	.container-md,
 	.container-sm,
 	.container-xs{
-		padding-right: 25px;
-    	padding-left: 25px;
+		padding-right: 20px;
+    	padding-left: 20px;
 	}
 	.row{
 		margin-right: -20px;
@@ -163,6 +164,9 @@
 	.show-xs{
 		display: block!important;
 	}
+	p{
+		font-size: 11px;
+	}
 	h1{
 		font-size: 36px;
 	}
@@ -181,7 +185,10 @@
 	h6{
 		font-size: 20px;
 	}
-
+	.rgsHolder,
+	.rtsHolder {
+	    margin-left: 13px!important;
+	}
 }
 
 @media(max-width: 479px){

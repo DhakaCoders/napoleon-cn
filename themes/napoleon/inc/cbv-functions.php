@@ -102,3 +102,65 @@ function wpmu_role_based_style() {
 
 // for back-end; comment out if you don't want to hide in back-end
 add_action( 'admin_footer', 'wpmu_role_based_style', 99 );
+function cbv_table( $table){
+  if ( ! empty ( $table ) ) {
+    echo '<div class="dfp-tbl-wrap block-930">
+    <div class="table-dsc" data-aos="fade-up" data-aos-delay="200">
+    <table>';
+    if ( ! empty( $table['caption'] ) ) {
+      echo '<caption>' . $table['caption'] . '</caption>';
+    }
+    if ( ! empty( $table['header'] ) ) {
+      echo "<thead class='dfp-thead'>";
+      echo '<tr>';
+      echo '<th><span>#</span></th>';
+      foreach ( $table['header'] as $th ) {
+        echo '<th><span>';
+        echo $th['c'];
+        echo '</span></th>';
+      }
+      echo '</tr>';
+      echo '</thead>';
+    }
+    echo '<tbody>';
+    $i = 1;
+    foreach ( $table['body'] as $tr ) {
+      echo '<tr>';
+      echo '<td><span class="mHc">'.$i.'</span></td>';
+      foreach ( $tr as $td ) {
+        echo '<td>';
+        echo $td['c'];
+        echo '</td>';
+      }
+      echo '</tr>';
+      $i++;
+    }
+    echo '</tbody>';
+    echo '</table></div>';
+    echo '</div>';
+  }  
+}
+
+function is_default_page(){
+  $class = '';
+/*  if( is_blog() && !is_front_page() ){
+    $class = 'page-header';
+  }elseif( (is_page_template('page-agenda.php') || 'agenda'==get_post_type()) ){
+    $class = 'page-header';
+  }elseif( (is_page_template('page-arrangementen.php') || 'arrangementen'==get_post_type()) ){
+    $class = 'page-header';
+  }elseif( is_page() && is_page_template('page-restaurant.php') ){
+    $class = 'page-header';
+  }elseif( is_page() && !is_front_page() ){
+    $class = 'page-header';
+  }elseif( is_404() && !is_front_page() ){
+    $class = 'page-header';
+  }*/
+  if( is_front_page() || is_page_template('page-contact.php') || is_page_template('page-casino.php') || is_page_template('page-loyalty.php')){
+    $class = '';
+  }else{
+    $class = 'page-header';
+  }
+  return $class;
+}
+

@@ -22,9 +22,21 @@ if( !function_exists('cbv_theme_setup') ){
         if(function_exists('add_theme_support')) {
             add_theme_support('category-thumbnails');
         }
-        //add_image_size( 'hhovergrid', 574, 576, true );
-        //add_image_size( 'hprogrid', 364, 236, true );
-        //add_image_size( 'hawgrid', 574, 420, true );
+        add_image_size( 'postgrid', 340, 280, true );
+        add_image_size( 'agendagrid', 340, 360, true );
+        add_image_size( 'hmslider', 426, 398, true );
+        add_image_size( 'quickknop', 222, 176, true );
+        add_image_size( 'cposter', 536, 446, true );
+        add_image_size( 'cblok1', 632, 450, true );
+        add_image_size( 'cslider', 700, 558, true );
+        add_image_size( 'agendamb', 756, 300, true );
+        add_image_size( 'agendadesk', 622, 490, true );
+        add_image_size( 'arrgblok', 640, 490, true );
+        add_image_size( 'restaugrid', 456, 432, true );
+        add_image_size( 'dftslide', 568, 558, true );
+        add_image_size( 'dftagenda', 364, 478, true );
+        add_image_size( 'dftnieuws', 454, 280, true );
+        add_image_size( 'dftposter', 930, 600, true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -39,9 +51,12 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-            'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
-            'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME )
+            'cbv_top_menu' => __( 'Top Menu', THEME_NAME ),
+            'cbv_main_menu1' => __( 'Hoofdmenu 1', THEME_NAME ),
+            'cbv_main_menu2' => __( 'Hoofdmenu 2', THEME_NAME ),
+            'cbv_mobiel_menu' => __( 'Mobiel Menu', THEME_NAME ),
+            'cbv_ft_menu' => __( 'Footer Menu', THEME_NAME ),
+            'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME )
         ) );
 
     }
@@ -58,6 +73,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
     include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
+    include_once( THEME_DIR . '/enq-scripts/swiper.php' );
     include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
     include_once( THEME_DIR . '/enq-scripts/app.php' );
@@ -72,7 +88,9 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
-include_once(THEME_DIR .'/inc/wc-functions.php');
+include_once(THEME_DIR .'/inc/ajax-agenda.php');
+include_once(THEME_DIR .'/inc/ajax-agenda-cat.php');
+include_once(THEME_DIR .'/inc/ajax-arrangementen.php');
 /**
 ACF Option pages->>
 */

@@ -285,6 +285,12 @@
 	.np-arrangementen-con{
 		padding-top: 20px;
 	}
+	.np-arrangementen-grd-item{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 }
 
@@ -292,6 +298,10 @@
 	.np-arrangementen-con .np-arrangementen-lftsidebar .np-nieuws-lftsidebar-des-inr {
 	    padding-left: 15px;
 	    padding-right: 15px;
+	}
+	.np-arrangementen-con-inr{
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 
 }

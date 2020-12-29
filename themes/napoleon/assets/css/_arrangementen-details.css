@@ -175,13 +175,16 @@
 	text-align: left;
 }
 
-@media(max-width: 1799){
+@media(max-width: 1899px){
 	.np-ad-package-lft{
 		padding-right: 75px;
 	}
 	.np-ad-btm-package-rgt {
 	    padding-left: 80px;
 	    padding-right: 30px;
+	}
+	.np-ad-package-lft{
+		padding-right: 120px;
 	}
 }
 @media(max-width: 1599px){
@@ -287,6 +290,12 @@
 	    padding-top: 60px;
 	    padding-bottom: 200px;
 	}
+	.np-ad-ctlr .restaurant-gallery-slider{
+		margin-left: 0;
+	}
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: -15px;
+	}
 	
 
 }
@@ -314,7 +323,7 @@
 	    margin-left: 0;
 	}
 	.np-ad-package-holder{
-		margin-left: 20px!important;
+		margin-left: 25px!important;
 	}
 	.np-ad-btm-package-rgt-title{
 		font-size: 32px;
@@ -370,6 +379,10 @@
 	.np-ad-ctlr .restaurant-testi-slider {
 	    padding-top: 50px;
 	    padding-bottom: 180px;
+	}
+	.np-ad-btm-package-lft,
+	.np-ad-btm-package-rgt{
+	    width: 50%;
 	}
 }
 
@@ -449,6 +462,13 @@
 	.np-ad-btm-package-lft-img {
 	    min-height: 350px;
 	}
+	.np-ad-package-rgt-img-ctlr,
+	.np-ad-btm-package-lft-img-ctlr{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media(max-width: 575px){
@@ -486,13 +506,16 @@
 	.np-ad-btm-package-lft-img {
 	    min-height: 200px;
 	}
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: 0px;
+	}
 	
 
 }
 
 @media(max-width: 479px){
 	.np-ad-package-lft-title {
-	    font-size: 30px;
+	    font-size: 28px;
 	}
 	.np-ad-btm-package-rgt-title {
 	    font-size: 20px;
@@ -501,8 +524,27 @@
 	.np-ad-expert-rgt-title {
 	    font-size: 20px;
 	}
-	.np-ad-ctlr .contact-form-dsc-title {
-	    font-size: 20px;
+	.np-ad-package-sec {
+	    padding-right: 0px;
+	}
+	.np-ad-package-holder {
+	    margin-left: 10px!important;
+	    margin-right: 10px;
+	}
+	.np-ad-btm-package-sec {
+	    padding-left: 0px;
+	}
+	.np-ad-btm-package-holder {
+	    margin-right: 10px!important;
+	    margin-left: 10px;
+	}
+	.np-ad-package-lft,
+	.np-ad-btm-package-rgt{
+		padding-right: 20px;
+	}
+	.np-ad-expert-sec-inr{
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 
 }

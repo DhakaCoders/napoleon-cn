@@ -12,13 +12,11 @@
 }
 .np-roulette-lft{
 	order: 1;
-	float: left;
 	width:  40.9482%;
 	padding-right: 95px;
 }
 .np-roulette-rgt{
 	order: 2;
-	float: right;
 	width:  59.0517%;
 }
 
@@ -155,10 +153,19 @@
 	    padding-top: 0;
 	    padding-bottom: 120px;
 	}
+	.np-winner-rgt{
+		padding-left: 50px;
+    	padding-right: 15px;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 600px;
+	}
 }
 
 @media(max-width: 1399px){
-	
+	.np-roulette-lft{
+		padding-right: 60px;
+	}
 }
 
 @media(max-width: 1299px){
@@ -194,6 +201,16 @@
 	.np-roulette-img,
 	.np-winner-lft-img{
 	    min-height: 400px;
+	}
+	.np-casino-ctlr .restaurant-testi-slider {
+	    padding-bottom: 200px;
+	}
+	.np-casino-ctlr .restaurant-gallery-slider,
+	.np-casino-ctlr .restaurant-testi-slider{
+		margin-left: 0px!important;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 600px;
 	}
 
 }
@@ -241,6 +258,12 @@
 	.np-winner-lft-img{
 	    min-height: 350px;
 	}
+	.np-casino-ctlr .restaurant-testi-slider {
+	    padding-bottom: 180px;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 500px;
+	}
 }
 
 @media(max-width: 767px){
@@ -279,7 +302,7 @@
 	}
 	.np-roulette-sec-inr,
 	.np-winner-sec-inr{
-		display: initial;
+		display: inherit;
 	}
 	.np-winner-rgt{
 		width: 100%;
@@ -289,6 +312,22 @@
 	.np-roulette-img,
 	.np-winner-lft-img{
 	    min-height: 300px;
+	}
+	.np-casino-ctlr .restaurant-testi-slider {
+	    padding-bottom: 140px;
+	}
+	.np-casino-ctlr .np-roulette-sec {
+	    padding-bottom: 65px;
+	}
+	.np-roulette-img-ctlr,
+	.np-winner-lft-img-ctlr{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 420px;
 	}
 }
 
@@ -312,11 +351,46 @@
 	.np-winner-lft-img{
 	    min-height: 200px;
 	}
+	.np-casino-ctlr .np-roulette-sec {
+	    padding-bottom: 55px;
+	}
+	.np-casino-ctlr .restaurant-testi-slider {
+	    padding-bottom: 100px;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 380px;
+	}
+	.np-casino-ctlr .np-roulette-lft-title{
+		font-size: 20px;
+	}
+	.np-casino-ctlr .restaurant-gallery-slider {
+	    padding: 40px 0 40px;
+	}
+	.np-casino-ctlr .restaurant-testi-slider .slider-arrows {
+	    padding-bottom: 30px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.np-winner-sec {
+	    padding-bottom: 25px;
+	}
+	.np-roulette-img-ctlr, 
+	.np-winner-lft-img-ctlr,
+	.np-roulette-sec-inr,
+	.np-winner-sec-inr{
+		max-width: initial;
+		width: auto;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 260px;
+	}
+	.np-roulette-sec-inr,
+	.np-winner-sec-inr{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
 
 }
 
