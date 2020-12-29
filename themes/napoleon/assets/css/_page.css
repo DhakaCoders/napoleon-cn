@@ -582,7 +582,23 @@
 		width: 100%;
 		margin-bottom: 10px;
 	}
-
+	.swiper-button-prev i svg,
+	.swiper-button-next i svg{
+		max-width: 18px;
+		height: auto;
+	}
+	.swiper-button-prev,
+	.swiper-button-next{
+		width: 18px;
+		height: 18px;
+	}
+	.slider-arrows {
+	    padding-bottom: 40px;
+	}
+	.swiper-button-next{
+		left: 40px;
+	}
+	
 }
 
 @media(max-width: 479px){
@@ -590,7 +606,7 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
-
+	
 }
 
 @media(max-width: 359px){
