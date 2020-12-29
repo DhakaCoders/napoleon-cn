@@ -511,7 +511,7 @@
 }
 @media(max-width: 575px){
 	.catagory-sec{
-		padding: 0 8px;
+		padding: 0 10px;
 	}
 
 	.news-sec{
@@ -550,6 +550,13 @@
 	.wellcome-sub-title{
 		font-size: 18px;
 		margin-bottom: 20px;
+	}
+	.hm-footer-gallery{
+		padding-left: 10px;
+	}
+	.footer-top-sec-cntlr{
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 }
 @media(max-width: 479px){
