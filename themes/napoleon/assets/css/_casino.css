@@ -380,11 +380,16 @@
 	.np-winner-lft-img-ctlr,
 	.np-roulette-sec-inr,
 	.np-winner-sec-inr{
-		max-width: 100%;
+		max-width: initial;
 		width: auto;
 	}
 	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
 	    width: 260px;
+	}
+	.np-roulette-sec-inr,
+	.np-winner-sec-inr{
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 
 }
