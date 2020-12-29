@@ -293,6 +293,9 @@
 	.np-ad-ctlr .restaurant-gallery-slider{
 		margin-left: 0;
 	}
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: -15px;
+	}
 	
 
 }
@@ -502,6 +505,9 @@
 	}
 	.np-ad-btm-package-lft-img {
 	    min-height: 200px;
+	}
+	.np-ad-ctlr .restaurant-testi-slider{
+		margin-left: 0px;
 	}
 	
 

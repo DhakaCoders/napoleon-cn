@@ -361,6 +361,12 @@
 	.np-casino-ctlr .np-roulette-lft-title{
 		font-size: 20px;
 	}
+	.np-casino-ctlr .restaurant-gallery-slider {
+	    padding: 40px 0 40px;
+	}
+	.np-casino-ctlr .restaurant-testi-slider .slider-arrows {
+	    padding-bottom: 30px;
+	}
 
 }
 
