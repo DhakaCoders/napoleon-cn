@@ -118,8 +118,8 @@
 	.container-md,
 	.container-sm,
 	.container-xs{
-		padding-right: 25px;
-    	padding-left: 25px;
+		padding-right: 20px;
+    	padding-left: 20px;
 	}
 	.row{
 		margin-right: -20px;
