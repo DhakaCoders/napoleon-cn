@@ -426,11 +426,49 @@
 	.restaurantGallerySlider .swiper-slide {
 	    width: 600px;
 	}
+	.restaurant-mascotte-section {
+	    padding: 100px 0;
+	}
+	.restaurant-mascotte-sec-con-des{
+		padding-right: 50px;
+	}
+	.rmscd-title{
+		margin-bottom: 70px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 400px;
+	}
+	.restaurantTestiSlide-item {
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    padding-bottom: 50px;
+	}
+	.restaurantTestiSlide-item{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.restaurantTestiSliderArrows {
+	    margin-left: 5px;
+	}
+	.rtshdr-title{
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+	}
+	.restaurant-testi-slider {
+	    padding: 65px 0 80px;
+	}
+	.restaurant-btm-des-section {
+	    padding: 100px 0 75px;
+	}
 }
 
 @media(max-width: 1023px){
 	.restaurantGallerySlider .swiper-slide {
-	    width: 500px;
+	    width: 450px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 400px;
 	}
 }
 
@@ -461,6 +499,26 @@
 	.restaurant-gallery-slide-item {
 	    height: 400px;
 	}
+	.restaurant-mascotte-sec-con-des {
+	    padding-right: 40px;
+	}
+	.rmscd-title {
+	    font-size: 36px;
+	    margin-bottom: 40px;
+	}
+	.restaurant-mascotte-sec-fea-img {
+	    height: 445px;
+	}
+	.restaurantGallerySlider .swiper-slide {
+	    width: 380px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 450px;
+	}
+	.res-btm-des-sec-lft p strong {
+	    font-size: 22px;
+	    line-height: 1.3;
+	}
 }
 
 @media(max-width: 767px){
@@ -488,6 +546,77 @@
 	}
 	.restaurantGallerySlider .swiper-slide {
 	    width: 420px;
+	}
+	.restaurant-mascotte-sec-con{
+		display: block;
+	}
+	.restaurant-mascotte-sec-fea-img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.restaurant-mascotte-sec-con-des{
+		width: 100%;
+		padding-right: 0;
+		padding-left: 25px;
+	}
+	.rmscd-title br{
+		display: none;
+	}
+	.restaurant-mascotte-section {
+	    padding: 60px 0;
+	}
+	.rmscd-title{
+		margin-bottom: 30px;
+	}
+	.restaurant-mascotte-sec-con-des p{
+		font-size: 15px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 400px;
+	}
+	.restaurantTestiSlide-item{
+		padding: 30px 40px 45px
+	}
+	.rti-titlte{
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	.restaurantTestiSlide-item i {
+	    right: 33px;
+	    top: 30px;
+	}
+	.restaurantTestiSlide-item i svg{
+		width: 40px;
+		height: auto;
+	}
+	.restaurantTestiSlide-item p{
+		text-align: left;
+	}
+	.rtshdr-title{
+		font-size: 27px;
+	}
+	.restaurant-btm-des-section,
+	.res-btm-des-sec-lft p strong{
+		text-align: left;
+	}
+	.res-btm-des-sec-lft > div,
+	.res-btm-des-sec-rgt > div{
+		width: 100%;
+		max-width: 100%;
+	}
+	.res-btm-des-sec-lft p strong{
+		font-weight: 400;
+	}
+	.res-btm-des-sec-lft,
+	.res-btm-des-sec-rgt{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.restaurant-btm-des-section {
+	    padding: 60px 0 50px;
+	}
+	.restaurant-tab-con-des ul li label, .restaurant-tab-con-des ul li strong{
+		font-weight: 700;
 	}
 }
 
@@ -546,6 +675,51 @@
 	    margin-left: -5px;
 	    margin-right: -5px;
 	}
+	.restaurant-mascotte-sec-fea-img{
+		margin-bottom: 15px;
+	}
+	.restaurant-mascotte-section {
+	    padding: 40px 0;
+	}
+	.rmscd-title{
+		margin-bottom: 25px;
+	}
+	.restaurant-mascotte-sec-con-des p{
+		font-size: 14px;
+	}
+	.restaurant-mascotte-sec-fea-img {
+	    height: 345px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 360px;
+	}
+	.restaurantTestiSlider {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.restaurantTestiSliderArrows {
+	    margin-left: 0;
+	}
+	.restaurant-testi-slider {
+	    padding: 60px 0 70px;
+	}
+	.rtshdr-title{
+		font-size: 25px;
+	}
+	.res-btm-des-sec-lft p strong{
+		font-size: 20px;
+	}
+	.res-btm-des-sec-lft,
+	.res-btm-des-sec-rgt{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.restaurant-tab-con-des ul li label, .restaurant-tab-con-des ul li strong{
+		font-size: 16px;
+	}
+	.restaurant-tab-con-fea-box-des p{
+		margin-bottom: 40px!important;
+	}
 }
 
 @media(max-width: 479px){
@@ -557,6 +731,48 @@
 	}
 	.restaurant-gallery-slide-item {
 	    height: 250px;
+	}
+	.rmscd-title {
+	    font-size: 28px;
+	}
+	.rmscd-title{
+		margin-bottom: 20px;
+	}
+	.restaurant-mascotte-sec-con-des p{
+		font-size: 11px;
+	}
+	.restaurant-mascotte-sec-fea-img {
+	    height: 245px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 320px;
+	}
+	.rtshdr-title{
+		font-size: 23px;
+		margin-bottom: 35px;
+		padding-bottom: 20px;
+	}
+	.restaurantTestiSlide-item {
+	    padding: 20px 20px 15px;
+	}
+	.restaurantTestiSlide-item i{
+		right: 18px;
+		top: 16px;
+	}
+	.restaurantTestiSlide-item i svg{
+		width: 34px;
+	}
+	.rti-titlte{
+		font-size: 25px;
+		margin-bottom: 22px;
+	}
+	.restaurantTestiSlider .swiper-slide {
+	    width: 260px;
+	}
+	.res-btm-des-sec-lft,
+	.res-btm-des-sec-rgt{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
