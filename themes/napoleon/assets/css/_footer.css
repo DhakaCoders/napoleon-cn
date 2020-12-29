@@ -971,6 +971,12 @@
 	}
 	.footer-top{
 		padding-bottom: 80px;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.footer-bottom{
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 	/*footer top sec version 2*/
 	.footer-top-sec-v2{
