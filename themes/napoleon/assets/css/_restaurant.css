@@ -723,6 +723,10 @@
 	.rpeh-title{
 		font-size: 30px;
 	}
+	.restaurant-tabs ul li {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
 }
 
 @media(max-width: 479px){
@@ -780,5 +784,7 @@
 }
 
 @media(max-width: 359px){
-
+	.restaurant-tab-con-fea-box-img {
+	    height: 200px;
+	}
 }

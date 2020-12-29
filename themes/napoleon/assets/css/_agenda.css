@@ -392,6 +392,13 @@
 	.np-agenda-con{
 		padding-bottom: 0;
 	}
+	.np-agenda-lftimg-rgt-des,
+	.np-angenda-grd-item{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 }
 
