@@ -12,13 +12,11 @@
 }
 .np-roulette-lft{
 	order: 1;
-	float: left;
 	width:  40.9482%;
 	padding-right: 95px;
 }
 .np-roulette-rgt{
 	order: 2;
-	float: right;
 	width:  59.0517%;
 }
 
@@ -357,10 +355,6 @@
 	.np-roulette-sec-inr{
 		max-width: 100%;
 		width: auto;
-	}
-	.np-roulette-sec-inr{
-		margin-left: -10px;
-		margin-right: -10px;
 	}
 
 }
