@@ -377,6 +377,10 @@
 	    padding-top: 50px;
 	    padding-bottom: 180px;
 	}
+	.np-ad-btm-package-lft,
+	.np-ad-btm-package-rgt{
+	    width: 50%;
+	}
 }
 
 @media(max-width: 767px){
@@ -505,7 +509,7 @@
 
 @media(max-width: 479px){
 	.np-ad-package-lft-title {
-	    font-size: 30px;
+	    font-size: 28px;
 	}
 	.np-ad-btm-package-rgt-title {
 	    font-size: 20px;

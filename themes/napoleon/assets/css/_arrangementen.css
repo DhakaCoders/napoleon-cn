@@ -285,6 +285,12 @@
 	.np-arrangementen-con{
 		padding-top: 20px;
 	}
+	.np-arrangementen-grd-item{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 }
 

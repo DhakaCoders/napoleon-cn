@@ -157,6 +157,9 @@
 		padding-left: 50px;
     	padding-right: 15px;
 	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 600px;
+	}
 }
 
 @media(max-width: 1399px){
@@ -203,6 +206,9 @@
 	.np-casino-ctlr .restaurant-gallery-slider,
 	.np-casino-ctlr .restaurant-testi-slider{
 		margin-left: 0px!important;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 600px;
 	}
 
 }
@@ -252,6 +258,9 @@
 	}
 	.np-casino-ctlr .restaurant-testi-slider {
 	    padding-bottom: 180px;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 500px;
 	}
 }
 
@@ -315,6 +324,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 420px;
+	}
 }
 
 @media(max-width: 575px){
@@ -343,6 +355,12 @@
 	.np-casino-ctlr .restaurant-testi-slider {
 	    padding-bottom: 100px;
 	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 380px;
+	}
+	.np-casino-ctlr .np-roulette-lft-title{
+		font-size: 20px;
+	}
 
 }
 
@@ -355,6 +373,9 @@
 	.np-roulette-sec-inr{
 		max-width: 100%;
 		width: auto;
+	}
+	.np-casino-ctlr .restaurantGallerySlider .swiper-slide {
+	    width: 260px;
 	}
 
 }
