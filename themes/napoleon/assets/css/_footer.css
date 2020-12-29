@@ -1021,6 +1021,9 @@
 		left: -10px;
 		right: -10px;
 	}
+	.footer-top-sec-cntlr{
+		padding-bottom: 32px;
+	}
 
 }
 @media(max-width: 479px){

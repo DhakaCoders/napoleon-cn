@@ -115,6 +115,7 @@
 .wellcome-right-cntlr{
 	width: 71.7%;
 	padding-left: 20px;
+	padding-right: 15px;
 }
 .wellcome-title{
 	font-family: 'Operetta18-Regular';
@@ -385,6 +386,17 @@
 	.visite-lft-desc p br{
 		display: none;
 	}
+	.visite-slide-item-desc-cntlr{
+		width: 290px;
+		height: 155px;
+	}
+	.visite-slide-item-title{
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+	.visite-slide-item-desc p{
+		font-size: 13px;
+	}
 }
 @media(max-width: 991px){
 	.catagory-sec{
@@ -520,6 +532,9 @@
 	.visite-lft-title{
 		margin-bottom: 20px;
 		font-size: 25px;
+	}
+	.news-items-cntlr .np-nieuws-grd-items ul{
+		justify-content: center;
 	}
 }
 @media(max-width: 639px){
