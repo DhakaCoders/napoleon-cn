@@ -1,5 +1,6 @@
 .footer-wrp{
 	background: #fff;
+	overflow: hidden;
 }
 .footer-top{
 	padding-top: 67px;
@@ -939,6 +940,12 @@
 	}
 	.fts-v2-lft-title{
 		font-size: 22px;
+	}
+
+
+
+	.ftr-top-col{
+		padding-right: 0;
 	}
 }
 @media(max-width: 639px){
