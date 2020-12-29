@@ -143,7 +143,8 @@
 	padding-bottom: 30px;
 }
 
-.restaurant-tab-con-des ul li label{
+.restaurant-tab-con-des ul li label,
+.restaurant-tab-con-des ul li strong{
 	display: block;
 	font-weight: 500;
 	font-size: 18px;
@@ -391,23 +392,116 @@
 		padding-left: 25px;
 		padding-right: 25px;
 	}
+	.rtcfbd-title {
+	    font-size: 34px!important;
+	}
+	.restaurant-tab-con-fea-box-des p{
+		font-size: 15px;
+		margin-bottom: 15px!important;
+	}
+	.restaurant-tab-con-fea-box-des{
+		padding-top: 25px;
+		padding-bottom: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.rtcfbd-price{
+		font-size: 23px;
+	}
 }
 
 @media(max-width: 991px){
-	
+	.restaurant-tabs ul li {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.restaurant-tabs .tab-link{
+		font-size: 11px;
+	}
+	.restaurant-tab-con-fea-box{
+		width: 52%;
+	}
+	.restaurant-tab-con-des{
+		width: 48%;
+		padding-left: 40px;
+	}
+	.restaurant-tab-con-fea-box-des{
+		padding-bottom: 25px;
+	}
+	.restaurant-gallery-slider {
+	    padding: 100px 0 90px;
+	}
 }
 
 @media(max-width: 767px){
-	
+	.restaurant-tab-con{
+		display: block;
+	}
+	.restaurant-tab-con-des{
+		width: 100%;
+	}
+	.restaurant-tab-con-fea-box {
+	    width: 100%;
+	    margin-bottom: 40px;
+	}
+	.restaurant-tab-con{
+		max-width: 550px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.restaurant-gallery-slider {
+	    padding: 80px 0 60px;
+	}
 }
 
 @media(max-width: 575px){
-	
-
+	.restaurant-tab-con-fea-box-des{
+		position: static;
+		background: transparent!important;
+		padding-left: 0;
+	}
+	.restaurant-tab-con-fea-box{
+		position: static;
+	}
+	.restaurant-tab-con-fea-box{
+		height: auto;
+	}
+	.restaurant-tab-con-fea-box-img{
+		height: 350px;
+	}
+	.restaurant-tab-con-fea-box-des p{
+		color: #512C36;
+	}
+	.restaurant-tab-con-des{
+		padding-left: 0;
+	}
+	.restaurant-tab-con{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.restaurant-tab-con-fea-box-des{
+		padding: 40px 0;
+	}
+	.restaurant-tab-con-fea-box{
+		margin-bottom: 0;
+	}
+	.rtcfbd-title {
+	    font-size: 32px!important;
+	}
+	.restaurant-tabs{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.restaurant-gallery-slider {
+	    padding: 50px 0 55px;
+	}
 }
 
 @media(max-width: 479px){
-
+	.restaurant-tab-con-fea-box-img {
+	    height: 300px;
+	}
 
 }
 

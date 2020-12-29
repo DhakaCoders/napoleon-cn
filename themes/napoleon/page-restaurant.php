@@ -63,7 +63,7 @@ $thisID = get_the_ID();
         <div class="col-md-12">
           <div class="">
               <div class="fl-tabs clearfix restaurant-tabs">
-                <ul class="reset-list clearfix">
+                <ul class="reset-list clearfix xsRestaurantTabsSlider">
 	        	  <?php $i = 1; while($menuQuery->have_posts()): $menuQuery->the_post(); ?>
                   <li><button class="tab-link<?php echo ($i == 1)?' current': ''; ?>" data-tab="tab-<?php echo $i; ?>"><span><?php the_title(); ?></span></button></li>
                   <?php $i++; endwhile; ?>

@@ -274,6 +274,9 @@ $(document).delegate('.fl-push-btn', 'click', function() {
     }*/
 });
 
+
+
+
 /**
 Sidebar menu
 */
@@ -300,6 +303,43 @@ if (windowWidth <= 991) {
   });
 }
 
+
+
+if (windowWidth <= 767) {
+  
+  if( $('.xsRestaurantTabsSlider').length ){
+      $('.xsRestaurantTabsSlider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+            }
+          }
+        ]
+      });
+  }
+}
 
 
   /*Start Of Noyon*/
