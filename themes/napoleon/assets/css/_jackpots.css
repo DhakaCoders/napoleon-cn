@@ -435,11 +435,32 @@
 	.jackpots-content{
 		padding-bottom: 107px;
 	}
-	/*.{
+	.nl-left-img-right-desc-cntlr,
+	.jkpt-cntnt-item{
+		max-width: 100%;
+	}
+	.nl-left-img-cntlr{
+		margin-left: -20px;
+		width: auto;
+		margin-right: -20px;
+	}
+	.nl-right-desc-cntlr{
+		width: auto;
 		margin-left: -10px;
 		margin-right: -10px;
-	}*/
-
+	}
+	.jackpots-content-cntlr{
+		max-width: initial;
+		width: auto;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.jkpt-cntnt-item-desc-cntlr{
+		display: block;
+	}
+	.jkpt-cntnt-item-desc{
+		max-width: 100%;
+	}
 }
 @media(max-width: 479px){
 
