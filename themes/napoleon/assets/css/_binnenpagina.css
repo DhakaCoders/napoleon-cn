@@ -720,6 +720,25 @@ Gallery design
 	text-align: center;
 	color: #CB9F67!important;
 	margin-bottom: 55px!important;
+	padding-top: 0!important;
+}
+.dfp-restaurant-tab-section-cntlr > p{
+	color: #fff;
+	margin-bottom: 28px;
+	font-size: 11px;
+	font-weight: 500;
+	text-align: center;
+}
+.dfp-restaurant-tab-section-cntlr-btn{
+	padding-bottom: 58px;
+}
+.dfp-restaurant-tab-section-cntlr-btn .fl-tsprnt-btn{
+	width: 252px;
+	height: 52px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #CB9F67;
+	border-color: #CB9F67;
 }
 .dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box {
     width: 49%;
@@ -832,6 +851,9 @@ Gallery design
 		font-size: 50px;
 		margin-bottom: 35px;
 	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 200px;
+	}
 }
 @media(max-width: 1199px){
 	.jackpots-banner-wrap .page-banner-inr{
@@ -887,6 +909,12 @@ Gallery design
 	}
 	.dfp-restaurant-tab-section-cntlr{
 		padding: 58px 38px 73px 38px;
+	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 48px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 170px;
 	}
 }
 @media(max-width: 991px){
@@ -962,6 +990,15 @@ Gallery design
 	}
 	.dfp-restaurant-tab-section{
 		padding-bottom: 65px;
+	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 40px!important;
+	}
+	.dfp-restaurant-tab-section-title{
+		font-size: 32px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 150px;
 	}
 }
 @media(max-width: 850px){
@@ -1052,7 +1089,7 @@ Gallery design
 		padding-bottom: 45px;
 	}
 	.dfp-plate-one-img-inr{
-		min-height: 200px;
+		min-height: 300px;
 	}
 	.dfp-promo-module{
 		padding-bottom: 30px;
@@ -1163,6 +1200,29 @@ Gallery design
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 30px!important;
+	}
+	.dfp-restaurant-tab-section-title{
+		font-size: 28px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 130px;
+	}
+	.default-page-con h6{
+		font-size: 26px;
+	}
+	.default-page-con h5{
+		font-size: 28px;
+	}
+	.table-dsc table thead tr th:first-child, .table-dsc table thead tr td:first-child{
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 100px;
+	}
+	.table-dsc table thead tr th, .table-dsc table tbody tr td{
+		padding-left: 51px;
 	}
 }
 @media(max-width: 639px){
@@ -1317,6 +1377,66 @@ Gallery design
 	.dfp-tbl-wrap-sec{
 		margin-top: 40px;
 	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 22px!important;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box{
+		height: initial;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box .restaurant-tab-con-fea-box-des p{
+		color: #fff;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box-des{
+		padding-left: 0;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-des ul li{
+		padding-left: 0;
+		padding-top: 0;
+	}
+	.dfp-restaurant-tab-section-cntlr{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.dfp-restaurant-tabs{
+		margin-left: -38px!important;
+		margin-right: -38px!important;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box .restaurant-tab-con-fea-box-img{
+		height: 250px;
+	}
+	.dfp-restaurant-tab-section-title{
+		font-size: 24px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 120px;
+	}
+	.dfp-promo-module h1 br, .dfp-promo-module-title br{
+		display: none;
+	}
+	.default-page-con h6{
+		font-size: 22px;
+	}
+	.default-page-con h5{
+		font-size: 24px;
+	}
+	.dfp-np-nieuws-grd-items-in > ul > li{
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	.dfp-np-nieuws-grd-items-in{
+		padding-top: 35px;
+		border-top: 2px solid #fff;
+	}
+	.dfp-plate-one-img-inr{
+		min-height: 250px;
+	}
+	.dfp-tbl-wrap{
+		margin-left: -20px;
+		margin-right: -20px;
+		min-width: initial;
+		width: initial;
+	}
+
 
 }
 
@@ -1367,11 +1487,60 @@ Gallery design
 	.dfp-tbl-wrap-sec{
 		margin-top: 30px;
 	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box .restaurant-tab-con-fea-box-img{
+		height: 171px;
+	}
+	.dfp-plate-one-img-bx{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.fl-dft-lftimg-rgtdes{
+		display: block;
+		margin-left: -10px;
+		margin-right: -10px;
+		padding-bottom: 30px;
+	}
+	.fl-dft-lftimg-rgtdes-lft{
+	}
+	.fl-dft-lftimg-rgtdes-rgt-inr{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.loyalty-welcome-sec-con-cntlr .loyalty-welcome-sec-des{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.default-page-con h6{
+		font-size: 18px;
+	}
+	.default-page-con h5{
+		font-size: 21px;
+	}
+	.dfp-loyalty-welcome-cntlr{
+		margin-left: -30px;
+		margin-right: -30px;
+		width: initial;
+	}
+	.dfp-plate-one-img-inr{
+		min-height: 200px;
+	}
+	.dfp-lftimg-rtdesc-grid{
+		margin-left: -10px;
+		margin-right: -10px;
+		max-width: initial;
+		width: initial;
+	}
+	.dfp-download-pdf{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
 }
 
 
 
 @media(max-width: 359px){
-
+	.fl-dft-lftimg-rgtdes-lft{
+		min-height: 200px;
+	}
 }
 

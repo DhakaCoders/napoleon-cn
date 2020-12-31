@@ -469,7 +469,7 @@ contact-info-sec-wrp
 }
 
 .contact-map-sec-wrp {
-    margin-bottom: -3px;
+    margin-bottom: -15px;
 }
 #googlemap{
 	height: 700px;
@@ -731,6 +731,9 @@ contact-info-sec-wrp
 	}
 	.np-two-grid-des p {
 	    margin-bottom: 25px;
+	}
+	.contact-info-lft ul {
+	    margin: 0 -10px;
 	}
 	
 
