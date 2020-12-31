@@ -740,6 +740,10 @@ Gallery design
 	color: #CB9F67;
 	border-color: #CB9F67;
 }
+.dfp-restaurant-tab-section-cntlr-btn .fl-tsprnt-btn:hover{
+	border-color: #A21D1D;
+	color: #fff;
+}
 .dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box {
     width: 49%;
     height: 390px;
