@@ -324,11 +324,17 @@ Gallery design
 /*table*/
 .dfp-tbl-wrap-sec{
 	margin-top: 63px;
-	padding-top: 81px;
-	padding-bottom: 231px;
-	background: #ffffff;
+	padding-bottom: 148px;	
 }
-
+.dfp-tbl-wrap-sec-wbg{
+	background: #ffffff;
+	
+}
+.dfp-tbl-wrap-cntlr{
+	background: #fff;
+	padding-top: 81px;
+	padding-bottom: 81px;
+}
 .dfp-tbl-wrap{
 	padding-top: 10px;
 }
@@ -856,7 +862,7 @@ Gallery design
 		margin-bottom: 35px;
 	}
 	.dfp-tbl-wrap-sec{
-		padding-bottom: 200px;
+		padding-bottom: 160px;
 	}
 }
 @media(max-width: 1199px){
@@ -918,7 +924,7 @@ Gallery design
 		margin-bottom: 48px!important;
 	}
 	.dfp-tbl-wrap-sec{
-		padding-bottom: 170px;
+		padding-bottom: 188px;
 	}
 }
 @media(max-width: 991px){
@@ -1002,7 +1008,7 @@ Gallery design
 		font-size: 32px!important;
 	}
 	.dfp-tbl-wrap-sec{
-		padding-bottom: 150px;
+		padding-bottom: 67px;
 	}
 }
 @media(max-width: 850px){
@@ -1212,7 +1218,7 @@ Gallery design
 		font-size: 28px!important;
 	}
 	.dfp-tbl-wrap-sec{
-		padding-bottom: 130px;
+		padding-bottom: 67px;
 	}
 	.default-page-con h6{
 		font-size: 26px;
@@ -1412,7 +1418,7 @@ Gallery design
 		font-size: 24px!important;
 	}
 	.dfp-tbl-wrap-sec{
-		padding-bottom: 120px;
+		padding-bottom: 37px;
 	}
 	.dfp-promo-module h1 br, .dfp-promo-module-title br{
 		display: none;
