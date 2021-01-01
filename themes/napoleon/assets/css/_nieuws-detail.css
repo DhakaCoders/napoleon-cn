@@ -59,3 +59,41 @@
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+
+
+/*responsive*/
+@media(max-width: 1199px){
+	.dfp-back-link{
+		padding-bottom: 160px;
+	}
+	
+}
+@media(max-width: 991px){
+	.dfp-back-link{
+		padding-bottom: 140px;
+	}
+	.nd-dfp-promo-module-date{
+		margin-bottom: 34px;
+	}
+}
+@media(max-width: 767px){
+	.dfp-back-link{
+		padding-bottom: 120px;
+	}
+	.nd-dfp-promo-module-date{
+		margin-bottom: 28px;
+	}
+}
+@media(max-width: 639px){
+	
+	
+}
+@media(max-width: 575px){
+	.dfp-back-link{
+		padding-bottom: 100px;
+	}
+	.nd-dfp-promo-module-date{
+		margin-bottom: 23px;
+	}
+	
+}
