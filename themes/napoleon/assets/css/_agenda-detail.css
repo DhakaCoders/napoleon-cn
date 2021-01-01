@@ -20,7 +20,7 @@ ad-two-grid-sec-wrp
 
 
 .ad-two-grid-wrp li .ad-two-grid-img-inr{
-    width: 46%;
+    width: 45%;
     position: relative;
     order: 2;
     overflow: hidden;
@@ -32,14 +32,14 @@ ad-two-grid-sec-wrp
     display: none;
 }
 .ad-two-grid-wrp li .ad-two-grid-des-inr{
-    width: 54%;
+    width: 55%;
     order: 1;
 }
 .ad-two-grid-wrp li .ad-two-grid-des-inr .ad-two-grid-des {
     max-width: 780px;
     width: 100%;
     float: right;
-    padding: 10px 135px 30px 125px;
+    padding: 10px 135px 30px 129px;
 }
 .ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr{
 	order: 2 !important;
@@ -49,7 +49,7 @@ ad-two-grid-sec-wrp
 }
 .ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des{
     float: left;
-    padding: 20px 255px 20px 125px;
+    padding: 20px 255px 20px 150px;
 }
 .ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title{
 	margin-bottom: 20px;
@@ -157,6 +157,15 @@ ad-two-grid-sec-wrp
 	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des {
 	    padding: 20px 150px 20px 125px;
 	}
+	.ad-two-grid-des-title{
+		font-size: 55px;
+	}
+	.ad-two-grid-des strong{
+		font-size: 24px;
+	}
+	.ad-two-grid-des p{
+		font-size: 15px;
+	}
 }
 
 @media(max-width: 1499px){
@@ -238,6 +247,7 @@ ad-two-grid-sec-wrp
 	}
 	.ad-two-grid-sec-wrp {
 	    padding-bottom:150px;
+	    padding-top: 80px;
 	}
 	.np-two-grid-sec-wrp {
 	    margin-top: 70px;
@@ -272,10 +282,9 @@ ad-two-grid-sec-wrp
 	.ad-two-grid-img img {
 	    display: block !important;
 	    width: 100%;
-	    height: 300px;
 	}
 	.ad-two-grid-wrp li .ad-two-grid-des-inr .ad-two-grid-des {
-	    padding: 15px 40px 30px 40px;
+	    padding: 20px 40px 30px 40px;
 	    float: none;
 	    margin: 0 auto;
 	}
@@ -322,9 +331,6 @@ ad-two-grid-sec-wrp
 	.ad-two-grid-wrp li .ad-two-grid-des-inr .ad-two-grid-des {
 	    padding: 15px 30px 30px 30px;
 	}
-	.ad-two-grid-img img {
-	    height: 250px;
-	}
 	.ad-two-grid-des p {
 	    font-size: 11px;
 	}
@@ -348,9 +354,6 @@ ad-two-grid-sec-wrp
 @media(max-width: 479px){
 	.ad-two-grid-des-title{
 		font-size: 28px;
-	}
-	.ad-two-grid-img img {
-	    height: 200px;
 	}
 	.ad-two-grid-wrp li:nth-child(2n+2) .ad-two-grid-des-inr .ad-two-grid-des .ad-two-grid-des-title {
 	    font-size: 20px;

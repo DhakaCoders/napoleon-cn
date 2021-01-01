@@ -1038,7 +1038,7 @@ Gallery design
 	}
 	.fl-dft-lftimg-rgtdes-lft,
 	.fl-dft-lftimg-rgtdes-lft-img-inr {
-	    min-height: 240px;
+	    min-height: 340px;
 	    height: 100%;
 	}
 	.fl-dft-lftimg-rgtdes-rgt{
@@ -1246,6 +1246,7 @@ Gallery design
 	.dfp-promo-module h1, .dfp-promo-module-title{
 		font-size: 28px;
 		margin-bottom: 16px;
+		font-weight: 400;
 	}
 	.block-930{
 		padding-left: 20px;
@@ -1446,8 +1447,14 @@ Gallery design
 		min-width: initial;
 		width: initial;
 	}
-
-
+	.fl-dft-lftimg-rgtdes-lft,
+	.fl-dft-lftimg-rgtdes-lft-img-inr {
+		min-height: 300px;
+	}
+	.dfp-restaurant-tab-section .restaurant-tab-con{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 
@@ -1544,12 +1551,17 @@ Gallery design
 		margin-left: -20px;
 		margin-right: -20px;
 	}
+	.fl-dft-lftimg-rgtdes-lft,
+	.fl-dft-lftimg-rgtdes-lft-img-inr {
+		min-height: 240px;
+	}
 }
 
 
 
 @media(max-width: 359px){
-	.fl-dft-lftimg-rgtdes-lft{
+	.fl-dft-lftimg-rgtdes-lft,
+	.fl-dft-lftimg-rgtdes-lft-img-inr {
 		min-height: 200px;
 	}
 }

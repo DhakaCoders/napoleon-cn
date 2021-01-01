@@ -366,7 +366,7 @@
 	}
 	.np-angenda-grd-item-img,
 	.np-agenda-lftimg{
-		min-height: 200px;
+		min-height: 276px;
 	}
 	.np-agenda-lftimg-ctlr,
 	.np-agenda-rgt-des{
@@ -399,7 +399,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	.page-template-page-agenda .np-nieuws-lftsidebar-des p{
+		display: block;
+	}
 }
 
 @media(max-width: 479px){
@@ -412,7 +414,16 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
+	.np-angenda-grd-item-img,
+	.np-agenda-lftimg{
+		min-height: 200px;
+	}
+	.np-nieuws-lftsidebar-title{
+		font-size: 35px;
+	}
+	.page-template-page-agenda .np-agenda-lftsidebar .np-nieuws-lftsidebar-des {
+	    min-height: 320px;
+	}
 }
 
 @media(max-width: 359px){

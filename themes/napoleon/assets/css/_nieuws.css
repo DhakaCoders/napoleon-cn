@@ -161,12 +161,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 .fl-pagination-ctlr ul li{
-	display: inline-block;
-	vertical-align: baseline;
 	padding-left: 18px;
 	padding-right: 18px;
+	position: static;
 }
 .fl-pagination-ctlr ul li span.current{
 	display: inline-block;
@@ -192,16 +194,16 @@
 .fl-pagination-ctlr ul li a:hover{
 	color: #CBA068;
 }
-.fl-pagination-ctlr ul li:first-child{
+.fl-pagination-ctlr ul li a.prev{
 	position: absolute;
-	left: -30px;
+	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	padding-left: 0;
 }
-.fl-pagination-ctlr ul li:last-child{
+.fl-pagination-ctlr ul li a.next{
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -210,8 +212,8 @@
 	-ms-transform: translateY(-50%);
 	padding-right: 0;
 }
-.fl-pagination-ctlr ul li:first-child a,
-.fl-pagination-ctlr ul li:last-child a{
+.fl-pagination-ctlr ul li a.prev,
+.fl-pagination-ctlr ul li a.next{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 14px;
@@ -219,43 +221,54 @@
 	color: #CBA068;
 	font-weight: 600;
 }
-.fl-pagination-ctlr ul li:first-child a span,
-.fl-pagination-ctlr ul li:last-child a span{
+.fl-pagination-ctlr ul li a.prev span,
+.fl-pagination-ctlr ul li a.next span{
 	color: #CBA068;
 }
-.fl-pagination-ctlr ul li:first-child a{
+.fl-pagination-ctlr ul li a.prev{
 	padding-left: 40px;
-	position: relative;
 }
-.fl-pagination-ctlr ul li:first-child a i{
+.fl-pagination-ctlr ul li a.prev i{
 	position: absolute;
-	top: 0;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 	left: 0;
+	top: 50%;
 }
-.fl-pagination-ctlr ul li:first-child a:hover,
-.fl-pagination-ctlr ul li:first-child a:hover span,
-.fl-pagination-ctlr ul li:last-child a:hover,
-.fl-pagination-ctlr ul li:last-child a:hover span{
+.fl-pagination-ctlr ul li a.prev:hover,
+.fl-pagination-ctlr ul li a.prev:hover span,
+.fl-pagination-ctlr ul li a.next:hover,
+.fl-pagination-ctlr ul li a.next:hover span{
 	color: #4C2631;
 }
-.fl-pagination-ctlr ul li:first-child a:hover svg,
-.fl-pagination-ctlr ul li:last-child a:hover svg{
+.fl-pagination-ctlr ul li a.next:hover svg,
+.fl-pagination-ctlr ul li a.prev:hover svg{
 	fill: #4C2631;
 }
-.fl-pagination-ctlr ul li:first-child a:hover i{
-	margin-left: -5px;
+.fl-pagination-ctlr ul li a.prev:hover i{
+	margin-left: -3px;
 }
-.fl-pagination-ctlr ul li:last-child a:hover i{
-	margin-right: -5px;
+.fl-pagination-ctlr ul li a.next:hover i{
+	margin-right: -3px;
 }
-.fl-pagination-ctlr ul li:last-child a{
+.fl-pagination-ctlr ul li a.next{
 	padding-right: 40px;
-	position: relative;
 }
-.fl-pagination-ctlr ul li:last-child a i{
+.fl-pagination-ctlr ul li a.next i{
 	position: absolute;
-	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 	right: 0;
+}
+
+.fl-pagination-ctlr ul li a.next i svg,
+.fl-pagination-ctlr ul li a.prev i svg{
+	max-width: 19px;
+	width: 100%;
+	height: auto;
 }
 
 @media(max-width: 1599px){
@@ -313,7 +326,7 @@
 		width: 65%;
 	}
 	.np-nieuws-lftsidebar-inr {
-	    padding: 60px 40px 55px;
+	    padding: 60px 25px 55px;
 	}
 	.np-ngid-title{
 		font-size: 20px;
@@ -329,17 +342,14 @@
 }
 
 @media(max-width: 991px){
-	.hide-md{
-		display: none!important;
-	}
-	.show-md{
-		display: block!important;
-	}
 	.np-nieuws-lftsidebar-inr {
-	    padding: 50px 30px 45px;
+	    padding: 50px 20px 45px;
 	}
 	.np-nieuws-lftsidebar-des{
 		min-height: 300px;
+	}
+	.np-nieuws-grd-item-img{
+		min-height: 220px;
 	}
 	.np-nieuws-lftsidebar-des-inr {
 	    padding-left: 25px;
@@ -373,16 +383,26 @@
 		font-size: 13px;
 	}
 	.fl-pagination-ctlr ul li {
-	    padding-left: 12px;
-	    padding-right: 12px;
+	    padding-left: 10px;
+	    padding-right: 10px;
 	}
 	.fl-pagination-ctlr ul li a, 
 	.fl-pagination-ctlr ul li span{
 		font-size: 13px;
 	}
 	.np-nieuws-con-sec {
-	    padding-top: 30px;
+	    padding-top: 70px;
 	    padding-bottom: 40px;
+	}
+	.fl-pagination-ctlr ul li a.prev {
+	    padding-left: 28px;
+	}
+	.fl-pagination-ctlr ul li a.next {
+	    padding-right: 28px;
+	}
+	.fl-pagination-ctlr ul li span.current{
+		width: 35px;
+		height: 35px;
 	}
 }
 
@@ -433,6 +453,10 @@
 	.np-nieuws-grd-item-img{
 		min-height: 240px;
 	}
+	.np-nieuws-lftsidebar-inr{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 @media(max-width: 575px){
@@ -472,10 +496,6 @@
 	.fl-pagination-ctlr ul li:first-child a span,
 	.fl-pagination-ctlr ul li:last-child a span{
 		display: none;
-	}
-	.fl-pagination-ctlr ul li:first-child a i,
-	.fl-pagination-ctlr ul li:last-child a i{
-		top: 4px;
 	}
 	.np-nieuws-grd-item-img{
 		min-height: 200px;

@@ -44,6 +44,9 @@ contact-info-sec-wrp
 	display: inline-block;
 	vertical-align: baseline;
 	padding-bottom: 10px;
+	color: #CB9F67;
+	font-size: 24px;
+	line-height: 1;
 }
 .contact-info-gird p{
 	font-size: 14px;
@@ -193,7 +196,7 @@ contact-info-sec-wrp
 */
 .contact-form-sec-wrp{
 	padding-top: 75px;
-	padding-bottom: 100px;
+	padding-bottom: 75px;
 }
 .contact-form-wrp{
 	max-width: 740px;
@@ -497,7 +500,7 @@ contact-info-sec-wrp
 	    width: 100%;
 	}
 	.np-two-grid-des-title{
-		font-size: 60px;
+		font-size: 55px;
 	}
 	.np-two-grid-des p {
 	    margin-bottom: 30px;
@@ -505,15 +508,27 @@ contact-info-sec-wrp
 	.np-two-grid-des strong:last-of-type br{
 		display: none;
 	}
+	.contact-info-gird a, .contact-info-gird span{
+		font-size: 22px;
+	}
+	.contact-form-dsc-title{
+		font-size: 60px;
+	}
+	.np-two-grid-des strong:first-of-type {
+	    font-size: 135px;
+	    top: 100px;
+		left: -20px;
+	}
+	.np-two-grid-des strong:last-of-type{
+		font-size: 22px;
+	}
+	.np-two-grid-des p{
+		font-size: 15px;
+	}
 }
 
 @media(max-width: 1399px){
-	.np-two-grid-des strong:first-of-type{
-		font-size: 150px;
-	}
-	.np-two-grid-des strong:first-of-type{
-		top: 100px;
-	}
+	
 	.np-contact-form-tab ul li{
 		padding:0 6px;
 	}
@@ -556,16 +571,16 @@ contact-info-sec-wrp
 	}
 	.contact-form-sec-wrp {
 	    padding-top: 60px;
-	    padding-bottom: 80px;
+	    padding-bottom: 60px;
 	}
 	.contact-form-dsc-title{
 		font-size: 55px;
 	}
 	.np-two-grid-des-title{
-		font-size: 55px;
+		font-size: 45px;
 	}
 	.np-two-grid-des strong:last-of-type{
-		font-size: 24px;
+		font-size: 22px;
 	}
 	.np-two-grid-sec-wrp .np-two-grid-des {
 	    padding: 20px 40px 30px 140px;
@@ -607,7 +622,7 @@ contact-info-sec-wrp
 	}
 	.contact-form-sec-wrp {
 	    padding-top: 50px;
-	    padding-bottom: 70px;
+	    padding-bottom: 50px;
 	}
 	.contact-form-dsc-title{
 		font-size: 48px;
@@ -671,7 +686,7 @@ contact-info-sec-wrp
 	}
 	.contact-form-sec-wrp {
 	    padding-top: 30px;
-	    padding-bottom: 60px;
+	    padding-bottom: 30px;
 	}
 	.contact-form-dsc-title{
 		font-size: 40px;
@@ -735,7 +750,9 @@ contact-info-sec-wrp
 	.contact-info-lft ul {
 	    margin: 0 -10px;
 	}
-	
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-html p{
+		font-size: 12px;
+	}
 
 }
 
