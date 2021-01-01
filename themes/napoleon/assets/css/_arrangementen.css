@@ -128,7 +128,9 @@
 	background: #0A2B20;
 }
 
-
+.np-arrangementen-grd-item{
+	display: flex;
+}
 .np-arrangementen-grd-item:hover .np-agi-lft-img-inr{
 	transform: scale(1.05);
 	-webkit-transform: scale(1.05);
@@ -210,12 +212,6 @@
 }
 
 @media(max-width: 991px){
-	.hide-md{
-		display: none!important;
-	}
-	.show-md{
-		display: block!important;
-	}
 	.np-arrangementen-con .np-arrangementen-lftsidebar {
 	    width: 100%;
 	}
@@ -231,6 +227,7 @@
 	}
 	.np-arrangementen-con {
 	    padding-bottom: 50px;
+	    padding-top: 70px;
 	}
 	.np-agi-lft-img-inr{
 		min-height: 350px;
@@ -291,7 +288,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	.np-arrangementen-grd-item{
+		flex-wrap: wrap;
+	}
 }
 
 @media(max-width: 479px){
@@ -302,6 +301,10 @@
 	.np-arrangementen-con-inr{
 		margin-left: -10px;
 		margin-right: -10px;
+	}
+	.np-arrangementen-rgt{
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
 }

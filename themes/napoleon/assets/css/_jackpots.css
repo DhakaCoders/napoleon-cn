@@ -113,6 +113,7 @@
 	padding: 4px 20px;
 	margin-bottom: 16px;
 	display: inline-block;
+	text-transform: uppercase;
 }
 .nl-right-desc-title{
 	font-family: 'Operetta18-Medium';
@@ -358,8 +359,11 @@
 	.nl-left-img-cntlr,
 	.jkpt-cntnt-item-img-cntlr{
 		width: 100%;
-		height: 250px;
+		height: initial!important;
 		margin-bottom: 
+	}
+	.jkpt-cntnt-item-img-cntlr{
+		height: 250px;
 	}
 	.nl-right-desc-cntlr{
 		width: 100%;
@@ -387,6 +391,9 @@
 	}
 	.jackpots-content{
 		padding-bottom: 137px;
+	}
+	.nl-rd-current-jackpots-prize .price .amount bdi{
+		font-family: 'Montserrat', sans-serif;
 	}
 	
 }
@@ -426,12 +433,12 @@
 	.nl-rd-current-jackpots{
 		margin-bottom: 20px;
 	}
-	.nl-left-img-cntlr,
+/*	.nl-left-img-cntlr,
 	.jkpt-cntnt-item-img-cntlr{
 		width: 100%;
 		height: 200px;
 		
-	}
+	}*/
 	.jackpots-content{
 		padding-bottom: 107px;
 	}
@@ -463,5 +470,12 @@
 	}
 }
 @media(max-width: 479px){
-
+	/*.nl-left-img-cntlr, .jkpt-cntnt-item-img-cntlr{
+		height: 250px;
+	}*/
+}
+@media(max-width: 359px){
+	/*.nl-left-img-cntlr, .jkpt-cntnt-item-img-cntlr{
+		height: 200px;
+	}*/
 }

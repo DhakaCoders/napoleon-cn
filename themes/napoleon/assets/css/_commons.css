@@ -199,7 +199,8 @@ ul.sub-menu,
 .fl-pagi-ctlr ul,
 .reset-slect ul,
 .page-breadcrumbs ul,
-.restaurant-tab-con-des ul{
+.restaurant-tab-con-des ul,
+.fl-pagination-ctlr ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -209,7 +210,8 @@ ul.sub-menu li,
 .fl-pagi-ctlr ul li,
 .reset-slect ul li,
 .page-breadcrumbs ul li,
-.restaurant-tab-con-des ul li{
+.restaurant-tab-con-des ul li,
+.fl-pagination-ctlr ul li{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -220,7 +222,8 @@ ul.sub-menu li:before,
 .fl-pagi-ctlr ul li:before,
 .reset-slect ul li:before,
 .page-breadcrumbs ul li:before,
-.restaurant-tab-con-des ul li:before{
+.restaurant-tab-con-des ul li:before,
+.fl-pagination-ctlr ul li:before{
 	content: none!important;
 }
 

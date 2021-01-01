@@ -191,9 +191,6 @@
 	.container{
 		max-width: 1200px;
 	}
-	.np-ad-package-sec{
-		margin-left: -115px;
-	}
 	.np-ad-package-lft {
 	    padding-right: 60px;
 	    width: 50%;
@@ -234,17 +231,35 @@
 	.np-ad-expert-rgt-title{
 		font-size: 32px;
 	}
+	.np-ad-btm-package-holder{
+		margin-right: 100px!important;
+	}
+	.np-ad-package-holder{
+		margin-left: 100px!important;
+	}
 }
 
 @media(max-width: 1399px){
 	.np-ad-btm-package-rgt {
 	    padding-left: 100px;
 	}
+	.np-ad-btm-package-holder{
+		margin-right: 60px!important;
+	}
+	.np-ad-package-holder{
+		margin-left: 60px!important;
+	}
 }
 
 @media(max-width: 1299px){
 	.np-ad-btm-package-rgt {
 	    padding-left: 35px;
+	}
+	.np-ad-btm-package-holder{
+		margin-right: 20px!important;
+	}
+	.np-ad-package-holder{
+		margin-left: 20px!important;
 	}
 }
 
@@ -417,6 +432,7 @@
 		width: 100%;
 		padding-right: 0;
 		padding-left: 30px;
+		padding-right: 15px;
 	}
 	.np-ad-package-sec{
 		padding-right: 20px;

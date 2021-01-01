@@ -324,11 +324,17 @@ Gallery design
 /*table*/
 .dfp-tbl-wrap-sec{
 	margin-top: 63px;
-	padding-top: 81px;
-	padding-bottom: 231px;
-	background: #ffffff;
+	padding-bottom: 148px;	
 }
-
+.dfp-tbl-wrap-sec-wbg{
+	background: #ffffff;
+	
+}
+.dfp-tbl-wrap-cntlr{
+	background: #fff;
+	padding-top: 81px;
+	padding-bottom: 81px;
+}
 .dfp-tbl-wrap{
 	padding-top: 10px;
 }
@@ -455,6 +461,10 @@ Gallery design
 }
 
 /*extra*/
+.dfp-restaurant-tabs ul{
+	padding-left: 0!important;
+	padding-bottom: 0!important;
+}
 .dfp-loyalty-welcome-sec-con-cntlr{
 	padding-top: 15px;
 	padding-bottom: 97px;
@@ -716,6 +726,29 @@ Gallery design
 	text-align: center;
 	color: #CB9F67!important;
 	margin-bottom: 55px!important;
+	padding-top: 0!important;
+}
+.dfp-restaurant-tab-section-cntlr > p{
+	color: #fff;
+	margin-bottom: 28px;
+	font-size: 11px;
+	font-weight: 500;
+	text-align: center;
+}
+.dfp-restaurant-tab-section-cntlr-btn{
+	padding-bottom: 58px;
+}
+.dfp-restaurant-tab-section-cntlr-btn .fl-tsprnt-btn{
+	width: 252px;
+	height: 52px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #CB9F67;
+	border-color: #CB9F67;
+}
+.dfp-restaurant-tab-section-cntlr-btn .fl-tsprnt-btn:hover{
+	border-color: #A21D1D;
+	color: #fff;
 }
 .dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box {
     width: 49%;
@@ -786,6 +819,12 @@ Gallery design
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 }
+.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-des ul{
+	padding-left: 0;
+	padding-bottom: 0;
+}
+
+
 @media(max-width: 1599px){
 	.dfp-promo-module h1, .dfp-promo-module-title{
 		font-size: 60px;
@@ -822,8 +861,14 @@ Gallery design
 		font-size: 50px;
 		margin-bottom: 35px;
 	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 160px;
+	}
 }
 @media(max-width: 1199px){
+	.jackpots-banner-wrap .page-banner-inr{
+		height: 720px!important;
+	}
 	.dfp-promo-module h1, .dfp-promo-module-title{
 		font-size: 43px;
 		margin-bottom: 30px;
@@ -859,6 +904,27 @@ Gallery design
 	}
 	.dfp-restaurant-testi-slider{
 		padding-bottom: 85px;
+	}
+	.dfp-nieuws-con-sec{
+		padding-bottom: 85px;
+	}
+	.dfp-loyalty-welcome-cntlr .loyalty-welcome-sec-fea-img{
+		height: 550px;
+	}
+	.dfp-restaurant-tabs ul li {
+		padding: 0 15px 15px!important;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-des{
+		padding-left: 0;
+	}
+	.dfp-restaurant-tab-section-cntlr{
+		padding: 58px 38px 73px 38px;
+	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 48px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 188px;
 	}
 }
 @media(max-width: 991px){
@@ -919,9 +985,46 @@ Gallery design
 	.dfp-restaurant-testi-slider{
 		padding-bottom: 70px;
 	}
+	.dfp-nieuws-con-sec{
+		padding-bottom: 70px;
+	}
+	.dfp-np-nieuws-grd-items-sec{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.dfp-loyalty-welcome-cntlr .loyalty-welcome-sec-fea-img{
+		height: 450px;
+	}
+	.dfp-loyalty-welcome-sec{
+		padding-bottom: 95px;
+	}
+	.dfp-restaurant-tab-section{
+		padding-bottom: 65px;
+	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 40px!important;
+	}
+	.dfp-restaurant-tab-section-title{
+		font-size: 32px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 67px;
+	}
 }
 @media(max-width: 850px){
-
+	.table-dsc table thead tr th:first-child, .table-dsc table tbody tr td:first-child{
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 76px;
+	}
+	.table-dsc table thead tr th, .table-dsc table tbody tr td{
+		padding-left: 15px;
+		padding-right: 5px;
+	}
+	.table-dsc table tbody tr td:last-child{
+		padding-right: 15px;
+		padding-left: 10px;
+	}
 }
 
 @media(max-width: 767px){
@@ -935,7 +1038,7 @@ Gallery design
 	}
 	.fl-dft-lftimg-rgtdes-lft,
 	.fl-dft-lftimg-rgtdes-lft-img-inr {
-	    min-height: 240px;
+	    min-height: 340px;
 	    height: 100%;
 	}
 	.fl-dft-lftimg-rgtdes-rgt{
@@ -996,7 +1099,7 @@ Gallery design
 		padding-bottom: 45px;
 	}
 	.dfp-plate-one-img-inr{
-		min-height: 200px;
+		min-height: 300px;
 	}
 	.dfp-promo-module{
 		padding-bottom: 30px;
@@ -1063,6 +1166,74 @@ Gallery design
 	.dfp-ngibd-brnd{
 		margin-bottom: 7px;
 	}
+	.jackpots-banner-wrap .page-banner-inr{
+		height: 650px!important;
+	}
+	.dfp-lftimg-rtdesc-grid{
+		max-width: 420px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.dfp-nieuws-con-sec{
+		padding-bottom: 55px;
+	}
+	.dfp-np-nieuws-grd-items-sec{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.dfp-loyalty-welcome-cntlr .loyalty-welcome-sec-fea-img{
+		height: 350px;
+	}
+	.dfp-loyalty-welcome-sec{
+		padding-bottom: 80px;
+	}
+	.dfp-restaurant-tab-section{
+		padding-bottom: 55px;
+	}
+	.dfp-tbl-wrap-sec{
+		margin-top: 55px;
+	}
+	.table-dsc{
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	.table-dsc table{
+		width: 620px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box,
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-des{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 30px!important;
+	}
+	.dfp-restaurant-tab-section-title{
+		font-size: 28px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 67px;
+	}
+	.default-page-con h6{
+		font-size: 26px;
+	}
+	.default-page-con h5{
+		font-size: 28px;
+	}
+	.table-dsc table thead tr th:first-child, .table-dsc table thead tr td:first-child{
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 100px;
+	}
+	.table-dsc table thead tr th, .table-dsc table tbody tr td{
+		padding-left: 51px;
+	}
 }
 @media(max-width: 639px){
 	
@@ -1075,6 +1246,7 @@ Gallery design
 	.dfp-promo-module h1, .dfp-promo-module-title{
 		font-size: 28px;
 		margin-bottom: 16px;
+		font-weight: 400;
 	}
 	.block-930{
 		padding-left: 20px;
@@ -1182,6 +1354,107 @@ Gallery design
 		padding-bottom: 0!important;
 		border-bottom: 0!important;
 	}
+	.jackpots-banner-wrap .page-banner-inr{
+		height: 620px!important;
+	}
+	.dfp-nieuws-con-sec-cntlr .np-nieuws-lftsidebar .np-nieuws-lftsidebar-inr{
+		padding: 30px;
+	}
+	.dfp-nieuws-con-sec-cntlr .np-nieuws-lftsidebar .np-nieuws-lftsidebar-inr .np-nieuws-lftsidebar-des{
+		min-height: 162px;
+	}
+	.dfp-nieuws-con-sec{
+		padding-bottom: 40px;
+	}
+	.dfp-np-nieuws-grds-item{
+		max-width: initial!important;
+	}
+	.dfp-np-nieuws-grd-items-sec{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.dfp-loyalty-welcome-cntlr .loyalty-welcome-sec-fea-img{
+		height: 250px;
+	}
+	.dfp-loyalty-welcome-sec{
+		padding-bottom: 65px;
+	}
+	.dfp-restaurant-tab-section{
+		padding-bottom: 45px;
+	}
+	.dfp-download-pdf-item-title{
+		font-size: 20px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		margin-top: 40px;
+	}
+	.dfp-restaurant-tab-section-title{
+		margin-bottom: 22px!important;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box{
+		height: initial;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box .restaurant-tab-con-fea-box-des p{
+		color: #fff;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box-des{
+		padding-left: 0;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-des ul li{
+		padding-left: 0;
+		padding-top: 0;
+	}
+	.dfp-restaurant-tab-section-cntlr{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.dfp-restaurant-tabs{
+		margin-left: -38px!important;
+		margin-right: -38px!important;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box .restaurant-tab-con-fea-box-img{
+		height: 250px;
+	}
+	.dfp-restaurant-tab-section-title{
+		font-size: 24px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		padding-bottom: 37px;
+	}
+	.dfp-promo-module h1 br, .dfp-promo-module-title br{
+		display: none;
+	}
+	.default-page-con h6{
+		font-size: 22px;
+	}
+	.default-page-con h5{
+		font-size: 24px;
+	}
+	.dfp-np-nieuws-grd-items-in > ul > li{
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	.dfp-np-nieuws-grd-items-in{
+		padding-top: 35px;
+		border-top: 2px solid #fff;
+	}
+	.dfp-plate-one-img-inr{
+		min-height: 250px;
+	}
+	.dfp-tbl-wrap{
+		margin-left: -20px;
+		margin-right: -20px;
+		min-width: initial;
+		width: initial;
+	}
+	.fl-dft-lftimg-rgtdes-lft,
+	.fl-dft-lftimg-rgtdes-lft-img-inr {
+		min-height: 300px;
+	}
+	.dfp-restaurant-tab-section .restaurant-tab-con{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 
@@ -1197,11 +1470,99 @@ Gallery design
 		padding-bottom: 32px;
 		padding-top: 0;
 	}
+	.dfp-nieuws-con-sec{
+		padding-bottom: 32px;
+	}
+	.dfp-loyalty-welcome-cntlr .loyalty-welcome-sec-fea-img{
+		height: 200px;
+	}
+	.dfp-loyalty-welcome-sec{
+		padding-bottom: 55px;
+	}
+	.dfp-download-pdf-item{
+		padding: 65px 17px 32px 17px;
+		text-align: center;
+	}
+	.dfp-download-pdf-item-img{
+		top: 17px;
+		transform: initial;
+		-webkit-transform: initial;
+		-o-transform: initial;
+		-ms-transform: initial;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+	}
+	.dfp-download-pdf-item-img img{
+		max-width: 30px;
+	}
+	.dfp-download-pdf-item-title{
+		font-size: 18px!important;
+	}
+	.dfp-tbl-wrap-sec{
+		margin-top: 30px;
+	}
+	.dfp-restaurant-tab-section-cntlr .restaurant-tab-con-fea-box .restaurant-tab-con-fea-box-img{
+		height: 171px;
+	}
+	.dfp-plate-one-img-bx{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.fl-dft-lftimg-rgtdes{
+		display: block;
+		margin-left: -10px;
+		margin-right: -10px;
+		padding-bottom: 30px;
+	}
+	.fl-dft-lftimg-rgtdes-lft{
+	}
+	.fl-dft-lftimg-rgtdes-rgt-inr{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.loyalty-welcome-sec-con-cntlr .loyalty-welcome-sec-des{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.default-page-con h6{
+		font-size: 18px;
+	}
+	.default-page-con h5{
+		font-size: 21px;
+	}
+	.dfp-loyalty-welcome-cntlr{
+		margin-left: -30px;
+		margin-right: -30px;
+		width: initial;
+	}
+	.dfp-plate-one-img-inr{
+		min-height: 200px;
+	}
+	.dfp-lftimg-rtdesc-grid{
+		margin-left: -10px;
+		margin-right: -10px;
+		max-width: initial;
+		width: initial;
+	}
+	.dfp-download-pdf{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.fl-dft-lftimg-rgtdes-lft,
+	.fl-dft-lftimg-rgtdes-lft-img-inr {
+		min-height: 240px;
+	}
 }
 
 
 
 @media(max-width: 359px){
-
+	.fl-dft-lftimg-rgtdes-lft,
+	.fl-dft-lftimg-rgtdes-lft-img-inr {
+		min-height: 200px;
+	}
 }
 
