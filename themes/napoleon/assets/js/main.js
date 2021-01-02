@@ -202,6 +202,19 @@ $(window).resize(function(){
   rgsHolderWidth();
 });
 
+function vswWidth(){
+  var padding = 15, 
+  offset = 0,
+  winW = $(window).width(),
+  conW = $('.container').outerWidth(),
+  conWleft = (winW - conW) / 2;
+  $('.visite-sec-wrap').css('margin-left', (conWleft+padding+offset));
+}
+vswWidth();
+$(window).resize(function(){
+  vswWidth();
+});
+
 var swiper = new Swiper('.restaurantGallerySlider', {
     slidesPerView: 'auto',
     loop: true,
@@ -389,7 +402,7 @@ if (windowWidth <= 768) {
 }
 
 
-  
+if( windowWidth < 1199 ){  
   var swiper = new Swiper('.catagorySlider', {
     slidesPerView: 1,
     loop: true,
@@ -407,16 +420,18 @@ if (windowWidth <= 768) {
         spaceBetween: 0,
       },
       1199: {
+        loop: false,
         slidesPerView: 4,
         spaceBetween: 0,
       },
       1920: {
+        loop: false,
         slidesPerView: 4,
         spaceBetween: 0,
       },
     }
   });
-
+}
   function wswWidth(){
     var padding = 15, 
     offset = 0,
@@ -428,20 +443,6 @@ if (windowWidth <= 768) {
   wswWidth();
   $(window).resize(function(){
     wswWidth();
-  });
-
-
-  function vswWidth(){
-    var padding = 15, 
-    offset = 0,
-    winW = $(window).width(),
-    conW = $('.container').outerWidth(),
-    conWleft = (winW - conW) / 2;
-    $('.visite-sec-wrap').css('margin-left', (conWleft+padding+offset));
-  }
-  vswWidth();
-  $(window).resize(function(){
-    vswWidth();
   });
   
 

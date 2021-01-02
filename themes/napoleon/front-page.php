@@ -11,7 +11,7 @@ get_header();
   <div class="page-banner-inr">
   	<?php if( empty($pgvideo) ): ?>
     <div class="page-banner-bg-cntlr">
-      <div class="page-banner-bg inline-bg" style="background-image:url(<?php echo $bannerposter; ?>);">
+      <div class="inline-bg" style="background-image:url(<?php echo $bannerposter; ?>);">
       </div>
     </div>
     <?php 
@@ -20,29 +20,13 @@ else:
 $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 ?>
     <div class="bnr-vdo-cntlr"> 
-      <video id="fl-vdo" class="fl-vdo" muted poster="<?php echo $bannerposter; ?>">
+      <video autoplay muted loop id="fl-vdo" class="fl-vdo" poster="<?php echo $bannerposter; ?>">
         <?php if( $ext == 'mp4' ): ?>
         <source src="<?php echo $pgvideo; ?>" type="video/mp4">
         <?php elseif($ext == 'ogg'): ?>
           <source src="<?php echo $pgvideo; ?>" type="video/ogg">
         <?php endif; ?>
       </video>
-      <div class="vdo-controller">
-        <button class="fl-play-btn">
-          <i>
-            <svg class="play-icon-svg" width="18" height="24" viewBox="0 0 18 24" fill="#ffffff">
-              <use xlink:href="#play-icon-svg"></use>
-            </svg> 
-          </i>
-        </button> 
-        <button class="fl-push-btn">
-          <i>
-            <svg class="push-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
-              <use xlink:href="#push-icon-svg"></use>
-            </svg> 
-          </i>
-        </button> 
-      </div>
     </div>
 	<?php endif; ?>
     <div class="page-banner-des">
@@ -132,7 +116,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
                 </div>
             	<?php endforeach; ?>
               </div>
-              <div class="slider-arrows show-sm catagorySlider-arrows">
+              <div class="slider-arrows show-lg catagorySlider-arrows">
                 <div class="swiper-button-prev">
                   <i>
                     <svg class="fl-lft-arrow-svg" width="27" height="22" viewBox="0 0 27 22" fill="#CBA068">
@@ -218,6 +202,26 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 			</div>
 			</div>
 			<?php endforeach; ?>
+          <?php 
+            foreach( $tslides as $tslide ): 
+            $slideImg = !empty($tslide['afbeelding'])? cbv_get_image_src( $tslide['afbeelding'], 'hmslider' ): ''; 
+            $knopStart = !empty($tslide['knop'])? '<a href="'.$tslide['knop'].'">':'';
+            $knopEnd = !empty($tslide['knop'])? '</a>':'';
+          ?>
+      <div class="swiper-slide restaurantGallerySlide">
+      <div class='restaurant-gallery-slide-item'>
+        <div class="inline-bg" style="background: url(<?php echo $slideImg; ?>);"></div>
+        <div class="visite-slide-item-desc-cntlr">
+          <div class="visite-slide-item-desc">
+            <?php 
+              if( !empty($tslide['titel']) ) printf('<h4 class="visite-slide-item-title">%s%s%s</h4>',$knopStart, $tslide['titel'], $knopEnd);
+              if( !empty($tslide['beschrijving']) ) echo wpautop( $tslide['beschrijving'] );
+            ?>
+          </div>
+        </div>
+      </div>
+      </div>
+      <?php endforeach; ?>
         </div>
       </div>
       <div class="slider-arrows restaurantGallerySliderArrows">
