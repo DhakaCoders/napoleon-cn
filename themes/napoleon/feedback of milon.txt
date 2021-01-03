@@ -1,3 +1,12 @@
 1. Ai section gulor right ar padding koi res a
 - https://prnt.sc/weeu71
 2. Lang a amra to ul li a use kori
+
+3. restaurant page ar button hover effect
+4. footer social hover effects
+5. 
+
+
+
+1. Cassino page layout 100% done
+2. Rasturant page 70%

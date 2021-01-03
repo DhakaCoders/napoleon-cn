@@ -341,8 +341,12 @@
 	bottom: 0;
 }
 
-
-
+.rgsHolder1Inner{
+	padding-left: 140px;
+}
+.rtsHolderRes{
+	margin-left: -12px;
+}
 @media(max-width: 1599px){
 	.rtshdr-title{
 		margin-left: 200px;
@@ -443,6 +447,9 @@
 	    padding-right: 30px;
 	    padding-bottom: 50px;
 	}
+	.rtsHolderRes{
+		margin-left: -5px;
+	}
 	.restaurantTestiSlide-item{
 		margin-left: 5px;
 		margin-right: 5px;
@@ -533,10 +540,15 @@
 	    margin-bottom: 40px;
 	}
 	.restaurant-tab-con{
-		max-width: 550px;
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.restaurant-tab-con-des{
+		padding-left: 0;
 	}
 	.restaurant-gallery-slider {
 	    padding: 80px 0 60px;
@@ -556,7 +568,7 @@
 	}
 	.restaurant-mascotte-sec-con-des{
 		width: 100%;
-		padding-right: 0;
+		padding-right: 25px;
 		padding-left: 25px;
 	}
 	.rmscd-title br{
@@ -617,6 +629,9 @@
 	}
 	.restaurant-tab-con-des ul li label, .restaurant-tab-con-des ul li strong{
 		font-weight: 700;
+	}
+	.rgsHolder1Inner {
+	    padding-left: 0;
 	}
 }
 
@@ -711,8 +726,8 @@
 	}
 	.res-btm-des-sec-lft,
 	.res-btm-des-sec-rgt{
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.restaurant-tab-con-des ul li label, .restaurant-tab-con-des ul li strong{
 		font-size: 16px;

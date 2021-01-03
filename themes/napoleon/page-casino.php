@@ -24,7 +24,7 @@ else:
 $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 ?>
     <div class="bnr-vdo-cntlr"> 
-      <video id="fl-vdo" class="fl-vdo" muted poster="<?php echo $bannerposter; ?>">
+      <video id="fl-vdo" class="fl-vdo" muted loop autoplay poster="<?php echo $bannerposter; ?>">
         <?php if( $ext == 'mp4' ): ?>
         <source src="<?php echo $pgvideo; ?>" type="video/mp4">
         <?php elseif($ext == 'ogg'): ?>
@@ -32,7 +32,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
         <?php endif; ?>
       </video>
       <div class="vdo-controller">
-        <button class="fl-play-btn">
+        <button class="fl-play-btn hide">
           <i>
             <svg class="play-icon-svg" width="18" height="24" viewBox="0 0 18 24" fill="#ffffff">
               <use xlink:href="#play-icon-svg"></use>
@@ -88,7 +88,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
               <div class="loyalty-welcome-sec-fea-img img-div-scale ">
                 <div class="loyalty-welcome-sec-fea-img-inr img-div inline-bg" style="background-image: url(<?php echo $videoImg; ?>);"></div>
                   <?php if( !empty($video['video_url']) ):?>
-                  <a href="<?php echo $video['video_url']; ?>" data-fancybox="gallery" class="overlay-link"></a>
+                  <a href="<?php echo $video['video_url']; ?>" data-fancybox class="overlay-link"></a>
                   <i>
                     <svg class="play-button-svg" width="50" height="50" viewBox="0 0 50 50" fill="#CB9F67">
                       <use xlink:href="#play-button-svg"></use>

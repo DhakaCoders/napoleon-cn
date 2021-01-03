@@ -336,6 +336,57 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
   </div>
 </section>
 <?php endif; ?>
+
+<section class="hm-footer-gallery">
+  <h2 class="hm-footer-gallery-title">#GrandCasinoKnokke on Instagram</h2>
+  <div class="hm-ftr-gllry-cntlr">
+    <img src="<?php echo THEME_URI; ?>/assets/images/hm-ftr-gllry-img.jpg" alt="hm-ftr-gllry-img">
+  </div>
+</section>
+
+
+<section class="footer-top-sec">
+  <span class="footer-top-sec-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></span>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-top-sec-cntlr">
+          <div class="footer-top-col-hedding">
+            <h4 class="footer-top-col-title">Schrijf je in voor <br>onze nieuwsbrief</h4>
+          </div>
+          <div class="footer-top-col-desc">
+            <p>Ja, ik wil op de hoogte blijven van de laatste<br>
+              acties & promoties! Mis geen enkele kans om<br>
+              mooie prijzen te winnen!
+            </p>
+          </div>
+          <div class="footer-top-form">
+            <form action="" class="needs-validation" novalidate>
+              <div class="input-fields-row input-fields-row-d2">
+                <div class="input-fields-col">
+                  <input type="text" name="fname" placeholder="Naam">
+                </div>
+                <div class="input-fields-col">
+                  <input type="text" name="lname" placeholder="Voornaam">
+                </div>
+              </div>
+
+              <div class="input-fields-row input-fields-row-d2">
+                <div class="input-fields-col input-fields-email-col from-group">
+                  <input type="email" name="email" placeholder="mathias2.conversalbe" class="form-control" required>
+                </div>
+                <div class="input-fields-col input-fields-submit-col">
+                  <button type="submit" name="submit">SCHRIJF JE IN</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php
 get_footer();
 ?>

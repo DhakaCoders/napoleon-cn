@@ -119,7 +119,8 @@ $thisID = get_the_ID();
   	$imgsliders = get_field('afbeelding_sliders', $thisID);
 ?>
 <section class="restaurant-gallery-slider">
-  <div class="rgsHolder">
+  <div class="rgsHolder1">
+  <div class="rgsHolder1Inner">
   	<?php if( $imgsliders ): ?>
       <div class="swiper-container restaurantGallerySlider">
         <div class="swiper-wrapper slide1Wrapper">
@@ -152,6 +153,7 @@ $thisID = get_the_ID();
         </div>
       </div>
   	<?php endif; ?>
+  </div>    
   </div>    
 </section>
 <?php endif; ?>
@@ -197,6 +199,7 @@ $thisID = get_the_ID();
 ?>
 <section class="restaurant-testi-slider">
   <div class="rtsHolder">
+  <div class="rtsHolderRes">
       <div class="restaurant-testi-slider-hdr">
         <?php if( !empty($getuigenissen['titel']) ) printf('<h4 class="rtshdr-title">%s</h4>', $getuigenissen['titel']); ?>
       </div>
@@ -258,6 +261,7 @@ $thisID = get_the_ID();
         </div>
       </div>
       <?php endif; wp_reset_postdata(); ?>
+  </div>    
   </div>    
 </section>
 <?php endif; ?>
