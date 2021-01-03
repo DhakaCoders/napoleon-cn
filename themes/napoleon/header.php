@@ -177,16 +177,22 @@ $posts = wp_count_posts();
                   ?>
                 </div>
                 <div class="hdr-language">
-                  <label class="hdr-lang">
-                    <input type="radio" name="ln" checked="checked">
-                    <strong>NL</strong>
-                    <span class="switch"></span>
-                  </label>
-                  <label class="hdr-lang">
-                    <input type="radio" name="ln">
-                    <strong>FR</strong>
-                    <span class="switch"></span>
-                  </label>
+                  <ul class="reset-list">
+                    <li>
+                      <label class="hdr-lang">
+                        <input type="radio" name="ln" checked="checked">
+                        <strong>NL</strong>
+                        <span class="switch"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="hdr-lang">
+                        <input type="radio" name="ln">
+                        <strong>FR</strong>
+                        <span class="switch"></span>
+                      </label>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

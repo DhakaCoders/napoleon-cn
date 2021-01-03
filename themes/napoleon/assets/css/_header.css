@@ -69,6 +69,10 @@ header.header{
 	padding-left: 2px;
 	padding-right: 2px;
 }
+.hdr-language ul{
+	display: flex;
+	align-items: center;
+}
 .hdr-lang{
 	margin: 0;
 	width: 50%;
