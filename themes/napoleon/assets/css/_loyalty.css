@@ -220,7 +220,8 @@
 		display: none;
 	}
 	.loyalty-welcome-sec-des{
-		padding-left: 30px;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 	.loyalty-welcome-section {
 	    padding: 50px 0;
@@ -267,7 +268,7 @@
 	    padding: 25px 0 55px;
 	}
 	.loyalty-welcome-sec-des {
-	    padding-left: 10px;
+	    padding-left: 25px;
 	}
 	.loyalty-welcome-sec-lft{
 		margin-left: -10px;

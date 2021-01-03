@@ -1,68 +1,12 @@
-Contact
-------------------------------
-Desktop--->
+1. Ai section gulor right ar padding koi res a
+- https://prnt.sc/weeu71
+2. Lang a amra to ul li a use kori
 
-1. https://prnt.sc/w8ageb
-	page banner img ta update korte hobe.
-
-2. https://prnt.sc/w8ahnx
-	puro box a akta overlay link hobe
-
-3. https://prnt.sc/w8aiqk
-	font-weight mileni
-
-4. https://prnt.sc/w8ajgg
-	ai div a mHc ta ki lagteche?
-
-5. https://prnt.sc/w8akcw
-	akta strong akta span hobe
-	i) li te flex hobe 
-	ii) then span take bolte hobe margin-left auto
-		tahole float lagtechena
-
-6. https://prnt.sc/w8aleh
-	h2 hobe banner a jodi title use kore tahole h1 2 ta hoye jabe
-
-7. https://prnt.sc/w8am3h
-	text ar nicher tuku kete geche
-
-8. https://prnt.sc/w8amhe
-	hover color lagbe
-
-9. https://prnt.sc/w8aoqr
-	ai gap ta hobena
-
-
-404
-------------------------------
-Desktop--->
-
-1. https://prnt.sc/w8aqer
-	strong hobe
-
-2. https://prnt.sc/w8bd7k
-	bottom gap ta mileni
-
-
-3. https://prnt.sc/w8bdcx
-	hover korle arrow sore jabena just text ar color change hobe
+3. restaurant page ar button hover effect
+4. footer social hover effects
+5. 
 
 
 
-Agenda Detail
-------------------------------
-Desktop--->
-
-1. https://prnt.sc/w8b6h8
-	a ar padding top deoa jabena p ar margin bottom daw
-
-
-2. https://prnt.sc/w8b5sh
-	h2 hobe
-
-3. https://prnt.sc/w8bcsf
-	font-size kom hobe ata r h3 use kori ata
-
-
-	N.B.--> desktop fix hole responsive tene dekhte hobe thik ache kina
-			browser check korte hobe
+1. Cassino page layout 100% done
+2. Rasturant page 70%

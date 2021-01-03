@@ -74,6 +74,11 @@ Purpose -> practice.html
 .slider1 .box{
     margin-right: 0;
 }
+@media(max-width: 1100px){
+    .wellcome-sec-wrap{
+        margin-right: 15px;
+    }
+}
 @media(max-width: 1920px){
     .container-new{
         width: auto;

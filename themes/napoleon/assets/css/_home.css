@@ -1,11 +1,7 @@
-
-
-
-
-
-
-
-
+.home-page-bnr{
+	position: relative;
+	z-index: 1;
+}
 .catagory-sec{
 	margin-top: -63px;
 	z-index: 3;
@@ -39,6 +35,9 @@
 	padding-left: 12px;
 	padding-right: 12px;
 }
+.catagory-slider .sliderItem{
+	max-width: 25%;
+}
 .catagory-slide-item-cntlr{
 	padding: 25px 25px;
 	background: #1A1429;
@@ -57,10 +56,10 @@
 	width: 100%;
 }
 .catagory-slide-item-cntlr:hover .catagory-slide-item-img{
-	transform: scale(1.051);
-	-ms-transform: scale(1.051);
-	-webkit-transform: scale(1.051);
-	-o-transform: scale(1.051);
+	transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-webkit-transform: scale(1.07);
+	-o-transform: scale(1.07);
 }
 .catagory-slide-item-desc-cntlr{
 	text-align: center;
@@ -174,6 +173,7 @@
 	width: 71.7%;
 /*	padding-right: 19px;*/
 	overflow: hidden;
+	padding-left: 20px;
 }
 .visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
 	width: 600px!important;
@@ -184,11 +184,15 @@
 	width: 100%;
 	height: 398px;
 }
+.visite-slider-cntlr .restaurant-gallery-slide-item .inline-bg{
+	filter: grayscale(1);
+	transition: 0.3s;
+}
 .visite-slide-item-desc-cntlr{
 	position: absolute;
 	width: 372px;
 	height: 200px;
-	left: 100%;
+	left: 95%;
 	margin-left: -40px;
 	bottom: -50px;
 	padding: 20px 15px;
@@ -197,7 +201,8 @@
 	align-items: center;
 	background: #0a2b20;
 	z-index: 11;
-	display: none;
+	visibility: hidden;
+	opacity: 0;
 }
 .visite-slider-cntlr .swiper-container{
 	padding-bottom: 50px;
@@ -206,8 +211,17 @@
 .visite-slider-cntlr .slider-arrows{
 	margin-top: -50px;
 }
-.visite-slider-cntlr .restaurantGallerySlider .swiper-slide-active .restaurant-gallery-slide-item .visite-slide-item-desc-cntlr{
-	display: flex;
+.visite-slider-cntlr .restaurantGallerySlider .swiper-slide-active 
+.restaurant-gallery-slide-item .visite-slide-item-desc-cntlr{
+	transition: all 0.5s;
+	transition-delay: 0.3s;
+	left: 100%;
+	visibility: visible;
+	opacity: 1;
+}
+.visite-slider-cntlr .restaurantGallerySlider .swiper-slide-active 
+.restaurant-gallery-slide-item .inline-bg{
+	filter: grayscale(0);
 }
 .visite-slide-item-desc{
 	max-width: 290px;
@@ -269,8 +283,8 @@
 	padding-top: 92px;
 	padding-left: 20px;
 }
-.hm-ftr-gllry-cntlr{
-
+.hm-ftr-gllry-cntlr img{
+	width: 100%;
 }
 .hm-footer-gallery-title{
     font-family: 'Operetta18-Regular';
@@ -334,9 +348,9 @@
 	}
 
 
-	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
-		width: 456px!important;
-	}
+/*	.visite-slider-cntlr .restaurantGallerySlider .swiper-slide{
+		width: 480px!important;
+	}*/
 }
 @media(max-width: 1399px){
 	.catagory-sec{
@@ -354,6 +368,9 @@
 	}
 	.catagory-slide-item-title{
 		font-size: 30px;
+	}
+	.catagory-slider .sliderItem{
+		max-width: 25%;
 	}
 }
 @media(max-width: 1299px){
@@ -396,6 +413,9 @@
 	}
 	.visite-slide-item-desc p{
 		font-size: 13px;
+	}
+	.catagory-slider .sliderItem{
+		max-width: 355px;
 	}
 }
 @media(max-width: 991px){
@@ -481,6 +501,7 @@
 	.wellcome-sec-cntrl{
 		display: block;
 		padding-left: 25px;
+		padding-right: 25px;
 	}
 	.wellcome-left{
 		width: 100%;
@@ -505,10 +526,10 @@
 		padding: 70px 0;
 	}
 	.wellcome-left{
-		padding-right: 10px;
+		padding-right: 0;
 	}
 	.wellcome-right-cntlr{
-		padding-right: 20px;
+		padding-right: 0;
 	}
 	.wellcome-sub-title br,
 	.wellcome-right p br{
@@ -535,6 +556,9 @@
 	}
 	.news-items-cntlr .np-nieuws-grd-items ul{
 		justify-content: center;
+	}
+	.visite-lft-desc{
+		padding-right: 40px;
 	}
 }
 @media(max-width: 639px){
