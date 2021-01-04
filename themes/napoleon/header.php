@@ -134,7 +134,7 @@
 $posts1 = wp_count_posts(); 
 ?>
 <div class="bdoverlay"></div>
-<header class="header <?php echo is_default_page(); ?>" data-posts="<?php echo $posts1->publish; ?>">
+<header class="header <?php echo is_default_page(); ?>" data-posts="<?php //echo $posts1->publish; ?>">
   <?php if( $is_top_text && is_front_page() ): ?>
   <div class="hdr-top-notification-bar">
     <div class="container">
