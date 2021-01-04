@@ -156,7 +156,7 @@ function is_default_page(){
   }elseif( is_404() && !is_front_page() ){
     $class = 'page-header';
   }*/
-  if( is_front_page() || is_page_template('page-contact.php') || is_page_template('page-casino.php') || is_page_template('page-loyalty.php')){
+  if( is_front_page() || is_page_template('page-contact.php') || is_page_template('page-casino.php') || is_page_template('page-loyalty.php') || is_page_template('page-jackpots.php')){
     $class = '';
   }else{
     $class = 'page-header';

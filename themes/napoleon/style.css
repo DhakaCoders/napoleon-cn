@@ -74,6 +74,26 @@ Purpose -> practice.html
 .slider1 .box{
     margin-right: 0;
 }
+.loading-screen{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #0a2b20;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: 99991;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+.jsLoaded .loading-screen{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -99991;
+}
 @media(max-width: 1100px){
     .wellcome-sec-wrap{
         margin-right: 15px;

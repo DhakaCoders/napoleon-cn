@@ -4,9 +4,17 @@
 
 3. restaurant page ar button hover effect
 4. footer social hover effects
-5. 
-
+5. Contact page icon problem
+6. jackpots page banner slider
 
 
 1. Cassino page layout 100% done
-2. Rasturant page 70%
+2. Rasturant page 100% done
+3. Agenda page 100% done
+4. Arrangementen 100% done
+5. Contact page 100% done
+6. Agenda details
+7. arrangementen details
+8. loyalty page
+9. jackpots page
+10. 

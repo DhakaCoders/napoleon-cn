@@ -296,7 +296,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 </section>
 <?php endif; ?>
 
-<?php get_template_part('templates/newslater'); ?>
+<?php get_template_part('templates/openhours'); ?>
 <?php
 get_footer();
 ?>

@@ -15,7 +15,11 @@ function rgsHolderWidth(){
   var padding = 15;
   var offset = 0;
   var winW = $(window).width();
-  var conW = $('.np-roulette-sec .container').outerWidth();
+  if( $('.np-roulette-sec .container').length ){
+    conW = $('.np-roulette-sec .container').outerWidth();
+  }else{
+    conW = $('.np-ad-expert-sec .container').outerWidth();
+  }
   var conWleft = (winW - conW) / 2;
   $('.rgsHolder').css('padding-left', (conWleft+padding+offset));
 }
@@ -196,7 +200,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*Start Of Ranojit*/
-
 $('div.fl-tabs button').click(function(){
     var tab_id = $(this).attr('data-tab');
 
@@ -275,7 +278,7 @@ if (windowWidth <= 991) {
 
 if (windowWidth <= 767) {
   
-  if( $('.xsRestaurantTabsSlider').length ){
+  if( $('.xsRestaurantTabsSlider12').length ){
       $('.xsRestaurantTabsSlider').slick({
         dots: false,
         arrows: false,
@@ -308,8 +311,25 @@ if (windowWidth <= 767) {
       });
   }
 }
-
-
+if (windowWidth <= 767) {
+  var swiper2 = new Swiper('.xsRestaurantTabsSlider', {
+    slidesPerView: 'auto',
+    loop: false,
+    preventClicks: false,
+    preventClicksPropagation: false,
+    centeredSlides: true,
+  });
+  //swiper2.slideTo(numberPage,1000,false);
+  $('.xsRestaurantTabsSliderItem').on('click', function(){
+    slideno = $(this).attr('data-slide');
+    tab_id = $(this).attr('data-tab');
+    swiper2.slideTo(slideno,1000,false);
+    //$('div.fl-tabs button').removeClass('current');
+    //$('.fl-tab-content').removeClass('current');
+    //$(this).addClass('current');
+    //$("#"+tab_id).addClass('current');
+  });
+}
 /*Start Of Noyon*/
 
 var swiper = new Swiper('.jBnrSlider', {
@@ -457,5 +477,15 @@ if( dataPosts ){
   $('.hdr-top-menu ul li.nieuws a').append('<span>'+dataPosts+'</span>');
 }
 
+$('.goToform a').on('click', function(e){
+  e.preventDefault();
+    $('html,body').animate({
+        scrollTop: $("#booking-form").offset().top
+    }, 1000);
+});
+
+$( document ).ready(function() {
+  $('body').addClass('jsLoaded');
+});
 
 })(jQuery);

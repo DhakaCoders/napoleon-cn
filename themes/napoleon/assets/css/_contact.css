@@ -3,6 +3,14 @@
 contact-info-sec-wrp
 --------------------
 */
+.page-template-page-contact .page-banner{
+	position: relative;
+	z-index: 1;
+}
+.contact-info-sec-wrp{
+	position: relative;
+	z-index: 2;
+}
 .contact-info-wrp{
 	position: relative;
 	margin-top:-45px;
@@ -36,6 +44,10 @@ contact-info-sec-wrp
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.5s;
+}
+.contact-info-gird-inr:hover {
+    background: #052219;
 }
 .contact-info-gird{
 	text-align: center;
@@ -171,7 +183,7 @@ contact-info-sec-wrp
 	letter-spacing: 0.03em;
 	font-weight: 700;
 	color: #fff;
-	width: 49%;
+	width: 50%;
 }
 .np-contact-form-tab-dsc ul li span{
 	font-weight: 500;
@@ -313,11 +325,11 @@ contact-info-sec-wrp
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error{
 	position: relative;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error:after {
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-email:after {
     content: "";
     position: absolute;
     right: 30px;
-    bottom: 21px;
+    top: 21px;
     background: url(../images/email-icon.svg);
     background-repeat: no-repeat;
     background-size: 18px 18px;
@@ -331,7 +343,7 @@ contact-info-sec-wrp
     content: "";
     position: absolute;
     right: 30px;
-    bottom: 21px;
+    top: 21px;
     background: url(../images/phone-icon.svg);
     background-repeat: no-repeat;
     background-size: 18px 18px;
@@ -477,7 +489,10 @@ contact-info-sec-wrp
 #googlemap{
 	height: 700px;
 }
-
+.contact-map-sec-wrp iframe{
+	width: 100%;
+	height: 700px;
+}
 /*
 --------------------
  Responsive Css
@@ -526,11 +541,9 @@ contact-info-sec-wrp
 		font-size: 15px;
 	}
 }
-
-@media(max-width: 1399px){
-	
-	.np-contact-form-tab ul li{
-		padding:0 6px;
+@media(max-width: 1499px){
+	.np-contact-form-tab ul li {
+	    padding: 0 7px;
 	}
 }
 
@@ -558,7 +571,7 @@ contact-info-sec-wrp
 	.np-contact-form-tab ul{
 		text-align: center;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 	}
 	.np-contact-form-tab ul li {

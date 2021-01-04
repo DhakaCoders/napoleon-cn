@@ -9,7 +9,7 @@
 .np-ad-package-lft{
 	order: 1;
 	width: 42.8104%;
-	padding-right: 185px;
+	padding-right: 145px;
 }
 .np-ad-package-rgt{
 	order: 2;
@@ -162,7 +162,7 @@
 }
 
 .np-ad-ctlr .np-ad-rgsholder-inr{
-	padding-left: 22px;
+	padding-left: 120px;
 }
 .np-ad-ctlr .restaurant-gallery-slide-item{
 	max-width: 100%;
@@ -174,7 +174,9 @@
 .np-ad-ctlr .restaurantTestiSlide-item p{
 	text-align: left;
 }
-
+.singleArragement .np-casino-rtstestiholder-inr {
+    padding-left: 108px;
+}
 @media(max-width: 1899px){
 	.np-ad-package-lft{
 		padding-right: 75px;
@@ -413,7 +415,7 @@
 		display: initial;
 	}
 	.np-ad-package-lft{
-		padding-right: 0;
+		padding-right: 30px;
 		width: 100%;
 		padding-left: 30px;
 	}
@@ -424,15 +426,14 @@
 	}
 	.np-ad-btm-package-rgt{
 		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
+		padding-right: 30px;
 		padding-left: 30px;
 	}
 	.np-ad-expert-lft{
 		width: 100%;
 		padding-right: 0;
 		padding-left: 30px;
-		padding-right: 15px;
+		padding-right: 30px;
 	}
 	.np-ad-package-sec{
 		padding-right: 20px;
@@ -484,6 +485,26 @@
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.np-ad-ctlr .np-ad-rgsholder-inr {
+	    padding-left: 5px;
+	}
+	.singleArragement .np-casino-rtstestiholder-inr {
+	    padding-left: 20px;
+	}
+	.singleArragement .rtsHolder,
+	body .np-ad-package-holder,
+	.np-ad-ctlr .restaurant-testi-slider.singleArragement{
+		margin-left: 0!important;
+	}
+	body .np-ad-btm-package-holder {
+	    margin-right: 0!important;
+	    margin-left: 0!important;
+	}
+	.np-ad-package-sec,
+	.np-ad-btm-package-sec{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
@@ -540,15 +561,8 @@
 	.np-ad-expert-rgt-title {
 	    font-size: 20px;
 	}
-	.np-ad-package-sec {
-	    padding-right: 0px;
-	}
 	.np-ad-package-holder {
-	    margin-left: 10px!important;
-	    margin-right: 10px;
-	}
-	.np-ad-btm-package-sec {
-	    padding-left: 0px;
+	    margin-left: 0!important;
 	}
 	.np-ad-btm-package-holder {
 	    margin-right: 10px!important;
@@ -557,10 +571,6 @@
 	.np-ad-package-lft,
 	.np-ad-btm-package-rgt{
 		padding-right: 20px;
-	}
-	.np-ad-expert-sec-inr{
-		margin-left: -10px;
-		margin-right: -10px;
 	}
 
 }

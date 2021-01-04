@@ -22,7 +22,7 @@ $thisID = get_the_ID();
 			if( !empty($introsec['beschrijving']) ) echo wpautop( $introsec['beschrijving'] );
 			$intor_knop = $introsec['knop']; 
 			if( is_array( $intor_knop ) &&  !empty( $intor_knop['url'] ) ){
-				printf('<a href="%s" target="%s">%s</a>', $intor_knop['url'], $intor_knop['target'], $intor_knop['title']); 
+				printf('<div class="goToform"><a href="%s" target="%s">%s</a></div>', $intor_knop['url'], $intor_knop['target'], $intor_knop['title']); 
 			}
 		?>
           </div>
@@ -63,11 +63,16 @@ $thisID = get_the_ID();
         <div class="col-md-12">
           <div class="">
               <div class="fl-tabs clearfix restaurant-tabs">
-                <ul class="reset-list clearfix xsRestaurantTabsSlider">
-	        	  <?php $i = 1; while($menuQuery->have_posts()): $menuQuery->the_post(); ?>
-                  <li><button class="tab-link<?php echo ($i == 1)?' current': ''; ?>" data-tab="tab-<?php echo $i; ?>"><span><?php the_title(); ?></span></button></li>
-                  <?php $i++; endwhile; ?>
+                <div class="swiper-container xsRestaurantTabsSlider">
+                <ul class="reset-list clearfix swiper-wrapper">
+	        	  <?php $i = 1; $j = 0; while($menuQuery->have_posts()): $menuQuery->the_post(); ?>
+                  <li class="swiper-slide xsRestaurantTabsSliderItem" 
+                  data-tab="tab-<?php echo $i; ?>"
+                  data-slide="<?php echo $j; ?>">
+                    <button class="tab-link<?php echo ($i == 1)?' current': ''; ?>" data-tab="tab-<?php echo $i; ?>"><span><?php the_title(); ?></span></button></li>
+                  <?php $i++; $j++; endwhile; ?>
                 </ul>
+              </div>
               </div>
               <?php 
               	$i = 1; while($menuQuery->have_posts()): $menuQuery->the_post(); 
@@ -99,7 +104,7 @@ $thisID = get_the_ID();
                   </div>
                   <div class="restaurant-tab-con-des">
 					<?php if( !empty($beschrijving) ) echo wpautop( $beschrijving ); ?>
-                    <div class="rtcd-btn-cntlr">
+                    <div class="rtcd-btn-cntlr goToform">
                       <a class="fl-red-center-btn" href="#">Boek uw tafel</a>
                     </div>
                   </div>
@@ -180,7 +185,7 @@ $thisID = get_the_ID();
 			if( !empty($bmascotte['titel']) ) printf('<h3 class="rmscd-title">%s</h3>', $bmascotte['titel']); 
 			if( !empty($bmascotte['beschrijving']) ) echo wpautop( $bmascotte['beschrijving'] ); 
 			if( is_array( $bmas_knop ) &&  !empty( $bmas_knop['url'] ) ){
-				printf('<div class="rtcd-btn-cntlr"><a class="fl-red-center-btn" href="%s" target="%s">%s</a></div>', $bmas_knop['url'], $bmas_knop['target'], $bmas_knop['title']); 
+				printf('<div class="rtcd-btn-cntlr goToform"><a class="fl-red-center-btn" href="%s" target="%s">%s</a></div>', $bmas_knop['url'], $bmas_knop['target'], $bmas_knop['title']); 
 			}
             ?>
             </div>
@@ -292,7 +297,7 @@ $thisID = get_the_ID();
 </section>
 <?php endif; ?>
 
-<section class="ftr-top-blank-bg-sec inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/ftr-top-blank-bg.jpg);">
+<section id="booking-form" class="ftr-top-blank-bg-sec inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/ftr-top-blank-bg.jpg);">
   <div></div>   
 </section>
 <?php get_footer(); ?>
