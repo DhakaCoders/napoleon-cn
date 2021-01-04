@@ -1,21 +1,78 @@
 <?php 
+/*Template Name: Landing*/
 get_header(); 
 $thisID = get_the_ID();
-//while ( have_posts() ) :
-  //the_post();
-$terms = get_the_terms(get_the_ID(), 'category');
-$termNameTag = $gridTag = '';
-if( !empty($terms) ){
-  foreach ($terms as $key => $term) {
-    $termThumID = get_field('icon', $term);
-    $termNameTag = $term->name.' / ';
-  }
 
-}
-if( !empty($termThumID) ){
-  $gridTag = cbv_get_image_tag($termThumID);
-} 
 ?>
+<?php  
+  $pgbanner = get_field('pagebanner', $thisID);
+  if($pgbanner):
+    $bannerposter = !empty($pgbanner['afbeelding'])? cbv_get_image_src( $pgbanner['afbeelding'], 'full' ): '';
+    $pgvideo = !empty($pgbanner['video_uploaden'])? $pgbanner['video_uploaden']:'';
+?>
+<section class="page-banner landing-banner">
+  <div class="page-banner-inr">
+    <?php if( empty($pgvideo) ): ?>
+    <div class="page-banner-bg-cntlr">
+      <div class="page-banner-bg inline-bg" style="background-image:url(<?php echo $bannerposter; ?>);">
+      </div>
+    </div>
+    <?php 
+
+else:
+$ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
+?>
+    <div class="bnr-vdo-cntlr"> 
+      <video id="fl-vdo" class="fl-vdo" muted loop autoplay poster="<?php echo $bannerposter; ?>">
+        <?php if( $ext == 'mp4' ): ?>
+        <source src="<?php echo $pgvideo; ?>" type="video/mp4">
+        <?php elseif($ext == 'ogg'): ?>
+          <source src="<?php echo $pgvideo; ?>" type="video/ogg">
+        <?php endif; ?>
+      </video>
+      <div class="vdo-controller">
+        <button class="fl-play-btn hide">
+          <i>
+            <svg class="play-icon-svg" width="18" height="24" viewBox="0 0 18 24" fill="#ffffff">
+              <use xlink:href="#play-icon-svg"></use>
+            </svg> 
+          </i>
+        </button> 
+        <button class="fl-push-btn">
+          <i>
+            <svg class="push-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+              <use xlink:href="#push-icon-svg"></use>
+            </svg> 
+          </i>
+        </button> 
+      </div>
+    </div>
+  <?php endif; ?>
+    <div class="page-banner-des">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-banner-des-inr">
+              <div>
+                <?php 
+                  if( !empty($pgbanner['titel']) ) printf( '<h1 class="page-banner-title">%s</h1>', $pgbanner['titel'] ); 
+                  if( !empty($pgbanner['subtitel']) ) printf( '<strong>%s</strong>', $pgbanner['subtitel'] ); 
+                  if( !empty($pgbanner['beschrijving']) ) echo wpautop( $pgbanner['beschrijving'] );
+          $pknop = $pgbanner['knop'];
+          if( is_array( $pknop ) &&  !empty( $pknop['url'] ) ){
+            printf('<a class="fl-red-btn" href="%s" target="%s"><span>%s</span><i><svg class="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8" fill="#ffffff"><use xlink:href="#btn-white-angle-svg"></use></svg></i></a>', $pknop['url'], $pknop['target'], $pknop['title']); 
+          }
+                ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- end of page-banner -->
+<?php endif; ?>
+
 <?php get_template_part('templates/page', 'breadcrumbs'); ?>
 <section class="innerpage-con-wrap">
   <article class="default-page-con">
@@ -26,7 +83,6 @@ if( !empty($termThumID) ){
       $title = get_sub_field('titel');
       $afbeelding = get_sub_field('afbeelding');
       $mbafbeelding = get_sub_field('mb_afbeelding');
-      
     ?>
     <div class="dfp-promo-module-cntlr">
       <div class="container">
@@ -35,12 +91,6 @@ if( !empty($termThumID) ){
             <div class="dfp-promo-module clearfix">
               <?php 
                 if( !empty($title) ) printf('<div><strong class="dfp-promo-module-title block-930">%s</strong></div>', $title); 
-                echo '<div class="nd-dfp-promo-module-date block-930">
-                <strong><span>';
-                echo $termNameTag.''.get_the_date('d-m-Y');
-                echo '</span><i>';
-                echo $gridTag;
-                echo '</i></strong></div>';
                 echo '<div class="dfp-plate-one-img-bx">';
                   if( !empty($afbeelding) ){
                     echo cbv_get_image_tag($afbeelding);
@@ -439,7 +489,7 @@ if( !empty($termThumID) ){
                 if( !empty($terms) ){
                   foreach ($terms as $key => $term) {
                     $termThumID = get_field('icon', $term);
-                    $termNameTag = '<a>'.$term->name.'</a> / ';
+                    $termNameTag = '<a href="'.esc_url( get_term_link( $term ) ).'">'.$term->name.'</a> / ';
                   }
 
                 }
@@ -668,20 +718,6 @@ if( !empty($termThumID) ){
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="dfp-promo-module clearfix">
-            <div>
-              <strong class="dfp-promo-module-title block-930"><?php the_title(); ?></strong>
-            </div>
-
-            <div class="nd-dfp-promo-module-date block-930">
-              <strong>
-                <span><?php echo $termNameTag; ?><?php echo get_the_date('d-m-Y'); ?></span>
-                <i>
-                  <?php echo $gridTag; ?>
-                </i>
-              </strong>
-            </div>
-          </div>
           <?php the_content(); ?>
         </div>
       </div>
@@ -692,6 +728,5 @@ if( !empty($termThumID) ){
 </section>
 <?php get_template_part('templates/openhours'); ?>
 <?php 
-//endwhile; 
 get_footer(); 
 ?>
