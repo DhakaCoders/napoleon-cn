@@ -1,8 +1,8 @@
 <?php 
 get_header(); 
 $thisID = get_the_ID();
-//while ( have_posts() ) :
-  //the_post();
+while ( have_posts() ) :
+  the_post();
 $terms = get_the_terms(get_the_ID(), 'category');
 $termNameTag = $gridTag = '';
 if( !empty($terms) ){
@@ -692,6 +692,6 @@ if( !empty($termThumID) ){
 </section>
 <?php get_template_part('templates/openhours'); ?>
 <?php 
-//endwhile; 
+endwhile; 
 get_footer(); 
 ?>

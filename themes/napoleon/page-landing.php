@@ -714,16 +714,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
     </div>
     <?php }?>
     <?php endwhile; ?>
-    <?php }else{ ?>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <?php the_content(); ?>
-        </div>
-      </div>
-    </div>
     <?php } ?>
-
   </article>
 </section>
 <?php get_template_part('templates/openhours'); ?>
