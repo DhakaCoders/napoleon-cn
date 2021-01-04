@@ -35,7 +35,7 @@
             success: function(response) {
                 //check
                 if (response == 0) {
-                  $('#agenda-content').append('<div class="clearfix"></div><div class="text-center"><p>No more post.</p></div>');
+                  $('#agenda-content').append('<div class="clearfix"></div><div class="noPosts text-center"><p>No more post.</p></div>');
                     $('#ajxaloader1').hide();
                 } else {  
                     function post_load()
@@ -90,7 +90,7 @@
             success: function(response) {
                 //check
                 if (response == 0) {
-                  $('#agenda_cat-content').append('<div class="clearfix"></div><div class="text-center"><p>No more post.</p></div>');
+                  $('#agenda_cat-content').append('<div class="clearfix"></div><div class="noPosts text-center"><p>No more post.</p></div>');
                     $('#ajxaloader2').hide();
                 } else {  
                     function agendaCatLoad()
@@ -139,7 +139,7 @@
             success: function(response) {
                 //check
                 if (response == 0) {
-                  $('#arrange-content').append('<div class="clearfix"></div><div class="text-center"><p>No more post.</p></div>');
+                  $('#arrange-content').append('<div class="clearfix"></div><div class="noPosts text-center"><p>No more post.</p></div>');
                     $('#ajxaloader3').hide();
                 } else {  
                     function arrange_post_load()

@@ -3,6 +3,7 @@ get_header();
 $pageID = get_option( 'page_for_posts' );
 $titel = get_field('titel', $pageID);
 $beschrijving = get_field('beschrijving', $pageID);
+global $wp_query;
 ?>
 <section class="np-nieuws-con-sec">
   <div class="container">
@@ -31,7 +32,7 @@ $beschrijving = get_field('beschrijving', $pageID);
             <div class="np-nieuws-grd-items">
               <ul class="reset-list clearfix">
               <?php 
-                 while(have_posts()): the_post();
+                 while ( have_posts() ) : the_post();
                   $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'postgrid' );
                   if( empty($gridurl) ){
                     $gridurl = THEME_URI.'/assets/images/news-item-img-01.jpg';
@@ -69,8 +70,6 @@ $beschrijving = get_field('beschrijving', $pageID);
             </div>
             <div class="fl-pagination-ctlr">
           <?php
-            global $wp_query;
-
             $big = 999999999; // need an unlikely integer
             $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
 

@@ -166,7 +166,7 @@ if( $fc_arrang ):
     $getuigenissen = get_field('getuigenissen', $thisID);
     $getuiIDs = $getuigenissen['selecteer_getuigenis'];
 ?>
-  <section class="restaurant-testi-slider">
+  <section class="restaurant-testi-slider singleArragement">
     <div class="rtsHolder">
       <div class="np-casino-rtstestiholder-inr">
           <?php 

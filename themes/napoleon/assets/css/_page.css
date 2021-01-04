@@ -432,7 +432,8 @@
 	font-family: 'Operetta18-Regular';
 	letter-spacing: 0.01em;
 }
-.np-two-grid-des strong:last-of-type{
+.np-two-grid-des strong:last-of-type,
+.thank-you .np-two-grid-des strong.sub-title{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 26px;

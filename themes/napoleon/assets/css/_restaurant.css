@@ -54,14 +54,18 @@
 	padding: 22px 0 7px;
 	margin-bottom: 65px;
 }
-.restaurant-tabs ul{
-	text-align: center;
+.restaurant-tabs ul {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.restaurant-tabs ul li{
-	display: inline-block;
-	vertical-align: baseline;
-	padding: 0 35px 15px;
+.restaurant-tabs ul li {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0 35px 15px;
+    width: auto;
 }
 
 .restaurant-tabs .tab-link{
@@ -632,6 +636,17 @@
 	}
 	.rgsHolder1Inner {
 	    padding-left: 0;
+	}
+	.restaurant-page-entry-hdr{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+/*	.xsRestaurantTabsSliderItem{
+		max-width: 180px;
+	}*/
+	.restaurant-tabs ul {
+		justify-content: initial;
+		flex-wrap: initial;
 	}
 }
 

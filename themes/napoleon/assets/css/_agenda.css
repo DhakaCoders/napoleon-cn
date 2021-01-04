@@ -120,9 +120,9 @@
 }
 
 .np-angenda-grd-item:hover .np-angenda-grd-item-img{
-	transform: scale(1.05);
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
+	transform: scale(1.07);
+	-webkit-transform: scale(1.07);
+	-ms-transform: scale(1.07);
 }
 
 .np-agenda-lftimg-ctlr{
@@ -157,9 +157,9 @@
 }
 
 .np-agenda-lftimg-rgt-des:hover .np-agenda-lftimg{
-	transform: scale(1.05);
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
+	transform: scale(1.07);
+	-webkit-transform: scale(1.07);
+	-ms-transform: scale(1.07);
 }
 
 
@@ -309,6 +309,15 @@
 	.np-agenda-con .np-nieuws-lftsidebar-inr{
 		margin-bottom: 15px;
 	}
+	.np-agenda-lftsidebar .np-nieuws-lftsidebar-des {
+	    min-height: 0;
+	    padding: 40px 0;
+	}
+	.np-nieuws-lftsidebar-inr {
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    padding: 40px 30px;
+	}
 }
 
 @media(max-width: 767px){
@@ -350,10 +359,11 @@
 	.np-agenda-con {
 		padding-top: 20px;
 	}
-	
-	
 	.np-agenda-lftsidebar{
 		margin-bottom: 15px;
+	}
+	.xs-np-agenda-select-ctlr{
+		padding-top: 10px;
 	}
 }
 
@@ -399,7 +409,8 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.page-template-page-agenda .np-nieuws-lftsidebar-des p{
+	.page-template-page-agenda .np-nieuws-lftsidebar-des p,
+	.np-agenda-lftsidebar .np-nieuws-lftsidebar-des-ctlr p{
 		display: block;
 	}
 }
