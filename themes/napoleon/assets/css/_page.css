@@ -359,7 +359,9 @@
 	cursor: pointer;
 }
 
-
+.vdo-controller button:hover{
+	opacity: .7;
+}
 
 /*common button*/
 .fl-tsprnt-btn{
