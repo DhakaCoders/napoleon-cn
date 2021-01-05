@@ -91,6 +91,9 @@ header.header{
 	border-radius: 100% 100%;
 	transition: initial;
 }
+.hdr-language ul li a:hover span{
+	color: #4C2631;
+}
 .hdr-language ul li{
 	margin-left: auto;
 }
@@ -135,6 +138,10 @@ header.header{
 }
 .page-header .hdr-language ul li a{
 	color: #4C2631;
+}
+
+.page-header .hdr-language ul li a:hover span{
+	color: #fff;
 }
 
 .logo{
