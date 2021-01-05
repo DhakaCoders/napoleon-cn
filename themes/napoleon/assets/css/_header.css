@@ -73,7 +73,7 @@ header.header{
 	display: flex;
 	align-items: center;
 }
-.hdr-lang{
+.hdr-lang,.hdr-language ul li a{
 	margin: 0;
 	width: 50%;
 	position: relative;
@@ -87,7 +87,8 @@ header.header{
 	align-items: center;
 	justify-content: center;
 }
-.hdr-lang:last-child{
+.hdr-lang:last-child,
+.hdr-language ul li{
 	margin-left: auto;
 }
 .hdr-language input{
@@ -104,7 +105,8 @@ header.header{
 	cursor: pointer;
 }
 
-.hdr-language .switch{
+.hdr-language .switch,
+.hdr-language ul li a span:after{
 	position: absolute;
 	background: #fff;
 	color: #000;
@@ -119,15 +121,25 @@ header.header{
 	opacity: 0;
 
 }
-.hdr-language strong{
+.hdr-language strong,
+.hdr-language ul li a span{
 	position: relative;
 	z-index: 2;
+	display: block;
+	font-weight: 600;
 }
-.hdr-lang input:checked ~ .switch {
+.hdr-language ul li input:checked ~ .switch,
+.hdr-language ul li a:focus span:after {
   opacity: 1;
 }
+.hdr-language ul li a:focus{
+	background: #fff;
+	color: #000;
+	border-radius: 100% 100%;
+}
 
-.hdr-lang input:checked + strong{
+.hdr-lang input:checked + strong,
+.hdr-language ul li a:focus span{
 	color: #1A1429;
 }
 

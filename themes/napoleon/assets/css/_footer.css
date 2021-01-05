@@ -170,6 +170,9 @@
 .ftr-btm-socials > ul > li > a{
 	display: inline-block;
 }
+.ftr-btm-socials > ul > li > a:hover i{
+	color: #A21D1D;
+}
 .ftr-btm-socials > ul > li > a i{
 	display: inline-block;
 	font-size: 20px;
