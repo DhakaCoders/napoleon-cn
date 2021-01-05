@@ -255,8 +255,8 @@ $posts1 = wp_count_posts();
     </nav>
     <div class="xs-language">
       <ul class="reset-list clearfix">
-        <li><span>NL</span></li>
-        <li><span>NL</span></li>
+        <li><a href="#"><span>NL</span></a></li>
+        <li><a href="#"><span>NL</span></a></li>
       </ul>
     </div>
     <div class="xs-menu-address">
