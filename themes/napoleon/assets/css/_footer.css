@@ -167,13 +167,23 @@
 .ftr-btm-socials > ul > li{
 	padding: 0 11px;
 }
-.ftr-btm-socials > ul > li > a{
-	display: inline-block;
+.ftr-btm-socials > ul > li > a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background: #999999;
+    font-size: 12px;
+    padding: 3px 5px;
 }
-.ftr-btm-socials > ul > li > a i{
-	display: inline-block;
-	font-size: 20px;
-	color: #999999;
+.ftr-btm-socials > ul > li > a:hover{
+	background: #A21D1D;
+}
+.ftr-btm-socials > ul > li > a i {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
 }
 .ftr-btm-socials > ul > li:first-child{
 	padding-left: 0;

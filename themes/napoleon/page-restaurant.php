@@ -18,13 +18,19 @@ $thisID = get_the_ID();
         <div class="col-sm-12">
           <div class="restaurant-page-entry-hdr">
 		<?php 
-			if( !empty($introsec['titel']) ) printf('<h2 class="rpeh-title">%s</h2>', $introsec['titel']); 
-			if( !empty($introsec['beschrijving']) ) echo wpautop( $introsec['beschrijving'] );
+			if( !empty($introsec['titel']) ) printf('<h2 data-aos="fade-up4" data-aos-delay="100" class="rpeh-title">%s</h2>', $introsec['titel']); 
+    ?>
+    <div data-aos="fade-up4" data-aos-delay="300">
+      <?php if( !empty($introsec['beschrijving']) ) echo wpautop( $introsec['beschrijving'] ); ?>
+    </div>
+    <div data-aos="fade-up4" data-aos-delay="500">
+    <?php
 			$intor_knop = $introsec['knop']; 
 			if( is_array( $intor_knop ) &&  !empty( $intor_knop['url'] ) ){
 				printf('<div class="goToform"><a href="%s" target="%s">%s</a></div>', $intor_knop['url'], $intor_knop['target'], $intor_knop['title']); 
 			}
 		?>
+    </div>
           </div>
         </div>
       </div>
@@ -62,7 +68,7 @@ $thisID = get_the_ID();
       <div class="row">
         <div class="col-md-12">
           <div class="">
-              <div class="fl-tabs clearfix restaurant-tabs">
+              <div class="fl-tabs clearfix restaurant-tabs" data-aos="fade-up4" data-aos-delay="200">
                 <div class="swiper-container xsRestaurantTabsSlider">
                 <ul class="reset-list clearfix swiper-wrapper">
 	        	  <?php $i = 1; $j = 0; while($menuQuery->have_posts()): $menuQuery->the_post(); ?>
@@ -74,6 +80,7 @@ $thisID = get_the_ID();
                 </ul>
               </div>
               </div>
+             <div data-aos="fade-up4" data-aos-delay="300">
               <?php 
               	$i = 1; while($menuQuery->have_posts()): $menuQuery->the_post(); 
               	$menuTitel = get_field('titel', get_the_ID());
@@ -111,6 +118,7 @@ $thisID = get_the_ID();
                 </div>
               </div> 
               <?php $i++; endwhile; ?>
+            </div>
           </div>
         </div>
       </div>
@@ -125,7 +133,7 @@ $thisID = get_the_ID();
 ?>
 <section class="restaurant-gallery-slider">
   <div class="rgsHolder1">
-  <div class="rgsHolder1Inner">
+  <div class="rgsHolder1Inner" data-aos="fade-up4" data-aos-delay="300">
   	<?php if( $imgsliders ): ?>
       <div class="swiper-container restaurantGallerySlider">
         <div class="swiper-wrapper slide1Wrapper">
@@ -167,7 +175,7 @@ $thisID = get_the_ID();
   if($blok_tonenverbergen_mascotte): 
   	$bmascotte = get_field('blok_mascotte', $thisID);
 ?>
-<section class="restaurant-mascotte-section">
+<section class="restaurant-mascotte-section" data-aos="fade-up4" data-aos-delay="100">
   <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -177,10 +185,10 @@ $thisID = get_the_ID();
     	$bmas_knop = $bmascotte['knop'];
     	?>
           <div class="restaurant-mascotte-sec-con">
-            <div class="restaurant-mascotte-sec-fea-img">
+            <div class="restaurant-mascotte-sec-fea-img" data-aos="fade-up4" data-aos-delay="400">
               <div class="inline-bg" style="background: url(<?php echo $bmasImg2; ?>);"></div>
             </div>
-            <div class="restaurant-mascotte-sec-con-des">
+            <div class="restaurant-mascotte-sec-con-des" data-aos="fade-up4" data-aos-delay="200">
 			<?php 
 			if( !empty($bmascotte['titel']) ) printf('<h3 class="rmscd-title">%s</h3>', $bmascotte['titel']); 
 			if( !empty($bmascotte['beschrijving']) ) echo wpautop( $bmascotte['beschrijving'] ); 
@@ -205,7 +213,7 @@ $thisID = get_the_ID();
 <section class="restaurant-testi-slider">
   <div class="rtsHolder">
   <div class="rtsHolderRes">
-      <div class="restaurant-testi-slider-hdr">
+      <div class="restaurant-testi-slider-hdr" data-aos="fade-up4" data-aos-delay="100">
         <?php if( !empty($getuigenissen['titel']) ) printf('<h4 class="rtshdr-title">%s</h4>', $getuigenissen['titel']); ?>
       </div>
     <?php 
@@ -231,7 +239,7 @@ $thisID = get_the_ID();
 	    }
 	    if( $getQuery->have_posts() ):
     ?>
-      <div class="swiper-container restaurantTestiSlider">
+      <div class="swiper-container restaurantTestiSlider" data-aos="fade-up4" data-aos-delay="300">
         <div class="swiper-wrapper">
         <?php 
           while($getQuery->have_posts()): $getQuery->the_post(); 
@@ -279,14 +287,14 @@ $thisID = get_the_ID();
   <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="res-btm-des-sec-lft">
+          <div class="res-btm-des-sec-lft" data-aos="fade-up4" data-aos-delay="100">
             <div>
             <?php if(!empty($blokbtm['titel'])) printf('<p><strong>%s</strong></p>', $blokbtm['titel']); ?>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="res-btm-des-sec-rgt">
+          <div class="res-btm-des-sec-rgt" data-aos="fade-up4" data-aos-delay="300">
             <div>
 			<?php if( !empty($blokbtm['beschrijving']) ) echo wpautop( $blokbtm['beschrijving'] ); ?>
             </div>
@@ -297,7 +305,8 @@ $thisID = get_the_ID();
 </section>
 <?php endif; ?>
 
-<section id="booking-form" class="ftr-top-blank-bg-sec inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/ftr-top-blank-bg.jpg);">
+<section data-aos="fade-up4" data-aos-delay="100"
+id="booking-form" class="ftr-top-blank-bg-sec inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/ftr-top-blank-bg.jpg);">
   <div></div>   
 </section>
 <?php get_footer(); ?>

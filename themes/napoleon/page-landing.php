@@ -72,8 +72,9 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
   </div>
 </section><!-- end of page-banner -->
 <?php endif; ?>
-
+<div style="display: none;">
 <?php get_template_part('templates/page', 'breadcrumbs'); ?>
+</div>
 <section class="innerpage-con-wrap">
   <article class="default-page-con">
     <?php if(have_rows('inhoud')){  ?>

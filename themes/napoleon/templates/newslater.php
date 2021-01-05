@@ -3,11 +3,12 @@ $fc_newsl = get_field('nieuwsbrief', 'options');
 if( $fc_newsl ):
 ?>
 <section class="footer-top-sec">
-  <span class="footer-top-sec-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></span>
+  <span class="footer-top-sec-bg inline-bg" data-aos="fade-up2" data-aos-delay="100"
+  style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></span>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="footer-top-sec-cntlr">
+        <div class="footer-top-sec-cntlr" data-aos="fade-up4" data-aos-delay="500">
           <div class="footer-top-col-hedding">
             <?php if( !empty($fc_newsl['titel']) ) printf('<h4 class="footer-top-col-title">%s</h4>', $fc_newsl['titel']); ?>
           </div>
