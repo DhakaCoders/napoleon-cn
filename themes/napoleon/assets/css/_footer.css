@@ -185,8 +185,8 @@
 }
 .ftr-btm-socials > ul > li > a i{
 	display: inline-block;
-	font-size: 20px;
-	color: #999999;
+	font-size: 16px;
+	color: #fff;
 }
 .ftr-btm-socials > ul > li:first-child{
 	padding-left: 0;
