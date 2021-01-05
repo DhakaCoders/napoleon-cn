@@ -93,7 +93,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
     <div class="row">
       <div class="col-md-12">
         <div class="contact-info-wrp clearfix">
-        <div class="contact-info-lft mHc">
+        <div class="contact-info-lft mHc" data-aos="fade-up4" data-aos-delay="100">
           <ul class="clearfix reset-list">
           	<?php if(!empty($smedias)):  ?>
           	<?php foreach($smedias as $smedia): ?>
@@ -176,7 +176,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
           </ul>
         </div>
         <?php $fc_openhour = get_field('fc_openingsuren', 'options'); ?>
-        <div class="contact-info-rgt mHc hide-sm">
+        <div class="contact-info-rgt mHc hide-sm" data-aos="fade-up4" data-aos-delay="600">
           <div class="contact-info-tab-wrp mHc">
               <div class="contact-info-tab-innr">
                 <div class="clock-circular-outline">
@@ -278,10 +278,10 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
       <div class="col-md-12">
       	<?php if( $form ): ?>
         <div class="contact-form-wrp clearfix">
-          <div class="contact-form-dsc">
+          <div class="contact-form-dsc" data-aos="fade-up4" data-aos-delay="100">
             <?php if( !empty( $form['titel'] ) ) printf( '<h2 class="contact-form-dsc-title">%s</h2>', $form['titel']); ?>
           </div>
-          <div class="wpforms-container">
+          <div class="wpforms-container" data-aos="fade-up4" data-aos-delay="300">
 			<?php if( !empty( $form['shortcode'] ) ) echo do_shortcode( $form['shortcode'] ); ?>
           </div>
         </div>
@@ -291,7 +291,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
   </div>
 </section>
 <?php if( !empty($embedded_map) ): ?>
-<section class="contact-map-sec-wrp">
+<section class="contact-map-sec-wrp" data-aos="fade" data-aos-delay="100">
  <?php printf('%s', $embedded_map); ?>
 </section>
 <?php endif; ?>

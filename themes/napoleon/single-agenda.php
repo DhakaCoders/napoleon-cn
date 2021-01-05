@@ -19,13 +19,13 @@ $overzicht = get_field('overzicht', get_the_ID());
           $mbblokImg = !empty($intro['mobiel_afbeelding'])? cbv_get_image_tag( $intro['mobiel_afbeelding'], 'agendamb' ): cbv_get_image_tag( $intro['afbeelding'], 'agendamb' );
       ?>
       <li>
-        <div class="ad-two-grid-img-inr">
+        <div class="ad-two-grid-img-inr" data-aos="fade-up4" data-aos-delay="300">
           <div class="ad-two-grid-img inline-bg" style="background: url(<?php echo $blokImg; ?>);"> 
             <?php echo $mbblokImg; ?>
           </div>              
         </div> 
         <div class="ad-two-grid-des-inr">
-          <div class="ad-two-grid-des"> 
+          <div class="ad-two-grid-des" data-aos="fade-up5" data-aos-delay="100"> 
             <?php 
               if( !empty($intro['titel']) ) 
                 printf('<h2 class="ad-two-grid-des-title">%s</h2>', $intro['titel']);
@@ -47,13 +47,13 @@ $overzicht = get_field('overzicht', get_the_ID());
             $mbblokImg1 = !empty($blok['mobiel_afbeelding'])? cbv_get_image_tag( $blok['mobiel_afbeelding'], 'agendamb' ): cbv_get_image_tag( $blok['afbeelding'], 'agendamb' );
       ?>
       <li>
-        <div class="ad-two-grid-img-inr">
+        <div class="ad-two-grid-img-inr" data-aos="fade-up5" data-aos-delay="100">
           <div class="ad-two-grid-img inline-bg" style="background: url(<?php echo $blokImg1; ?>);"> 
             <?php echo $mbblokImg1; ?>
           </div>              
         </div> 
         <div class="ad-two-grid-des-inr">
-          <div class="ad-two-grid-des"> 
+          <div class="ad-two-grid-des" data-aos="fade-up4" data-aos-delay="300"> 
           <?php 
             if( !empty($blok['titel']) ) printf('<h2 class="ad-two-grid-des-title">%s</h2>', $blok['titel']); 
             if( !empty($blok['beschrijving']) ) echo wpautop( $blok['beschrijving'] ); 
@@ -72,7 +72,7 @@ $overzicht = get_field('overzicht', get_the_ID());
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="terug-overzicht">
+        <div class="terug-overzicht" data-aos="fade-up3" data-aos-delay="100">
           <a href="<?php echo esc_url(home_url('agenda')); ?>">Terug naar overzicht</a>
         </div>
       </div>

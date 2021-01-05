@@ -10,7 +10,7 @@ global $wp_query;
     <div class="row">
       <div class="col-md-12">
         <div class="np-nieuws-con-sec-ctlr clearfix">
-          <div class="np-nieuws-lftsidebar">
+          <div class="np-nieuws-lftsidebar" data-aos="fade-up5" data-aos-delay="100">
             <div class="np-nieuws-lftsidebar-inr">
               <div class="np-nieuws-lftsidebar-des">
                 <div class="np-nieuws-lftsidebar-des-inr">
@@ -28,7 +28,7 @@ global $wp_query;
               </div>
             </div>
           </div>
-          <div class="np-nieuws-grds-item">
+          <div class="np-nieuws-grds-item" data-aos="fade-up4" data-aos-delay="300">
             <div class="np-nieuws-grd-items">
               <ul class="reset-list clearfix">
               <?php 

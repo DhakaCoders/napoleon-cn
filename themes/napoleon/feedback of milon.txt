@@ -7,6 +7,7 @@
 5. Contact page icon problem
 6. jackpots page banner slider
 
+data-aos="fade-up4" data-aos-delay="10" data-aos-duration="800"
 
 1. Cassino page layout 100% done
 2. Rasturant page 100% done

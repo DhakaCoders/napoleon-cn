@@ -17,6 +17,7 @@ if( !empty($termThumID) ){
 } 
 ?>
 <?php get_template_part('templates/page', 'breadcrumbs'); ?>
+
 <section class="innerpage-con-wrap">
   <article class="default-page-con">
     <?php if(have_rows('inhoud')){  ?>

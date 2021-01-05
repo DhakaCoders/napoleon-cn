@@ -8,10 +8,10 @@ $blokImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbe
 <section class="np-ad-package-sec">
   <div class="np-ad-package-holder">
     <div class="np-ad-package-inr">
-      <div class="np-ad-package-rgt">
+      <div class="np-ad-package-rgt" data-aos="fade-up4" data-aos-delay="300">
         <div class="np-ad-package-rgt-img inline-bg" style="background: url('<?php echo $blokImg; ?>');"></div>
       </div>
-      <div class="np-ad-package-lft">
+      <div class="np-ad-package-lft" data-aos="fade-up5" data-aos-delay="100">
         <h2 class="np-ad-package-lft-title"><?php echo get_the_title(get_the_ID()); ?></h2>
         <div class="np-ad-package-price">
           <span class="woocommerce-Price-amount amount">
@@ -42,10 +42,10 @@ $blokImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbe
         if( $blok1 ): 
         $blokImg1 = !empty($blok1['afbeelding'])? cbv_get_image_src( $blok1['afbeelding'], 'arrgblok' ): '';
       ?>
-      <div class="np-ad-btm-package-lft">
+      <div class="np-ad-btm-package-lft" data-aos="fade-up4" data-aos-delay="100">
         <div class="np-ad-btm-package-lft-img inline-bg" style="background: url('<?php echo $blokImg1; ?>');"></div>
       </div>
-      <div class="np-ad-btm-package-rgt">
+      <div class="np-ad-btm-package-rgt" data-aos="fade-up5" data-aos-delay="300">
         <?php 
           if( !empty($blok1['titel']) ) printf('<h3 class="np-ad-btm-package-rgt-title">%s</h3>', $blok1['titel']); 
           if( !empty($blok1['beschrijving']) ) echo wpautop( $blok1['beschrijving'] ); 
@@ -67,7 +67,7 @@ $blokImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbe
     <div class="row">
       <div class="col-md-12">
         <div class="np-ad-expert-sec-inr clearfix">
-          <div class="np-ad-expert-rgt mHc">
+          <div class="np-ad-expert-rgt mHc" data-aos="fade-up5" data-aos-delay="100">
           <?php 
             if( $blok_col2 ):
               if( !empty($blok_col2['titel']) ) printf('<h5 class="np-ad-expert-rgt-title">%s</h5>', $blok_col2['titel']);  
@@ -75,7 +75,7 @@ $blokImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbe
             endif; 
           ?>
           </div>
-          <div class="np-ad-expert-lft mHc">
+          <div class="np-ad-expert-lft mHc" data-aos="fade-up4" data-aos-delay="300">
           <?php 
             if( $blok_col1 ):
               if( !empty($blok_col1['titel']) ) printf('<h5 class="np-ad-expert-lft-title">%s</h5>', $blok_col1['titel']);  
@@ -97,7 +97,7 @@ $blokImg = !empty($overzicht['afbeelding'])? cbv_get_image_src( $overzicht['afbe
 ?>
   <section class="restaurant-gallery-slider">
     <div class="rgsHolder">
-      <div class="np-ad-rgsholder-inr">
+      <div class="np-ad-rgsholder-inr" data-aos="fade-up4" data-aos-delay="300">
         <?php if( $imgsliders ): ?>
         <div class="swiper-container restaurantGallerySlider">
           <div class="swiper-wrapper slide1Wrapper">
@@ -144,13 +144,13 @@ if( $fc_arrang ):
         <div class="col-md-12">
           <div class="np-ad-contact-sec-inr">
             <div class="contact-form-wrp clearfix">
-              <div class="contact-form-dsc">
+              <div class="contact-form-dsc" data-aos="fade-up4" data-aos-delay="200">
               <?php 
                 if( !empty($fc_arrang['titel']) ) printf('<h5 class="contact-form-dsc-title">%s</h5>', $fc_arrang['titel']);
                 if( !empty($fc_arrang['beschrijving']) ) echo wpautop( $fc_arrang['beschrijving'] ); 
               ?>
               </div>
-              <div class="wpforms-container">
+              <div class="wpforms-container" data-aos="fade-up4" data-aos-delay="300">
               <?php if( !empty($fc_arrang['form_shortcode']) ) echo do_shortcode( $fc_arrang['form_shortcode'] ); ?>
               </div>
             </div>
@@ -168,7 +168,7 @@ if( $fc_arrang ):
 ?>
   <section class="restaurant-testi-slider singleArragement">
     <div class="rtsHolder">
-      <div class="np-casino-rtstestiholder-inr">
+      <div class="np-casino-rtstestiholder-inr" data-aos="fade-up4" data-aos-delay="300">
           <?php 
             if( !empty($getuiIDs) ){
               $count = count($getuiIDs);

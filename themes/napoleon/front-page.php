@@ -33,14 +33,21 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="page-banner-des-inr">
+            <div class="page-banner-des-inr homePageBnr">
               <div>
                 <?php 
-                	if( !empty($pgbanner['titel']) ) printf( '<h1 class="page-banner-title">%s</h1>', $pgbanner['titel'] ); 
-                	if( !empty($pgbanner['subtitel']) ) printf( '<strong>%s</strong>', $pgbanner['subtitel'] ); 
-                	if( !empty($pgbanner['beschrijving']) ) echo wpautop( $pgbanner['beschrijving'] );
-                ?>
-                <div class="bnr-btns">
+                	if( !empty($pgbanner['titel']) ) 
+                    printf( '<h1 data-aos="fade-up4" data-aos-delay="10" class="page-banner-title">%s</h1>', $pgbanner['titel'] ); 
+                	if( !empty($pgbanner['subtitel']) ) 
+                    printf( '<strong data-aos="fade-up4" data-aos-delay="300">%s</strong>', $pgbanner['subtitel'] ); 
+                  ?>
+                  <div class="btext" data-aos="fade-up4" data-aos-delay="500">
+                  <?php
+                	if( !empty($pgbanner['beschrijving']) ) 
+                    echo wpautop( $pgbanner['beschrijving'] );
+                  ?>
+                  </div>
+                <div class="bnr-btns" data-aos="fade-up4" data-aos-delay="600">
 		            <?php 
 		              $hknop_1 = $pgbanner['knop_1'];
 		              $hknop_2 = $pgbanner['knop_2'];
@@ -67,11 +74,12 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
   	$qknops = get_field('knops', HOMEID);
 ?>
 <section class="catagory-sec">
-  <div class="catagory-sec-cntlr inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/catagory-sec-bg.png');">
+  <div class="catagory-sec-cntlr inline-bg" data-aos="fade" data-aos-delay="100"
+  style="background-image: url('<?php echo THEME_URI; ?>/assets/images/catagory-sec-bg.png');">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="catagory-slider-cntlr">
+          <div class="catagory-slider-cntlr" data-aos="fade-up6" data-aos-delay="300">
           	<?php if( $qknops ): ?>
             <div class="catagory-slider swiper-container catagorySlider"> 
               <div class="swiper-wrapper">
@@ -150,10 +158,10 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
   <div class="wellcome-sec-wrap ">
     <div class="wellcome-sec-cntrl">
       <div class="wellcome-left">
-        <?php if( !empty($bienvenue['titel']) ) printf('<h2 class="wellcome-title">%s</h2>', $bienvenue['titel']); ?>
+        <?php if( !empty($bienvenue['titel']) ) printf('<h2 data-aos="fade-up4" data-aos-delay="50" class="wellcome-title">%s</h2>', $bienvenue['titel']); ?>
       </div>
       <div class="wellcome-right-cntlr">
-        <div class="wellcome-right">
+        <div class="wellcome-right" data-aos="fade-up4" data-aos-delay="300">
 		<?php 
 			if( !empty($bienvenue['subtitel']) ) printf('<h5 class="wellcome-sub-title">%s</h5>', $bienvenue['subtitel']);
 			if( !empty($bienvenue['beschrijving']) ) echo wpautop( $bienvenue['beschrijving'] ); 
@@ -172,14 +180,14 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 ?>
 <section class="visite-sec">
   <div class="visite-sec-wrap">
-    <div class="visite-lft-desc">
+    <div class="visite-lft-desc" data-aos="fade-up4" data-aos-delay="50">
       <?php 
         if( !empty($tcasino['titel']) ) printf('<h4 class="visite-lft-title">%s</h4>', $tcasino['titel']);
         if( !empty($tcasino['beschrijving']) ) echo wpautop( $tcasino['beschrijving'] );
       ?>
     </div>
     <?php if( $tslides ): ?>
-    <div class="visite-slider-cntlr">
+    <div class="visite-slider-cntlr" data-aos="fade-up4" data-aos-delay="300">
       <div class="swiper-container restaurantGallerySlider">
         <div class="swiper-wrapper slide1Wrapper">
 	      	<?php 
@@ -256,7 +264,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
     <div class="row">
       <div class="col-md-12">
         <div class="news-sec-inr">
-        <?php if( !empty($snieuws['titel']) ) printf('<h2 class="news-title">%s</h2>', $snieuws['titel']); ?>
+        <?php if( !empty($snieuws['titel']) ) printf('<h2 data-aos="fade-up4" data-aos-delay="100" class="news-title">%s</h2>', $snieuws['titel']); ?>
           <?php 
             if( !empty($snieuwsIDs) ){
               $count = count($snieuwsIDs);
@@ -267,8 +275,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
                 'post__in' => $pIDS,
                 'orderby' => 'rand'
 
-              ));
-                  
+              ));  
             }else{
               $pQuery = new WP_Query(array(
                 'post_type' => 'post',
@@ -281,7 +288,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
             if( $pQuery->have_posts() ):
           ?>
           <div class="news-items-cntlr">
-            <div class="np-nieuws-grd-items">
+            <div class="np-nieuws-grd-items" data-aos="fade-up4" data-aos-delay="300">
               <ul class="reset-list clearfix">
                 <?php 
                   while($pQuery->have_posts()): $pQuery->the_post(); 
@@ -338,19 +345,20 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 <?php endif; ?>
 
 <section class="hm-footer-gallery">
-  <h2 class="hm-footer-gallery-title">#GrandCasinoKnokke on Instagram</h2>
-  <div class="hm-ftr-gllry-cntlr">
+  <h2 class="hm-footer-gallery-title" data-aos="fade-up4" data-aos-delay="100">#GrandCasinoKnokke on Instagram</h2>
+  <div class="hm-ftr-gllry-cntlr" data-aos="fade-up4" data-aos-delay="300">
     <img src="<?php echo THEME_URI; ?>/assets/images/hm-ftr-gllry-img.jpg" alt="hm-ftr-gllry-img">
   </div>
 </section>
 
 
 <section class="footer-top-sec">
-  <span class="footer-top-sec-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></span>
+  <span class="footer-top-sec-bg inline-bg" data-aos="fade" data-aos-delay="100"
+  style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></span>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="footer-top-sec-cntlr">
+        <div class="footer-top-sec-cntlr" data-aos="fade-up4" data-aos-delay="300">
           <div class="footer-top-col-hedding">
             <h4 class="footer-top-col-title">Schrijf je in voor <br>onze nieuwsbrief</h4>
           </div>
