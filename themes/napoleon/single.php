@@ -35,14 +35,14 @@ if( !empty($termThumID) ){
           <div class="col-md-12">
             <div class="dfp-promo-module clearfix">
               <?php 
-                if( !empty($title) ) printf('<div><strong class="dfp-promo-module-title block-930">%s</strong></div>', $title); 
-                echo '<div class="nd-dfp-promo-module-date block-930">
+                if( !empty($title) ) printf('<div data-aos="fade-up4" data-aos-delay="100"><strong class="dfp-promo-module-title block-930">%s</strong></div>', $title); 
+                echo '<div class="nd-dfp-promo-module-date block-930" data-aos="fade-up4" data-aos-delay="300">
                 <strong><span>';
                 echo $termNameTag.''.get_the_date('d-m-Y');
                 echo '</span><i>';
                 echo $gridTag;
                 echo '</i></strong></div>';
-                echo '<div class="dfp-plate-one-img-bx">';
+                echo '<div class="dfp-plate-one-img-bx" data-aos="fade-up4" data-aos-delay="500">';
                   if( !empty($afbeelding) ){
                     echo cbv_get_image_tag($afbeelding);
                   }
@@ -57,11 +57,13 @@ if( !empty($termThumID) ){
         </div>
       </div>
     </div>
+    <div data-aos="fade-up4" data-aos-delay="100">
     <?php 
       }elseif( get_row_layout() == 'teksteditor' ){ 
       $beschrijving = get_sub_field('fc_teksteditor');
     ?>
-    <div class="dfp-text-module-cntlr">
+    </div>
+    <div class="dfp-text-module-cntlr" data-aos="fade-up4" data-aos-delay="300">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -86,7 +88,7 @@ if( !empty($termThumID) ){
           <div class="col-md-12">
             <div class="loyalty-welcome-sec-con-cntlr">
               <div class="loyalty-welcome-sec-con">
-                <div class="loyalty-welcome-sec-lft">
+                <div class="loyalty-welcome-sec-lft" data-aos="fade-up4" data-aos-delay="100">
                   <div class="loyalty-welcome-sec-fea-img img-div-scale ">
                     <div class="loyalty-welcome-sec-fea-img-inr img-div inline-bg" style="background-image: url(<?php echo $imgsrc; ?>);"></div>
                     <?php if( !empty($fc_video) ): ?>
@@ -99,7 +101,7 @@ if( !empty($termThumID) ){
                     <?php endif; ?>
                   </div>
                 </div>
-                <div class="loyalty-welcome-sec-rgt">
+                <div class="loyalty-welcome-sec-rgt" data-aos="fade-up4" data-aos-delay="300">
                   <div class="loyalty-welcome-sec-des">
                     <?php echo wpautop($fc_tekst); ?>
                   </div>
@@ -116,7 +118,8 @@ if( !empty($termThumID) ){
         <div class="row">
           <div class="col-md-12">
             <div class="fl-dft-lftimg-rgtdes clearfix">
-              <div class="fl-dft-lftimg-rgtdes-lft" style="background-image: url(<?php echo $imgsrc; ?>);">
+              <div class="fl-dft-lftimg-rgtdes-lft" data-aos="fade-up4" data-aos-delay="100"
+              style="background-image: url(<?php echo $imgsrc; ?>);">
               <a href="https://youtu.be/9No-FiEInLA" data-fancybox="gallery" class="overlay-link"></a>
               <i>
                 <svg class="play-button-svg" width="50" height="50" viewBox="0 0 50 50" fill="#CB9F67">
@@ -124,7 +127,7 @@ if( !empty($termThumID) ){
                 </svg> 
               </i>
               </div>
-              <div class="fl-dft-lftimg-rgtdes-rgt">
+              <div class="fl-dft-lftimg-rgtdes-rgt" data-aos="fade-up4" data-aos-delay="300">
                 <?php echo wpautop($fc_tekst); ?>
               </div>
             </div>
@@ -141,7 +144,7 @@ if( !empty($termThumID) ){
     <div class="dfp-restaurant-gallery-slider">
       <div class="restaurant-gallery-slider">
         <div class="rgsHolder">
-          <div class="dfp-rgsholder">
+          <div class="dfp-rgsholder" data-aos="fade-up4" data-aos-delay="300">
             <div class="swiper-container restaurantGallerySlider">
               <div class="swiper-wrapper slide1Wrapper">
               <?php 
@@ -209,7 +212,7 @@ if( !empty($termThumID) ){
         <div class="row">
           <div class="col-md-12">
             <div class="dfp-lftimg-rtdesc-grid">
-              <div class="dfp-lftimg-rtdesc-lft mHc">
+              <div class="dfp-lftimg-rtdesc-lft mHc" data-aos="fade-up4" data-aos-delay="100">
                 <div class="dfp-lftimg-rtdesc-lft-img-cntlr">
                   <div class="dfp-lftimg-rtdesc-lft-img inline-bg dft-transition" style="background: url('<?php echo $gridImg; ?>');"> </div>
                   <a class="overlay-link" href="<?php the_permalink(); ?>"></a>
@@ -218,7 +221,7 @@ if( !empty($termThumID) ){
                   </div>
                 </div>
               </div>
-              <div class="dfp-lftimg-rtdesc-rt mHc">
+              <div class="dfp-lftimg-rtdesc-rt mHc" data-aos="fade-up4" data-aos-delay="300">
                 <div class="dfp-lftimg-rtdesc-rt-desc-cntlr">
                   <div class="dfp-lftimg-rtdesc-rt-desc">
                     <?php echo !empty($overzicht['etiket'])? '<span class="jkpt-cntnt-item-brand nl-right-desc-brand">'.$overzicht['etiket'].'</span>': '';?>
@@ -276,7 +279,7 @@ if( !empty($termThumID) ){
   ?>
     <div class="dfp-restaurant-testi-slider">
       <div class="rtsHolder">
-        <div class="dfp-rtsholder">
+        <div class="dfp-rtsholder" data-aos="fade-up4" data-aos-delay="300">
           <div class="swiper-container restaurantTestiSlider">
             <div class="swiper-wrapper">
             <?php while($getuiQuery->have_posts()): $getuiQuery->the_post(); ?>
@@ -348,7 +351,7 @@ if( !empty($termThumID) ){
             <div class="np-nieuws-con-sec-ctlr dfp-nieuws-con-sec-cntlr clearfix">
 
               <div class="np-nieuws-lftsidebar">
-                <div class="np-nieuws-lftsidebar-inr">
+                <div class="np-nieuws-lftsidebar-inr" data-aos="fade-up5" data-aos-delay="100">
                   <div class="np-nieuws-lftsidebar-des">
                     <div class="np-nieuws-lftsidebar-des-inr">
                       <div class="np-nieuws-lftsidebar-des-ctlr">
@@ -362,7 +365,7 @@ if( !empty($termThumID) ){
                 </div>
               </div>
               <?php if( $agendaQuery->have_posts() ): ?>
-              <div class="np-nieuws-grds-item">
+              <div class="np-nieuws-grds-item" data-aos="fade-up4" data-aos-delay="300"> 
                 <div class="np-nieuws-grd-items dfp-np-nieuws-grds-items">
                   <ul class="reset-list clearfix">
                 <?php 
@@ -428,7 +431,7 @@ if( !empty($termThumID) ){
         <div class="row">
           <div class="col-md-12">
             <div class="np-nieuws-grd-items block-954 dfp-np-nieuws-grd-items-in">
-              <ul class="reset-list clearfix">
+              <ul class="reset-list clearfix" data-aos="fade-up4" data-aos-delay="300">
               <?php 
                 while($nieuwsQuery->have_posts()): $nieuwsQuery->the_post();
                 $gridurl = cbv_get_image_src( get_post_thumbnail_id(get_the_ID()), 'dftnieuws' );
@@ -481,7 +484,7 @@ if( !empty($termThumID) ){
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="dfp-loyalty-welcome-cntlr block-930">
+            <div class="dfp-loyalty-welcome-cntlr block-930" data-aos="fade-up4" data-aos-delay="300">
               <div class="loyalty-welcome-sec-fea-img img-div-scale">
                 <div class="loyalty-welcome-sec-fea-img-inr img-div inline-bg" style="background-image: url(<?php echo $fcposter; ?>);"></div>
                 <?php if( !empty($fc_videourl) ): ?>
@@ -529,14 +532,16 @@ if( !empty($termThumID) ){
         <div class="row">
           <div class="col-md-12">
             <div class="dfp-restaurant-tab-section-cntlr">
-              <?php if( !empty($menu_titel) ) printf('<h3 class="dfp-restaurant-tab-section-title">%s</h3>', $menu_titel); ?>
-              <div class="fl-tabs clearfix restaurant-tabs dfp-restaurant-tabs">
+              <?php if( !empty($menu_titel) ) printf('<h3 data-aos="fade-up4" data-aos-delay="100" class="dfp-restaurant-tab-section-title">%s</h3>', $menu_titel); ?>
+              <div class="fl-tabs clearfix restaurant-tabs dfp-restaurant-tabs"
+              data-aos="fade-up4" data-aos-delay="200">
                 <ul class="reset-list clearfix">
                   <?php $i = 1; while($menuQuery->have_posts()): $menuQuery->the_post(); ?>
                   <li><button class="tab-link<?php echo ($i == 1)?' current': ''; ?>" data-tab="tab-<?php echo $i; ?>"><span><?php the_title(); ?></span></button></li>
                   <?php $i++; endwhile; ?>
                 </ul>
                 </div>
+                <div data-aos="fade-up4" data-aos-delay="300">
                 <?php 
                   $i = 1; while($menuQuery->have_posts()): $menuQuery->the_post(); 
                   $menuTitel = get_field('titel', get_the_ID());
@@ -572,6 +577,7 @@ if( !empty($termThumID) ){
                 </div>
                 <?php $i++; endwhile; ?>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -587,7 +593,7 @@ if( !empty($termThumID) ){
       <div class="row">
         <div class="col-md-12">
           <div class="dfp-text-module block-930 clearfix">
-            <div class="dfp-text-module-btn">
+            <div class="dfp-text-module-btn" data-aos="fade-up4" data-aos-delay="300">
             <?php 
               if( is_array( $rode_knop ) &&  !empty( $rode_knop['url'] ) ){
                 printf('<a class="fl-tsprnt-btn dfp-tmb2" href="%s" target="%s">%s</a>', $rode_knop['url'], $rode_knop['target'], $rode_knop['title']); 
@@ -620,7 +626,7 @@ if( !empty($termThumID) ){
             ?>
             <div class="dfp-download-pdf">
               <?php foreach( $fc_pdfs as $fc_pdf ): ?>
-              <div class="dfp-download-pdf-item-cntlr">
+              <div class="dfp-download-pdf-item-cntlr" data-aos="fade-up4" data-aos-delay="200">
                 <div class="dfp-download-pdf-item">
                   <div class="dfp-download-pdf-item-img">
                     <img src="<?php echo THEME_URI; ?>/assets/images/dfp-download-item-pdf-icon.png" alt="">
@@ -669,7 +675,7 @@ if( !empty($termThumID) ){
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="dfp-promo-module clearfix">
+          <div class="dfp-promo-module clearfix" data-aos="fade-up4" data-aos-delay="100">
             <div>
               <strong class="dfp-promo-module-title block-930"><?php the_title(); ?></strong>
             </div>
@@ -683,7 +689,9 @@ if( !empty($termThumID) ){
               </strong>
             </div>
           </div>
+          <div data-aos="fade-up4" data-aos-delay="200">
           <?php the_content(); ?>
+          </div>
         </div>
       </div>
     </div>
