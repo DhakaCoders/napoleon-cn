@@ -133,7 +133,9 @@ header.header{
 	background: #4C2631!important;
 	color: #000!important;
 }
-
+.page-header .hdr-language ul li a{
+	color: #4C2631;
+}
 
 .logo{
 	position: absolute;
