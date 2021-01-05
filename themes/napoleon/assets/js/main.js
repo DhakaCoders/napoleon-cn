@@ -209,7 +209,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-/*Start Of Ranojit*/
+/*
+Blog 1
+*/
 $('div.fl-tabs button').click(function(){
     var tab_id = $(this).attr('data-tab');
 
@@ -340,8 +342,10 @@ if (windowWidth <= 767) {
     //$("#"+tab_id).addClass('current');
   });
 }
-/*Start Of Noyon*/
 
+/*
+Blog 2
+*/
 var swiper = new Swiper('.jBnrSlider', {
   slidesPerView: 1,
   loop: true,
@@ -427,7 +431,9 @@ $('.ftr-top-row-col h5').on('click', function(){
 
 
 
-/*Start Of Milon*/
+/*
+Blog 3
+*/
 
 /*
 ----------------------
