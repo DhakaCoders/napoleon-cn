@@ -59,6 +59,8 @@ header.header{
     justify-content: center;
     color: #fff;
 }
+
+
 .hdr-language{
 	width: 75px;
 	height: 41px;
@@ -73,7 +75,7 @@ header.header{
 	display: flex;
 	align-items: center;
 }
-.hdr-lang{
+.hdr-language ul li a{
 	margin: 0;
 	width: 50%;
 	position: relative;
@@ -86,25 +88,14 @@ header.header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 100% 100%;
+	transition: initial;
 }
-.hdr-lang:last-child{
+.hdr-language ul li{
 	margin-left: auto;
 }
-.hdr-language input{
-	width: 20px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	opacity: 0;
-	z-index: 3;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-}
 
-.hdr-language .switch{
+/*.hdr-language ul li a span:after{
 	position: absolute;
 	background: #fff;
 	color: #000;
@@ -118,21 +109,33 @@ header.header{
 	z-index: 1;
 	opacity: 0;
 
-}
-.hdr-language strong{
+}*/
+.hdr-language ul li a span{
 	position: relative;
 	z-index: 2;
+	display: block;
+	font-weight: 600;
 }
-.hdr-lang input:checked ~ .switch {
-  opacity: 1;
+.hdr-language ul li a.lang-active{
+	background: #fff!important;
+	color: #000!important;
+	border-radius: 100% 100%;
 }
 
-.hdr-lang input:checked + strong{
-	color: #1A1429;
+.hdr-language ul li a.lang-active span{
+	color: #1A1429!important;
 }
 
-
-
+.page-header .hdr-language ul li a.lang-active span{
+	color: #fff!important;
+}
+.page-header .hdr-language ul li a.lang-active{
+	background: #4C2631!important;
+	color: #000!important;
+}
+.page-header .hdr-language ul li a{
+	color: #4C2631;
+}
 
 .logo{
 	position: absolute;
@@ -628,6 +631,12 @@ header.header.page-header .hdr-lang input:checked + strong{
 		color: #fff;
 		width: 44px;
 		padding-left: 0;
+	}
+	.xs-language ul li a{
+		color: #CB9F67;
+	}
+	.xs-language ul li:first-child a{
+		color: #fff;
 	}
 	.xs-menu-address{
 		padding: 45px 20px 20px 40px;

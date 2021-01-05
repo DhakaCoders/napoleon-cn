@@ -8,6 +8,14 @@ $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 
+
+$('.hdr-language ul li').first().find('a').addClass('lang-active');
+$('.hdr-language ul li a').on('click', function(){
+  $(this).addClass('lang-active');
+  $(this).parent().siblings().find('.lang-active').removeClass('lang-active');
+});
+
+
 /**
 Dynamic containers
 */

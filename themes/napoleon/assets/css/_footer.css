@@ -180,10 +180,13 @@
 .ftr-btm-socials > ul > li > a:hover{
 	background: #A21D1D;
 }
-.ftr-btm-socials > ul > li > a i {
-    display: inline-block;
-    font-size: 16px;
-    color: #ffffff;
+.ftr-btm-socials > ul > li > a:hover i{
+	color: #A21D1D;
+}
+.ftr-btm-socials > ul > li > a i{
+	display: inline-block;
+	font-size: 20px;
+	color: #999999;
 }
 .ftr-btm-socials > ul > li:first-child{
 	padding-left: 0;

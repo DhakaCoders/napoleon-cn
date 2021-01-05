@@ -180,20 +180,12 @@ $posts1 = wp_count_posts();
                   ?>
                 </div>
                 <div class="hdr-language">
-                  <ul class="reset-list">
+                 <ul class="reset-list">
                     <li>
-                      <label class="hdr-lang">
-                        <input type="radio" name="ln" checked="checked">
-                        <strong>NL</strong>
-                        <span class="switch"></span>
-                      </label>
+                      <a href="#"><span>NL</span></a>
                     </li>
                     <li>
-                      <label class="hdr-lang">
-                        <input type="radio" name="ln">
-                        <strong>FR</strong>
-                        <span class="switch"></span>
-                      </label>
+                      <a href="#"><span>FR</span></a>
                     </li>
                   </ul>
                 </div>
@@ -263,8 +255,8 @@ $posts1 = wp_count_posts();
     </nav>
     <div class="xs-language">
       <ul class="reset-list clearfix">
-        <li><span>NL</span></li>
-        <li><span>NL</span></li>
+        <li><a href="#"><span>NL</span></a></li>
+        <li><a href="#"><span>NL</span></a></li>
       </ul>
     </div>
     <div class="xs-menu-address">
