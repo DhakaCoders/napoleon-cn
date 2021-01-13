@@ -156,7 +156,9 @@
 	color: #512C36;
 	margin-bottom: 6px;
 }
-
+.default-page-con .restaurant-tab-con-des ul li strong{
+	color: #fff;
+}
 .restaurant-tab-con-des ul li p{
 	text-transform: uppercase;
 }

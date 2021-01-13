@@ -6,7 +6,10 @@
 4. footer social hover effects
 5. Contact page icon problem
 6. jackpots page banner slider
+7. Innerpage ar sob ses module sob somoy sobar sese hobe na
+8. jodi kono text lower thake css use kore upper korte hobe
 
+data-aos="fade-up4" data-aos-delay="10" data-aos-duration="800"
 
 1. Cassino page layout 100% done
 2. Rasturant page 100% done

@@ -350,7 +350,17 @@ contact-info-sec-wrp
     width: 18px;
     height: 18px;
 }
-
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .InputTypeTelephone.wpforms-has-error:after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 21px;
+    background: url(../images/phone-icon-validate.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+}
 .contact-form-wrp .wpforms-field-container .wpforms-field-select{
     width: 100% !important;
 }

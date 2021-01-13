@@ -145,6 +145,7 @@ ol li::before {
 	color: #512C36;
 	margin-bottom: 46px;
 	display: block;
+	font-weight: normal;
 }
 
 .dfp-promo-module-hdr p{
@@ -158,6 +159,12 @@ ol li::before {
 }
 .fl-dft-lftimg-rgtdes-cntlr{
 	padding-top: 68px;
+}
+.fl-dft-lftimg-rgtdes .fl-dft-lftimg-rgtdes-lft i{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 .fl-dft-lftimg-rgtdes {
 	margin: 0 0;
@@ -323,6 +330,7 @@ Gallery design
 
 /*table*/
 .dfp-tbl-wrap-sec{
+	background: #ffffff;
 	margin-top: 63px;
 	padding-bottom: 148px;	
 }
@@ -608,14 +616,20 @@ Gallery design
 	padding-bottom: 60px;
 }
 .dfp-restaurant-testi-slider .dfp-rtsholder{
-	padding-left: 124px;
+	padding-left: 224px;
 }
-
+.innerpage-con-wrap .np-nieuws-grd-items ul{
+	padding: 0;
+	margin: 0;
+}
+.innerpage-con-wrap .np-nieuws-grd-items ul li{
+	padding: 0;
+}
 .dfp-nieuws-con-sec{
 	padding-bottom: 95px;
 }
-.dfp-nieuws-con-sec-cntlr{
-
+.dfp-nieuws-con-sec-cntlr .np-nieuws-grds-item{
+	margin-left: -3px;
 }
 .dfp-nieuws-con-sec-cntlr .np-nieuws-grds-item{
 	padding-left: 0;
@@ -823,8 +837,10 @@ Gallery design
 	padding-left: 0;
 	padding-bottom: 0;
 }
-
-
+.innerpage-con-wrap .dfp-np-nieuws-grd-items-sec .dfp-np-nieuws-grd-items-in ul{
+	margin-left: -12px;
+	margin-right: -12px;
+}
 @media(max-width: 1599px){
 	.dfp-promo-module h1, .dfp-promo-module-title{
 		font-size: 60px;

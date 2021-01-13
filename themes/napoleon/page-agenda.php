@@ -10,7 +10,7 @@ $beschrijving = get_field('beschrijving', $thisID);
     <div class="row">
       <div class="col-md-12">
         <div class="np-agenda-con-inr clearfix">
-          <div class="np-agenda-lftsidebar">
+          <div class="np-agenda-lftsidebar" data-aos="fade-up5" data-aos-delay="100">
             <div class="np-nieuws-lftsidebar-inr">
               <div class="np-nieuws-lftsidebar-des">
                 <div class="np-nieuws-lftsidebar-des-inr">
@@ -57,7 +57,7 @@ $beschrijving = get_field('beschrijving', $thisID);
             </div>
             <?php } ?>
           </div>
-          <div class="np-agenda-rgt">
+          <div class="np-agenda-rgt" data-aos="fade-up4" data-aos-delay="300">
             <?php echo do_shortcode('[ajax_agenda]'); ?>
           </div>
         </div>

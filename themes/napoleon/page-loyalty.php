@@ -85,7 +85,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
       <div class="row">
         <div class="col-md-12">
           <div class="loyalty-welcome-sec-con">
-            <div class="loyalty-welcome-sec-lft">
+            <div class="loyalty-welcome-sec-lft" data-aos="fade-up4" data-aos-delay="100">
               <div class="loyalty-welcome-sec-fea-img img-div-scale ">
                 <div class="loyalty-welcome-sec-fea-img-inr img-div inline-bg" style="background-image: url(<?php echo $videoImg; ?>);"></div>
                   <?php if( !empty($video['video_url']) ):?>
@@ -98,7 +98,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
                   <?php endif; ?>
               </div>
             </div>
-            <div class="loyalty-welcome-sec-rgt">
+            <div class="loyalty-welcome-sec-rgt" data-aos="fade-up4" data-aos-delay="400">
               <div class="loyalty-welcome-sec-des">
               <?php 
                 if( !empty($video['titel']) ) printf('<h2 class="lwsd-title">%s</h2>', $video['titel']); 
@@ -131,10 +131,10 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
               ?>
               <li>
                 <div class="loyalty-grd-item">
-                  <div class="loyalty-grd-item-fea-img">
+                  <div class="loyalty-grd-item-fea-img" data-aos="fade-up4" data-aos-delay="100">
                     <div class="inline-bg" style="background: url(<?php echo $inhoudImg;?>);"></div>
                   </div>
-                  <div class="loyalty-grd-item-des">
+                  <div class="loyalty-grd-item-des" data-aos="fade-up5" data-aos-delay="300">
                     <div>
                       <?php 
                       if( !empty($inhoud['titel']) ) printf('<h3 class="lgid-title">%s</h3>', $inhoud['titel']); 

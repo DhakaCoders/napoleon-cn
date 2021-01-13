@@ -12,11 +12,12 @@ if( $fc_openhour ):
   $algemeen = $fc_openhour['algemeen'];
 ?>
 <section class="footer-top-sec-v2">
-  <div class="footer-top-sec-v2-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></div>
+  <div class="footer-top-sec-v2-bg inline-bg" data-aos="fade-up2" data-aos-delay="100" 
+  style="background-image: url('<?php echo THEME_URI; ?>/assets/images/footer-top-sec-bg.png');"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="footer-top-sec-v2-inr">
+        <div class="footer-top-sec-v2-inr" data-aos="fade-up4" data-aos-delay="500">
           <div class="ftr-top-sec-v2-lft">
             <div class="fts-v2-lft-top">
               <h6 class="fts-v2-lft-sub-title">Openingsuren</h6>

@@ -16,8 +16,10 @@ $thisID = get_the_ID();
         <div class="row">
           <div class="col-md-12">
             <div class="jackpots-banner-cntlr">
-              <h1 class="jackpots-banner-title page-banner-title">Slots</h1>
-              <div class="j-bnr-sliders-cntlr">
+              <h1 class="jackpots-banner-title page-banner-title"
+              data-aos="fade-up4" data-aos-delay="100">Slots</h1>
+              <div class="j-bnr-sliders-cntlr"
+              data-aos="fade-up4" data-aos-delay="300">
                 <div class="j-bnr-slider swiper-container jBnrSlider">
                   <div class="j-bnr-slide-item-cntlr swiper-wrapper">
                     <div class="swiper-slide sliderItem">
@@ -109,12 +111,12 @@ $thisID = get_the_ID();
     <div class="row">
       <div class="col-md-12">
         <div class="nl-left-img-right-desc-cntlr">
-          <div class="nl-left-img-cntlr mHc">
+          <div class="nl-left-img-cntlr mHc" data-aos="fade-up4" data-aos-delay="100">
             <div class="nl-left-img inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/nl-left-img-001.jpg');"></div>
             <a class="overlay-link" href="#"></a>
             <img class="show-sm" src="<?php echo THEME_URI; ?>/assets/images/nl-left-img-001.jpg" alt="">
           </div>
-          <div class="nl-right-desc-cntlr mHc">
+          <div class="nl-right-desc-cntlr mHc" data-aos="fade-up4" data-aos-delay="300">
             <div class="nl-right-desc">
               <span class="nl-right-desc-brand">brand</span>
               <h3 class="nl-right-desc-title"><a href="#">Apex Clover Link</a></h3>
@@ -146,12 +148,12 @@ $thisID = get_the_ID();
           <ul class="reset-list">
             <li>
               <div class="jkpt-cntnt-item">
-                <div class="jkpt-cntnt-item-img-cntlr">
+                <div class="jkpt-cntnt-item-img-cntlr" data-aos="fade-up4" data-aos-delay="100">
                   <div class="jkpt-cntnt-item-img inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-001.jpg');"></div>
                   <img class="show-sm" src="<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-001.jpg" alt="">
                   <a class="overlay-link" href="#"></a>
                 </div>
-                <div class="jkpt-cntnt-item-desc-cntlr">
+                <div class="jkpt-cntnt-item-desc-cntlr" data-aos="fade-up4" data-aos-delay="300">
                   <div class="jkpt-cntnt-item-desc nl-right-desc">
                     <span class="jkpt-cntnt-item-brand nl-right-desc-brand">brand</span>
                     <h3 class="jkpt-cntnt-item-title nl-right-desc-title"><a href="#">88 Fortunes</a></h3>
@@ -173,12 +175,12 @@ $thisID = get_the_ID();
 
             <li>
               <div class="jkpt-cntnt-item">
-                <div class="jkpt-cntnt-item-img-cntlr">
+                <div class="jkpt-cntnt-item-img-cntlr" data-aos="fade-up4" data-aos-delay="100">
                   <div class="jkpt-cntnt-item-img inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-002.jpg');"></div>
                   <img class="show-sm" src="<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-002.jpg" alt="">
                   <a class="overlay-link" href="#"></a>
                 </div>
-                <div class="jkpt-cntnt-item-desc-cntlr jkpt-cntnt-item-desc-cntlr-c2">
+                <div class="jkpt-cntnt-item-desc-cntlr jkpt-cntnt-item-desc-cntlr-c2" data-aos="fade-up4" data-aos-delay="300">
                   <div class="jkpt-cntnt-item-desc nl-right-desc">
                     <span class="jkpt-cntnt-item-brand nl-right-desc-brand">brand</span>
                     <h3 class="jkpt-cntnt-item-title nl-right-desc-title"><a href="#">Blackjack 11's</a></h3>
@@ -200,12 +202,12 @@ $thisID = get_the_ID();
 
             <li>
               <div class="jkpt-cntnt-item">
-                <div class="jkpt-cntnt-item-img-cntlr">
+                <div class="jkpt-cntnt-item-img-cntlr" data-aos="fade-up4" data-aos-delay="100">
                   <div class="jkpt-cntnt-item-img inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-003.jpg');"></div>
                   <img class="show-sm" src="<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-003.jpg" alt="">
                   <a class="overlay-link" href="#"></a>
                 </div>
-                <div class="jkpt-cntnt-item-desc-cntlr jkpt-cntnt-item-desc-cntlr-c2">
+                <div class="jkpt-cntnt-item-desc-cntlr jkpt-cntnt-item-desc-cntlr-c2" data-aos="fade-up4" data-aos-delay="300">
                   <div class="jkpt-cntnt-item-desc nl-right-desc">
                     <span class="jkpt-cntnt-item-brand nl-right-desc-brand">brand</span>
                     <h3 class="jkpt-cntnt-item-title nl-right-desc-title"><a href="#">Zeus - Son of Kronos</a></h3>
@@ -227,12 +229,12 @@ $thisID = get_the_ID();
 
             <li>
               <div class="jkpt-cntnt-item">
-                <div class="jkpt-cntnt-item-img-cntlr">
+                <div class="jkpt-cntnt-item-img-cntlr" data-aos="fade-up4" data-aos-delay="100">
                   <div class="jkpt-cntnt-item-img inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-004.jpg');"></div>
                   <img class="show-sm" src="<?php echo THEME_URI; ?>/assets/images/jkpt-cntnt-item-img-004.jpg" alt="">
                   <a class="overlay-link" href="#"></a>
                 </div>
-                <div class="jkpt-cntnt-item-desc-cntlr">
+                <div class="jkpt-cntnt-item-desc-cntlr" data-aos="fade-up4" data-aos-delay="300">
                   <div class="jkpt-cntnt-item-desc nl-right-desc">
                     <span class="jkpt-cntnt-item-brand nl-right-desc-brand">brand</span>
                     <h3 class="jkpt-cntnt-item-title nl-right-desc-title"><a href="#">Kronos - Father of Zeus</a></h3>

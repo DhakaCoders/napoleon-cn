@@ -84,7 +84,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
       <div class="row">
         <div class="col-md-12">
           <div class="loyalty-welcome-sec-con">
-            <div class="loyalty-welcome-sec-lft">
+            <div class="loyalty-welcome-sec-lft" data-aos="fade-up4" data-aos-delay="100">
               <div class="loyalty-welcome-sec-fea-img img-div-scale ">
                 <div class="loyalty-welcome-sec-fea-img-inr img-div inline-bg" style="background-image: url(<?php echo $videoImg; ?>);"></div>
                   <?php if( !empty($video['video_url']) ):?>
@@ -97,7 +97,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
               	  <?php endif; ?>
               </div>
             </div>
-            <div class="loyalty-welcome-sec-rgt">
+            <div class="loyalty-welcome-sec-rgt" data-aos="fade-up4" data-aos-delay="400">
               <div class="loyalty-welcome-sec-des">
                 <?php 
                 if( !empty($video['titel']) ) printf('<h2 class="lwsd-title">%s</h2>', $video['titel']); 
@@ -127,10 +127,10 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
           	$blok1Img = !empty($blok1['afbeelding'])? cbv_get_image_src( $blok1['afbeelding'], 'cblok1' ): '';
           	$bk_knop1 = $blok1['knop'];
           ?>
-          <div class="np-roulette-rgt">
+          <div class="np-roulette-rgt" data-aos="fade-up4" data-aos-delay="300">
             <div class="np-roulette-img inline-bg" style="background: url('<?php echo $blok1Img; ?>');"></div>
           </div>
-          <div class="np-roulette-lft">
+          <div class="np-roulette-lft" data-aos="fade-up4" data-aos-delay="100">
 		       <?php 
             if( !empty($blok1['titel']) ) printf('<h3 class="np-roulette-lft-title">%s</h3>', $blok1['titel']); 
             if( !empty($blok1['beschrijving']) ) echo wpautop( $blok1['beschrijving'] ); 
@@ -155,7 +155,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 ?>
   <section class="restaurant-gallery-slider">
     <div class="rgsHolder">
-      <div class="np-casino-slider-ctlr">
+      <div class="np-casino-slider-ctlr" data-aos="fade-up4" data-aos-delay="100">
       	<?php if( $imgsliders ): ?>
         <div class="swiper-container restaurantGallerySlider">
 
@@ -209,10 +209,10 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
         	$bk_knop2 = $blok2['knop'];
         	?>
           <div class="np-winner-sec-inr clearfix">
-            <div class="np-winner-lft">
+            <div class="np-winner-lft" data-aos="fade-up4" data-aos-delay="100">
               <div class="np-winner-lft-img inline-bg" style="background: url('<?php echo $blokImg2; ?>');"></div>
             </div>
-            <div class="np-winner-rgt">
+            <div class="np-winner-rgt" data-aos="fade-up4" data-aos-delay="400">
 			      <?php 
 	            if( !empty($blok2['titel']) ) printf('<h4 class="np-winner-rgt-title">%s</h4>', $blok2['titel']); 
 	            if( !empty($blok2['beschrijving']) ) echo wpautop( $blok2['beschrijving'] ); 
@@ -243,10 +243,10 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 			$bk_knop3 = $blok3['knop'];
 		?>
           <div class="np-roulette-sec-inr clearfix">
-            <div class="np-roulette-rgt">
+            <div class="np-roulette-rgt" data-aos="fade-up4" data-aos-delay="300">
               <div class="np-roulette-img inline-bg" style="background: url('<?php echo $blokImg3; ?>');"></div>
             </div>
-            <div class="np-roulette-lft">
+            <div class="np-roulette-lft" data-aos="fade-up4" data-aos-delay="100">
 			<?php 
         if( !empty($blok3['titel']) ) printf('<h5 class="np-roulette-lft-title">%s</h5>', $blok3['titel']); 
         if( !empty($blok3['beschrijving']) ) echo wpautop( $blok3['beschrijving'] ); 
@@ -270,7 +270,7 @@ $ext = strtolower(pathinfo($pgvideo, PATHINFO_EXTENSION));
 ?>
   <section class="restaurant-testi-slider">
     <div class="rtsHolder">
-      <div class="np-casino-rtstestiholder-inr">
+      <div class="np-casino-rtstestiholder-inr" data-aos="fade-up4" data-aos-delay="300">
           <?php 
             if( !empty($getuiIDs) ){
               $count = count($getuiIDs);

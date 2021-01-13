@@ -14,7 +14,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->	
-
+<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
 <svg style="display: none;">
   <symbol id="btn-white-angle-svg" width="6" height="8" viewBox="0 0 6 8">
   <path d="M0.606555 0.000137755C0.488317 -0.00246282 0.372207 0.0318128 0.274366 0.0982521C0.176525 0.164691 0.101816 0.260011 0.0606254 0.370872C0.0194347 0.481734 0.0138091 0.602658 0.0445306 0.716865C0.0752521 0.831071 0.140794 0.932823 0.232045 1.00806L3.71377 3.9908L0.232045 6.97249C0.168922 7.01889 0.116058 7.07778 0.0767644 7.14555C0.0374702 7.21332 0.0125922 7.2885 0.00368797 7.36633C-0.00521629 7.44416 0.00204522 7.52297 0.0250177 7.59787C0.0479902 7.67276 0.0861785 7.74212 0.137192 7.80158C0.188205 7.86103 0.250944 7.90925 0.321479 7.94333C0.392015 7.97741 0.468827 7.99656 0.547107 7.99958C0.625386 8.0026 0.703446 7.98947 0.776397 7.96092C0.849349 7.93238 0.915621 7.88908 0.971064 7.83373L4.95732 4.42309C5.01992 4.36967 5.07019 4.30337 5.10466 4.22864C5.13912 4.15391 5.15697 4.07257 5.15697 3.99027C5.15697 3.90798 5.13912 3.82664 5.10466 3.75191C5.07019 3.67718 5.01992 3.61081 4.95732 3.55739L0.971064 0.14347C0.870365 0.0540263 0.741204 0.00317536 0.606555 6.49802e-06V0.000137755Z"/>
@@ -107,9 +109,6 @@
   <path d="M0.606555 0.000137755C0.488317 -0.00246282 0.372207 0.0318128 0.274366 0.0982521C0.176525 0.164691 0.101816 0.260011 0.0606254 0.370872C0.0194347 0.481734 0.0138091 0.602658 0.0445306 0.716865C0.0752521 0.831071 0.140794 0.932823 0.232045 1.00806L3.71377 3.9908L0.232045 6.97249C0.168922 7.01889 0.116058 7.07778 0.0767644 7.14555C0.0374702 7.21332 0.0125922 7.2885 0.00368797 7.36633C-0.00521629 7.44416 0.00204522 7.52297 0.0250177 7.59787C0.0479902 7.67276 0.0861785 7.74212 0.137192 7.80158C0.188205 7.86103 0.250944 7.90925 0.321479 7.94333C0.392015 7.97741 0.468827 7.99656 0.547107 7.99958C0.625386 8.0026 0.703446 7.98947 0.776397 7.96092C0.849349 7.93238 0.915621 7.88908 0.971064 7.83373L4.95732 4.42309C5.01992 4.36967 5.07019 4.30337 5.10466 4.22864C5.13912 4.15391 5.15697 4.07257 5.15697 3.99027C5.15697 3.90798 5.13912 3.82664 5.10466 3.75191C5.07019 3.67718 5.01992 3.61081 4.95732 3.55739L0.971064 0.14347C0.870365 0.0540263 0.741204 0.00317536 0.606555 6.49802e-06V0.000137755Z"/>
   </symbol>
 </svg>
-<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
 <div class="loading-screen">
   <img src="<?php echo THEME_URI; ?>/assets/images/logo-green.svg" alt="loading screen">
 </div>
@@ -134,7 +133,7 @@
 $posts1 = wp_count_posts(); 
 ?>
 <div class="bdoverlay"></div>
-<header class="header <?php echo is_default_page(); ?>" data-posts="<?php //echo $posts1->publish; ?>">
+<header class="header <?php echo is_default_page(); ?>" data-posts="<?php echo $posts1->publish; ?>">
   <?php if( $is_top_text && is_front_page() ): ?>
   <div class="hdr-top-notification-bar">
     <div class="container">
@@ -180,20 +179,12 @@ $posts1 = wp_count_posts();
                   ?>
                 </div>
                 <div class="hdr-language">
-                  <ul class="reset-list">
+                 <ul class="reset-list">
                     <li>
-                      <label class="hdr-lang">
-                        <input type="radio" name="ln" checked="checked">
-                        <strong>NL</strong>
-                        <span class="switch"></span>
-                      </label>
+                      <a href="#"><span>NL</span></a>
                     </li>
                     <li>
-                      <label class="hdr-lang">
-                        <input type="radio" name="ln">
-                        <strong>FR</strong>
-                        <span class="switch"></span>
-                      </label>
+                      <a href="#"><span>FR</span></a>
                     </li>
                   </ul>
                 </div>
@@ -263,8 +254,8 @@ $posts1 = wp_count_posts();
     </nav>
     <div class="xs-language">
       <ul class="reset-list clearfix">
-        <li><span>NL</span></li>
-        <li><span>NL</span></li>
+        <li><a href="#"><span>NL</span></a></li>
+        <li><a href="#"><span>NL</span></a></li>
       </ul>
     </div>
     <div class="xs-menu-address">

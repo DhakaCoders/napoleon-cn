@@ -336,6 +336,23 @@
 
 
 /*responsive*/
+@media(max-width: 1699px){
+	.catagory-sec-cntlr{
+		min-height: 530px;
+	}
+	.page-banner.home-page-bnr .page-banner-des{
+		padding-top: 280px;
+	}
+	.page-banner.jackpots-banner-wrap .page-banner-des{
+		padding-top: 200px;
+	} 
+	.page-banner.home-page-bnr .page-banner-inr {
+	    height: 820px;
+	}
+	.page-banner.jackpots-banner-wrap .page-banner-inr {
+	    height: 700px;
+	}
+}
 @media(max-width: 1599px){
 	.catagory-sec{
 		padding: 0 40px;
